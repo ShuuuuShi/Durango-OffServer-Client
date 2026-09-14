@@ -27,8 +27,9 @@ launcher เช็คเวอร์ชันกับเซิร์ฟทุ�
 
 ## สถานะเซิร์ฟ (อัปเดต 14 ก.ย. 2026)
 
-![server progress](https://img.shields.io/badge/%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B7%E0%B8%9A%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%8B%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%9F-83%2F96%20%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%20%2886%25%29-yellowgreen)
+![server progress](https://img.shields.io/badge/server%20progress-83%2F96%20(86%25)-yellowgreen)
 ![client](https://img.shields.io/badge/client-v2.3-blue)
+![multiplayer](https://img.shields.io/badge/social%20%2F%20clan%20%2F%20market-not%20yet-lightgrey)
 ![launcher](https://img.shields.io/badge/launcher-1.0-blue)
 
 `█████████░` **86%** — ทำแล้ว 83 จาก 96 รายการ (นับจากรายการงานฝั่งเซิร์ฟ) · เล่นคนเดียวได้ครบเกือบทั้งเกม · **ระบบหลายคน (เพื่อน/ปาร์ตี้/แคลน/ตลาด) ยังไม่มี**
