@@ -1,0 +1,6 @@
+{
+  "servers": [
+    { "name": "CloseBeta", "gateway": "http://100.122.111.72:8290" },
+    { "name": "PrebetaServer", "gateway": "http://100.122.111.72:8292" }
+  ]
+}
