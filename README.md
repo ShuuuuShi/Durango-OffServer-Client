@@ -27,43 +27,40 @@ launcher เช็คเวอร์ชันกับเซิร์ฟทุ�
 - เข้าโลกไม่ได้ / ค้างที่โหลด → เซิร์ฟอาจปิดอยู่ ดูสถานะมุมขวาบนของ launcher
 - แจ้งบั๊กได้ที่ [Issues](../../issues)
 
-## สถานะเซิร์ฟ (อัปเดต 14 ก.ย. 2026)
+## สถานะเซิร์ฟ (อัปเดต 20 ก.ย. 2026)
 
-![server progress](https://img.shields.io/badge/server%20progress-83%2F96%20(86%25)-yellowgreen)
-![client](https://img.shields.io/badge/client-v2.3-blue)
-![multiplayer](https://img.shields.io/badge/social%20%2F%20clan%20%2F%20market-not%20yet-lightgrey)
-![launcher](https://img.shields.io/badge/launcher-1.0-blue)
+![server progress](https://img.shields.io/badge/server%20progress-97%2F106%20(92%25)-brightgreen)
+![client](https://img.shields.io/badge/client-v2.7-blue)
+![multiplayer](https://img.shields.io/badge/social%20%2F%20clan%20%2F%20market-ready%20(bot--tested)-yellowgreen)
+![discord](https://img.shields.io/badge/discord%20link-live-5865F2)
 
-`█████████░` **86%** — ทำแล้ว 83 จาก 96 รายการ (นับจากรายการงานฝั่งเซิร์ฟ) · เล่นคนเดียวได้ครบเกือบทั้งเกม · **ระบบหลายคน (เพื่อน/ปาร์ตี้/แคลน/ตลาด) ยังไม่มี**
+`█████████░` **92%** — ทำแล้ว 97 จาก 106 รายการ (นับจากรายการงานฝั่งเซิร์ฟ) · เล่นได้ครบเกือบทั้งเกมรวม**ระบบหลายคน** (เพื่อน/ปาร์ตี้/แคลน/ตลาด/คอนเสิร์ต) · **ของใหม่รอบ 19–20 ก.ย. ส่วนใหญ่ยังเทสด้วยบอทเท่านั้น — เจออะไรแจ้งได้เลย**
 
 สัญลักษณ์: ✅ ทำแล้ว + เทสแล้ว · 🟡 ทำแล้ว **แต่ยังไม่ได้เทสกับตัวเกมจริง** (เทสด้วยบอทเท่านั้น) · ⬜ ยังไม่ทำ
 
 | ระบบ | ความคืบหน้า | สถานะ |
 |---|---|---|
-| เข้าเกม / สร้าง-ลบตัวละคร / โหลดโลก | `█████████░` 6/7 | ✅ เข้าโลก เดิน เห็นคนอื่น · 🟡 **ย้ายเกาะ** (ทำแล้ว ยังไม่ได้เทสกับตัวเกม) |
-| กระเป๋า / ไอเทม / สวมใส่ | `██████████` 8/8 | ✅ |
-| คราฟต์ / สกิล / อาชีพ / วิจัย | `██████████` 5/5 | ✅ |
-| ต่อสู้ / ล่าสัตว์ / สัตว์โจมตี | `█████████░` 8/9 | ✅ · ⬜ คลิปสัตว์วิ่ง (ใช้คลิปเดินเร่งแทน) |
-| เอาตัวรอด (หิว/เหนื่อย/อุณหภูมิ/ตาย/ฟื้น/พัก) | `██████████` 7/7 | ✅ |
-| แผนที่ / เดินทาง / ท่าเรือ / วาร์ป | `████████░░` 8/10 | ✅ · ⬜ `VisitEstate` / `RequestEpicWarp` · ⬜ landmark บนแผนที่เกาะอื่น |
-| สิ่งปลูกสร้าง / แคมป์ / กระดาน | `█████████░` 14/15 | ✅ สร้าง-รื้อ-ใช้ safehouse · ⬜ **ประกาศ/ขยาย/ใบอนุญาตที่ดิน** |
-| ฟาร์ม | `██████████` 4/4 | ✅ |
-| สัตว์เลี้ยง (จับ/เลี้ยง/งาน/ขี่) | `█████████░` 6/7 | ✅ · ⬜ ปล่อยเลี้ยง (`GrazePets`) |
-| เควส / ไกด์ / ภารกิจองค์กร / เมล | `█████████░` 9/10 | ✅ · ⬜ `GuideProgress` / `TutorialEvent` |
-| สังคม: เพื่อน / ปาร์ตี้ / แคลน / ตลาด / วิทยุ / ดนตรี / PvP | `█░░░░░░░░░` 1/7 | ⬜ **ยังไม่มี** (มีแค่แชทกับเมล) |
-| แอดมิน / สำรองข้อมูล / hot reload ตาราง | `██████████` 5/5 | ✅ |
+| เข้าเกม / สร้าง-ลบตัวละคร / โหลดโลก | `██████████` 7/7 | ✅ เข้าโลก เดิน เห็นคนอื่น · ย้ายเกาะ · 3 ตัวละคร/บัญชี · คิวรอเข้าตอนคนเต็ม |
+| กระเป๋า / ไอเทม / สวมใส่ | `██████████` 8/8 | ✅ + ความทนทาน/ขนาด/แท็กแฝง/ค่าห่อของตามต้นฉบับ |
+| คราฟต์ / สกิล / อาชีพ / ดัดแปลง | `████████░░` 5/6 | ✅ คราฟต์/สกิล/บันไดความชำนาญ · 🟡 **ดัดแปลงอุปกรณ์ + สนับสนุนเทคนิค** · 🟡 แต้มสกิลตามเลเวลของสิ่งที่ทำ · ⬜ กฎแปรรูป (ตัด/หลอม/ฟอก/ตาก) ตามต้นฉบับยังไม่ครบ |
+| ต่อสู้ / ล่าสัตว์ / สัตว์โจมตี | `█████████░` 9/10 | ✅ ล่า/แล่/สัตว์ไล่ · 🟡 **สูตรดาเมจ-เกราะ-ท่าโจมตีเป็นพื้นที่-ตัวใหญ่ไม่สะดุด ตามต้นฉบับ (สมดุลเปลี่ยน: สัตว์ใหญ่แกร่งขึ้น)** · 🟡 ส่วนร่างกายสัตว์/บาดเจ็บ · ⬜ คลิปสัตว์วิ่ง |
+| เอาตัวรอด (หิว/เหนื่อย/อุณหภูมิ/ตาย/ฟื้น/พัก) | `██████████` 7/7 | ✅ + ของตกเป็นห่อตอนตาย · CPR |
+| แผนที่ / เดินทาง / ท่าเรือ / วาร์ป | `████████░░` 9/11 | ✅ · 🟡 **รอยแยก/ตัวเร่งวาร์ป (wave defence)** · 🟡 ขนส่งสินค้า/ยานพาหนะ · ⬜ `VisitEstate`/`RequestEpicWarp` · ⬜ landmark บนแผนที่เกาะอื่น |
+| สิ่งปลูกสร้าง / ที่ดิน / แคมป์ | `█████████░` 16/18 | ✅ สร้าง-รื้อ-ใช้ · **ที่ดินส่วนตัว/แคลน** · ผุเมื่อทิ้ง (กองไฟ 1 วัน · นอกที่ดิน 3 วัน) · ป้าย/กล่องล็อก/Sanctum · 🟡 เซ็ตเฟอร์นิเจอร์+mood+ฝากทำ · 🟡 หุ่นโชว์/เครื่องต่อย · ⬜ บ่อน้ำ/กับดักปลา · ⬜ กับดักสัตว์ |
+| ฟาร์ม | `██████████` 4/4 | ✅ + 🟡 ปุ๋ยเร่ง · ระบบนิเวศ (ล่าแล้วฝูงบาง/ฟื้น · ฤดูกาล · พืชแพร่) |
+| สัตว์เลี้ยง (จับ/เลี้ยง/งาน/ขี่/สกิล) | `█████████░` 7/8 | ✅ · 🟡 **สกิลติดตัว 37 สกิล** · ⬜ ปล่อยเลี้ยง (`GrazePets`) |
+| เควส / ภารกิจองค์กร / เมล / อีเวนต์ | `█████████░` 12/13 | ✅ เควสเรื่อง/ภารกิจ/เมล · 🟡 **รายสัปดาห์ 64 + ต้านอากาศ 36 (รีเซ็ตจันทร์ 05:00)** · 🟡 เช็คชื่อ + แจกแบบแปลนอีเวนต์ · 🟡 เสบียงองค์กร 11 ขั้น/57 คำขอ · ⬜ `GuideProgress`/`TutorialEvent` |
+| สังคม: เพื่อน / ปาร์ตี้ / แคลน / ตลาด / วิทยุ / ดนตรี / PvP | `████████░░` 6/7 | 🟡 **เพื่อน · ปาร์ตี้ · แคลน (ยศ/คลัง/แชท/ที่ดิน/กองทุน/พันธมิตร/วิจัย) · ตลาด · วิทยุ · ดนตรี→คอนเสิร์ต** ทำครบแล้ว รอเทสจริง · ⬜ PvP (ไม่มีแผน) |
+| แอดมิน / Discord / สำรองข้อมูล | `██████████` 7/7 | ✅ **ผูกบัญชี Discord ผ่านเมนู 쿠폰 (ปุ่ม «ใส่คูปอง» ใน v2.7)** · บอท ticket สำหรับ Supporter · จดหมายอัปเดตอัตโนมัติ · สำรองเซฟ · hot reload ตาราง |
 
-### ⚠️ ยังไม่ได้เทส — ใช้แล้วเจออะไรแจ้งใน [Issues](../../issues)
-- 🟡 **ฟีเจอร์รอบ 13 ก.ย. ทั้งหมด** (เควส/ภารกิจองค์กร/สัตว์เลี้ยง/ฟาร์ม/สิ่งปลูกสร้าง/เมล) เทสผ่านบอทเท่านั้น ยังไม่ได้เล่นด้วยตัวเกมจริงครบทุกเมนู
-- 🟡 **ปุ่ม "อัปเดต" ใน launcher** — โค้ดแตกไฟล์เทสกับ zip จำลองบนเครื่องแล้ว แต่**ยังไม่เคยโหลดของจริงจาก GitHub ผ่าน launcher** (ยังไม่มีเวอร์ชันถัดไปให้เทส) · แพตช์ `-update-from-*` ยังไม่เคยสร้างจริง
-- 🟡 **launcher อัปเดตตัวเอง** (สลับ `.exe` ขณะรันอยู่) เทสด้วยไฟล์จำลอง ไม่ใช่ตัว launcher จริง
-- 🟡 **ติดตั้งบนเครื่องอื่น** — ชุดนี้เทสบนเครื่อง dev เครื่องเดียว ยังไม่ได้ลองแตก zip เล่นบนเครื่องผู้เล่นจริง (SmartScreen · เข้าเซิร์ฟผ่านเน็ตนอก)
-- 🟡 **ย้ายเกาะด้วยตัวเกมจริง** (ท่าเรือ → เกาะที่สอง วาดครบไหม)
-- ⬜ `min_version` บังคับอัปเดต — ยังไม่เคยเปิดใช้
+### ⚠️ ยังไม่ได้เทสกับตัวเกมจริง — ใช้แล้วเจออะไรแจ้งใน [Issues](../../issues)
+- 🟡 **ฟีเจอร์รอบ 19–20 ก.ย. ทั้งหมด** (แคลน · รายสัปดาห์ · ร้าน/ขนส่ง · ดัดแปลง · เสบียง · สกิลสัตว์เลี้ยง · รอยแยก · เครื่องต่อย · **สมดุลต่อสู้ใหม่**) เทสผ่านบอทเท่านั้น
+- 🟡 **ปุ่ม "อัปเดต" ใน launcher** โหลดแพตช์จาก GitHub ได้แล้วตั้งแต่ v2.4 → v2.7 แต่ launcher **อัปเดตตัวเอง** ยังเทสด้วยไฟล์จำลอง
+- ⬜ `min_version` บังคับอัปเดต — ยังไม่เคยเปิดใช้ (ตอนนี้ต่ำสุด 2.5)
 
 ### บั๊กที่รู้แล้ว
-- ตัวเกม (Kllox build) log `UITitleWidget_PC.OnEnable IndexOutOfRangeException` ตอนหน้าสร้างตัวละคร — เป็นเรื่องฝั่ง client ยังเข้าเกมได้ปกติ
-- ตัวละครผูกกับเครื่อง — ล้าง Windows ใหม่ = ตัวละครหาย ถ้าไม่ได้ตั้ง `account=` ใน `offserver.txt` ไว้ก่อน
+- ตัวละครผูกกับเครื่อง — ล้าง Windows ใหม่ = ตัวละครหาย ถ้าไม่ได้ตั้ง `account=` ใน `offserver.txt` ไว้ก่อน (ผูก Discord แล้วช่วยกู้ได้)
+- หลอดสัตว์เลี้ยงไม่ฟื้นเอง — ให้อาหาร/ชุบชีวิต (ตามต้นฉบับ)
 
 ---
 
@@ -94,43 +91,40 @@ Your character is tied to this PC — to move to another PC add the line `accoun
 - Can't enter the world / stuck loading → the server may be down; see the status in the launcher's top-right corner
 - Report bugs in [Issues](../../issues)
 
-## Server status (updated 14 Sep 2026)
+## Server status (updated 20 Sep 2026)
 
-![server progress](https://img.shields.io/badge/server%20progress-83%2F96%20(86%25)-yellowgreen)
-![client](https://img.shields.io/badge/client-v2.3-blue)
-![multiplayer](https://img.shields.io/badge/social%20%2F%20clan%20%2F%20market-not%20yet-lightgrey)
-![launcher](https://img.shields.io/badge/launcher-1.0-blue)
+![server progress](https://img.shields.io/badge/server%20progress-97%2F106%20(92%25)-brightgreen)
+![client](https://img.shields.io/badge/client-v2.7-blue)
+![multiplayer](https://img.shields.io/badge/social%20%2F%20clan%20%2F%20market-ready%20(bot--tested)-yellowgreen)
+![discord](https://img.shields.io/badge/discord%20link-live-5865F2)
 
-`█████████░` **86%** — 83 of 96 items done (counted from the server-side task list) · almost the whole solo game works · **multiplayer systems (friends / party / clan / market) do not exist yet**
+`█████████░` **92%** — 97 of 106 server-side items done · nearly the whole game is playable, **including multiplayer** (friends / party / clan / market / concerts) · **most of the 19–20 Sep additions are bot-tested only — please report anything odd**
 
-Legend: ✅ done + tested · 🟡 done **but NOT tested with the real game client** (bot-tested only) · ⬜ not done
+Legend: ✅ done + tested · 🟡 done **but not yet tested with the real client** (bot-tested only) · ⬜ not yet
 
 | System | Progress | Status |
 |---|---|---|
-| Login / create-delete character / world load | `█████████░` 6/7 | ✅ enter world, walk, see other players · 🟡 **island travel** (done, not tested with the real client) |
-| Inventory / items / equipment | `██████████` 8/8 | ✅ |
-| Crafting / skills / jobs / research | `██████████` 5/5 | ✅ |
-| Combat / hunting / animal attacks | `█████████░` 8/9 | ✅ · ⬜ real animal run clip (sped-up walk clip used instead) |
-| Survival (hunger / fatigue / temperature / death / revive / rest) | `██████████` 7/7 | ✅ |
-| Map / travel / port / warp | `████████░░` 8/10 | ✅ · ⬜ `VisitEstate` / `RequestEpicWarp` · ⬜ landmarks on other islands' maps |
-| Buildings / camp / pinboard | `█████████░` 14/15 | ✅ build-dismantle-use safehouse · ⬜ **declare / expand / license estate** |
-| Farming | `██████████` 4/4 | ✅ |
-| Pets (tame / raise / jobs / ride) | `█████████░` 6/7 | ✅ · ⬜ grazing (`GrazePets`) |
-| Quests / guide / faction missions / mail | `█████████░` 9/10 | ✅ · ⬜ `GuideProgress` / `TutorialEvent` |
-| Social: friends / party / clan / market / radio / music / PvP | `█░░░░░░░░░` 1/7 | ⬜ **not available** (only chat and mail) |
-| Admin / backups / hot-reload tables | `██████████` 5/5 | ✅ |
+| Login / create-delete character / world load | `██████████` 7/7 | ✅ enter world, walk, see others · island travel · 3 characters per account · admission queue when full |
+| Inventory / items / equipment | `██████████` 8/8 | ✅ + durability / size / latent tags / packing cost as in the original |
+| Crafting / skills / jobs / modification | `████████░░` 5/6 | ✅ craft / skills / mastery ladder · 🟡 **equipment modification + tech support** · 🟡 skill exp scales with the level of what you do · ⬜ processing rules (trim / smelt / tan / dry) not fully ported |
+| Combat / hunting / animal attacks | `█████████░` 9/10 | ✅ hunt / butcher / animals chase · 🟡 **original damage-armor formula, area attack shapes, big animals do not flinch (balance changed: big animals are tougher)** · 🟡 animal body parts / injuries · ⬜ animal run clips |
+| Survival (hunger / fatigue / temperature / death / revive / rest) | `██████████` 7/7 | ✅ + drop bundle on death · CPR |
+| Map / travel / harbor / warp | `████████░░` 9/11 | ✅ · 🟡 **rift / warp accelerator (wave defence)** · 🟡 cargo / vehicles · ⬜ `VisitEstate` / `RequestEpicWarp` · ⬜ landmarks on maps of other islands |
+| Buildings / land / camp | `█████████░` 16/18 | ✅ build-demolish-use · **personal / clan land** · decay when abandoned (bonfire 1 day · outside land 3 days) · signs / lockbox / sanctum · 🟡 furniture sets + mood + entrust · 🟡 mannequin / punch machine · ⬜ wells / fish traps · ⬜ animal traps |
+| Farming | `██████████` 4/4 | ✅ + 🟡 crop booster · ecosystem (herds thin out and recover · seasons · plants spread) |
+| Pets (tame / raise / work / ride / skills) | `█████████░` 7/8 | ✅ · 🟡 **37 pet active skills** · ⬜ grazing (`GrazePets`) |
+| Quests / faction missions / mail / events | `█████████░` 12/13 | ✅ story quests / missions / mail · 🟡 **weekly 64 + weather resistance 36 (reset Monday 05:00)** · 🟡 attendance + event blueprints · 🟡 faction supply 11 tiers / 57 requests · ⬜ `GuideProgress` / `TutorialEvent` |
+| Social: friends / party / clan / market / radio / music / PvP | `████████░░` 6/7 | 🟡 **friends · party · clan (ranks / storage / chat / land / fund / allies / research) · market · radio · music → concerts** all implemented, awaiting real-client testing · ⬜ PvP (not planned) |
+| Admin / Discord / backups | `██████████` 7/7 | ✅ **link your Discord via the coupon menu (new "Enter coupon" button in v2.7)** · ticket bot for Supporters · automatic update mails · save backups · hot-reload tables |
 
-### ⚠️ NOT tested — if something breaks, report it in [Issues](../../issues)
-- 🟡 **All features from the 13 Sep round** (quests / faction missions / pets / farming / buildings / mail) were tested with bots only, not played through every menu with the real client
-- 🟡 **The launcher's "Update" button** — the extraction code was tested against mock zips locally, but **it has never downloaded a real release from GitHub through the launcher** (no next version exists yet to test with) · `-update-from-*` patches have never been built for real
-- 🟡 **Launcher self-update** (swapping its own `.exe` while running) tested with mock files, not the real launcher
-- 🟡 **Install on another machine** — this build was tested on the dev PC only; never extracted and played on a real player's PC (SmartScreen · connecting over the public internet)
-- 🟡 **Island travel with the real client** (port → second island renders fully?)
-- ⬜ `min_version` forced update — never enabled
+### ⚠️ Not yet tested with the real client — report anything in [Issues](../../issues)
+- 🟡 **everything from the 19–20 Sep rounds** (clan · weekly · shop / cargo · modification · supply · pet skills · rift · punch machine · **new combat balance**) was tested with bots only
+- 🟡 the launcher **Update** button has fetched real patches from GitHub since v2.4 → v2.7, but launcher **self-update** is still tested with dummy files only
+- ⬜ `min_version` forced update — never enabled (currently 2.5)
 
-### Known bugs
-- The client (Kllox build) logs `UITitleWidget_PC.OnEnable IndexOutOfRangeException` on the character creation screen — client-side, the game still works
-- Character is tied to the machine — reinstalling Windows loses it unless `account=` was set in `offserver.txt` beforehand
+### Known issues
+- Characters are bound to the machine — a fresh Windows install loses them unless `account=` was set in `offserver.txt` (linking Discord helps recovery)
+- Pet HP does not regenerate on its own — feed / revive (as in the original)
 
 ---
 
@@ -161,40 +155,37 @@ Karakter terikat ke PC ini — untuk pindah PC tambahkan baris `account=<kata ya
 - Tidak bisa masuk dunia / stuck loading → server mungkin sedang mati; lihat status di pojok kanan atas launcher
 - Laporkan bug di [Issues](../../issues)
 
-## Status server (diperbarui 14 Sep 2026)
+## Status server (diperbarui 20 Sep 2026)
 
-![server progress](https://img.shields.io/badge/server%20progress-83%2F96%20(86%25)-yellowgreen)
-![client](https://img.shields.io/badge/client-v2.3-blue)
-![multiplayer](https://img.shields.io/badge/social%20%2F%20clan%20%2F%20market-not%20yet-lightgrey)
-![launcher](https://img.shields.io/badge/launcher-1.0-blue)
+![server progress](https://img.shields.io/badge/server%20progress-97%2F106%20(92%25)-brightgreen)
+![client](https://img.shields.io/badge/client-v2.7-blue)
+![multiplayer](https://img.shields.io/badge/social%20%2F%20clan%20%2F%20market-ready%20(bot--tested)-yellowgreen)
+![discord](https://img.shields.io/badge/discord%20link-live-5865F2)
 
-`█████████░` **86%** — 83 dari 96 item selesai (dihitung dari daftar tugas sisi server) · hampir seluruh mode solo bisa dimainkan · **sistem multiplayer (teman / party / clan / pasar) belum ada**
+`█████████░` **92%** — 97 dari 106 item sisi server selesai · hampir seluruh game bisa dimainkan **termasuk multiplayer** (teman / party / clan / pasar / konser) · **sebagian besar tambahan 19–20 Sep baru diuji dengan bot — laporkan jika ada yang aneh**
 
-Keterangan: ✅ selesai + sudah dites · 🟡 selesai **tapi BELUM dites dengan client game asli** (baru dites dengan bot) · ⬜ belum dibuat
+Keterangan: ✅ selesai + diuji · 🟡 selesai **tapi belum diuji dengan client asli** (hanya bot) · ⬜ belum
 
 | Sistem | Progres | Status |
 |---|---|---|
-| Login / buat-hapus karakter / muat dunia | `█████████░` 6/7 | ✅ masuk dunia, jalan, lihat pemain lain · 🟡 **pindah pulau** (selesai, belum dites dengan client asli) |
-| Inventaris / item / perlengkapan | `██████████` 8/8 | ✅ |
-| Crafting / skill / pekerjaan / riset | `██████████` 5/5 | ✅ |
-| Pertarungan / berburu / serangan hewan | `█████████░` 8/9 | ✅ · ⬜ animasi lari hewan asli (pakai animasi jalan dipercepat) |
-| Bertahan hidup (lapar / lelah / suhu / mati / hidup lagi / istirahat) | `██████████` 7/7 | ✅ |
-| Peta / perjalanan / pelabuhan / warp | `████████░░` 8/10 | ✅ · ⬜ `VisitEstate` / `RequestEpicWarp` · ⬜ landmark di peta pulau lain |
-| Bangunan / kamp / papan pengumuman | `█████████░` 14/15 | ✅ bangun-bongkar-pakai safehouse · ⬜ **klaim / perluas / lisensi lahan** |
-| Bertani | `██████████` 4/4 | ✅ |
-| Hewan peliharaan (jinakkan / rawat / tugas / tunggangi) | `█████████░` 6/7 | ✅ · ⬜ menggembalakan (`GrazePets`) |
-| Quest / panduan / misi faksi / surat | `█████████░` 9/10 | ✅ · ⬜ `GuideProgress` / `TutorialEvent` |
-| Sosial: teman / party / clan / pasar / radio / musik / PvP | `█░░░░░░░░░` 1/7 | ⬜ **belum tersedia** (baru chat dan surat) |
-| Admin / backup / hot-reload tabel | `██████████` 5/5 | ✅ |
+| Masuk / buat-hapus karakter / muat dunia | `██████████` 7/7 | ✅ masuk dunia, jalan, lihat pemain lain · pindah pulau · 3 karakter per akun · antrean masuk saat penuh |
+| Inventaris / item / perlengkapan | `██████████` 8/8 | ✅ + ketahanan / ukuran / tag tersembunyi / biaya bungkus seperti aslinya |
+| Crafting / skill / profesi / modifikasi | `████████░░` 5/6 | ✅ craft / skill / tangga keahlian · 🟡 **modifikasi perlengkapan + tech support** · 🟡 exp skill sesuai level hal yang dilakukan · ⬜ aturan pengolahan (potong / lebur / samak / jemur) belum lengkap |
+| Pertarungan / berburu / serangan hewan | `█████████░` 9/10 | ✅ berburu / jagal / hewan mengejar · 🟡 **rumus damage-armor asli, bentuk serangan area, hewan besar tidak goyah (keseimbangan berubah: hewan besar lebih kuat)** · 🟡 bagian tubuh hewan / cedera · ⬜ klip hewan berlari |
+| Bertahan hidup (lapar / lelah / suhu / mati / bangkit / istirahat) | `██████████` 7/7 | ✅ + barang jatuh jadi bungkusan saat mati · CPR |
+| Peta / perjalanan / pelabuhan / warp | `████████░░` 9/11 | ✅ · 🟡 **retakan / akselerator warp (wave defence)** · 🟡 kargo / kendaraan · ⬜ `VisitEstate` / `RequestEpicWarp` · ⬜ landmark di peta pulau lain |
+| Bangunan / tanah / kamp | `█████████░` 16/18 | ✅ bangun-bongkar-pakai · **tanah pribadi / clan** · lapuk jika ditinggal (api unggun 1 hari · luar tanah 3 hari) · papan / kotak kunci / sanctum · 🟡 set furnitur + mood + titip buat · 🟡 manekin / mesin pukul · ⬜ sumur / perangkap ikan · ⬜ perangkap hewan |
+| Pertanian | `██████████` 4/4 | ✅ + 🟡 pupuk pemacu · ekosistem (kawanan menipis lalu pulih · musim · tanaman menyebar) |
+| Hewan peliharaan (tangkap / rawat / kerja / tunggang / skill) | `█████████░` 7/8 | ✅ · 🟡 **37 skill aktif peliharaan** · ⬜ lepas merumput (`GrazePets`) |
+| Quest / misi faksi / surat / event | `█████████░` 12/13 | ✅ quest cerita / misi / surat · 🟡 **mingguan 64 + tahan cuaca 36 (reset Senin 05:00)** · 🟡 absensi + blueprint event · 🟡 suplai faksi 11 tingkat / 57 permintaan · ⬜ `GuideProgress` / `TutorialEvent` |
+| Sosial: teman / party / clan / pasar / radio / musik / PvP | `████████░░` 6/7 | 🟡 **teman · party · clan (pangkat / gudang / chat / tanah / dana / sekutu / riset) · pasar · radio · musik → konser** semua sudah ada, menunggu uji client asli · ⬜ PvP (tidak direncanakan) |
+| Admin / Discord / cadangan | `██████████` 7/7 | ✅ **tautkan Discord lewat menu kupon (tombol "Masukkan kupon" baru di v2.7)** · bot tiket untuk Supporter · surat update otomatis · cadangan save · hot-reload tabel |
 
-### ⚠️ BELUM dites — kalau ada yang rusak, laporkan di [Issues](../../issues)
-- 🟡 **Semua fitur dari putaran 13 Sep** (quest / misi faksi / hewan peliharaan / bertani / bangunan / surat) baru dites dengan bot, belum dimainkan lewat semua menu dengan client asli
-- 🟡 **Tombol "Update" di launcher** — kode ekstraksi sudah dites dengan zip tiruan secara lokal, tapi **belum pernah mengunduh rilis asli dari GitHub lewat launcher** (belum ada versi berikutnya untuk dites) · patch `-update-from-*` belum pernah dibuat sungguhan
-- 🟡 **Launcher memperbarui dirinya sendiri** (mengganti `.exe` saat berjalan) dites dengan file tiruan, bukan launcher asli
-- 🟡 **Instal di komputer lain** — build ini baru dites di PC developer; belum pernah diekstrak dan dimainkan di PC pemain sungguhan (SmartScreen · koneksi lewat internet publik)
-- 🟡 **Pindah pulau dengan client asli** (pelabuhan → pulau kedua tergambar lengkap?)
-- ⬜ `min_version` paksa update — belum pernah diaktifkan
+### ⚠️ Belum diuji dengan client asli — laporkan di [Issues](../../issues)
+- 🟡 **semua fitur putaran 19–20 Sep** (clan · mingguan · toko / kargo · modifikasi · suplai · skill peliharaan · retakan · mesin pukul · **keseimbangan tarung baru**) hanya diuji dengan bot
+- 🟡 tombol **Update** di launcher sudah mengunduh patch asli dari GitHub sejak v2.4 → v2.7, tapi **update mandiri** launcher masih diuji dengan file tiruan
+- ⬜ `min_version` paksa update — belum pernah diaktifkan (sekarang 2.5)
 
-### Bug yang sudah diketahui
-- Client (build Kllox) mencatat `UITitleWidget_PC.OnEnable IndexOutOfRangeException` di layar pembuatan karakter — masalah sisi client, game tetap jalan
-- Karakter terikat ke mesin — instal ulang Windows = karakter hilang kecuali `account=` sudah diatur di `offserver.txt` sebelumnya
+### Bug yang diketahui
+- Karakter terikat ke mesin — instal ulang Windows = karakter hilang jika `account=` di `offserver.txt` belum diatur (tautan Discord membantu pemulihan)
+- HP peliharaan tidak pulih sendiri — beri makan / hidupkan (seperti aslinya)
