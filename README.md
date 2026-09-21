@@ -20,7 +20,15 @@ launcher เช็คเวอร์ชันกับเซิร์ฟทุ�
 
 ## offserver.txt
 ไฟล์ตั้งค่าข้าง `DurangoV2.exe` ที่เกมอ่าน — `gateway=` คือเซิร์ฟ · ลบไฟล์ = กลับไปเล่น offline คนเดียว
-ตัวละครผูกกับเครื่อง — ถ้าจะย้ายเครื่องให้เติมบรรทัด `account=<คำเดียวกันทั้งสองเครื่อง>` ก่อนเข้าเกมครั้งแรก
+
+## บัญชี (Account Number) — เข้าเกมครั้งแรกเซิร์ฟออกให้เอง ไม่ต้องตั้งเอง
+เข้าเกมครั้งแรก = เซิร์ฟสร้าง **บัญชี UUID ไม่ซ้ำกับใคร** ให้อัตโนมัติ ดูเลขบัญชีตัวเองได้ในเกมที่
+**ตั้งค่า (Settings) ▸ Account ▸ Account Number**
+
+**ย้ายเครื่อง:** เปิด `offserver.txt` บนเครื่องใหม่ เติมบรรทัด `account=<Account Number ของเรา>` แล้วเข้าเกม — ตัวละครเดิมโผล่มาเลย
+⚠️ **ห้ามบอก Account Number ให้ใคร** — ใครถือเลขนี้เข้าบัญชีนี้ได้ (ผูก Discord ไว้ = แอดมินช่วยกู้ได้เมื่อโดนขโมย)
+
+**กันลืม/กันโดนขโมย:** ผูก Discord ผ่านบอท (กด 🔗 ผูกบัญชีเกม → ได้โค้ด 6 ตัว) แล้วกรอกโค้ดในเกมที่ **ตั้งค่า ▸ Account ▸ Enter Coupon**
 
 ## มีปัญหา
 - เปิดแล้วไม่ขึ้นอะไร → ดู `player.log` ในโฟลเดอร์เกม และ `%TEMP%\DurangoLauncher.log`
@@ -59,7 +67,7 @@ launcher เช็คเวอร์ชันกับเซิร์ฟทุ�
 - ⬜ `min_version` บังคับอัปเดต — ยังไม่เคยเปิดใช้ (ตอนนี้ต่ำสุด 2.5)
 
 ### บั๊กที่รู้แล้ว
-- ตัวละครผูกกับเครื่อง — ล้าง Windows ใหม่ = ตัวละครหาย ถ้าไม่ได้ตั้ง `account=` ใน `offserver.txt` ไว้ก่อน (ผูก Discord แล้วช่วยกู้ได้)
+- บัญชีผูกกับ Account Number (UUID ที่เซิร์ฟออกให้ ดูที่ ตั้งค่า ▸ Account) — ล้าง Windows = เปิด `offserver.txt` เติม `account=<Account Number ของเรา>` เข้าใหม่ก็ได้ตัวละครคืน · ไม่ตั้งไว้ก่อนล้าง = ต้องให้แอดมินกู้ (ผูก Discord ไว้ช่วยได้เร็ว)
 - หลอดสัตว์เลี้ยงไม่ฟื้นเอง — ให้อาหาร/ชุบชีวิต (ตามต้นฉบับ)
 
 ---
@@ -84,7 +92,15 @@ The launcher checks the server version every time it opens — when a new versio
 
 ## offserver.txt
 Config file next to `DurangoV2.exe` that the game reads — `gateway=` is the server · delete the file = back to single-player offline.
-Your character is tied to this PC — to move to another PC add the line `account=<same word on both PCs>` before entering the game for the first time.
+
+## Account (Account Number) — the server issues it on your first login, you never invent one
+First time in the game = the server automatically creates a **unique account UUID** for you. See it in-game under
+**Settings ▸ Account ▸ Account Number**
+
+**Moving PCs:** on the new PC open `offserver.txt`, add the line `account=<your Account Number>`, then start the game — your characters are right there.
+⚠️ **Never share your Account Number** — whoever has it can enter your account (linking Discord lets admins help recover it).
+
+**Keep it safe:** link Discord via the bot (🔗 button → you get a 6-character code), then enter the code in-game at **Settings ▸ Account ▸ Enter Coupon**
 
 ## Problems
 - Nothing shows up after launching → check `player.log` in the game folder and `%TEMP%\DurangoLauncher.log`
@@ -123,7 +139,7 @@ Legend: ✅ done + tested · 🟡 done **but not yet tested with the real client
 - ⬜ `min_version` forced update — never enabled (currently 2.5)
 
 ### Known issues
-- Characters are bound to the machine — a fresh Windows install loses them unless `account=` was set in `offserver.txt` (linking Discord helps recovery)
+- Accounts are bound to the Account Number (UUID issued by the server — see Settings ▸ Account) — after a fresh Windows install add `account=<your Account Number>` to `offserver.txt` and your characters return · without it saved beforehand, an admin must recover them (linking Discord makes this quick)
 - Pet HP does not regenerate on its own — feed / revive (as in the original)
 
 ---
@@ -148,7 +164,15 @@ Launcher mengecek versi server setiap kali dibuka — kalau ada versi baru akan 
 
 ## offserver.txt
 File konfigurasi di sebelah `DurangoV2.exe` yang dibaca game — `gateway=` adalah server · hapus file ini = kembali main offline sendirian.
-Karakter terikat ke PC ini — untuk pindah PC tambahkan baris `account=<kata yang sama di kedua PC>` sebelum masuk game pertama kali.
+
+## Akun (Account Number) — server yang membuatkan saat login pertama, tidak perlu mengarang sendiri
+Masuk game pertama kali = server otomatis membuat **akun UUID unik** untukmu. Lihat nomormu di dalam game di
+**Pengaturan (Settings) ▸ Account ▸ Account Number**
+
+**Pindah PC:** di PC baru buka `offserver.txt`, tambahkan baris `account=<Account Number milikmu>`, lalu masuk game — karakter lamamu langsung muncul.
+⚠️ **Jangan beritahu Account Number ke siapa pun** — siapa pun yang memegang nomor ini bisa masuk akunmu (kalau sudah link Discord, admin bisa bantu pulihkan).
+
+**Amankan akun:** link Discord lewat bot (tombol 🔗 → kamu dapat kode 6 karakter), lalu masukkan kodenya di dalam game di **Pengaturan ▸ Account ▸ Enter Coupon**
 
 ## Ada masalah
 - Tidak muncul apa-apa setelah dijalankan → cek `player.log` di folder game dan `%TEMP%\DurangoLauncher.log`
@@ -187,5 +211,5 @@ Keterangan: ✅ selesai + diuji · 🟡 selesai **tapi belum diuji dengan client
 - ⬜ `min_version` paksa update — belum pernah diaktifkan (sekarang 2.5)
 
 ### Bug yang diketahui
-- Karakter terikat ke mesin — instal ulang Windows = karakter hilang jika `account=` di `offserver.txt` belum diatur (tautan Discord membantu pemulihan)
+- Akun terikat ke Account Number (UUID yang diberikan server — lihat Pengaturan ▸ Account) — setelah instal ulang Windows tambahkan `account=<Account Number milikmu>` di `offserver.txt` dan karaktermu kembali · tanpa itu sebelumnya, admin harus memulihkan (link Discord mempercepat)
 - HP peliharaan tidak pulih sendiri — beri makan / hidupkan (seperti aslinya)
