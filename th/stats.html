@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ค่าสถานะตัวละคร · คู่มือ Durango OffServer</title>
+<meta name="description" content="ค่าพื้นฐาน 8 ตัว เพดานพลังชีวิต/พลังงาน ค่าต่อสู้ ค่าคราฟต์/เก็บของ ความต้านทาน และพลังรวม — มาจากไหน คิดยังไง ค่าไหนมีผลจริง">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0f0d">
+<link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/stats.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/stats.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/stats.html">
+<link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
+<link rel="stylesheet" href="../assets/wiki.css?v=mue3r5pw">
+<script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body data-root="../" data-lang="th" data-slug="stats">
+<a class="skip" href="#content">ข้ามไปเนื้อหา</a>
+<header class="topbar">
+<button class="icon-btn menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" title="เมนู"><span aria-hidden="true">☰</span><span class="sr">เมนู</span></button>
+<a class="brand" href="../th/index.html"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="brand-icon glyph" loading="lazy"><span class="brand-long">คู่มือ Durango OffServer</span><span class="brand-short">Durango Wiki</span></a>
+<div class="search" role="search">
+<input type="search" id="search-input" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ…" autocomplete="off" data-none="ไม่พบผลลัพธ์">
+<ul id="search-results" class="search-results" hidden></ul>
+</div>
+<nav class="langs" aria-label="ภาษา"><span class="lang current" aria-current="true" lang="th">ไทย</span><a class="lang" href="../en/stats.html" hreflang="en" lang="en" data-lang="en">English</a></nav>
+<button class="icon-btn theme-btn" type="button" title="สลับธีมมืด/สว่าง"><span aria-hidden="true">◐</span><span class="sr">สลับธีมมืด/สว่าง</span></button>
+</header>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="เมนู">
+<a class="nav-home"href="../th/index.html">หน้าแรก</a>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">เริ่มต้น</p><ul>
+<li><a href="../th/getting-started.html">เริ่มต้นเล่น <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/guide.html">ไกด์เล่นตั้งแต่ต้นจนจบ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/account.html">บัญชีและการเข้าเกม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/roadmap.html">แผนงานถึงเปิดจริง <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">เอาตัวรอด</p><ul>
+<li><a href="../th/survival.html">การเอาตัวรอด <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/status-effects.html">บัพและสถานะผิดปกติ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/weather.html">สภาพอากาศและค่าดัชนีแปรผัน <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/death.html">การตายและการคืนชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">เก็บของและคราฟต์</p><ul>
+<li><a href="../th/gathering.html">การเก็บของ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/crafting.html">การคราฟต์ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/tags.html">คุณสมบัติของไอเทม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/farming.html">การเพาะปลูก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/harvestables.html">กับดักและบ่อน้ำ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/rgb_atlas/bag_back.webp" alt="" width="64" height="64" class="nav-icon" loading="lazy">ไอเทม</p><ul>
+<li><a href="../th/items.html">ไอเทม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/equipment.html">อุปกรณ์และการซ่อม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/weapons-tools.html">อาวุธและเครื่องมือ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/clothing.html">เสื้อผ้าและเครื่องประดับ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/materials.html">วัตถุดิบ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/consumables.html">อาหาร เครื่องดื่ม และยา <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">อาหาร</p><ul>
+<li><a href="../th/eating.html">การกินและดื่ม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/cooking.html">การทำอาหาร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/preserving.html">การถนอมอาหารและอาหารเน่า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">ก่อสร้างและที่ดิน</p><ul>
+<li><a href="../th/building.html">การก่อสร้าง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/land.html">อาณาเขต <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/decay.html">การผุพังและซ่อม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/storage.html">ที่เก็บของ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">สัตว์และการต่อสู้</p><ul>
+<li><a href="../th/combat.html">การต่อสู้ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/animals.html">สัตว์ป่า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">จับและเลี้ยงสัตว์</p><ul>
+<li><a href="../th/taming.html">การจับสัตว์ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/pets.html">สัตว์เลี้ยง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">การเติบโต</p><ul>
+<li><a href="../th/stats.html" class="current" aria-current="page">ค่าสถานะตัวละคร <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/skills.html">สกิลและอาชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/skill-list.html">รายการสกิล <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/titles.html">ฉายา <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/organizations.html">องค์กร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/quests.html">เควสและรางวัล <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_InviteToClan.webp" alt="" width="52" height="42" class="nav-icon glyph" loading="lazy">สังคมและเศรษฐกิจ</p><ul>
+<li><a href="../th/clan.html">แคลน <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/market.html">ตลาดและร้านค้า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/transport.html">ขนส่งและพาหนะ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/mail.html">จดหมาย <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">โลกและการเดินทาง</p><ul>
+<li><a href="../th/islands.html">เกาะและการเดินทาง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/warp.html">วาร์ปและรอยแยก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/map.html">แผนที่และการสำรวจ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+</ul></div>
+</nav>
+
+<main id="content" class="content">
+<article class="page">
+<p class="crumbs"><a href="index.html">หน้าแรก</a> › การเติบโต</p>
+<h1><img src="../images/atlas/icon_atlas/skill_survival_1.webp" alt="" width="43" height="55" class="title-icon glyph" loading="lazy">ค่าสถานะตัวละคร <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h1>
+<p class="summary">ค่าพื้นฐาน 8 ตัว เพดานพลังชีวิต/พลังงาน ค่าต่อสู้ ค่าคราฟต์/เก็บของ ความต้านทาน และพลังรวม — มาจากไหน คิดยังไง ค่าไหนมีผลจริง</p>
+
+<p>หน้า <strong>ข้อมูลตัวละคร</strong> แสดงค่าหลายหมวด — บางค่ามีผลกับการเล่นโดยตรง บางค่าเป็นค่าแสดงผล หน้านี้บอกว่าแต่ละค่ามาจากไหน คิดยังไง และมีผลตรงไหนในเซิร์ฟนี้</p>
+<div class="table-wrap"><table>
+<thead><tr><th>ค่า</th><th>มาจาก</th><th>มีผลกับ</th></tr></thead>
+<tbody>
+<tr><td>ค่าพื้นฐาน 8 ตัว</td><td>เลเวลตัวละคร + เลเวลหมวดสกิล + ฉายา</td><td>ความอดทน → เพดานสุขภาพ · ความมุ่งมั่น → เพดานพลังงาน</td></tr>
+<tr><td>สุขภาพ / พลังงานสูงสุด</td><td>ฐาน + เลเวล + ค่าพื้นฐาน + ฉายา</td><td>หลอดบนจอ (<a href="survival.html">การเอาตัวรอด</a>)</td></tr>
+<tr><td>ค่าต่อสู้</td><td>อาวุธและชุดที่สวม · ผลสกิลของท่า</td><td>ดาเมจที่ทำและที่โดน (<a href="combat.html">การต่อสู้</a>)</td></tr>
+<tr><td>ค่าคราฟต์ / เก็บของ</td><td>เลเวลตัวละคร + สกิลที่เรียน + โบนัส</td><td>ปลดสูตรตามบันไดความชำนาญ (<a href="crafting.html">การคราฟต์</a>)</td></tr>
+<tr><td>ความต้านทานภูมิอากาศ</td><td>เวลาที่อยู่บนเกาะแต่ละภูมิอากาศ</td><td>ด่านเข้าเกาะค่าดัชนีสูง (<a href="weather.html#ระดับความต้านสภาพอากาศ">สภาพอากาศ</a>)</td></tr>
+<tr><td>พลังรวม 3 แบบ</td><td>ถัวเฉลี่ยจากค่าด้านบน</td><td>แสดงผลเท่านั้น</td></tr>
+</tbody></table></div>
+<h2 id="ค่าพื้นฐาน-8-ตัว"><a class="anchor" href="#ค่าพื้นฐาน-8-ตัว" aria-hidden="true">#</a>ค่าพื้นฐาน 8 ตัว <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p><strong>ค่าพื้นฐาน = 10 + 0.5 × (เลเวลตัวละคร − 1) + 0.35 × ผลรวม (เลเวลหมวดสกิลที่ป้อน − 1) + ค่าจากฉายา</strong> · ต่ำสุด 1 สูงสุด 100 · หน้าตัวละครปัดเป็นจำนวนเต็ม</p>
+<div class="table-wrap"><table>
+<thead><tr><th>ค่า</th><th>หมวดสกิลที่ป้อน</th></tr></thead>
+<tbody>
+<tr><td><strong>พละกำลัง</strong></td><td>การต่อสู้ระยะประชิด · สิ่งปลูกสร้าง</td></tr>
+<tr><td><strong>ความอดทน</strong></td><td>ป้องกัน · การอยู่รอด</td></tr>
+<tr><td><strong>ความว่องไว</strong></td><td>การต่อสู้ระยะประชิด · การยิงธนู</td></tr>
+<tr><td><strong>คล่องแคล่ว</strong></td><td>อาวุธ/เครื่องมือ · ตัดเย็บ · แปรรูป</td></tr>
+<tr><td><strong>การรับรู้</strong></td><td>รวบรวม · การยิงธนู</td></tr>
+<tr><td><strong>ความเฉลียวฉลาด</strong></td><td>ทำอาหาร · แปรรูป</td></tr>
+<tr><td><strong>ความมุ่งมั่น</strong></td><td>การอยู่รอด · การแล่เนื้อ</td></tr>
+<tr><td><strong>ทักษะพิเศษ</strong></td><td>ทำอาหาร · ตัดเย็บ</td></tr>
+</tbody></table></div>
+<p>ตัวอย่าง: ตัวละคร Lv30 ที่หมวด <strong>การอยู่รอด</strong> Lv20 และ <strong>ป้องกัน</strong> Lv10 → ความอดทน = 10 + 14.5 + 0.35 × (19 + 9) = <strong>34.3</strong></p>
+<aside class="callout callout-note"><p class="callout-title"><span aria-hidden="true">ℹ️</span> หมายเหตุ</p><p>ในเซิร์ฟนี้ค่าพื้นฐานที่มีผลจริงคือ <strong>ความอดทน</strong> (เพดานสุขภาพ) และ <strong>ความมุ่งมั่น</strong> (เพดานพลังงาน) — อีก 6 ค่าแสดงในหน้าตัวละครแต่ยังไม่ถูกใช้คำนวณดาเมจหรือโอกาสใด ๆ</p>
+</aside>
+<h2 id="สุขภาพและพลังงานสูงสุด"><a class="anchor" href="#สุขภาพและพลังงานสูงสุด" aria-hidden="true">#</a>สุขภาพและพลังงานสูงสุด <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<div class="table-wrap"><table>
+<thead><tr><th>ค่า</th><th>สูตร</th></tr></thead>
+<tbody>
+<tr><td><strong>สุขภาพสูงสุด</strong> (เพดานพลังชีวิต)</td><td>300 + 4 × (เลเวล − 1) + 2 × (ความอดทน − 10) + โบนัสฉายา</td></tr>
+<tr><td><strong>พลังงานสูงสุด</strong> (เพดานความแข็งแรง)</td><td>100 + 1.5 × (เลเวล − 1) + 0.8 × (ความมุ่งมั่น − 10) + โบนัสฉายา</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<thead><tr><th>เลเวล (ยังไม่มีหมวดสกิล)</th><th>ค่าพื้นฐาน</th><th>สุขภาพสูงสุด</th><th>พลังงานสูงสุด</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>10</td><td>300</td><td>100</td></tr>
+<tr><td>10</td><td>14.5</td><td>345</td><td>117</td></tr>
+<tr><td>30</td><td>24.5</td><td>445</td><td>155</td></tr>
+<tr><td>60</td><td>39.5</td><td>595</td><td>212</td></tr>
+</tbody></table></div>
+<p>เลเวลหมวดสกิลที่ป้อนความอดทน/ความมุ่งมั่นทำให้สูงกว่านี้ — เช่น Lv60 ที่หมวดการอยู่รอดกับป้องกัน Lv60 ทั้งคู่ ความอดทน = 39.5 + 0.35 × 118 = 80.8 → สุขภาพสูงสุด ≈ <strong>678</strong></p>
+<ul>
+<li>อาการตัวเย็น/ตัวร้อนเกินลดสุขภาพลงชั่วคราว (<a href="survival.html#อุณหภูมิร่างกาย">การเอาตัวรอด</a>)</li>
+<li>หลอดความเหนื่อยล้าเต็ม 100 · ขึ้นเตือนที่ 60 และอันตรายที่ 90</li>
+</ul>
+<h2 id="ค่าต่อสู้"><a class="anchor" href="#ค่าต่อสู้" aria-hidden="true">#</a>ค่าต่อสู้ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>ดาเมจจริงคิดจาก <strong>ของที่ถือและสวม</strong> ไม่ใช่ค่าพื้นฐาน — สูตรเต็มอยู่ที่ <a href="combat.html#สูตรดาเมจ">การต่อสู้</a></p>
+<div class="table-wrap"><table>
+<thead><tr><th>ค่า</th><th>ในการต่อสู้จริง</th></tr></thead>
+<tbody>
+<tr><td><strong>โจมตี</strong></td><td>พลังโจมตีของอาวุธในมือ (มือเปล่า = 40) · อาวุธที่ความทนหมดไม่ให้ค่า</td></tr>
+<tr><td><strong>ค่าเจาะเกราะ</strong></td><td>ของอาวุธในมือ (มือเปล่า = 40) — ยิ่งสูงกว่าป้องกันของสัตว์ ยิ่งแรง</td></tr>
+<tr><td><strong>ป้องกัน</strong></td><td>ผลรวมค่าป้องกันของเสื้อผ้าและเครื่องประดับทุกชิ้นที่สวม (ชิ้นที่ความทนหมดไม่นับ)</td></tr>
+<tr><td><strong>โจมตีคริติคอล</strong></td><td>โอกาสคงที่ 10% (ท่าหนัก 18%) ดาเมจ ×1.9</td></tr>
+<tr><td><strong>แม่นยำ</strong></td><td>โอกาสตีโดนมาจากความแม่นของท่า (ท่าปกติ 95%)</td></tr>
+<tr><td>ผลสกิลของท่า</td><td>สกิลที่เรียนแล้วปลดท่าใหม่และเพิ่มผลของท่า</td></tr>
+</tbody></table></div>
+<ul>
+<li>ค่าในแท็กวัสดุ (เช่น «โจมตีเพิ่ม» «ป้องกันเพิ่ม») บวกเข้าอาวุธ/ชุดตามระดับ (<a href="tags.html">คุณสมบัติของไอเทม</a>)</li>
+<li>อาวุธสึกตามดาเมจที่ทำ · ชุดสึกตามดาเมจที่โดน — ซ่อมที่ <a href="equipment.html">อุปกรณ์และการซ่อม</a></li>
+</ul>
+<h2 id="ค่าคราฟต์และเก็บของ"><a class="anchor" href="#ค่าคราฟต์และเก็บของ" aria-hidden="true">#</a>ค่าคราฟต์และเก็บของ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>ค่าความชำนาญแต่ละสาขา (หน้าตัวละคร) = <strong>เลเวลตัวละคร + 4 × จำนวนโหนดสกิลที่เรียนแล้วในหมวดที่ป้อน + โบนัส</strong> (อาหาร อุปกรณ์ ฉายา บันไดความชำนาญ)</p>
+<div class="table-wrap"><table>
+<thead><tr><th>สาขา</th><th>หมวดสกิลที่ป้อน</th></tr></thead>
+<tbody>
+<tr><td>สร้างอาวุธ</td><td>อาวุธ/เครื่องมือ</td></tr>
+<tr><td>สร้างชุดเกราะ</td><td>ตัดเย็บ</td></tr>
+<tr><td>ตัดเย็บ</td><td>ตัดเย็บ · แปรรูป</td></tr>
+<tr><td>ตีเหล็ก</td><td>แปรรูป · อาวุธ/เครื่องมือ</td></tr>
+<tr><td>ทำอาหาร</td><td>ทำอาหาร</td></tr>
+<tr><td>สร้างเฟอร์นิเจอร์</td><td>สิ่งปลูกสร้าง · แปรรูป</td></tr>
+<tr><td>ก่อสร้าง</td><td>สิ่งปลูกสร้าง</td></tr>
+<tr><td>เพาะปลูก</td><td>เพาะปลูก</td></tr>
+<tr><td>งานฝีมือ</td><td>แปรรูป</td></tr>
+<tr><td>รวบรวม · การขุดแร่</td><td>รวบรวม</td></tr>
+<tr><td>การแล่เนื้อ</td><td>การแล่เนื้อ</td></tr>
+</tbody></table></div>
+<ul>
+<li>ค่าเหล่านี้ใช้เทียบ <strong>บันไดความชำนาญ</strong> — ถึงเกณฑ์แล้วได้สูตร/แบบแปลนเพิ่มเอง (<a href="crafting.html">การคราฟต์</a>)</li>
+<li>หน้าสูตรโชว์ค่าที่ต้องการเป็นความยาก แต่เซิร์ฟนี้ <strong>ไม่บล็อก</strong> การคราฟต์ถ้าค่าไม่ถึง</li>
+</ul>
+<h2 id="ความต้านทานภูมิอากาศ"><a class="anchor" href="#ความต้านทานภูมิอากาศ" aria-hidden="true">#</a>ความต้านทานภูมิอากาศ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>ความต้านทานของแต่ละภูมิอากาศ (บึง ทะเลทราย ป่าเขตร้อน ภูเขาไฟ ทุ่งหิมะ ทุนดรา) <strong>โตเองตามเวลาที่อยู่บนเกาะภูมิอากาศนั้น</strong> และเป็นด่านเข้าเกาะค่าดัชนีสูง — รายละเอียดที่ <a href="weather.html#ระดับความต้านสภาพอากาศ">สภาพอากาศ</a> · เกาะป่าอบอุ่น/ทุ่งหญ้าใช้ระดับต้านทานสูงสุดที่คุณมี</p>
+<h2 id="พลังรวม"><a class="anchor" href="#พลังรวม" aria-hidden="true">#</a>พลังรวม <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>หน้าตัวละครโชว์ <strong>พลังการต่อสู้ · พลังการประดิษฐ์ · พลังการเก็บ</strong> เป็นตัวเลขสรุป — ใช้ดูเทียบเท่านั้น ไม่มีผลกับเกม</p>
+<div class="table-wrap"><table>
+<thead><tr><th>พลัง</th><th>ถ่วงจาก</th></tr></thead>
+<tbody>
+<tr><td>พลังการต่อสู้</td><td>หลบหลีก · ป้องกัน · โจมตี · แม่นยำ · คริติคอล · ค่าเจาะเกราะ</td></tr>
+<tr><td>พลังการประดิษฐ์</td><td>ค่าสาขาคราฟต์ทั้ง 9 สาขา (น้ำหนักเท่ากัน)</td></tr>
+<tr><td>พลังการเก็บ</td><td>รวบรวม · การขุดแร่ · การแล่เนื้อ</td></tr>
+</tbody></table></div>
+<h2 id="ค่าอื่น-ๆ-ในหน้าตัวละคร"><a class="anchor" href="#ค่าอื่น-ๆ-ในหน้าตัวละคร" aria-hidden="true">#</a>ค่าอื่น ๆ ในหน้าตัวละคร</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>ค่า</th><th>ค่าในเซิร์ฟนี้</th></tr></thead>
+<tbody>
+<tr><td>ว่ายน้ำ</td><td>100</td></tr>
+<tr><td>ต้านทานการกระแทก / ต้านทานกระเด็น</td><td>350 / 250 (ยังไม่ใช้ — ไม่มีการกระเด็นในเซิร์ฟนี้)</td></tr>
+<tr><td>จำนวนสัตว์ฝึกได้</td><td>10</td></tr>
+<tr><td>ความจุกระเป๋าในหน้าตัวละคร</td><td>100 (ค่าแสดง — กระเป๋าจริงจุ 200 ชิ้น <a href="storage.html">ที่เก็บของ</a>)</td></tr>
+</tbody></table></div>
+<h2 id="เพิ่มค่าสถานะได้ทางไหน"><a class="anchor" href="#เพิ่มค่าสถานะได้ทางไหน" aria-hidden="true">#</a>เพิ่มค่าสถานะได้ทางไหน</h2>
+<ul>
+<li><strong>เลเวลตัวละคร</strong> — ทุกเลเวลเพิ่มค่าพื้นฐาน สุขภาพ พลังงาน ค่าคราฟต์ (<a href="skills.html#เลเวลตัวละครและ-exp">สกิลและอาชีพ</a>)</li>
+<li><strong>เลเวลหมวดสกิล</strong> — ใช้งานหมวดนั้นบ่อย ๆ (<a href="skills.html">สกิลและอาชีพ</a>)</li>
+<li><strong>เรียนสกิล</strong> — เพิ่มค่าคราฟต์และผลเฉพาะ (<a href="skill-list.html">รายการสกิล</a>)</li>
+<li><strong>ฉายา</strong> — ใส่ฉายาที่ให้โบนัส (<a href="titles.html#โบนัสของฉายา">ฉายา</a>)</li>
+<li><strong>อุปกรณ์</strong> — อาวุธ ชุด และคุณสมบัติแท็กของมัน (<a href="equipment.html">อุปกรณ์และการซ่อม</a>)</li>
+<li><strong>อาหารและบัพ</strong> — บัพจากอาหารและบรรยากาศบ้าน (<a href="status-effects.html">บัพและสถานะผิดปกติ</a>)</li>
+</ul>
+
+</article>
+<nav class="pager"><a class="prev" href="pets.html"><small>← ก่อนหน้า</small>สัตว์เลี้ยง</a><a class="next" href="skills.html"><small>ถัดไป →</small>สกิลและอาชีพ</a></nav>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"><p class="toc-title">ในหน้านี้</p><ul><li class="toc-l2"><a href="#ค่าพื้นฐาน-8-ตัว">ค่าพื้นฐาน 8 ตัว</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#สุขภาพและพลังงานสูงสุด">สุขภาพและพลังงานสูงสุด</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ค่าต่อสู้">ค่าต่อสู้</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ค่าคราฟต์และเก็บของ">ค่าคราฟต์และเก็บของ</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ความต้านทานภูมิอากาศ">ความต้านทานภูมิอากาศ</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#พลังรวม">พลังรวม</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ค่าอื่น-ๆ-ในหน้าตัวละคร">ค่าอื่น ๆ ในหน้าตัวละคร</a></li><li class="toc-l2"><a href="#เพิ่มค่าสถานะได้ทางไหน">เพิ่มค่าสถานะได้ทางไหน</a></li></ul></aside>
+</div>
+<footer class="footer"><p>เนื้อหาอ้างอิงจากโค้ดและข้อมูลของเซิร์ฟ · รูปเป็นของเกม Durango: Wild Lands ต้นฉบับ</p></footer>
+<script src="../assets/wiki.js?v=mue3r5pw" defer></script>
+</body>
+</html>

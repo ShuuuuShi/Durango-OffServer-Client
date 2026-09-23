@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ไกด์เล่นตั้งแต่ต้นจนจบ · คู่มือ Durango OffServer</title>
+<meta name="description" content="เส้นทางของตัวละครทีละช่วง ตั้งแต่เกาะแรกจนเล่นเนื้อหาปลายเกม — แต่ละช่วงทำอะไร และลิงก์ไปหน้าที่อธิบายละเอียด">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0f0d">
+<link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/guide.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/guide.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/guide.html">
+<link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
+<link rel="stylesheet" href="../assets/wiki.css?v=mue3r5pw">
+<script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body data-root="../" data-lang="th" data-slug="guide">
+<a class="skip" href="#content">ข้ามไปเนื้อหา</a>
+<header class="topbar">
+<button class="icon-btn menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" title="เมนู"><span aria-hidden="true">☰</span><span class="sr">เมนู</span></button>
+<a class="brand" href="../th/index.html"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="brand-icon glyph" loading="lazy"><span class="brand-long">คู่มือ Durango OffServer</span><span class="brand-short">Durango Wiki</span></a>
+<div class="search" role="search">
+<input type="search" id="search-input" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ…" autocomplete="off" data-none="ไม่พบผลลัพธ์">
+<ul id="search-results" class="search-results" hidden></ul>
+</div>
+<nav class="langs" aria-label="ภาษา"><span class="lang current" aria-current="true" lang="th">ไทย</span><a class="lang" href="../en/guide.html" hreflang="en" lang="en" data-lang="en">English</a></nav>
+<button class="icon-btn theme-btn" type="button" title="สลับธีมมืด/สว่าง"><span aria-hidden="true">◐</span><span class="sr">สลับธีมมืด/สว่าง</span></button>
+</header>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="เมนู">
+<a class="nav-home"href="../th/index.html">หน้าแรก</a>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">เริ่มต้น</p><ul>
+<li><a href="../th/getting-started.html">เริ่มต้นเล่น <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/guide.html" class="current" aria-current="page">ไกด์เล่นตั้งแต่ต้นจนจบ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/account.html">บัญชีและการเข้าเกม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/roadmap.html">แผนงานถึงเปิดจริง <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">เอาตัวรอด</p><ul>
+<li><a href="../th/survival.html">การเอาตัวรอด <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/status-effects.html">บัพและสถานะผิดปกติ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/weather.html">สภาพอากาศและค่าดัชนีแปรผัน <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/death.html">การตายและการคืนชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">เก็บของและคราฟต์</p><ul>
+<li><a href="../th/gathering.html">การเก็บของ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/crafting.html">การคราฟต์ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/tags.html">คุณสมบัติของไอเทม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/farming.html">การเพาะปลูก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/harvestables.html">กับดักและบ่อน้ำ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/rgb_atlas/bag_back.webp" alt="" width="64" height="64" class="nav-icon" loading="lazy">ไอเทม</p><ul>
+<li><a href="../th/items.html">ไอเทม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/equipment.html">อุปกรณ์และการซ่อม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/weapons-tools.html">อาวุธและเครื่องมือ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/clothing.html">เสื้อผ้าและเครื่องประดับ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/materials.html">วัตถุดิบ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/consumables.html">อาหาร เครื่องดื่ม และยา <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">อาหาร</p><ul>
+<li><a href="../th/eating.html">การกินและดื่ม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/cooking.html">การทำอาหาร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/preserving.html">การถนอมอาหารและอาหารเน่า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">ก่อสร้างและที่ดิน</p><ul>
+<li><a href="../th/building.html">การก่อสร้าง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/land.html">อาณาเขต <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/decay.html">การผุพังและซ่อม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/storage.html">ที่เก็บของ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">สัตว์และการต่อสู้</p><ul>
+<li><a href="../th/combat.html">การต่อสู้ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/animals.html">สัตว์ป่า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">จับและเลี้ยงสัตว์</p><ul>
+<li><a href="../th/taming.html">การจับสัตว์ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/pets.html">สัตว์เลี้ยง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">การเติบโต</p><ul>
+<li><a href="../th/stats.html">ค่าสถานะตัวละคร <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/skills.html">สกิลและอาชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/skill-list.html">รายการสกิล <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/titles.html">ฉายา <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/organizations.html">องค์กร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/quests.html">เควสและรางวัล <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_InviteToClan.webp" alt="" width="52" height="42" class="nav-icon glyph" loading="lazy">สังคมและเศรษฐกิจ</p><ul>
+<li><a href="../th/clan.html">แคลน <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/market.html">ตลาดและร้านค้า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/transport.html">ขนส่งและพาหนะ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/mail.html">จดหมาย <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">โลกและการเดินทาง</p><ul>
+<li><a href="../th/islands.html">เกาะและการเดินทาง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/warp.html">วาร์ปและรอยแยก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/map.html">แผนที่และการสำรวจ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+</ul></div>
+</nav>
+
+<main id="content" class="content">
+<article class="page">
+<p class="crumbs"><a href="index.html">หน้าแรก</a> › เริ่มต้น</p>
+<h1><img src="../images/atlas/icon_atlas/act_history.webp" alt="" width="50" height="57" class="title-icon glyph" loading="lazy">ไกด์เล่นตั้งแต่ต้นจนจบ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h1>
+<p class="summary">เส้นทางของตัวละครทีละช่วง ตั้งแต่เกาะแรกจนเล่นเนื้อหาปลายเกม — แต่ละช่วงทำอะไร และลิงก์ไปหน้าที่อธิบายละเอียด</p>
+
+<p>หน้านี้เรียงลำดับว่าควรทำอะไรก่อนหลัง ตั้งแต่สร้างตัวละครจนถึงเนื้อหาปลายเกม · ตัวเลขและวิธีกดอยู่ในหน้าของแต่ละระบบ (ลิงก์ท้ายแต่ละช่วง) · เล่นข้ามลำดับได้ ไม่มีอะไรบังคับ</p>
+<h2 id="ก่อนเข้าเกม"><a class="anchor" href="#ก่อนเข้าเกม" aria-hidden="true">#</a>ก่อนเข้าเกม</h2>
+<ul>
+<li>เลือกเซิร์ฟในเกม แล้ว <strong>ผูก Discord</strong> เพื่อได้คีย์ย้ายเครื่องไว้กันตัวละครหาย — <a href="account.html">บัญชีและการเข้าเกม</a></li>
+<li>เซิร์ฟยังอยู่ช่วงทดสอบ ดูว่าอะไรยังไม่เสร็จได้ที่ <a href="roadmap.html">แผนงานถึงเปิดจริง</a></li>
+</ul>
+<h2 id="ช่วงที่-1-วันแรก-อังโคร่า-เซฟเฮ้าส์"><a class="anchor" href="#ช่วงที่-1-วันแรก-อังโคร่า-เซฟเฮ้าส์" aria-hidden="true">#</a>ช่วงที่ 1 — วันแรก: อังโคร่า → เซฟเฮ้าส์</h2>
+<ol>
+<li>สร้างตัวละคร เลือกอาชีพเดิม (ได้สกิลและของเริ่มต้นตามอาชีพ)</li>
+<li>บนเกาะอังโคร่า ทำงานตามลำดับ: สแกน → หาท่อนซุง 4 → ก้าน 6 → ต่อแพ แล้วออกเดินทาง</li>
+<li>ขึ้นฝั่งที่ <strong>เซฟเฮ้าส์</strong> คุยกับ <strong>K</strong> ทำภารกิจจาก K (ฟืน · มีดหิน) และงานนักบุกเบิกมือใหม่ที่ให้ทีสโตน</li>
+</ol>
+<p>อ่านต่อ: <a href="getting-started.html">เริ่มต้นเล่น</a> · <a href="quests.html">เควสและรางวัล</a></p>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> เคล็ดลับ</p><p>งานช่วงแรกให้ทีสโตนรวมพอสำหรับของจำเป็นชิ้นแรก ๆ — อย่าเพิ่งรีบใช้หมด</p>
+</aside>
+<h2 id="ช่วงที่-2-อยู่ให้รอด"><a class="anchor" href="#ช่วงที่-2-อยู่ให้รอด" aria-hidden="true">#</a>ช่วงที่ 2 — อยู่ให้รอด</h2>
+<ul>
+<li>ดูหลอด <strong>พลังชีวิต · สุขภาพ · พลังงาน · ความเหนื่อยล้า</strong> — เหนื่อยมากนั่งพักใกล้กองไฟหรือใต้หลังคา</li>
+<li>ดื่มน้ำ ล้างตัว กินอาหาร (กินรัวไม่ได้ มีความอิ่มซ่อนอยู่)</li>
+<li>ระวังอุณหภูมิร่างกายบนเกาะร้อน/หนาว</li>
+<li>ตายแล้วของในกระเป๋าครึ่งหนึ่งตกที่จุดตาย รีบกลับไปเก็บ</li>
+</ul>
+<p>อ่านต่อ: <a href="survival.html">การเอาตัวรอด</a> · <a href="eating.html">การกินและดื่ม</a> · <a href="status-effects.html">บัพและสถานะผิดปกติ</a> · <a href="death.html">การตายและการคืนชีพ</a></p>
+<h2 id="ช่วงที่-3-เก็บของและคราฟต์เครื่องมือแรก"><a class="anchor" href="#ช่วงที่-3-เก็บของและคราฟต์เครื่องมือแรก" aria-hidden="true">#</a>ช่วงที่ 3 — เก็บของและคราฟต์เครื่องมือแรก</h2>
+<ul>
+<li>เก็บไม้ หิน พืช ด้วยมือก่อน แล้วคราฟต์ขวาน ค้อน มีด เพื่อเก็บของที่ต้องใช้เครื่องมือ</li>
+<li><strong>เลเวลเครื่องมือต้องไม่ต่ำกว่าเลเวลเกาะ</strong> จึงจะเก็บได้ — อัปเครื่องมือตามเกาะที่ไป</li>
+<li>ของที่เก็บอาจติด <strong>คุณสมบัติแฝง/หายาก</strong> ที่ส่งต่อไปถึงของที่คราฟต์</li>
+</ul>
+<p>อ่านต่อ: <a href="gathering.html">การเก็บของ</a> · <a href="crafting.html">การคราฟต์</a> · <a href="weapons-tools.html">อาวุธและเครื่องมือ</a> · <a href="materials.html">วัตถุดิบ</a> · <a href="tags.html">คุณสมบัติของไอเทม</a></p>
+<h2 id="ช่วงที่-4-บ้านหลังแรก"><a class="anchor" href="#ช่วงที่-4-บ้านหลังแรก" aria-hidden="true">#</a>ช่วงที่ 4 — บ้านหลังแรก</h2>
+<ol>
+<li>ที่เซฟเฮ้าส์ขึ้น <strong>บอลลูน</strong> ไป <strong>เกาะเทม</strong> — เลือกแบบเกาะได้ครั้งเดียว · เกาะเทมเป็นโลกเดียวกันของทุกคน เห็นบ้านเพื่อนได้</li>
+<li><strong>ประกาศอาณาเขต</strong> ของตัวเอง แล้วค่อยขยาย — ของในอาณาเขตผุช้ากว่านอกอาณาเขตมาก</li>
+<li>สร้างบ้าน กล่องเก็บของ โต๊ะงานช่าง กองไฟ</li>
+<li>ตั้งสิทธิ์ให้เพื่อนเข้ามาใช้ของได้ถ้าต้องการ</li>
+</ol>
+<p>อ่านต่อ: <a href="islands.html">เกาะและการเดินทาง</a> · <a href="land.html">อาณาเขต</a> · <a href="building.html">การก่อสร้าง</a> · <a href="storage.html">ที่เก็บของ</a> · <a href="decay.html">การผุพังและซ่อม</a></p>
+<aside class="callout callout-warn"><p class="callout-title"><span aria-hidden="true">⚠️</span> ระวัง</p><p>สิ่งปลูกสร้างนอกอาณาเขตหายเร็ว — เก็บของมีค่าไว้ในอาณาเขตตัวเอง</p>
+</aside>
+<h2 id="ช่วงที่-5-อาหารระยะยาว"><a class="anchor" href="#ช่วงที่-5-อาหารระยะยาว" aria-hidden="true">#</a>ช่วงที่ 5 — อาหารระยะยาว</h2>
+<ul>
+<li>ทำแปลงปลูก หว่านเมล็ด รดน้ำ ใส่ปุ๋ย เก็บเกี่ยว</li>
+<li>ปรุงอาหารที่กองไฟ/ครัวให้ได้บัพและรสชาติ</li>
+<li>ของสดเน่า — รมควัน ตากแห้ง ดอง หรือบรรจุกระป๋องเก็บไว้</li>
+</ul>
+<p>อ่านต่อ: <a href="farming.html">การเพาะปลูก</a> · <a href="cooking.html">การทำอาหาร</a> · <a href="preserving.html">การถนอมอาหาร</a> · <a href="consumables.html">อาหาร เครื่องดื่ม และยา</a></p>
+<h2 id="ช่วงที่-6-ล่าสัตว์และจับสัตว์เลี้ยง"><a class="anchor" href="#ช่วงที่-6-ล่าสัตว์และจับสัตว์เลี้ยง" aria-hidden="true">#</a>ช่วงที่ 6 — ล่าสัตว์และจับสัตว์เลี้ยง</h2>
+<ul>
+<li>เรียนการตีให้ถูกท่าและทิศ แล่ซากเอาเนื้อ หนัง กระดูก</li>
+<li>ตีสัตว์ให้เลือดต่ำหรือมึน แล้วจับด้วยสมุนไพรฝึกสัตว์ → ฝึกในคอก → สร้างสายใย</li>
+<li>สัตว์เลี้ยงช่วยสู้ ขี่ ขนของ ผลิตนม</li>
+</ul>
+<p>อ่านต่อ: <a href="combat.html">การต่อสู้</a> · <a href="animals.html">สัตว์ป่า</a> · <a href="taming.html">การจับสัตว์</a> · <a href="pets.html">สัตว์เลี้ยง</a></p>
+<h2 id="ช่วงที่-7-เติบโต"><a class="anchor" href="#ช่วงที่-7-เติบโต" aria-hidden="true">#</a>ช่วงที่ 7 — เติบโต</h2>
+<ul>
+<li>ทุกแอ็กชันให้ EXP ตัวละครและ EXP หมวดสกิล · ใช้ <strong>แต้มสกิล</strong> เรียนสกิลใหม่ ย้อนสกิลได้วันละจำกัด</li>
+<li>เปลี่ยนอุปกรณ์ตามเลเวล ซ่อมเมื่อสึก ย้อมสี</li>
+<li>ใส่ <strong>ฉายา</strong> ที่ได้จากการแนะแนวอาชีพ องค์กร และเลเวล</li>
+</ul>
+<p>อ่านต่อ: <a href="skills.html">สกิลและอาชีพ</a> · <a href="skill-list.html">รายการสกิล</a> · <a href="stats.html">ค่าสถานะตัวละคร</a> · <a href="equipment.html">อุปกรณ์และการซ่อม</a> · <a href="clothing.html">เสื้อผ้าและเครื่องประดับ</a> · <a href="titles.html">ฉายา</a></p>
+<h2 id="ช่วงที่-8-ออกสำรวจเกาะที่ยากขึ้น"><a class="anchor" href="#ช่วงที่-8-ออกสำรวจเกาะที่ยากขึ้น" aria-hidden="true">#</a>ช่วงที่ 8 — ออกสำรวจเกาะที่ยากขึ้น</h2>
+<ul>
+<li>ล่องเรือจากท่าเรือไป <strong>เกาะผันแปร</strong> ตามภูมิอากาศ — เกาะเลเวลสูงสัตว์แรงขึ้นและเหนื่อยเร็วขึ้น</li>
+<li><strong>ค่าดัชนีแปรผัน (Index)</strong> ทำให้เกาะโหดขึ้น — ต้องมีระดับความต้านสภาพอากาศพอก่อนไป</li>
+<li>สำรวจแผนที่หาหลุมวาร์ป หลุม รอยแยก ได้ทีสโตน · ปลดปุ่มวาร์ปด่วน</li>
+</ul>
+<p>อ่านต่อ: <a href="islands.html">เกาะและการเดินทาง</a> · <a href="weather.html">สภาพอากาศและค่าดัชนีแปรผัน</a> · <a href="map.html">แผนที่และการสำรวจ</a> · <a href="warp.html">วาร์ปและรอยแยก</a></p>
+<h2 id="ช่วงที่-9-องค์กร-งานประจำ-และเศรษฐกิจ"><a class="anchor" href="#ช่วงที่-9-องค์กร-งานประจำ-และเศรษฐกิจ" aria-hidden="true">#</a>ช่วงที่ 9 — องค์กร งานประจำ และเศรษฐกิจ</h2>
+<ul>
+<li>ทำภารกิจและขอสนับสนุนจากองค์กร เพิ่มความน่าเชื่อถือ รับทีสโตนและฉายา</li>
+<li>ทำ <strong>งานรายสัปดาห์</strong> เก็บคะแนนผู้บุกเบิก เช็กชื่อรายวัน</li>
+<li>ซื้อขายกับผู้เล่นในตลาด ส่งของกลับบ้านด้วยหลุมวาร์ปส่งสาร รับของจากกล่องจดหมาย</li>
+</ul>
+<p>อ่านต่อ: <a href="organizations.html">องค์กร</a> · <a href="quests.html">เควสและรางวัล</a> · <a href="market.html">ตลาดและร้านค้า</a> · <a href="transport.html">ขนส่งและพาหนะ</a> · <a href="mail.html">จดหมาย</a> · <a href="harvestables.html">กับดักและบ่อน้ำ</a></p>
+<h2 id="ช่วงที่-10-ปลายเกม"><a class="anchor" href="#ช่วงที่-10-ปลายเกม" aria-hidden="true">#</a>ช่วงที่ 10 — ปลายเกม</h2>
+<ul>
+<li>รวมกลุ่มเป็น <strong>แคลน</strong> ใช้ที่ดินและกล่องร่วมกัน จับพันธมิตร</li>
+<li>ท้าทาย <strong>รอยแยกและเครื่องเร่งวาร์ป</strong> กับเพื่อน รับรางวัลตามขั้น (มีเพดานรายสัปดาห์)</li>
+<li>ไปเกาะ Index สูงให้ได้ สะสมอุปกรณ์คุณสมบัติหายาก เลี้ยงสัตว์ครบชุด</li>
+<li>ติดตามระบบที่กำลังจะมาที่ <a href="roadmap.html">แผนงานถึงเปิดจริง</a></li>
+</ul>
+<p>อ่านต่อ: <a href="clan.html">แคลน</a> · <a href="warp.html">วาร์ปและรอยแยก</a> · <a href="items.html">ไอเทม</a></p>
+
+</article>
+<nav class="pager"><a class="prev" href="getting-started.html"><small>← ก่อนหน้า</small>เริ่มต้นเล่น</a><a class="next" href="account.html"><small>ถัดไป →</small>บัญชีและการเข้าเกม</a></nav>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"><p class="toc-title">ในหน้านี้</p><ul><li class="toc-l2"><a href="#ก่อนเข้าเกม">ก่อนเข้าเกม</a></li><li class="toc-l2"><a href="#ช่วงที่-1-วันแรก-อังโคร่า-เซฟเฮ้าส์">ช่วงที่ 1 — วันแรก: อังโคร่า → เซฟเฮ้าส์</a></li><li class="toc-l2"><a href="#ช่วงที่-2-อยู่ให้รอด">ช่วงที่ 2 — อยู่ให้รอด</a></li><li class="toc-l2"><a href="#ช่วงที่-3-เก็บของและคราฟต์เครื่องมือแรก">ช่วงที่ 3 — เก็บของและคราฟต์เครื่องมือแรก</a></li><li class="toc-l2"><a href="#ช่วงที่-4-บ้านหลังแรก">ช่วงที่ 4 — บ้านหลังแรก</a></li><li class="toc-l2"><a href="#ช่วงที่-5-อาหารระยะยาว">ช่วงที่ 5 — อาหารระยะยาว</a></li><li class="toc-l2"><a href="#ช่วงที่-6-ล่าสัตว์และจับสัตว์เลี้ยง">ช่วงที่ 6 — ล่าสัตว์และจับสัตว์เลี้ยง</a></li><li class="toc-l2"><a href="#ช่วงที่-7-เติบโต">ช่วงที่ 7 — เติบโต</a></li><li class="toc-l2"><a href="#ช่วงที่-8-ออกสำรวจเกาะที่ยากขึ้น">ช่วงที่ 8 — ออกสำรวจเกาะที่ยากขึ้น</a></li><li class="toc-l2"><a href="#ช่วงที่-9-องค์กร-งานประจำ-และเศรษฐกิจ">ช่วงที่ 9 — องค์กร งานประจำ และเศรษฐกิจ</a></li><li class="toc-l2"><a href="#ช่วงที่-10-ปลายเกม">ช่วงที่ 10 — ปลายเกม</a></li></ul></aside>
+</div>
+<footer class="footer"><p>เนื้อหาอ้างอิงจากโค้ดและข้อมูลของเซิร์ฟ · รูปเป็นของเกม Durango: Wild Lands ต้นฉบับ</p></footer>
+<script src="../assets/wiki.js?v=mue3r5pw" defer></script>
+</body>
+</html>

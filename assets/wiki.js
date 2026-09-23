@@ -10,7 +10,7 @@
   var themeBtn = document.querySelector(".theme-btn");
   if (themeBtn) themeBtn.addEventListener("click", function () {
     var cur = document.documentElement.getAttribute("data-theme");
-    if (!cur) cur = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    if (!cur) cur = "dark";   // ค่าเริ่ม = ธีมมืด (wiki.css :root)
     var next = cur === "dark" ? "light" : "dark";
     document.documentElement.setAttribute("data-theme", next);
     store("wiki-theme", next);

@@ -1,78 +1,61 @@
-/* Durango OffServer wiki — ธีมสว่าง/มืด · มือถือ · ไม่มีฟอนต์ภายนอก */
+/* Durango OffServer wiki — ธีมมืดเป็นค่าเริ่ม (ผู้ใช้ตัดสิน 23 ก.ย.: สีเข้มขึ้น) · สลับเป็นธีมสว่างได้ · มือถือ · ไม่มีฟอนต์ภายนอก */
 :root {
-  --bg: #f7f5ef;
-  --bg-elev: #ffffff;
-  --bg-sunk: #efece3;
-  --fg: #1f2420;
-  --fg-muted: #5b635c;
-  --border: #dcd7ca;
-  --accent: #2f6f4f;
-  --accent-fg: #ffffff;
-  --link: #22603f;
-  --live-bg: #dff1e4;
-  --live-fg: #1d5a34;
-  --live-border: #9ccfaa;
-  --wip-bg: #fdecd2;
-  --wip-fg: #7a4508;
-  --wip-border: #eab676;
-  --tip-bg: #e8f3ec;
-  --note-bg: #e9eff7;
-  --warn-bg: #fbeee0;
-  --code-bg: #ece8dc;
-  --shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 4px 14px rgba(0, 0, 0, .05);
+  --bg: #0b0f0d;
+  --bg-elev: #131a16;
+  --bg-sunk: #070a08;
+  --bg-top: #0f1512;
+  --fg: #e9eee8;
+  --fg-muted: #98a59c;
+  --border: #25302a;
+  --accent: #3fcf85;
+  --accent-fg: #04110a;
+  --link: #62e0a0;
+  --live-bg: #0d2f1d;
+  --live-fg: #8cf2b6;
+  --live-border: #237a4c;
+  --wip-bg: #3a2406;
+  --wip-fg: #ffc76b;
+  --wip-border: #94600f;
+  --tip-bg: #0e2518;
+  --note-bg: #0d1b2e;
+  --warn-bg: #2f1b08;
+  --note-line: #4f8fe0;
+  --warn-line: #e39a32;
+  --code-bg: #18201b;
+  --glyph-bg: #1d4a33;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .5), 0 6px 18px rgba(0, 0, 0, .35);
   --radius: 10px;
   --topbar-h: 56px;
   --font: "Noto Sans Thai", "Noto Sans", "Leelawadee UI", "Sukhumvit Set", "Thonburi", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, "Cascadia Code", Consolas, monospace;
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #151916;
-    --bg-elev: #1d231f;
-    --bg-sunk: #111412;
-    --fg: #e4e8e3;
-    --fg-muted: #a0aaa2;
-    --border: #323a34;
-    --accent: #5fb487;
-    --accent-fg: #0e1a13;
-    --link: #7fcca0;
-    --live-bg: #183624;
-    --live-fg: #9fe0b6;
-    --live-border: #2f6b45;
-    --wip-bg: #3a2810;
-    --wip-fg: #f5c887;
-    --wip-border: #7a5320;
-    --tip-bg: #16281d;
-    --note-bg: #172230;
-    --warn-bg: #2e2112;
-    --code-bg: #262d28;
-    --shadow: 0 1px 2px rgba(0, 0, 0, .4);
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #151916;
-  --bg-elev: #1d231f;
-  --bg-sunk: #111412;
-  --fg: #e4e8e3;
-  --fg-muted: #a0aaa2;
-  --border: #323a34;
-  --accent: #5fb487;
-  --accent-fg: #0e1a13;
-  --link: #7fcca0;
-  --live-bg: #183624;
-  --live-fg: #9fe0b6;
-  --live-border: #2f6b45;
-  --wip-bg: #3a2810;
-  --wip-fg: #f5c887;
-  --wip-border: #7a5320;
-  --tip-bg: #16281d;
-  --note-bg: #172230;
-  --warn-bg: #2e2112;
-  --code-bg: #262d28;
-  --shadow: 0 1px 2px rgba(0, 0, 0, .4);
   color-scheme: dark;
+}
+:root[data-theme="light"] {
+  --bg: #efeadf;
+  --bg-elev: #fbf9f4;
+  --bg-sunk: #e4ded0;
+  --bg-top: #fbf9f4;
+  --fg: #141814;
+  --fg-muted: #4c554e;
+  --border: #cdc5b3;
+  --accent: #1d6b43;
+  --accent-fg: #ffffff;
+  --link: #175c38;
+  --live-bg: #d3eedc;
+  --live-fg: #134a29;
+  --live-border: #7fc295;
+  --wip-bg: #fbe2bd;
+  --wip-fg: #6b3903;
+  --wip-border: #de9d4c;
+  --tip-bg: #dcefe3;
+  --note-bg: #dfe8f5;
+  --warn-bg: #f8e4cc;
+  --note-line: #3a6aa8;
+  --warn-line: #c27a1c;
+  --code-bg: #e2dccd;
+  --glyph-bg: #2c4a39;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .08), 0 4px 14px rgba(0, 0, 0, .07);
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -96,7 +79,7 @@ img { max-width: 100%; height: auto; }
   position: sticky; top: 0; z-index: 30;
   display: flex; align-items: center; gap: 10px;
   height: var(--topbar-h); padding: 0 16px;
-  background: var(--bg-elev); border-bottom: 1px solid var(--border);
+  background: var(--bg-top); border-bottom: 2px solid var(--accent);
 }
 .brand { display: flex; align-items: center; gap: 8px; font-weight: 700; color: var(--fg); text-decoration: none; white-space: nowrap; }
 .brand-icon { width: 28px; height: 28px; object-fit: contain; }
@@ -193,8 +176,8 @@ td .img-icon { max-height: 36px; }
 .callout { margin: 0 0 16px; padding: 10px 16px; border-radius: 8px; border-left: 4px solid var(--accent); background: var(--tip-bg); }
 .callout > :last-child { margin-bottom: 0; }
 .callout-title { font-weight: 700; margin: 0 0 4px; }
-.callout-note { background: var(--note-bg); border-left-color: #4a7bb7; }
-.callout-warn { background: var(--warn-bg); border-left-color: #d08a2e; }
+.callout-note { background: var(--note-bg); border-left-color: var(--note-line); }
+.callout-warn { background: var(--warn-bg); border-left-color: var(--warn-line); }
 
 /* status badges — มีสัญลักษณ์+ข้อความ อ่านได้โดยไม่ต้องเห็นสี */
 .badge {
@@ -273,7 +256,7 @@ h1 .badge { font-size: 14px; }
 }
 
 /* ไอคอนลายขาว (icon_atlas) — พื้นเข้มคงที่ทั้งสองธีม เหมือนปุ่มในเกม */
-img.glyph { background: #2c4a39; border-radius: 8px; padding: 5px; box-sizing: content-box; }
+img.glyph { background: var(--glyph-bg); border-radius: 8px; padding: 5px; box-sizing: content-box; }
 img.glyph.img-inline { border-radius: 4px; padding: 2px; height: 1.15em; vertical-align: -.25em; }
 img.glyph.nav-icon { width: 16px; height: 16px; padding: 2px; border-radius: 4px; }
 img.glyph.brand-icon { width: 22px; height: 22px; padding: 3px; }

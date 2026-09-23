@@ -4,11 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>การผุพังและซ่อม · คู่มือ Durango OffServer</title>
-<meta name="description" content="ค่าทนทานของสิ่งปลูกสร้างลดตามเวลา — ในอาณาเขตตัวเอง 7 วันแล้วพัง (ซ่อมได้) · นอกอาณาเขต 1 วันแล้วหาย · ซ่อมด้วยเครื่องมือซ่อมสิ่งก่อสร้าง">
-<meta name="color-scheme" content="light dark">
+<meta name="description" content="ค่าทนทานของสิ่งปลูกสร้างลดตามเวลา — ในอาณาเขตตัวเอง 7 วันแล้วพัง (ซ่อมได้) · นอกอาณาเขต 1 วันแล้วหาย · ซ่อมด้วยเครื่องมือซ่อมสิ่งก่อสร้าง หรือซ่อมทันทีด้วย T Stone">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0f0d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/decay.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/decay.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/decay.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mudz20a8">
+<link rel="stylesheet" href="../assets/wiki.css?v=mue3r5pw">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="th" data-slug="decay">
@@ -27,19 +28,31 @@
 <nav class="sidebar" id="sidebar" aria-label="เมนู">
 <a class="nav-home"href="../th/index.html">หน้าแรก</a>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">เริ่มต้น</p><ul>
-<li><a href="../th/getting-started.html">เริ่มต้นเล่น <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/getting-started.html">เริ่มต้นเล่น <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/guide.html">ไกด์เล่นตั้งแต่ต้นจนจบ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 <li><a href="../th/account.html">บัญชีและการเข้าเกม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/roadmap.html">แผนงานถึงเปิดจริง <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">เอาตัวรอด</p><ul>
 <li><a href="../th/survival.html">การเอาตัวรอด <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/status-effects.html">บัพและสถานะผิดปกติ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 <li><a href="../th/weather.html">สภาพอากาศและค่าดัชนีแปรผัน <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/death.html">การตายและการคืนชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">เก็บของและคราฟต์</p><ul>
-<li><a href="../th/gathering.html">การเก็บของ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
-<li><a href="../th/crafting.html">การคราฟต์ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/gathering.html">การเก็บของ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/crafting.html">การคราฟต์ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 <li><a href="../th/tags.html">คุณสมบัติของไอเทม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/farming.html">การเพาะปลูก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/harvestables.html">กับดักและบ่อน้ำ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/rgb_atlas/bag_back.webp" alt="" width="64" height="64" class="nav-icon" loading="lazy">ไอเทม</p><ul>
+<li><a href="../th/items.html">ไอเทม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/equipment.html">อุปกรณ์และการซ่อม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/weapons-tools.html">อาวุธและเครื่องมือ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/clothing.html">เสื้อผ้าและเครื่องประดับ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/materials.html">วัตถุดิบ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/consumables.html">อาหาร เครื่องดื่ม และยา <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">อาหาร</p><ul>
 <li><a href="../th/eating.html">การกินและดื่ม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
@@ -49,8 +62,8 @@
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">ก่อสร้างและที่ดิน</p><ul>
 <li><a href="../th/building.html">การก่อสร้าง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/land.html">อาณาเขต <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
-<li><a href="../th/decay.html" class="current" aria-current="page">การผุพังและซ่อม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
-<li><a href="../th/storage.html">ที่เก็บของ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/decay.html" class="current" aria-current="page">การผุพังและซ่อม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/storage.html">ที่เก็บของ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">สัตว์และการต่อสู้</p><ul>
 <li><a href="../th/combat.html">การต่อสู้ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
@@ -61,7 +74,9 @@
 <li><a href="../th/pets.html">สัตว์เลี้ยง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">การเติบโต</p><ul>
+<li><a href="../th/stats.html">ค่าสถานะตัวละคร <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 <li><a href="../th/skills.html">สกิลและอาชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/skill-list.html">รายการสกิล <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 <li><a href="../th/titles.html">ฉายา <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/organizations.html">องค์กร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/quests.html">เควสและรางวัล <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
@@ -75,6 +90,7 @@
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">โลกและการเดินทาง</p><ul>
 <li><a href="../th/islands.html">เกาะและการเดินทาง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/warp.html">วาร์ปและรอยแยก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/map.html">แผนที่และการสำรวจ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 </ul></div>
 </nav>
 
@@ -82,14 +98,14 @@
 <article class="page">
 <p class="crumbs"><a href="index.html">หน้าแรก</a> › ก่อสร้างและที่ดิน</p>
 <h1><img src="../images/atlas/icon_atlas/act_Repair.webp" alt="" width="46" height="44" class="title-icon glyph" loading="lazy">การผุพังและซ่อม <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h1>
-<p class="summary">ค่าทนทานของสิ่งปลูกสร้างลดตามเวลา — ในอาณาเขตตัวเอง 7 วันแล้วพัง (ซ่อมได้) · นอกอาณาเขต 1 วันแล้วหาย · ซ่อมด้วยเครื่องมือซ่อมสิ่งก่อสร้าง</p>
-<p class="partial-note"><span aria-hidden="true">⏳</span> บางหัวข้อในหน้านี้ยังไม่เสร็จ</p>
+<p class="summary">ค่าทนทานของสิ่งปลูกสร้างลดตามเวลา — ในอาณาเขตตัวเอง 7 วันแล้วพัง (ซ่อมได้) · นอกอาณาเขต 1 วันแล้วหาย · ซ่อมด้วยเครื่องมือซ่อมสิ่งก่อสร้าง หรือซ่อมทันทีด้วย T Stone</p>
+
 <p>สิ่งปลูกสร้างที่สร้างเสร็จแล้วทุกชิ้นมี <strong>ค่าทนทาน</strong> ที่ลดลงเรื่อย ๆ ตามเวลา (แม้ไม่มีใครอยู่แถวนั้น)
 ลดเร็วแค่ไหนและหมดแล้วเกิดอะไร <strong>ขึ้นกับว่าตั้งอยู่ที่ไหน</strong> — ในอาณาเขตตัวเองปลอดภัยกว่ามาก (<a href="land.html">อาณาเขต</a>)</p>
 <h2 id="ทำอะไรได้บ้าง"><a class="anchor" href="#ทำอะไรได้บ้าง" aria-hidden="true">#</a>ทำอะไรได้บ้าง</h2>
 <ul>
 <li>ดูสภาพสิ่งปลูกสร้างจากหน้าข้อมูลของมัน (ค่าทนทาน / สภาพ)</li>
-<li><strong>ซ่อม</strong> ด้วยเครื่องมือซ่อมสิ่งก่อสร้าง → ค่าทนทานกลับมาเต็ม และเริ่มนับใหม่</li>
+<li><strong>ซ่อม</strong> ด้วยเครื่องมือซ่อมสิ่งก่อสร้าง หรือ <strong>ซ่อมทันที</strong> ด้วย T Stone → ค่าทนทานกลับมาเต็ม และเริ่มนับใหม่</li>
 <li>แพ็กของเก็บไว้ (<a href="building.html">การก่อสร้าง</a>) — ระหว่างอยู่ในกระเป๋าค่าทนทานไม่ลด</li>
 <li>เก็บของที่ตกเป็นห่อจากสิ่งปลูกสร้างที่พังหาย</li>
 </ul>
@@ -133,8 +149,7 @@
 <tr><td>ห่ออยู่ได้</td><td>24 ชั่วโมง</td></tr>
 <tr><td>ใครเก็บได้</td><td><strong>ทุกคน</strong> (แตะห่อ → เก็บ)</td></tr>
 </tbody></table></div>
-<aside class="callout callout-warn"><p class="callout-title"><span aria-hidden="true">⚠️</span> ระวัง</p><p>ปัญหาที่รู้แล้วและกำลังแก้: งานที่วางไว้บนโต๊ะงานช่าง (การสร้างอัตโนมัติ) และของขนส่งที่กำลังมา <strong>หายไปพร้อมสิ่งปลูกสร้าง</strong> ไม่ตกเป็นห่อ — อย่าทิ้งงานค้างไว้บนโต๊ะที่อยู่นอกอาณาเขต</p>
-</aside>
+<p>ในห่อมีครบ: ของในกล่อง · ของตกแต่งกำแพง · งานบนโต๊ะงานช่าง (เสร็จแล้ว = ได้ของ · ยังไม่เสร็จ = วัตถุดิบ) · ของขนส่งที่กำลังมา</p>
 <h2 id="ซ่อม"><a class="anchor" href="#ซ่อม" aria-hidden="true">#</a>ซ่อม</h2>
 <p><img src="../images/atlas/icon_atlas/repair_artifacts_02.webp" alt="เครื่องมือซ่อมสิ่งก่อสร้าง" width="62" height="44" loading="lazy" class="img-icon glyph"></p>
 <ol>
@@ -162,23 +177,24 @@
 <p>พลังงานที่ใช้ซ่อม = แรงซ่อมที่ต้องการ × 0.8</p>
 <aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> เคล็ดลับ</p><p>ซ่อมก่อนค่าทนทานหมด — ของนอกอาณาเขตที่ซ่อมทันจะได้เวลาอีก 1 วันเต็ม · ของในอาณาเขตได้อีก 7 วัน</p>
 </aside>
-<aside class="callout callout-note"><p class="callout-title"><span aria-hidden="true">ℹ️</span> หมายเหตุ</p><p>ปัญหาที่รู้แล้ว: บางชนิด (เช่น เต็นท์ กองไฟ) มีเมนูซ่อมโผล่ แต่เกมไม่เปิดหน้าซ่อมให้ — ของพวกนี้ซ่อมไม่ได้จริง</p>
-</aside>
-<h2 id="กำลังจะมา"><a class="anchor" href="#กำลังจะมา" aria-hidden="true">#</a>กำลังจะมา <span class="badge badge-wip" title="ยังไม่เสร็จ — ยังไม่ขึ้นเซิร์ฟ หรือกำลังทำ"><span aria-hidden="true">⏳</span> ยังไม่เสร็จ</span></h2>
+<p>เมนู <strong>ซ่อม</strong> ขึ้นเฉพาะของที่ซ่อมได้ — เต็นท์ กองไฟ หลังคาบ้าน ซ่อมไม่ได้ (ไม่มีเมนู)</p>
+<h3 id="ซ่อมทันทีด้วย-t-stone"><a class="anchor" href="#ซ่อมทันทีด้วย-t-stone" aria-hidden="true">#</a>ซ่อมทันทีด้วย T Stone <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h3>
+<p>ไม่มีเครื่องมือซ่อม? กด <strong>ซ่อมทันที</strong> ในหน้าซ่อม — จ่าย T Stone แทนเครื่องมือ</p>
 <ul>
-<li><strong>ซ่อมทันทีด้วย T Stone</strong> ไม่ต้องมีเครื่องมือซ่อม: ค่า = แรงซ่อมที่ต้องการ × 5 (ตอนนี้ปุ่มนี้ยังใช้ไม่ได้)</li>
-<li>เมนูซ่อมโผล่เฉพาะของที่ซ่อมได้จริง</li>
-<li>ค่าทนทานสูงสุดแบบเกมต้นฉบับ — เวลาผุ/สภาพ/สัดส่วนของคืนตอนรื้อ <strong>ไม่เปลี่ยน</strong></li>
-<li>รื้อของที่ผุมากได้วัตถุดิบคืนตามค่าทนทานที่เหลือจริง</li>
-<li>งานบนโต๊ะงานช่างและของขนส่งที่กำลังมา ตกเป็นห่อด้วยเมื่อสิ่งปลูกสร้างหาย</li>
+<li>ค่า = <strong>แรงซ่อมที่ต้องการ × 5</strong> T Stone — เช่น บ้านเลเวล 30 (แรงซ่อม 20) = 100 · พื้นที่จัดเก็บส่วนตัวเลเวล 60 (140) = 700</li>
+<li>หน้าต่างยืนยันในเกมโชว์ตัวเลขเป็น <strong>เจม = แรงซ่อม</strong> — ยอดที่หักจริงคือ × 5 และมีข้อความในแชทบอกยอด T Stone ที่หักทุกครั้ง</li>
+<li>หลอด 5 วินาที → ค่าทนทานเต็ม · พลังงาน/ความเหนื่อยเท่ากับซ่อมด้วยเครื่องมือ</li>
+<li>T Stone ไม่พอ = ซ่อมไม่ได้ · ซ่อมไม่สำเร็จหลังหักเงิน = คืน T Stone (มีข้อความบอก)</li>
 </ul>
+<aside class="callout callout-note"><p class="callout-title"><span aria-hidden="true">ℹ️</span> หมายเหตุ</p><p>ค่าทนทานสูงสุดใช้สเกลเกมต้นฉบับ (ดู <a href="building.html#ตัวเลขสำคัญ">การก่อสร้าง</a>) — เวลาผุ สภาพ และสัดส่วนวัตถุดิบที่คืนตอนรื้อเท่าเดิม · รื้อของที่ผุมากได้วัตถุดิบคืนตามค่าทนทานที่เหลือจริง</p>
+</aside>
 
 </article>
 <nav class="pager"><a class="prev" href="land.html"><small>← ก่อนหน้า</small>อาณาเขต</a><a class="next" href="storage.html"><small>ถัดไป →</small>ที่เก็บของ</a></nav>
 </main>
-<aside class="toc" aria-label="ในหน้านี้"><p class="toc-title">ในหน้านี้</p><ul><li class="toc-l2"><a href="#ทำอะไรได้บ้าง">ทำอะไรได้บ้าง</a></li><li class="toc-l2"><a href="#ผุเร็วแค่ไหน">ผุเร็วแค่ไหน</a></li><li class="toc-l3"><a href="#สภาพที่เห็น">สภาพที่เห็น</a></li><li class="toc-l2"><a href="#เมื่อพังในอาณาเขตตัวเอง">เมื่อพังในอาณาเขตตัวเอง</a></li><li class="toc-l2"><a href="#เมื่อหายนอกอาณาเขต">เมื่อหายนอกอาณาเขต</a></li><li class="toc-l2"><a href="#ซ่อม">ซ่อม</a></li><li class="toc-l2"><a href="#กำลังจะมา">กำลังจะมา</a> <span class="dot dot-wip" title="ยังไม่เสร็จ — ยังไม่ขึ้นเซิร์ฟ หรือกำลังทำ"><span aria-hidden="true">⏳</span><span class="sr">ยังไม่เสร็จ</span></span></li></ul></aside>
+<aside class="toc" aria-label="ในหน้านี้"><p class="toc-title">ในหน้านี้</p><ul><li class="toc-l2"><a href="#ทำอะไรได้บ้าง">ทำอะไรได้บ้าง</a></li><li class="toc-l2"><a href="#ผุเร็วแค่ไหน">ผุเร็วแค่ไหน</a></li><li class="toc-l3"><a href="#สภาพที่เห็น">สภาพที่เห็น</a></li><li class="toc-l2"><a href="#เมื่อพังในอาณาเขตตัวเอง">เมื่อพังในอาณาเขตตัวเอง</a></li><li class="toc-l2"><a href="#เมื่อหายนอกอาณาเขต">เมื่อหายนอกอาณาเขต</a></li><li class="toc-l2"><a href="#ซ่อม">ซ่อม</a></li><li class="toc-l3"><a href="#ซ่อมทันทีด้วย-t-stone">ซ่อมทันทีด้วย T Stone</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li></ul></aside>
 </div>
 <footer class="footer"><p>เนื้อหาอ้างอิงจากโค้ดและข้อมูลของเซิร์ฟ · รูปเป็นของเกม Durango: Wild Lands ต้นฉบับ</p></footer>
-<script src="../assets/wiki.js?v=mudz20a8" defer></script>
+<script src="../assets/wiki.js?v=mue3r5pw" defer></script>
 </body>
 </html>

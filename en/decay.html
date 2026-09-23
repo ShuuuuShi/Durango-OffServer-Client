@@ -4,11 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Decay and repair · Durango OffServer Guide</title>
-<meta name="description" content="Structures lose Durability over time — on your own Domain they break after 7 days (repairable) · outside a Domain they vanish after 1 day · repair with Building Repair Kits">
-<meta name="color-scheme" content="light dark">
+<meta name="description" content="Structures lose Durability over time — on your own Domain they break after 7 days (repairable) · outside a Domain they vanish after 1 day · repair with Building Repair Kits or instantly with T-Stones">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0f0d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/decay.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/decay.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/decay.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mudz20a8">
+<link rel="stylesheet" href="../assets/wiki.css?v=mue3r5pw">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="en" data-slug="decay">
@@ -27,19 +28,31 @@
 <nav class="sidebar" id="sidebar" aria-label="Menu">
 <a class="nav-home"href="../en/index.html">Home</a>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">Getting Started</p><ul>
-<li><a href="../en/getting-started.html">Getting Started <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/getting-started.html">Getting Started <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/guide.html">Start-to-finish guide <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/account.html">Account &amp; Login <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/roadmap.html">Roadmap to launch <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">Survival</p><ul>
 <li><a href="../en/survival.html">Survival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/status-effects.html">Buffs and status effects <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/weather.html">Weather &amp; Unstable Index <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/death.html">Death &amp; Revival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">Gathering &amp; Crafting</p><ul>
-<li><a href="../en/gathering.html">Gathering <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
-<li><a href="../en/crafting.html">Crafting <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/gathering.html">Gathering <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/crafting.html">Crafting <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/tags.html">Item attributes <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/farming.html">Farming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/harvestables.html">Traps and wells <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/rgb_atlas/bag_back.webp" alt="" width="64" height="64" class="nav-icon" loading="lazy">Items</p><ul>
+<li><a href="../en/items.html">Items <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/equipment.html">Equipment and repair <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/weapons-tools.html">Weapons and tools <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/clothing.html">Clothing and accessories <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/materials.html">Materials <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/consumables.html">Food, drinks and medicine <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">Food</p><ul>
 <li><a href="../en/eating.html">Eating and drinking <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
@@ -49,8 +62,8 @@
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">Building &amp; Land</p><ul>
 <li><a href="../en/building.html">Building <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/land.html">Domain <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
-<li><a href="../en/decay.html" class="current" aria-current="page">Decay and repair <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
-<li><a href="../en/storage.html">Storage <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/decay.html" class="current" aria-current="page">Decay and repair <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/storage.html">Storage <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">Animals &amp; Combat</p><ul>
 <li><a href="../en/combat.html">Combat <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
@@ -61,7 +74,9 @@
 <li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
+<li><a href="../en/stats.html">Character stats <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/skills.html">Skills and Careers <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/skill-list.html">Skill list <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/titles.html">Titles <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/organizations.html">Organizations <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/quests.html">Quests and Rewards <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
@@ -75,6 +90,7 @@
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">World &amp; Travel</p><ul>
 <li><a href="../en/islands.html">Islands &amp; Travel <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/warp.html">Warps &amp; Rifts <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/map.html">Map and exploration <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 </ul></div>
 </nav>
 
@@ -82,14 +98,14 @@
 <article class="page">
 <p class="crumbs"><a href="index.html">Home</a> › Building &amp; Land</p>
 <h1><img src="../images/atlas/icon_atlas/act_Repair.webp" alt="" width="46" height="44" class="title-icon glyph" loading="lazy">Decay and repair <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h1>
-<p class="summary">Structures lose Durability over time — on your own Domain they break after 7 days (repairable) · outside a Domain they vanish after 1 day · repair with Building Repair Kits</p>
-<p class="partial-note"><span aria-hidden="true">⏳</span> Some sections on this page are not ready yet</p>
+<p class="summary">Structures lose Durability over time — on your own Domain they break after 7 days (repairable) · outside a Domain they vanish after 1 day · repair with Building Repair Kits or instantly with T-Stones</p>
+
 <p>Every finished structure has <strong>Durability</strong>, which keeps dropping over time (even when nobody is around).
 How fast it drops and what happens at zero <strong>depends on where it stands</strong> — your own Domain is far safer (<a href="land.html">Domain</a>).</p>
 <h2 id="what-you-can-do"><a class="anchor" href="#what-you-can-do" aria-hidden="true">#</a>What you can do</h2>
 <ul>
 <li>Check a structure's condition on its info page (Durability / condition)</li>
-<li><strong>Repair</strong> it with Building Repair Kits → Durability is full again and the countdown restarts</li>
+<li><strong>Repair</strong> it with Building Repair Kits or <strong>Repair Now</strong> with T-Stones → Durability is full again and the countdown restarts</li>
 <li>Package it (<a href="building.html">Building</a>) — Durability does not drop while it sits in your bag</li>
 <li>Pick up the item bundles left behind by structures that fell apart</li>
 </ul>
@@ -133,8 +149,7 @@ How fast it drops and what happens at zero <strong>depends on where it stands</s
 <tr><td>Bundle lifetime</td><td>24 hours</td></tr>
 <tr><td>Who can pick it up</td><td><strong>anyone</strong> (touch the bundle → Pick Up)</td></tr>
 </tbody></table></div>
-<aside class="callout callout-warn"><p class="callout-title"><span aria-hidden="true">⚠️</span> Caution</p><p>Known issue being fixed: jobs left on a workbench (unattended crafting) and incoming cargo <strong>disappear with the structure</strong> instead of dropping as bundles — don't leave unfinished jobs on a workbench outside a Domain</p>
-</aside>
+<p>The bundles hold everything: box contents · wall decorations · workbench jobs (finished = the product · unfinished = the materials) · incoming cargo</p>
 <h2 id="repairing"><a class="anchor" href="#repairing" aria-hidden="true">#</a>Repairing</h2>
 <p><img src="../images/atlas/icon_atlas/repair_artifacts_02.webp" alt="Building Repair Kit" width="62" height="44" loading="lazy" class="img-icon glyph"></p>
 <ol>
@@ -162,23 +177,24 @@ How fast it drops and what happens at zero <strong>depends on where it stands</s
 <p>Energy used to repair = required repair power × 0.8</p>
 <aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>Repair before Durability runs out — an outside structure repaired in time gets another full day · one on your Domain gets another 7 days</p>
 </aside>
-<aside class="callout callout-note"><p class="callout-title"><span aria-hidden="true">ℹ️</span> Note</p><p>Known issue: some types (e.g. tents, bonfires) show a Repair option, but the game does not open the repair window — these cannot actually be repaired</p>
-</aside>
-<h2 id="coming-soon"><a class="anchor" href="#coming-soon" aria-hidden="true">#</a>Coming soon <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h2>
+<p>The <strong>Repair</strong> option only appears on structures that can be repaired — tents, bonfires and house roofs can't be repaired (no option).</p>
+<h3 id="repair-now-with-t-stones"><a class="anchor" href="#repair-now-with-t-stones" aria-hidden="true">#</a>Repair Now with T-Stones <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>No repair kit? Press <strong>Repair Now</strong> in the repair window and pay T-Stones instead.</p>
 <ul>
-<li><strong>Instant Repair with T-Stones</strong>, no kit needed: cost = required repair power × 5 (the button does not work yet)</li>
-<li>The Repair option only appears on structures that can really be repaired</li>
-<li>Original-game max Durability — decay times, conditions and demolish return ratios <strong>do not change</strong></li>
-<li>Demolishing a badly decayed structure returns materials based on its real remaining Durability</li>
-<li>Workbench jobs and incoming cargo also drop as bundles when a structure vanishes</li>
+<li>Cost = <strong>required repair power × 5</strong> T-Stones — e.g. a level 30 House (repair power 20) = 100 · level 60 Personal Storage (140) = 700</li>
+<li>The in-game confirm window shows the number as <strong>gems = repair power</strong> — the real charge is × 5, and a chat message tells you the exact T-Stones taken every time</li>
+<li>5-second bar → full Durability · energy/fatigue are the same as repairing with kits</li>
+<li>Not enough T-Stones = no repair · if the repair fails after you've paid, the T-Stones are refunded (with a message)</li>
 </ul>
+<aside class="callout callout-note"><p class="callout-title"><span aria-hidden="true">ℹ️</span> Note</p><p>Max Durability uses the original-game scale (see <a href="building.html#key-numbers">Building</a>) — decay times, conditions and the share of materials returned on demolish are unchanged · demolishing a badly decayed structure returns materials based on its real remaining Durability</p>
+</aside>
 
 </article>
 <nav class="pager"><a class="prev" href="land.html"><small>← Previous</small>Domain</a><a class="next" href="storage.html"><small>Next →</small>Storage</a></nav>
 </main>
-<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#how-fast-things-decay">How fast things decay</a></li><li class="toc-l3"><a href="#condition-shown">Condition shown</a></li><li class="toc-l2"><a href="#when-it-breaks-on-your-own-domain">When it breaks on your own Domain</a></li><li class="toc-l2"><a href="#when-it-vanishes-outside-a-domain">When it vanishes outside a Domain</a></li><li class="toc-l2"><a href="#repairing">Repairing</a></li><li class="toc-l2"><a href="#coming-soon">Coming soon</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#how-fast-things-decay">How fast things decay</a></li><li class="toc-l3"><a href="#condition-shown">Condition shown</a></li><li class="toc-l2"><a href="#when-it-breaks-on-your-own-domain">When it breaks on your own Domain</a></li><li class="toc-l2"><a href="#when-it-vanishes-outside-a-domain">When it vanishes outside a Domain</a></li><li class="toc-l2"><a href="#repairing">Repairing</a></li><li class="toc-l3"><a href="#repair-now-with-t-stones">Repair Now with T-Stones</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li></ul></aside>
 </div>
 <footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
-<script src="../assets/wiki.js?v=mudz20a8" defer></script>
+<script src="../assets/wiki.js?v=mue3r5pw" defer></script>
 </body>
 </html>

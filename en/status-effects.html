@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buffs and status effects · Durango OffServer Guide</title>
+<meta name="description" content="Every status this server can actually give players (77 of them) — numeric effects, durations and where they come from">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0f0d">
+<link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/status-effects.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/status-effects.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/status-effects.html">
+<link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
+<link rel="stylesheet" href="../assets/wiki.css?v=mue3r5pw">
+<script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body data-root="../" data-lang="en" data-slug="status-effects">
+<a class="skip" href="#content">Skip to content</a>
+<header class="topbar">
+<button class="icon-btn menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" title="Menu"><span aria-hidden="true">☰</span><span class="sr">Menu</span></button>
+<a class="brand" href="../en/index.html"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="brand-icon glyph" loading="lazy"><span class="brand-long">Durango OffServer Guide</span><span class="brand-short">Durango Wiki</span></a>
+<div class="search" role="search">
+<input type="search" id="search-input" placeholder="Search the guide…" aria-label="Search the guide…" autocomplete="off" data-none="No results">
+<ul id="search-results" class="search-results" hidden></ul>
+</div>
+<nav class="langs" aria-label="Language"><a class="lang" href="../th/status-effects.html" hreflang="th" lang="th" data-lang="th">ไทย</a><span class="lang current" aria-current="true" lang="en">English</span></nav>
+<button class="icon-btn theme-btn" type="button" title="Toggle dark/light theme"><span aria-hidden="true">◐</span><span class="sr">Toggle dark/light theme</span></button>
+</header>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="Menu">
+<a class="nav-home"href="../en/index.html">Home</a>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">Getting Started</p><ul>
+<li><a href="../en/getting-started.html">Getting Started <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/guide.html">Start-to-finish guide <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/account.html">Account &amp; Login <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/roadmap.html">Roadmap to launch <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">Survival</p><ul>
+<li><a href="../en/survival.html">Survival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/status-effects.html" class="current" aria-current="page">Buffs and status effects <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/weather.html">Weather &amp; Unstable Index <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/death.html">Death &amp; Revival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">Gathering &amp; Crafting</p><ul>
+<li><a href="../en/gathering.html">Gathering <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/crafting.html">Crafting <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/tags.html">Item attributes <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/farming.html">Farming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/harvestables.html">Traps and wells <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/rgb_atlas/bag_back.webp" alt="" width="64" height="64" class="nav-icon" loading="lazy">Items</p><ul>
+<li><a href="../en/items.html">Items <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/equipment.html">Equipment and repair <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/weapons-tools.html">Weapons and tools <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/clothing.html">Clothing and accessories <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/materials.html">Materials <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/consumables.html">Food, drinks and medicine <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">Food</p><ul>
+<li><a href="../en/eating.html">Eating and drinking <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/cooking.html">Cooking <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/preserving.html">Preserving food and spoilage <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">Building &amp; Land</p><ul>
+<li><a href="../en/building.html">Building <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/land.html">Domain <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/decay.html">Decay and repair <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/storage.html">Storage <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">Animals &amp; Combat</p><ul>
+<li><a href="../en/combat.html">Combat <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/animals.html">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
+<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
+<li><a href="../en/stats.html">Character stats <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/skills.html">Skills and Careers <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/skill-list.html">Skill list <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/titles.html">Titles <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/organizations.html">Organizations <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/quests.html">Quests and Rewards <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_InviteToClan.webp" alt="" width="52" height="42" class="nav-icon glyph" loading="lazy">Social &amp; Economy</p><ul>
+<li><a href="../en/clan.html">Clans <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/market.html">Market and Shop <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/transport.html">Transport and Vehicles <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/mail.html">Mail <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">World &amp; Travel</p><ul>
+<li><a href="../en/islands.html">Islands &amp; Travel <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/warp.html">Warps &amp; Rifts <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/map.html">Map and exploration <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+</ul></div>
+</nav>
+
+<main id="content" class="content">
+<article class="page">
+<p class="crumbs"><a href="index.html">Home</a> › Survival</p>
+<h1><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="title-icon glyph" loading="lazy">Buffs and status effects <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h1>
+<p class="summary">Every status this server can actually give players (77 of them) — numeric effects, durations and where they come from</p>
+
+<p>The status icons above your gauges are the buffs (green) and ailments (red) you currently have — touch one to read its description and time left
+This page lists <strong>the 77 statuses this server can actually give players</strong> (the game data has 374; the rest have no way to be obtained yet)</p>
+<p>How to read the <strong>Effect</strong> column</p>
+<ul>
+<li><strong>Fatigue from …</strong> = multiplier on climate fatigue of that kind (−50% = you tire half as fast) (<a href="survival.html#fatigue">Survival</a>)</li>
+<li><strong>… /s</strong> = that gauge changes per second while the status is on · <strong>level</strong> = the status level (e.g. higher-level food gives a higher level)</li>
+<li>Other values add to your stats (<a href="stats.html">Character stats</a>) · an empty <strong>Duration</strong> = it lasts while its condition holds (sitting, being in the house)</li>
+<li>Most statuses are cleared when you die</li>
+</ul>
+<h2 id="body-weather-and-resting"><a class="anchor" href="#body-weather-and-resting" aria-hidden="true">#</a>Body, weather and resting</h2>
+<p>From washing, drinking, warming up, resting under a roof, body temperature and island hazards — full mechanics on <a href="survival.html">Survival</a> · <a href="weather.html">Weather</a></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Status</th><th>Effect</th><th>Duration</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td><strong>Basic Outfit</strong></td><td>Wearing clothes makes your Fatigue more bearable.</td><td></td><td></td></tr>
+<tr><td><strong>Bonfire</strong></td><td>Fatigue from cold -50% · intense cold -50% · heat +20% · intense heat +20% — Your body temperature rises when you're dry. Fatigue is bearable in the heat, butoverwhelming in the cold.</td><td></td><td></td></tr>
+<tr><td><strong>Cold Food</strong></td><td>Fatigue from heat -(0.175 + 0.025*level) · intense heat -(0.175 + 0.025*level) · cold 0.175 + 0.025 * level · intense cold 0.175 + 0.025 * level — Consuming cold food has helped you endure hot weather.</td><td>5 min</td><td>From: Ice, Shaved Ice, Watermelon Shaved Ice</td></tr>
+<tr><td><strong>Cozy</strong></td><td>Fatigue from base -50% · heat -50% · intense heat -100% · cold -50% · intense cold -100% · humid -50% · dry -50% · scorching sun -50% · gale -50% · poison -50% · volcanic heat -50% — Fatigue is lower while at camp.</td><td></td><td></td></tr>
+<tr><td><strong>Exhausted</strong></td><td>Hit Rate -80% · Energy 0.25 * (1 - level)/s · Life 2 * (1 - level)/s — You worked yourself to exhaustion. Fatigue must drop to the &quot;Tired&quot; state before you can resume activity.</td><td>59 s</td><td></td></tr>
+<tr><td><strong>Heatstroke</strong></td><td>Fatigue from base +50% · heat +50% · intense heat +50% · Health -0.4/s</td><td></td><td></td></tr>
+<tr><td><strong>Hot Food</strong></td><td>Fatigue from heat 0.175 + 0.025 * level · intense heat 0.175 + 0.025 * level · cold -(0.175 + 0.025*level) · intense cold -(0.175 + 0.025*level) — Consuming hot food helps you endure cold weather.</td><td>5 min</td><td>From: Belly Meat Steak, Boiled Meat, Brisket Steak, Pumpkin Porridge and 8 more</td></tr>
+<tr><td><strong>Hypothermia</strong></td><td>Fatigue from base +50% · cold +50% · intense cold +50% · Health -0.4/s</td><td></td><td></td></tr>
+<tr><td><strong>Idle</strong></td><td>Currently away.</td><td></td><td></td></tr>
+<tr><td><strong>Lava Damage</strong></td><td>Life -70/s — You made contact with some lava. You are losing a large amount of Health.</td><td></td><td></td></tr>
+<tr><td><strong>Overexerted</strong></td><td>My head is pounding from too much physical activity.</td><td></td><td></td></tr>
+<tr><td><strong>Resting</strong></td><td>Fatigue -(0.15+0.0015*level)/s · Life 0.45 + 0.05*level/s · Health 0.18 + 0.02*level/s — Resting lessens Fatigue.</td><td></td><td></td></tr>
+<tr><td><strong>Resting (Ancora)</strong></td><td>Fatigue -8/s — Resting lessens Fatigue.</td><td></td><td></td></tr>
+<tr><td><strong>Shade</strong></td><td>Fatigue from heat -50% · intense heat -25% · scorching sun -100% — Staying in the shade makes the heat more bearable.</td><td></td><td></td></tr>
+<tr><td><strong>Thirst</strong></td><td>Fatigue from base +20% · dry +20% — Your excruciating thirst is causing your Fatigue to rise.</td><td>3 min</td><td>From: Spider Cookie, Grain Oil, Fruit Oil, Barley Flour and 12 more</td></tr>
+<tr><td><strong>Tired</strong></td><td>Energy 0.15 * (1 - level)/s · Life 1.5 * (1 - level)/s — You need to rest. If you work any more, you won't be able to move.</td><td>59 s</td><td></td></tr>
+<tr><td><strong>Volcanic Storm</strong></td><td>Health -10/s — Steadily decreases your Health. Prevent this by entering a hot spring or wearing the volcanic storm miner outfit.</td><td>5 min</td><td></td></tr>
+<tr><td><strong>Washed</strong></td><td>Fatigue from base -20% — Washing not only helps you stay clean and makes the heat bearable, it also lessens Fatigue.</td><td>6 min</td><td></td></tr>
+<tr><td><strong>Water</strong></td><td>Fatigue from heat -30% · intense heat -30% · cold -10% · intense cold -10% · volcanic heat -10% — You have quenched your thirst entirely, greatly reducing Fatigue.</td><td>3 min</td><td>From: Soup, Bone Broth, Fish Broth, Meat Broth and 17 more</td></tr>
+<tr><td><strong>Wet</strong></td><td>Fatigue from heat -20% · intense heat -20% · cold +30% · intense cold +30% · humid +30% · volcanic heat -20% — You're soaked, causing a drop in body temperature. Fatigue is bearable in the heat, but overwhelming in the cold.</td><td>2 min</td><td></td></tr>
+</tbody></table></div>
+<h2 id="food-and-drinks"><a class="anchor" href="#food-and-drinks" aria-hidden="true">#</a>Food and drinks</h2>
+<p>From eating and drinking — fullness, taste and food buffs are on <a href="eating.html">Eating and drinking</a> · only one «Enhanced Ability» buff at a time</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Status</th><th>Effect</th><th>Duration</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td><strong>Caffeinated</strong></td><td>Fatigue -(0.016 + level*0.001)/s — Drinking coffee soothes frustration and removes Fatigue.</td><td>20 min</td><td>From: Drip Coffee</td></tr>
+<tr><td><strong>Caffeinated</strong></td><td>Fatigue -(0.04 + level*0.001)/s — Drinking coffee soothes frustration and removes Fatigue.</td><td>20 min</td><td>From: Dutch Coffee</td></tr>
+<tr><td><strong>Delicious</strong></td><td>Acquired EXP +3% — It's delicious. Your Fatigue is more bearable.</td><td>5 min</td><td></td></tr>
+<tr><td><strong>Enhanced Ability</strong></td><td>Ability enhanced from eating food.</td><td></td><td></td></tr>
+<tr><td><strong>Enhanced Ability</strong></td><td>Crafting Fatigue Reduction 0.08 + 0.01 * (level / 5) — Ability enhanced from eating food.</td><td>20 min</td><td>From: Black Tea</td></tr>
+<tr><td><strong>Enhanced Ability</strong></td><td>Gathering Fatigue Reduction 0.08 + 0.01 * (level / 5) — Ability enhanced from eating food.</td><td>20 min</td><td>From: Green Tea</td></tr>
+<tr><td><strong>Fruit Sandwich</strong></td><td>Weapon Crafting Ability +50 · Tailoring Ability +50 · Sewing Ability +50 · Handicraft Ability +50 · Metal Processing Ability +50 · Building Ability +50 · Furniture Crafting Ability +50 · Cooking Ability +50 · Farming Ability +50 — Ability enhanced from eating food.</td><td>10 min</td><td>From: Fruit Sandwich</td></tr>
+<tr><td><strong>Full</strong></td><td>You're too full to eat any more.</td><td></td><td></td></tr>
+<tr><td><strong>Horrible</strong></td><td>Fatigue from base +20% — It tastes horrible. Fatigue has increased.</td><td>5 min</td><td></td></tr>
+<tr><td><strong>Infinite Vigor</strong></td><td>Animal's Vigor does not decrease.</td><td></td><td>From: Infinite Vigor Feed, Infinite Vigor Feed (Event), Infinite Vigor Feed (3 days)</td></tr>
+<tr><td><strong>Jasmine Aroma</strong></td><td>Jasmine's soothing aroma has reduced the Energy cost for all tasks.</td><td>5 min</td><td>From: Jasmine Tea</td></tr>
+<tr><td><strong>Juice</strong></td><td>Fatigue from base -10% · dry -20% — The drink slakes your thirst, moderately reducing Fatigue.</td><td>3 min</td><td>From: Normal Fruit, Sugar Cane Stalk, Tomato (Food), Tomato Seed</td></tr>
+<tr><td><strong>Life Recovery Speed Buff</strong></td><td>Life 0.5 + (0.5*level)/s — Food and medicine help you recover Life faster.</td><td>3 min</td><td>From: Cattail Flower, Cherry Blossom, Cherry Tree Root, Donarium Cherry Blossom and 12 more</td></tr>
+<tr><td><strong>Poisoned</strong></td><td>Health -(0.5 + 0.5*level)/s — You've been poisoned. Your health is decreasing.</td><td>1 min</td><td></td></tr>
+<tr><td><strong>Quenched (Cactus)</strong></td><td>Fatigue from base -20% · dry -30% — You feel less fatigued after drinking cactus juice.</td><td></td><td>From: Cactus Juice</td></tr>
+<tr><td><strong>Refreshed</strong></td><td>Fatigue from base -10% · dry -20% — Drinking a refreshing beverage has made Fatigue more bearable.</td><td>3 min</td><td>From: Warp Cocktail</td></tr>
+<tr><td><strong>Stamina Recovery Speed Buff</strong></td><td>Stamina 0.5 + (0.5*level)/s — Food and medicine help you recover Stamina.</td><td>3 min</td><td>From: Hamburger</td></tr>
+<tr><td><strong>Stomach Pain</strong></td><td>Health -0.2/s — Perhaps it was some bad food, but your Fatigue is rising fast.</td><td>5 min</td><td></td></tr>
+<tr><td><strong>Strange Eats</strong></td><td>Will +3 — If you're able to stomach this...thing, there's nothing you can't do.</td><td>30 s</td><td>From: Aphid, Fat, Meat Meal, Carnivore Feed and 8 more</td></tr>
+<tr><td><strong>Vigor</strong></td><td>Invigorated by a job well done, the Energy cost for all tasks is reduced.</td><td>1 min</td><td>From: Cake, Cream Cake, Red Carnation Cake, Pink Carnation Cake and 14 more</td></tr>
+</tbody></table></div>
+<h2 id="house-furniture-sets-and-moods"><a class="anchor" href="#house-furniture-sets-and-moods" aria-hidden="true">#</a>House: furniture sets and moods</h2>
+<p>Use <strong>Look Around</strong> in a house with a complete furniture set or mood (<a href="building.html#furniture-sets-and-ambiance">Building</a>)</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Status</th><th>Effect</th><th>Duration</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td><strong>Academic Ambiance</strong></td><td>The academic ambiance decreases the time required for skill research.</td><td></td><td></td></tr>
+<tr><td><strong>Bedroom Set Effect</strong></td><td>An effect gained from completing sets.</td><td></td><td></td></tr>
+<tr><td><strong>Cute Ambiance</strong></td><td>Max Energy Buff</td><td></td><td></td></tr>
+<tr><td><strong>Fiery Ambiance</strong></td><td>Increases Attack.</td><td></td><td></td></tr>
+<tr><td><strong>Fragrant Spring Ambiance</strong></td><td>The fragrant spring air makes you feel like anything is possible.</td><td></td><td></td></tr>
+<tr><td><strong>Gloomy Ambiance</strong></td><td>Decrease animal combat engagement range</td><td></td><td></td></tr>
+<tr><td><strong>Kitchen Set Effect</strong></td><td>An effect gained from completing sets.</td><td></td><td></td></tr>
+<tr><td><strong>Living Room Set Effect</strong></td><td>An effect gained from completing sets.</td><td></td><td></td></tr>
+<tr><td><strong>Luxurious Ambiance</strong></td><td>Decrease Satiety duration when eating cooked food</td><td></td><td></td></tr>
+<tr><td><strong>Pleasant Fragrance</strong></td><td>Fatigue from heat -1000% · intense heat -1000% · cold -1000% · intense cold -1000% · humid -1000% · dry -1000% · scorching sun -1000% · gale -1000% · poison -1000% · snowstorm -1000% · volcanic heat -1000% — A pleasant fragrance hangs in the air. Climate-related Fatigue does not affect you. However, this is ineffective for Fatigue resulting from unstable environments in archipelagos level 60 and above with an unstable index of 2 or higher.</td><td>2 h</td><td></td></tr>
+<tr><td><strong>Wardrobe Set Effect</strong></td><td>An effect gained from completing sets.</td><td></td><td></td></tr>
+</tbody></table></div>
+<h2 id="gear-attributes"><a class="anchor" href="#gear-attributes" aria-hidden="true">#</a>Gear attributes</h2>
+<p>Come from green attributes on the gear you wear (<a href="tags.html#rare-attributes-and-their-effects">Item attributes</a>)</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Status</th><th>Effect</th><th>Duration</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td><strong>Climate Suitability</strong></td><td>Wearing clothes suited to your current climate lessens Fatigue.</td><td></td><td></td></tr>
+<tr><td><strong>Lucky in the Rain: Crafting</strong></td><td>Rainy Day Flawless Crafting Rate +3% — Increases Flawless Crafting Rate on rainy days.</td><td>3 min</td><td></td></tr>
+<tr><td><strong>Lucky in the Rain: Gathering</strong></td><td>Rainy Day Flawless Gathering Rate +3% — Increases Flawless Gathering Rate on rainy days.</td><td>3 min</td><td></td></tr>
+<tr><td><strong>Restful Focus: Crafting</strong></td><td>Tamed/Civilized Island Crafting Time Reduction +20% — Decreases crafting time on Civilized and Tamed Islands.</td><td>30 min</td><td></td></tr>
+<tr><td><strong>Restful Focus: Gathering</strong></td><td>Tamed/Civilized Island Gathering Time Reduction +20% — Decreases gathering time on Civilized and Tamed Islands.</td><td>30 min</td><td></td></tr>
+<tr><td><strong>Sadism</strong></td><td>Life 4+(level-1)*2/s — Life increases.</td><td>10 s</td><td></td></tr>
+<tr><td><strong>Temporary Focus: Crafting</strong></td><td>Crafting Success Rate +0.5% — Increases the Success Rate of the next crafting attempt to over 99%.</td><td></td><td></td></tr>
+<tr><td><strong>Temporary Luck: Crafting</strong></td><td>Flawless Crafting Rate +6% — Increases the Flawless Rate of the next crafting attempt.</td><td></td><td></td></tr>
+</tbody></table></div>
+<h2 id="clan-research"><a class="anchor" href="#clan-research" aria-hidden="true">#</a>Clan research</h2>
+<p>Clan members get these once the clan has researched the topic (<a href="clan.html">Clans</a>)</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Status</th><th>Effect</th><th>Duration</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td><strong>Research Animal Butchering</strong></td><td>Slaughter Ability +6 — Enhance your ability to butcher animals through clan research.</td><td></td><td></td></tr>
+<tr><td><strong>Research Attack</strong></td><td>Attack +20 · Accuracy +20 — Enhance your ability to attack through clan research.</td><td></td><td></td></tr>
+<tr><td><strong>Research Construction</strong></td><td>Furniture Crafting Ability +6 · Building Ability +6 · Handicraft Ability +3 — Enhance your ability to build through clan research.</td><td></td><td></td></tr>
+<tr><td><strong>Research Cooking</strong></td><td>Cooking Ability +6 — Enhance your ability to cook through clan research.</td><td></td><td></td></tr>
+<tr><td><strong>Research Defense</strong></td><td>Defense +50 · Evasion Ability +20 — Enhance your ability to defend through clan research.</td><td></td><td></td></tr>
+<tr><td><strong>Research Ecology</strong></td><td>Capture Ability +5 · Stealth Ability +10 — Enhance your ability to understand ecology through clan research.</td><td></td><td></td></tr>
+<tr><td><strong>Research Mineral Gathering</strong></td><td>Mining Ability +6 — Enhance your ability to gather minerals through clan research.</td><td></td><td></td></tr>
+<tr><td><strong>Research Outfit Crafting</strong></td><td>Tailoring Ability +6 · Sewing Ability +6 — Enhance your ability to craft outfits through clan research.</td><td></td><td></td></tr>
+<tr><td><strong>Research Plant Gathering</strong></td><td>Plant Gathering Ability +6 — Enhance your ability to gather plants through clan research.</td><td></td><td></td></tr>
+<tr><td><strong>Research Recovery</strong></td><td>Max Health +100 · Life / Sec +20% — Enhance your ability to recover through clan research.</td><td></td><td></td></tr>
+<tr><td><strong>Research Survival</strong></td><td>Fatigue from heat -20% · intense heat -20% · cold -20% · intense cold -20% · scorching sun -20% · gale -20% — Enhance your ability to survive through clan research.</td><td></td><td></td></tr>
+<tr><td><strong>Research Tool Crafting</strong></td><td>Weapon Crafting Ability +6 · Handicraft Ability +3 · Metal Processing Ability +6 — Enhance your ability to craft tools through clan research.</td><td></td><td></td></tr>
+</tbody></table></div>
+<h2 id="personal-research"><a class="anchor" href="#personal-research" aria-hidden="true">#</a>Personal research</h2>
+<p>From advanced personal research (<a href="organizations.html#personal-research">Organizations</a>)</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Status</th><th>Effect</th><th>Duration</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td><strong>Research Advanced Capture</strong></td><td>Can capture more types of animals.</td><td></td><td></td></tr>
+<tr><td><strong>Research Advanced Combat</strong></td><td>Attack +30 · Accuracy +30 · Defense +75 · Evasion Ability +30 · Max Health +150 · Life / Sec +30% — Battle abilities enhance.</td><td></td><td></td></tr>
+<tr><td><strong>Research Quality Gathering</strong></td><td>Latent/Rare Attribute Rate +1 — Increased chance of acquiring items with latent or rare attributes when gathering.</td><td></td><td></td></tr>
+</tbody></table></div>
+<h2 id="other"><a class="anchor" href="#other" aria-hidden="true">#</a>Other</h2>
+<p><strong>Dizziness</strong> after reviving (<a href="death.html">Death</a>) · <strong>Returning Pioneer</strong> bonus for returning players · <strong>EXP event</strong> during events</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Status</th><th>Effect</th><th>Duration</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td><strong>Dizziness</strong></td><td>Hit Rate -10% — Feeling a bit dizzy and nauseated... Hit Rate has decreased slightly.</td><td>30 s</td><td></td></tr>
+<tr><td><strong>EXP / Skill Level +100% Event</strong></td><td>Acquired EXP +1 · Acquired Skill Progress +1</td><td></td><td></td></tr>
+<tr><td><strong>Prodigal Pioneer</strong></td><td>Acquired EXP +1</td><td></td><td></td></tr>
+</tbody></table></div>
+
+</article>
+<nav class="pager"><a class="prev" href="survival.html"><small>← Previous</small>Survival</a><a class="next" href="weather.html"><small>Next →</small>Weather &amp; Unstable Index</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#body-weather-and-resting">Body, weather and resting</a></li><li class="toc-l2"><a href="#food-and-drinks">Food and drinks</a></li><li class="toc-l2"><a href="#house-furniture-sets-and-moods">House: furniture sets and moods</a></li><li class="toc-l2"><a href="#gear-attributes">Gear attributes</a></li><li class="toc-l2"><a href="#clan-research">Clan research</a></li><li class="toc-l2"><a href="#personal-research">Personal research</a></li><li class="toc-l2"><a href="#other">Other</a></li></ul></aside>
+</div>
+<footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
+<script src="../assets/wiki.js?v=mue3r5pw" defer></script>
+</body>
+</html>
