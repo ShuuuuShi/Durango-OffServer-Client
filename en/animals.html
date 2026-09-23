@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wild animals · Durango OffServer Guide</title>
+<meta name="description" content="Animal temperaments, island-based levels, herds and alphas, predators hunting prey, movement/sleep, and what you get from butchering">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/animals.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/animals.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/animals.html">
+<link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
+<link rel="stylesheet" href="../assets/wiki.css?v=mudz20a8">
+<script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body data-root="../" data-lang="en" data-slug="animals">
+<a class="skip" href="#content">Skip to content</a>
+<header class="topbar">
+<button class="icon-btn menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" title="Menu"><span aria-hidden="true">☰</span><span class="sr">Menu</span></button>
+<a class="brand" href="../en/index.html"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="brand-icon glyph" loading="lazy"><span class="brand-long">Durango OffServer Guide</span><span class="brand-short">Durango Wiki</span></a>
+<div class="search" role="search">
+<input type="search" id="search-input" placeholder="Search the guide…" aria-label="Search the guide…" autocomplete="off" data-none="No results">
+<ul id="search-results" class="search-results" hidden></ul>
+</div>
+<nav class="langs" aria-label="Language"><a class="lang" href="../th/animals.html" hreflang="th" lang="th" data-lang="th">ไทย</a><span class="lang current" aria-current="true" lang="en">English</span></nav>
+<button class="icon-btn theme-btn" type="button" title="Toggle dark/light theme"><span aria-hidden="true">◐</span><span class="sr">Toggle dark/light theme</span></button>
+</header>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="Menu">
+<a class="nav-home"href="../en/index.html">Home</a>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">Getting Started</p><ul>
+<li><a href="../en/getting-started.html">Getting Started <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/account.html">Account &amp; Login <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">Survival</p><ul>
+<li><a href="../en/survival.html">Survival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/weather.html">Weather &amp; Unstable Index <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/death.html">Death &amp; Revival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">Gathering &amp; Crafting</p><ul>
+<li><a href="../en/gathering.html">Gathering <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/crafting.html">Crafting <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/tags.html">Item attributes <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/farming.html">Farming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">Food</p><ul>
+<li><a href="../en/eating.html">Eating and drinking <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/cooking.html">Cooking <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/preserving.html">Preserving food and spoilage <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">Building &amp; Land</p><ul>
+<li><a href="../en/building.html">Building <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/land.html">Domain <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/decay.html">Decay and repair <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/storage.html">Storage <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">Animals &amp; Combat</p><ul>
+<li><a href="../en/combat.html">Combat <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/animals.html" class="current" aria-current="page">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
+<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
+<li><a href="../en/skills.html">Skills and Careers <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/titles.html">Titles <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/organizations.html">Organizations <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/quests.html">Quests and Rewards <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_InviteToClan.webp" alt="" width="52" height="42" class="nav-icon glyph" loading="lazy">Social &amp; Economy</p><ul>
+<li><a href="../en/clan.html">Clans <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/market.html">Market and Shop <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/transport.html">Transport and Vehicles <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/mail.html">Mail <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">World &amp; Travel</p><ul>
+<li><a href="../en/islands.html">Islands &amp; Travel <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/warp.html">Warps &amp; Rifts <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+</nav>
+
+<main id="content" class="content">
+<article class="page">
+<p class="crumbs"><a href="index.html">Home</a> › Animals &amp; Combat</p>
+<h1><img src="../images/atlas/target_atlas/target_raptor.webp" alt="" width="62" height="80" class="title-icon" loading="lazy">Wild animals <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h1>
+<p class="summary">Animal temperaments, island-based levels, herds and alphas, predators hunting prey, movement/sleep, and what you get from butchering</p>
+<p class="partial-note"><span aria-hidden="true">⏳</span> Some sections on this page are not ready yet</p>
+<p>Every island is home to herds of dinosaurs and prehistoric animals. Some attack the moment they see you, some run, some ignore you until they are hit. Animals have levels based on their island, sleep at night, hunt each other in front of you, and leave a carcass you can butcher for meat, leather and bones.</p>
+<p> <img src="../images/atlas/target_atlas/target_trex.webp" alt="Tyrannosaurus" width="65" height="77" loading="lazy" class="img-icon"> <img src="../images/atlas/target_atlas/target_sabertooth.webp" alt="Sabertooth" width="65" height="75" loading="lazy" class="img-icon"> <img src="../images/atlas/target_atlas/target_mammoth.webp" alt="Mammoth" width="70" height="78" loading="lazy" class="img-icon"></p>
+<h2 id="what-you-can-do"><a class="anchor" href="#what-you-can-do" aria-hidden="true">#</a>What you can do</h2>
+<ul>
+<li>Hunt animals and butcher their carcasses into materials (see <a href="combat.html">Combat</a>)</li>
+<li>Capture animals to raise as pets (see <a href="taming.html">Taming</a>)</li>
+<li>Challenge the alpha of each island</li>
+<li>Watch predators hunt prey · sneak past animals sleeping at night</li>
+</ul>
+<h2 id="animal-temperaments"><a class="anchor" href="#animal-temperaments" aria-hidden="true">#</a>Animal temperaments <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Temperament</th><th>Behavior</th></tr></thead>
+<tbody>
+<tr><td>Aggressive</td><td>Sees you within 8 tiles → notices you in 2.5 seconds (alphas 1.5) → roars and chases · gives up once more than 32 tiles from home</td></tr>
+<tr><td>Neutral</td><td>Ignores you until hit, then fights back</td></tr>
+<tr><td>Skittish</td><td>Runs away when hit or when a predator comes</td></tr>
+</tbody></table></div>
+<ul>
+<li>After 20 seconds out of combat, animals regenerate 0.3% health per second · Tyrannosaurus and Apatosaurus regenerate 1% per second · Allosaurus does not regenerate</li>
+</ul>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>If you hit an animal and then leave it alone for a long time, it heals back — keep the pressure on when hunting big animals</p>
+</aside>
+<h2 id="animal-levels"><a class="anchor" href="#animal-levels" aria-hidden="true">#</a>Animal levels <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<ul>
+<li>Regular animals spawn at <strong>island level ±5</strong> (minimum 1 · maximum 70) · alphas and elite leaders keep the fixed level from the spawn table</li>
+<li>Health, attack and defense grow with level using the original game's formula (health ≈ species constant × (level + 24)²)</li>
+<li>The same species at different levels can differ a lot in toughness — that is real game data, not a bug</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>Animal</th><th>Lv10</th><th>Lv20</th><th>Lv30</th><th>Lv60</th></tr></thead>
+<tbody>
+<tr><td>Raptor (health)</td><td>488</td><td>817</td><td>—</td><td>—</td></tr>
+<tr><td>Sabertooth (health)</td><td>1,053</td><td>1,764</td><td>2,656</td><td>6,428</td></tr>
+</tbody></table></div>
+<h2 id="unstable-index"><a class="anchor" href="#unstable-index" aria-hidden="true">#</a>Unstable Index <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>On an <a href="islands.html">Unstable Island</a> the health and attack of every animal (alphas included) are multiplied by <strong>1 + (Unstable Index − 1) × 0.25</strong> · the level shown over its head does not change</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Unstable Index</th><th>1</th><th>3</th><th>4</th><th>7</th><th>10</th></tr></thead>
+<tbody>
+<tr><td>Multiplier</td><td>×1</td><td>×1.5</td><td>×1.75</td><td>×2.5</td><td>×3.25</td></tr>
+</tbody></table></div>
+<h2 id="herds-and-animal-numbers"><a class="anchor" href="#herds-and-animal-numbers" aria-hidden="true">#</a>Herds and animal numbers <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<ul>
+<li>Public islands hold about <strong>9 animals per 64×64-tile area</strong> (3 herds × 3 animals), using the species from that island's table</li>
+<li>Every island keeps at least <strong>3 herds with ≥ 3 animals each</strong> — if hunting drops it below that, the missing herd returns to its spot after 3 minutes (aggressive) · 2 minutes (skittish) · 4 minutes (neutral)</li>
+<li>Safehouses, tutorial islands and peaceful islands are not topped up</li>
+<li>Areas with nobody around for 30 minutes put their herds to rest; when someone returns, the remaining animals come back</li>
+</ul>
+<h2 id="alphas"><a class="anchor" href="#alphas" aria-hidden="true">#</a>Alphas <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>Most islands have one <strong>alpha</strong> per alpha species (e.g. the Alpha Tyrannosaurus). Alphas are always aggressive and never sleep</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Topic</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Health</td><td>×2.5 of the same species (at least 2,000 + 50 × level)</td></tr>
+<tr><td>Elite leaders</td><td>×1.5 (at least 250 + 12 × level)</td></tr>
+<tr><td>Respawn at the same spot</td><td>30 minutes (elite leaders 10 minutes)</td></tr>
+<tr><td>Examples</td><td>Alpha Tyrannosaurus Lv60 ≈ 389,191 · Allosaurus Lv60 ≈ 96,914 · Elephantulus Lv60 = 5,000</td></tr>
+</tbody></table></div>
+<ul>
+<li>No alphas on Tamed Islands or safehouses · on Unstable Islands their health is multiplied by the Index as well</li>
+</ul>
+<h2 id="predators-hunting-prey"><a class="anchor" href="#predators-hunting-prey" aria-hidden="true">#</a>Predators hunting prey <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>In areas where players are present, hungry aggressive carnivores actually chase down other animals in front of you</p>
+<ul>
+<li>They only hunt neutral/skittish animals of a different species and no higher level · alphas neither hunt nor get hunted · players' pets are never hunted</li>
+<li>Skittish prey runs once the predator is within 8 tiles · neutral prey fights back</li>
+<li>After a kill the predator eats for 20 seconds, then rests from hunting for 10 minutes · it gives up a chase after 60 seconds</li>
+<li>The kill leaves a carcass you can butcher, but with <strong>half the meat</strong> (leather/bones are complete) · no EXP/quest credit since you didn't kill it</li>
+<li>Hit a predator mid-hunt and it turns on you · a predator already chasing you won't switch to hunting animals</li>
+<li>At most 2 hunts at a time per area · how often depends on ecosystem hunger (0.08 prey per predator per hour), so it's not common · no hunting on peaceful islands</li>
+</ul>
+<h2 id="movement-and-sleep"><a class="anchor" href="#movement-and-sleep" aria-hidden="true">#</a>Movement and sleep <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<ul>
+<li><strong>Running:</strong> animals use their real run animation when chasing or fleeing (same speed as before, 0.925 tiles/second · walking 0.575)</li>
+<li><strong>Sleeping:</strong> a game day lasts 48 minutes: dawn (4:30–8) · day (8–17) · dusk (17–21) · night (21–4:30)
+<ul>
+<li>Night animals (wolves, sabertooths, etc.) are awake at dusk and night · everything else is awake except at night</li>
+<li>Outside its waking hours each animal has a 45% chance to be asleep (re-rolled daily) · sleeping animals don't wander, chase or hunt</li>
+<li>They wake if you come within 4 tiles or hit them, then stay awake for 2 minutes · alphas and water animals never sleep</li>
+</ul>
+</li>
+<li><strong>Flinching:</strong> every hit plays a short flinch (visual only) · only a critical hit or a full stagger gauge interrupts the attack an animal is winding up</li>
+<li><strong>Roaring:</strong> aggressive animals roar the first time they spot you (standing still ≤ 2 seconds) before chasing · alphas roar when a fight starts · once per 60 seconds per animal · no damage · some species have no roar (Sabertooth, Mammoth, Allosaurus, etc.)</li>
+<li><strong>Stunned/collapsed:</strong> see <a href="taming.html">Taming</a></li>
+</ul>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>Gathering at night on islands with aggressive (non-nocturnal) animals is safer — just don't walk right next to a sleeping one</p>
+</aside>
+<h2 id="butchering-and-drops"><a class="anchor" href="#butchering-and-drops" aria-hidden="true">#</a>Butchering and drops <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<ol>
+<li>A dead animal leaves a <strong>carcass</strong> for 15 minutes (each butchering resets the timer)</li>
+<li>Tap the carcass → choose a part to <strong>butcher</strong>, one piece at a time until it's empty · parts you haven't unlocked with butchering skills are greyed out</li>
+<li>Item level = animal level + your Butchering skill bonus, but never above your character level</li>
+</ol>
+<div class="table-wrap"><table>
+<thead><tr><th>Animal</th><th>Carcass drops (amount per carcass)</th></tr></thead>
+<tbody>
+<tr><td>Compsognathus</td><td>Meat 1–2 · Carnivore Leg Bone 1–2</td></tr>
+<tr><td>Raptor</td><td>Meat 2–3 · Carnivore Leg Bone 1–2 · Leather 1–2 · Teeth 1</td></tr>
+<tr><td>Triceratops</td><td>Meat 5–8 · Herbivore Leg Bone/Rib 2–3 · Skull 1 · Horn 1–2 · Leather 2–3</td></tr>
+<tr><td>Mammoth</td><td>Meat 7–10 · Herbivore Leg Bone/Rib 2–3 · Skull 1 · Ivory 1–2 · Pelt 2–3 · Fat 1–2</td></tr>
+<tr><td>Tyrannosaurus</td><td>Meat 8–12 · Carnivore Leg Bone/Rib 3–4 · Large Skull 1 · Leather 3–4 · Teeth 1</td></tr>
+</tbody></table></div>
+<ul>
+<li>Parts that were broken when the animal died give half (meat excluded) · carcasses left by predators give half the meat</li>
+</ul>
+<h2 id="population-recovery"><a class="anchor" href="#population-recovery" aria-hidden="true">#</a>Population recovery <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>Animals you kill or capture don't pop back at the same spot right away; each area's population regrows over time (only while someone is nearby) · if a species is hunted out of an area, new ones return after the area has been quiet for 12 hours · the 3-herds-per-island minimum always applies</p>
+<h2 id="not-finished-yet"><a class="anchor" href="#not-finished-yet" aria-hidden="true">#</a>Not finished yet <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h2>
+<h3 id="bonus-exp-from-alphas"><a class="anchor" href="#bonus-exp-from-alphas" aria-hidden="true">#</a>Bonus EXP from alphas <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h3>
+<p>Killing an alpha currently gives the same EXP as a normal animal of the same level (the alpha bonus isn't implemented yet)</p>
+
+</article>
+<nav class="pager"><a class="prev" href="combat.html"><small>← Previous</small>Combat</a><a class="next" href="taming.html"><small>Next →</small>Taming</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#animal-temperaments">Animal temperaments</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#animal-levels">Animal levels</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#unstable-index">Unstable Index</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#herds-and-animal-numbers">Herds and animal numbers</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#alphas">Alphas</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#predators-hunting-prey">Predators hunting prey</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#movement-and-sleep">Movement and sleep</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#butchering-and-drops">Butchering and drops</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#population-recovery">Population recovery</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#not-finished-yet">Not finished yet</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l3"><a href="#bonus-exp-from-alphas">Bonus EXP from alphas</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
+</div>
+<footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
+<script src="../assets/wiki.js?v=mudz20a8" defer></script>
+</body>
+</html>

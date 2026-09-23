@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>สภาพอากาศและค่าดัชนีแปรผัน · คู่มือ Durango OffServer</title>
+<meta name="description" content="อากาศเปลี่ยนทุก 20 นาทีต่อเกาะ · ฤดูกาลหมุนทุก 7 วัน · ค่าดัชนีแปรผัน (Index 1–10) ทำให้เกาะโหดขึ้นและต้องมีระดับความต้านสภาพอากาศก่อนล่องเรือไป">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/weather.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/weather.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/weather.html">
+<link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
+<link rel="stylesheet" href="../assets/wiki.css?v=mudz20a8">
+<script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body data-root="../" data-lang="th" data-slug="weather">
+<a class="skip" href="#content">ข้ามไปเนื้อหา</a>
+<header class="topbar">
+<button class="icon-btn menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" title="เมนู"><span aria-hidden="true">☰</span><span class="sr">เมนู</span></button>
+<a class="brand" href="../th/index.html"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="brand-icon glyph" loading="lazy"><span class="brand-long">คู่มือ Durango OffServer</span><span class="brand-short">Durango Wiki</span></a>
+<div class="search" role="search">
+<input type="search" id="search-input" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ…" autocomplete="off" data-none="ไม่พบผลลัพธ์">
+<ul id="search-results" class="search-results" hidden></ul>
+</div>
+<nav class="langs" aria-label="ภาษา"><span class="lang current" aria-current="true" lang="th">ไทย</span><a class="lang" href="../en/weather.html" hreflang="en" lang="en" data-lang="en">English</a></nav>
+<button class="icon-btn theme-btn" type="button" title="สลับธีมมืด/สว่าง"><span aria-hidden="true">◐</span><span class="sr">สลับธีมมืด/สว่าง</span></button>
+</header>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="เมนู">
+<a class="nav-home"href="../th/index.html">หน้าแรก</a>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">เริ่มต้น</p><ul>
+<li><a href="../th/getting-started.html">เริ่มต้นเล่น <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/account.html">บัญชีและการเข้าเกม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">เอาตัวรอด</p><ul>
+<li><a href="../th/survival.html">การเอาตัวรอด <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/weather.html" class="current" aria-current="page">สภาพอากาศและค่าดัชนีแปรผัน <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/death.html">การตายและการคืนชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">เก็บของและคราฟต์</p><ul>
+<li><a href="../th/gathering.html">การเก็บของ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/crafting.html">การคราฟต์ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/tags.html">คุณสมบัติของไอเทม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/farming.html">การเพาะปลูก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">อาหาร</p><ul>
+<li><a href="../th/eating.html">การกินและดื่ม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/cooking.html">การทำอาหาร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/preserving.html">การถนอมอาหารและอาหารเน่า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">ก่อสร้างและที่ดิน</p><ul>
+<li><a href="../th/building.html">การก่อสร้าง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/land.html">อาณาเขต <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/decay.html">การผุพังและซ่อม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/storage.html">ที่เก็บของ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">สัตว์และการต่อสู้</p><ul>
+<li><a href="../th/combat.html">การต่อสู้ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/animals.html">สัตว์ป่า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">จับและเลี้ยงสัตว์</p><ul>
+<li><a href="../th/taming.html">การจับสัตว์ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/pets.html">สัตว์เลี้ยง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">การเติบโต</p><ul>
+<li><a href="../th/skills.html">สกิลและอาชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/titles.html">ฉายา <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/organizations.html">องค์กร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/quests.html">เควสและรางวัล <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_InviteToClan.webp" alt="" width="52" height="42" class="nav-icon glyph" loading="lazy">สังคมและเศรษฐกิจ</p><ul>
+<li><a href="../th/clan.html">แคลน <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/market.html">ตลาดและร้านค้า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/transport.html">ขนส่งและพาหนะ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/mail.html">จดหมาย <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">โลกและการเดินทาง</p><ul>
+<li><a href="../th/islands.html">เกาะและการเดินทาง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/warp.html">วาร์ปและรอยแยก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+</nav>
+
+<main id="content" class="content">
+<article class="page">
+<p class="crumbs"><a href="index.html">หน้าแรก</a> › เอาตัวรอด</p>
+<h1><img src="../images/atlas/explore_atlas/icon_sailing_snowfield.webp" alt="" width="36" height="42" class="title-icon" loading="lazy">สภาพอากาศและค่าดัชนีแปรผัน <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h1>
+<p class="summary">อากาศเปลี่ยนทุก 20 นาทีต่อเกาะ · ฤดูกาลหมุนทุก 7 วัน · ค่าดัชนีแปรผัน (Index 1–10) ทำให้เกาะโหดขึ้นและต้องมีระดับความต้านสภาพอากาศก่อนล่องเรือไป</p>
+<p class="partial-note"><span aria-hidden="true">⏳</span> บางหัวข้อในหน้านี้ยังไม่เสร็จ</p>
+<p>แต่ละเกาะมีอากาศของตัวเองตามภูมิประเทศ (ป่าเขตร้อนฝนบ่อย ทะเลทรายแดดจัด ทุ่งหิมะหิมะตก) และอากาศมีผลจริง: เดินช้าลง นักล่ามองเห็นใกล้ลง ฝนรดน้ำแปลงผัก พายุดับกองไฟ ส่วนเกาะไม่เสถียรมี <strong>ค่าดัชนีแปรผัน (Index)</strong> ยิ่งสูงยิ่งอันตรายแต่ยิ่งคุ้ม</p>
+<h2 id="สิ่งที่ทำได้"><a class="anchor" href="#สิ่งที่ทำได้" aria-hidden="true">#</a>สิ่งที่ทำได้</h2>
+<ul>
+<li>ดูอากาศตอนนี้บนนาฬิกาของจอ แล้ววางแผนออกไปทำงาน</li>
+<li>ใช้ฝนรดน้ำแปลงปลูก · หลบพายุในที่พัก</li>
+<li>เลือกเกาะตาม Index บนหน้าล่องเรือ</li>
+<li>สะสม <strong>ระดับความต้านสภาพอากาศ</strong> ด้วยการอยู่บนเกาะภูมิอากาศนั้น เพื่อปลดล็อกเกาะ Index สูง</li>
+</ul>
+<h2 id="อากาศของแต่ละเกาะ"><a class="anchor" href="#อากาศของแต่ละเกาะ" aria-hidden="true">#</a>อากาศของแต่ละเกาะ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>อากาศเปลี่ยนทุก <strong>20 นาที</strong> (สุ่มซ้ำแบบเดิมได้ = อากาศเดิมยาวขึ้น) ทุกคนบนเกาะเดียวกันเห็นอากาศเดียวกัน โอกาสของแต่ละแบบขึ้นกับกลุ่มเกาะ (ค่าก่อนผลของฤดูกาล):</p>
+<div class="table-wrap"><table>
+<thead><tr><th>กลุ่มเกาะ</th><th>แจ่มใส</th><th>เมฆครึ้ม</th><th>ฝน</th><th>ฝนหนัก</th><th>หิมะ</th><th>หิมะหนัก</th><th>เถ้าภูเขาไฟ</th></tr></thead>
+<tbody>
+<tr><td>เซฟเฮ้าส์ · อังโคร่า</td><td>65%</td><td>25%</td><td>10%</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>ป่าอบอุ่น · ทุ่งหญ้า/สะวันนา · เกาะเทม</td><td>50%</td><td>25%</td><td>18%</td><td>7%</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>ป่าเขตร้อน</td><td>40%</td><td>20%</td><td>28%</td><td>12%</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>ทะเลทราย</td><td>85%</td><td>15%</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>บึง</td><td>30%</td><td>35%</td><td>25%</td><td>10%</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>ทุนดรา</td><td>40%</td><td>25%</td><td>–</td><td>–</td><td>25%</td><td>10%</td><td>–</td></tr>
+<tr><td>ทุ่งหิมะ</td><td>25%</td><td>25%</td><td>–</td><td>–</td><td>30%</td><td>20%</td><td>–</td></tr>
+<tr><td>ภูเขาไฟ</td><td>45%</td><td>30%</td><td>–</td><td>–</td><td>–</td><td>–</td><td>25%</td></tr>
+</tbody></table></div>
+<h2 id="อากาศมีผลอะไร"><a class="anchor" href="#อากาศมีผลอะไร" aria-hidden="true">#</a>อากาศมีผลอะไร <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<div class="table-wrap"><table>
+<thead><tr><th>อากาศ</th><th>ความเร็วเดิน</th><th>ระยะที่นักล่าเห็นคุณ</th><th>ความเหนื่อยล้าเพิ่ม/นาที</th><th>อื่น ๆ</th></tr></thead>
+<tbody>
+<tr><td>แจ่มใส · เมฆครึ้ม</td><td>ปกติ</td><td>ปกติ</td><td>–</td><td>–</td></tr>
+<tr><td><strong>ฝน</strong></td><td>×0.95</td><td>×0.8</td><td>0.2</td><td>ตัวเปียก · ตอนฝนเริ่มรดน้ำแปลงปลูก 1 หน่วย</td></tr>
+<tr><td>ฝนหนัก</td><td>×0.9</td><td>×0.6</td><td>0.5</td><td>ตัวเปียก · รดน้ำ 2 หน่วย · <strong>ดับกองไฟ/เตาที่ผู้เล่นจุดไว้</strong></td></tr>
+<tr><td><strong>หิมะ</strong></td><td>×0.92</td><td>×0.8</td><td>0.3</td><td>–</td></tr>
+<tr><td>หิมะหนัก</td><td>×0.85</td><td>×0.5</td><td>0.8</td><td>ตัวเปียก · <strong>ดับกองไฟ/เตา</strong></td></tr>
+<tr><td>เถ้าภูเขาไฟ</td><td>×0.95</td><td>×0.6</td><td>1.0</td><td>–</td></tr>
+</tbody></table></div>
+<ul>
+<li>อากาศแรง สัตว์ป่าหยุดพักบ่อยขึ้น (โอกาสพักต่อรอบ ปกติ 30% → ฝน/หิมะ 40% · ฝนหนัก/หิมะหนัก 60% · เถ้า 50%)</li>
+<li>ความเหนื่อยล้าจากอากาศเกิด <strong>ทุกเกาะ รวมเซฟเฮ้าส์</strong> — หลบเข้าที่พักระหว่างพายุ</li>
+<li>อากาศยังเปลี่ยนอุณหภูมิร่างกาย — ตารางที่ <a href="survival.html#อุณหภูมิร่างกาย">การเอาตัวรอด</a></li>
+</ul>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> เคล็ดลับ</p><p>ฝนเป็นเพื่อนของชาวไร่ — แปลงที่ปลูกไว้ได้น้ำฟรีทุกครั้งที่ฝนเริ่ม ดู <a href="farming.html">การปลูกพืช</a></p>
+</aside>
+<h2 id="ฤดูกาล"><a class="anchor" href="#ฤดูกาล" aria-hidden="true">#</a>ฤดูกาล <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>โลกทั้งใบมี 4 ฤดูเรียงกัน ฤดูละ <strong>7 วัน</strong> (ครบรอบ 28 วัน) เปลี่ยนทุก <strong>วันพฤหัสบดี 07:00 น. (เวลาไทย)</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>ฤดู</th><th>อากาศที่มาบ่อยขึ้น / น้อยลง</th><th>เวลาที่พืชกลับมาให้เก็บ</th><th>สัตว์ขยายพันธุ์</th></tr></thead>
+<tbody>
+<tr><td>ใบไม้ผลิ</td><td>ฝน ×1.5 · ฝนหนัก ×1.3 · แจ่มใส ×0.85</td><td>เร็วขึ้น (×0.77)</td><td>×1.25</td></tr>
+<tr><td>ร้อน</td><td>แจ่มใส ×1.4 · ฝน ×0.75 · ฝนหนัก ×0.7</td><td>ปกติ</td><td>×1</td></tr>
+<tr><td>ใบไม้ร่วง</td><td>เมฆครึ้ม ×1.35 · ฝน ×1.2 · แจ่มใส ×0.9</td><td>ช้าลง (×1.43)</td><td>×0.75</td></tr>
+<tr><td>หนาว</td><td>หิมะ ×1.5 · หิมะหนัก ×1.4 · เมฆครึ้ม ×1.1 · แจ่มใส ×0.65</td><td>ช้าลง (×1.67)</td><td>×0.45</td></tr>
+</tbody></table></div>
+<ul>
+<li>ฤดูแค่ถ่วงน้ำหนัก — หิมะยังตกเฉพาะเกาะที่มีหิมะอยู่แล้ว (ทุนดรา/ทุ่งหิมะ) ทะเลทรายหน้าหนาวก็ไม่มีหิมะ</li>
+<li>วันในเกม 1 วัน = 48 นาทีจริง</li>
+</ul>
+<h2 id="ค่าดัชนีแปรผัน-index"><a class="anchor" href="#ค่าดัชนีแปรผัน-index" aria-hidden="true">#</a>ค่าดัชนีแปรผัน (Index) <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p><img src="../images/atlas/explore_atlas/unstable_number_bg.webp" alt="ค่าดัชนีแปรผัน" width="82" height="82" loading="lazy" class="img-inline"> เกาะไม่เสถียรทุกเกาะเลเวล 15 ขึ้นไปมี <strong>ค่าดัชนีแปรผัน 1–10</strong> แสดงบนหน้าล่องเรือ</p>
+<div class="table-wrap"><table>
+<thead><tr><th>แบบเกาะ</th><th>Index</th></tr></thead>
+<tbody>
+<tr><td>พื้นที่ที่มี 4 เกาะ (บึง ทะเลทราย ป่าอบอุ่น ป่าเขตร้อน สะวันนา ทุ่งหิมะ ทุนดรา ภูเขาไฟ)</td><td>คงที่ 1 · 4 · 7 · 10 เกาะละค่า — เลือกเกาะที่ต้องการจากหน้าล่องเรือ</td></tr>
+<tr><td>พื้นที่ที่มีเกาะเดียว (เลเวล 15 · 20 · 25 · 30)</td><td>หมุนขึ้นทีละ 1 ทุก 7 วัน (1 → 2 → … → 10 → 1)</td></tr>
+<tr><td>เซฟเฮ้าส์ · อังโคร่า · เกาะเทม · เกาะฝึก · เมืองร้าง · เกาะอีเวนต์</td><td>1 เสมอ</td></tr>
+</tbody></table></div>
+<p><img src="../images/atlas/explore_atlas/explore_map_unstable_island.webp" alt="เกาะไม่เสถียรบนหน้าล่องเรือ" width="118" height="114" loading="lazy" class="img-icon"></p>
+<p><strong>Index สูงขึ้นแล้วเป็นอย่างไร</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Index</th><th>ความเหนื่อยล้าเพิ่ม/นาที</th><th>พลังชีวิต/พลังโจมตีสัตว์</th><th>EXP ภารกิจองค์กร</th><th>ระดับความต้านสภาพอากาศที่ต้องมี</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>–</td><td>×1</td><td>×1</td><td>–</td></tr>
+<tr><td>2</td><td>1.0</td><td>×1.25</td><td>×2.2</td><td>–</td></tr>
+<tr><td>3</td><td>1.5</td><td>×1.5</td><td>×4.5</td><td>3</td></tr>
+<tr><td>4</td><td>2.0</td><td>×1.75</td><td>×6.3</td><td>7</td></tr>
+<tr><td>5</td><td>2.5</td><td>×2</td><td>×9.1</td><td>12</td></tr>
+<tr><td>6</td><td>3.0</td><td>×2.25</td><td>×11.4</td><td>17</td></tr>
+<tr><td>7</td><td>3.5</td><td>×2.5</td><td>×14.4</td><td>25</td></tr>
+<tr><td>8</td><td>4.0</td><td>×2.75</td><td>×17.6</td><td>35</td></tr>
+<tr><td>9</td><td>4.5</td><td>×3</td><td>×21.1</td><td>62</td></tr>
+<tr><td>10</td><td>5.0</td><td>×3.25</td><td>×24.7</td><td>80</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Index 2 ขึ้นไป</strong> หลุมอุกกาบาตบนเกาะกลายเป็น <strong>คลังถาวร</strong>: มีของธรรมชาติพิเศษ 10 ชิ้นรอบหลุม และสัตว์เฝ้า 3 ตัวที่แกร่งกว่าปกติ 1.5 เท่า (คูณ Index อีกชั้น)</li>
+<li>ของที่เก็บได้บนเกาะ Index สูงมีแท็กแฝงระดับสูงขึ้น — ดู <a href="tags.html">แท็ก</a></li>
+<li>เกาะ Index 2 ขึ้นไปนับเป็น <strong>เกาะชั่วคราว</strong>: ออกเกมบนเกาะนี้ ล็อกอินครั้งหน้าจะไปโผล่ที่จุดพักหรือเซฟเฮ้าส์ — ดู <a href="death.html#ออกเกมบนเกาะชั่วคราว">การตาย</a></li>
+</ul>
+<h2 id="ระดับความต้านสภาพอากาศ"><a class="anchor" href="#ระดับความต้านสภาพอากาศ" aria-hidden="true">#</a>ระดับความต้านสภาพอากาศ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>ล่องเรือไปเกาะ Index 3 ขึ้นไปต้องมี <strong>ระดับความต้านสภาพอากาศ</strong> ของภูมิอากาศเกาะนั้นถึงเกณฑ์ (ตารางด้านบน) — ไม่ถึง หน้าล่องเรือจะขึ้นเงื่อนไขสีแดงและเซิร์ฟปฏิเสธการออกเรือ (การกลับที่ดินตัวเอง/เซฟเฮ้าส์ไม่ถูกเช็ก)</p>
+<p><strong>วิธีเพิ่ม:</strong> แค่อยู่บนเกาะภูมิอากาศนั้น (ออนไลน์) ค่าจะขึ้นเอง ยิ่ง Index ของเกาะสูงยิ่งขึ้นเร็ว</p>
+<div class="table-wrap"><table>
+<thead><tr><th>ภูมิอากาศที่มีค่าความต้านของตัวเอง</th><th>ป่าเขตร้อน · ทะเลทราย · ทุนดรา · ทุ่งหิมะ · บึง · ภูเขาไฟ</th></tr></thead>
+<tbody>
+<tr><td>ป่าอบอุ่น · ทุ่งหญ้า/สะวันนา</td><td>ไม่มีค่าของตัวเอง — ใช้ <strong>ค่าความต้านที่สูงที่สุดที่คุณมี</strong> ชนิดใดก็ได้</td></tr>
+<tr><td>ความเร็วที่ขึ้น</td><td>300 แต้ม/วินาที × (1 + 0.5 × (Index − 1))</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<thead><tr><th>ถึงระดับ</th><th>เวลาบนเกาะ Index 1</th><th>Index 4</th><th>Index 7</th></tr></thead>
+<tbody>
+<tr><td>3 (เข้า Index 3)</td><td>45 นาที</td><td>18 นาที</td><td>11 นาที</td></tr>
+<tr><td>7 (เข้า Index 4)</td><td>4.0 ชม.</td><td>1.6 ชม.</td><td>1.0 ชม.</td></tr>
+<tr><td>12 (เข้า Index 5)</td><td>10.3 ชม.</td><td>4.1 ชม.</td><td>2.6 ชม.</td></tr>
+<tr><td>17 (เข้า Index 6)</td><td>18.4 ชม.</td><td>7.4 ชม.</td><td>4.6 ชม.</td></tr>
+<tr><td>25 (เข้า Index 7)</td><td>34.3 ชม.</td><td>13.7 ชม.</td><td>8.6 ชม.</td></tr>
+<tr><td>35 (เข้า Index 8)</td><td>57.9 ชม.</td><td>23.2 ชม.</td><td>14.5 ชม.</td></tr>
+</tbody></table></div>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> เคล็ดลับ</p><p>เซฟเฮ้าส์และอังโคร่าเป็นเกาะป่าเขตร้อน — ยืนทำอะไรอยู่ที่นั่นค่าความต้านป่าเขตร้อนก็ขึ้นไปเรื่อย ๆ</p>
+</aside>
+<aside class="callout callout-warn"><p class="callout-title"><span aria-hidden="true">⚠️</span> ระวัง</p><p>ค่าความต้านสูงสุดที่สะสมได้ตอนนี้คือระดับ 51 — เกาะ <strong>Index 9 (ต้อง 62) และ Index 10 (ต้อง 80) จึงยังล่องเรือไปไม่ได้</strong></p>
+</aside>
+<h2 id="ส่วนที่ยังไม่เสร็จ"><a class="anchor" href="#ส่วนที่ยังไม่เสร็จ" aria-hidden="true">#</a>ส่วนที่ยังไม่เสร็จ</h2>
+<h3 id="ช่องทางไปเกาะ-index-910"><a class="anchor" href="#ช่องทางไปเกาะ-index-910" aria-hidden="true">#</a>ช่องทางไปเกาะ Index 9–10 <span class="badge badge-wip" title="ยังไม่เสร็จ — ยังไม่ขึ้นเซิร์ฟ หรือกำลังทำ"><span aria-hidden="true">⏳</span> ยังไม่เสร็จ</span></h3>
+<p>ยังไม่มีทางได้ค่าความต้านถึงระดับ 62/80 — เกาะ Index 9 และ 10 ของแต่ละพื้นที่จึงยังเข้าไม่ได้</p>
+
+</article>
+<nav class="pager"><a class="prev" href="survival.html"><small>← ก่อนหน้า</small>การเอาตัวรอด</a><a class="next" href="death.html"><small>ถัดไป →</small>การตายและการคืนชีพ</a></nav>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"><p class="toc-title">ในหน้านี้</p><ul><li class="toc-l2"><a href="#สิ่งที่ทำได้">สิ่งที่ทำได้</a></li><li class="toc-l2"><a href="#อากาศของแต่ละเกาะ">อากาศของแต่ละเกาะ</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#อากาศมีผลอะไร">อากาศมีผลอะไร</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ฤดูกาล">ฤดูกาล</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ค่าดัชนีแปรผัน-index">ค่าดัชนีแปรผัน (Index)</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ระดับความต้านสภาพอากาศ">ระดับความต้านสภาพอากาศ</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ส่วนที่ยังไม่เสร็จ">ส่วนที่ยังไม่เสร็จ</a></li><li class="toc-l3"><a href="#ช่องทางไปเกาะ-index-910">ช่องทางไปเกาะ Index 9–10</a> <span class="dot dot-wip" title="ยังไม่เสร็จ — ยังไม่ขึ้นเซิร์ฟ หรือกำลังทำ"><span aria-hidden="true">⏳</span><span class="sr">ยังไม่เสร็จ</span></span></li></ul></aside>
+</div>
+<footer class="footer"><p>เนื้อหาอ้างอิงจากโค้ดและข้อมูลของเซิร์ฟ · รูปเป็นของเกม Durango: Wild Lands ต้นฉบับ</p></footer>
+<script src="../assets/wiki.js?v=mudz20a8" defer></script>
+</body>
+</html>

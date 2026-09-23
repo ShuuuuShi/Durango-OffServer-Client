@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>การเพาะปลูก · คู่มือ Durango OffServer</title>
+<meta name="description" content="สร้างแปลงนาหรือกระถาง หว่านเมล็ด รดน้ำ ใส่ปุ๋ย แล้วเก็บเกี่ยวผลผลิตพร้อมเมล็ดคืน 1 เมล็ด">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/farming.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/farming.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/farming.html">
+<link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
+<link rel="stylesheet" href="../assets/wiki.css?v=mudz20a8">
+<script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body data-root="../" data-lang="th" data-slug="farming">
+<a class="skip" href="#content">ข้ามไปเนื้อหา</a>
+<header class="topbar">
+<button class="icon-btn menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" title="เมนู"><span aria-hidden="true">☰</span><span class="sr">เมนู</span></button>
+<a class="brand" href="../th/index.html"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="brand-icon glyph" loading="lazy"><span class="brand-long">คู่มือ Durango OffServer</span><span class="brand-short">Durango Wiki</span></a>
+<div class="search" role="search">
+<input type="search" id="search-input" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ…" autocomplete="off" data-none="ไม่พบผลลัพธ์">
+<ul id="search-results" class="search-results" hidden></ul>
+</div>
+<nav class="langs" aria-label="ภาษา"><span class="lang current" aria-current="true" lang="th">ไทย</span><a class="lang" href="../en/farming.html" hreflang="en" lang="en" data-lang="en">English</a></nav>
+<button class="icon-btn theme-btn" type="button" title="สลับธีมมืด/สว่าง"><span aria-hidden="true">◐</span><span class="sr">สลับธีมมืด/สว่าง</span></button>
+</header>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="เมนู">
+<a class="nav-home"href="../th/index.html">หน้าแรก</a>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">เริ่มต้น</p><ul>
+<li><a href="../th/getting-started.html">เริ่มต้นเล่น <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/account.html">บัญชีและการเข้าเกม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">เอาตัวรอด</p><ul>
+<li><a href="../th/survival.html">การเอาตัวรอด <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/weather.html">สภาพอากาศและค่าดัชนีแปรผัน <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/death.html">การตายและการคืนชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">เก็บของและคราฟต์</p><ul>
+<li><a href="../th/gathering.html">การเก็บของ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/crafting.html">การคราฟต์ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/tags.html">คุณสมบัติของไอเทม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/farming.html" class="current" aria-current="page">การเพาะปลูก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">อาหาร</p><ul>
+<li><a href="../th/eating.html">การกินและดื่ม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/cooking.html">การทำอาหาร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/preserving.html">การถนอมอาหารและอาหารเน่า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">ก่อสร้างและที่ดิน</p><ul>
+<li><a href="../th/building.html">การก่อสร้าง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/land.html">อาณาเขต <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/decay.html">การผุพังและซ่อม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/storage.html">ที่เก็บของ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">สัตว์และการต่อสู้</p><ul>
+<li><a href="../th/combat.html">การต่อสู้ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/animals.html">สัตว์ป่า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">จับและเลี้ยงสัตว์</p><ul>
+<li><a href="../th/taming.html">การจับสัตว์ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/pets.html">สัตว์เลี้ยง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">การเติบโต</p><ul>
+<li><a href="../th/skills.html">สกิลและอาชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/titles.html">ฉายา <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/organizations.html">องค์กร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/quests.html">เควสและรางวัล <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_InviteToClan.webp" alt="" width="52" height="42" class="nav-icon glyph" loading="lazy">สังคมและเศรษฐกิจ</p><ul>
+<li><a href="../th/clan.html">แคลน <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/market.html">ตลาดและร้านค้า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/transport.html">ขนส่งและพาหนะ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/mail.html">จดหมาย <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">โลกและการเดินทาง</p><ul>
+<li><a href="../th/islands.html">เกาะและการเดินทาง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/warp.html">วาร์ปและรอยแยก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+</nav>
+
+<main id="content" class="content">
+<article class="page">
+<p class="crumbs"><a href="index.html">หน้าแรก</a> › เก็บของและคราฟต์</p>
+<h1><img src="../images/atlas/icon_atlas/act_Plant.webp" alt="" width="42" height="52" class="title-icon glyph" loading="lazy">การเพาะปลูก <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h1>
+<p class="summary">สร้างแปลงนาหรือกระถาง หว่านเมล็ด รดน้ำ ใส่ปุ๋ย แล้วเก็บเกี่ยวผลผลิตพร้อมเมล็ดคืน 1 เมล็ด</p>
+<p class="partial-note"><span aria-hidden="true">⏳</span> บางหัวข้อในหน้านี้ยังไม่เสร็จ</p>
+<p>ปลูกพืชเองบนแปลงที่สร้างไว้ พืชโตตามเวลาจริงแม้ออกจากเกมอยู่ พอโตแล้วถอนเพื่อรับผลผลิต (อาหาร ดอกไม้ เส้นใย ฯลฯ) พร้อมเมล็ดคืน 1 เมล็ด</p>
+<p><figure><img src="../images/tex/Assets__Texture2D__farming_4-w480.webp" alt="หว่านเมล็ดลงแปลง" width="480" height="240" loading="lazy" class="img-figure"><figcaption>หว่านเมล็ดลงแปลง</figcaption></figure></p>
+<h2 id="ทำอะไรได้บ้าง"><a class="anchor" href="#ทำอะไรได้บ้าง" aria-hidden="true">#</a>ทำอะไรได้บ้าง</h2>
+<ul>
+<li>สร้าง <strong>ที่นาผืนเล็ก / ที่นาผืนใหญ่</strong> หรือ <strong>กระถางดอกไม้</strong> แล้วหว่านเมล็ดได้ 1 ชนิดต่อแปลง</li>
+<li><strong>รดน้ำ</strong> และ <strong>ใส่ปุ๋ย</strong> เพื่อย่นเวลาโต (ไม่บังคับ — ไม่รดน้ำพืชก็โต แค่ช้ากว่า)</li>
+<li>วาง <strong>เครื่องฉีดน้ำ</strong> รดน้ำหลายแปลงพร้อมกันโดยไม่ต้องใช้น้ำในกระเป๋า</li>
+<li>เก็บเกี่ยวแล้วได้ exp สายเพาะปลูก และเลเวล <strong>สารานุกรมการเพาะปลูก</strong> ของเมล็ดนั้น เพื่อปลดความเชี่ยวชาญ</li>
+</ul>
+<h2 id="วิธีทำ"><a class="anchor" href="#วิธีทำ" aria-hidden="true">#</a>วิธีทำ</h2>
+<ol>
+<li>สร้างแปลงปลูก (ดู <a href="building.html">การก่อสร้าง</a>) — แปลงที่ใช้ปลูกได้:</li>
+</ol>
+<div class="table-wrap"><table>
+<thead><tr><th>แปลง</th><th>ขนาด (ช่อง)</th></tr></thead>
+<tbody>
+<tr><td>ที่นาผืนเล็ก · ทุ่งนาสีเทาขนาดเล็ก</td><td>1×1</td></tr>
+<tr><td>ที่นาผืนใหญ่ · ทุ่งนาสีเทาขนาดใหญ่</td><td>2×2</td></tr>
+<tr><td>กระถางดอกไม้ขนาดเล็ก (ไม้ / หิน / เขา)</td><td>1×1</td></tr>
+<tr><td>กระถางดอกไม้ใหญ่ (ไม้ / หิน / เขา)</td><td>2×2</td></tr>
+</tbody></table></div>
+<ol>
+<li>เดินไปที่แปลง กด <strong>หว่านเมล็ด</strong> <img src="../images/atlas/icon_atlas/act_Plant.webp" alt="" width="42" height="52" loading="lazy" class="img-inline glyph"> แล้วเลือกเมล็ดในกระเป๋า</li>
+<li>ระหว่างรอ กด <strong>รดน้ำ</strong> <img src="../images/atlas/icon_atlas/act_Watering.webp" alt="" width="52" height="40" loading="lazy" class="img-inline glyph"> (ใช้ <strong>น้ำ</strong> หรือ <strong>น้ำจากน้ำพุร้อน</strong> — น้ำทะเลใช้ไม่ได้) และ <strong>ใส่ปุ๋ย</strong> <img src="../images/atlas/icon_atlas/act_Fertilize.webp" alt="" width="48" height="44" loading="lazy" class="img-inline glyph"> (ของที่มีคุณสมบัติ <strong>ปุ๋ยหมัก</strong> เช่น ปุ๋ยหญ้า ปุ๋ยยุคบรรพกาล ปุ๋ยคุณภาพ ปุ๋ยแบบน้ำ มูลสัตว์ โคลน มอส)</li>
+<li>พอขึ้นว่า <strong>พร้อมเก็บเกี่ยว</strong> กด <strong>ถอนพืชผลออก</strong> <img src="../images/atlas/icon_atlas/act_Uproot.webp" alt="" width="38" height="50" loading="lazy" class="img-inline glyph"> เพื่อรับผลผลิต</li>
+</ol>
+<aside class="callout callout-warn"><p class="callout-title"><span aria-hidden="true">⚠️</span> ระวัง</p><p>ถอนก่อนพืชโต = พืชหายไปเฉย ๆ ไม่ได้ผลผลิตและไม่ได้เมล็ดคืน</p>
+</aside>
+<p><figure><img src="../images/tex/Assets__Texture2D__farming_6-w480.webp" alt="ใส่ปุ๋ยให้แปลง" width="480" height="240" loading="lazy" class="img-figure"><figcaption>ใส่ปุ๋ยให้แปลง</figcaption></figure></p>
+<h2 id="ตัวเลขสำคัญ"><a class="anchor" href="#ตัวเลขสำคัญ" aria-hidden="true">#</a>ตัวเลขสำคัญ</h2>
+<h3 id="เวลาโต"><a class="anchor" href="#เวลาโต" aria-hidden="true">#</a>เวลาโต</h3>
+<p>เวลาโตมาจากข้อมูลพืชของเกม แต่เซิร์ฟนี้ <strong>จำกัดอยู่ระหว่าง 1 นาที ถึง 4 ชั่วโมง</strong> — พืชที่ต้นฉบับโตนานกว่า 4 ชั่วโมง (เช่น ต้นกาแฟ ต้นกล้วย ต้นไม้ผลต่าง ๆ) จะโตใน 4 ชั่วโมง</p>
+<div class="table-wrap"><table>
+<thead><tr><th>พืช</th><th>เวลาโต</th></tr></thead>
+<tbody>
+<tr><td>ข้าวโพด</td><td>5.5 นาที (เมล็ดเลเวล 1) ถึง 35 นาที (เลเวล 60)</td></tr>
+<tr><td>หัวหอม</td><td>15.5 นาที (เลเวล 1) ถึง 45 นาที (เลเวล 60)</td></tr>
+<tr><td>มันฝรั่ง · ฟักทอง</td><td>30.5 นาที (เลเวล 1) ถึง 60 นาที (เลเวล 60)</td></tr>
+<tr><td>แอปเปิล</td><td>10 นาที</td></tr>
+<tr><td>พีพคิน</td><td>1 ชั่วโมง</td></tr>
+<tr><td>ปอ · ข้าวสาลี · ถั่ว · แจสมิน</td><td>1.5 ชั่วโมง</td></tr>
+<tr><td>คาร์เนชัน · กุหลาบขาว</td><td>2.5 ชั่วโมง</td></tr>
+<tr><td>ต้นข้าว · บาร์เลย์ · ซันฟลาวเวอร์ · กุหลาบป่า และดอกไม้อีกหลายชนิด</td><td>3 ชั่วโมง</td></tr>
+<tr><td>พืชที่เหลือ</td><td>4 ชั่วโมง</td></tr>
+</tbody></table></div>
+<h3 id="น้ำและปุ๋ย"><a class="anchor" href="#น้ำและปุ๋ย" aria-hidden="true">#</a>น้ำและปุ๋ย</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>ทำอะไร</th><th>ผล</th></tr></thead>
+<tbody>
+<tr><td>รดน้ำ 1 ครั้ง</td><td>เวลาที่เหลือลด 10–15% (ยิ่งน้ำใกล้เต็มยิ่งลดมาก) · น้ำ 1 ชิ้น = 1 หน่วย</td></tr>
+<tr><td>ใส่ปุ๋ย 1 ครั้ง</td><td>เวลาที่เหลือลด 12–25% (ยิ่งใส่ปุ๋ยครบยิ่งลดมาก)</td></tr>
+<tr><td>ความต้องการน้ำ</td><td>2–40 หน่วยตามชนิดพืช (แอปเปิลไม่ต้องใช้)</td></tr>
+</tbody></table></div>
+<p>เมนูรดน้ำ/ใส่ปุ๋ยจะหายไปเองเมื่อแปลงได้ครบตามที่พืชต้องการ</p>
+<h3 id="เครื่องฉีดน้ำ"><a class="anchor" href="#เครื่องฉีดน้ำ" aria-hidden="true">#</a>เครื่องฉีดน้ำ</h3>
+<p>แตะเครื่องฉีดน้ำแล้วกด <strong>รดน้ำ</strong> — ทุกแปลงที่ปลูกอยู่ในระยะฉีดได้น้ำคนละ 1 หน่วยพร้อมกัน ไม่ต้องใช้น้ำในกระเป๋า</p>
+<div class="table-wrap"><table>
+<thead><tr><th>เครื่องฉีดน้ำ</th><th>จำนวนช่องที่ฉีดถึง</th></tr></thead>
+<tbody>
+<tr><td><img src="../images/atlas/icon_atlas/sprinkler_01.webp" alt="" width="55" height="58" loading="lazy" class="img-inline glyph"> เครื่องฉีดน้ำแบบกากบาท · แบบเอ็กซ์</td><td>4</td></tr>
+<tr><td>เครื่องฉีดน้ำแบบสี่เหลี่ยม</td><td>8</td></tr>
+<tr><td>เครื่องฉีดน้ำแบบสี่เหลี่ยมอเนกประสงค์</td><td>10</td></tr>
+<tr><td>เครื่องฉีดน้ำสี่เหลี่ยมแบบฉีดไกล</td><td>24</td></tr>
+<tr><td>เครื่องฉีดน้ำสี่เหลี่ยมแบบฉีดไกลอเนกประสงค์</td><td>28</td></tr>
+<tr><td>เครื่องฉีดน้ำแรงดันสูง</td><td>32</td></tr>
+<tr><td>เครื่องฉีดน้ำแรงดันสูงอเนกประสงค์</td><td>40</td></tr>
+</tbody></table></div>
+<h3 id="เก็บเกี่ยว"><a class="anchor" href="#เก็บเกี่ยว" aria-hidden="true">#</a>เก็บเกี่ยว</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>ได้อะไร</th><th>จำนวน</th></tr></thead>
+<tbody>
+<tr><td>ผลผลิต</td><td>1–4 ชิ้นตามชนิดพืช (เลเวลเท่าเมล็ด) × โบนัสความเชี่ยวชาญ</td></tr>
+<tr><td>เมล็ดคืน</td><td>1 เมล็ด (เลเวลเมล็ดเดิม − 5 ขั้นต่ำ 1)</td></tr>
+<tr><td>สารานุกรมการเพาะปลูก</td><td>+20 exp ต่อการเก็บเกี่ยวพืชที่โตแล้ว</td></tr>
+</tbody></table></div>
+<p>ตัวอย่างผลผลิต: เมล็ดข้าวโพด → <strong>ข้าวโพด (อาหาร)</strong> · หัวพันธุ์มันฝรั่ง → <strong>มันฝรั่งกลมเปลือกขาว (อาหาร)</strong> · ผลผลิตที่ลงท้าย «(อาหาร)» กินหรือใช้ทำอาหารได้แต่เอาไปปลูกต่อไม่ได้</p>
+<h3 id="สารานุกรมการเพาะปลูก"><a class="anchor" href="#สารานุกรมการเพาะปลูก" aria-hidden="true">#</a>สารานุกรมการเพาะปลูก</h3>
+<p>เมล็ดแต่ละชนิดมีเลเวลสารานุกรมของตัวเอง (สูงสุด 20) · เลเวลขึ้นเมื่อ exp สะสมถึง 50 × เลเวล × (เลเวล+1) · เลือกความเชี่ยวชาญได้ 1 ข้อในแต่ละขั้น</p>
+<div class="table-wrap"><table>
+<thead><tr><th>เลเวล</th><th>exp สะสม (≈ จำนวนครั้งเก็บเกี่ยว)</th><th>ตัวเลือก</th></tr></thead>
+<tbody>
+<tr><td>5</td><td>1,500 (75 ครั้ง)</td><td>ลดน้ำที่ต้องใช้ <strong>หรือ</strong> ลดปุ๋ยที่ต้องใช้ (ค่าตามชนิดพืช)</td></tr>
+<tr><td>10</td><td>5,500 (275 ครั้ง)</td><td>ดูหัวข้อ «ยังไม่เสร็จ»</td></tr>
+<tr><td>15</td><td>12,000 (600 ครั้ง)</td><td>เวลาโต −10% <strong>หรือ</strong> ผลผลิต +10%</td></tr>
+<tr><td>20</td><td>21,000 (1,050 ครั้ง)</td><td>ดูหัวข้อ «ยังไม่เสร็จ»</td></tr>
+</tbody></table></div>
+<p>ความเชี่ยวชาญมีผลกับพืชที่ <strong>ปลูกหลังจากเลือก</strong> เท่านั้น</p>
+<p><figure><img src="../images/tex/Assets__Texture2D__farming_8-w480.webp" alt="เก็บเกี่ยวผลผลิต" width="480" height="240" loading="lazy" class="img-figure"><figcaption>เก็บเกี่ยวผลผลิต</figcaption></figure></p>
+<h2 id="เคล็ดลับ"><a class="anchor" href="#เคล็ดลับ" aria-hidden="true">#</a>เคล็ดลับ</h2>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> เคล็ดลับ</p><p>รดน้ำกับใส่ปุ๋ยตั้งแต่เพิ่งปลูก — ทุกครั้งตัด «เวลาที่เหลือ» เป็นเปอร์เซ็นต์ ยิ่งทำเร็วยิ่งประหยัดเวลาได้มาก</p>
+</aside>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> เคล็ดลับ</p><p>ผัก ผลไม้ และเห็ดที่เก็บเกี่ยวได้ <strong>เน่าได้</strong> ภายใน 3 วัน ส่วนธัญพืช (ข้าวโพด ข้าว ข้าวสาลี ถั่ว บาร์เลย์) และแอปเปิลไม่เน่า — ดู <a href="preserving.html">การถนอมอาหาร</a></p>
+</aside>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> เคล็ดลับ</p><p>เมล็ดอีเวนต์ (เช่น คาร์เนชั่น) หว่านได้เฉพาะช่วงอีเวนต์ของมัน นอกช่วงเกมจะแจ้งว่าหว่านไม่ได้</p>
+</aside>
+<h2 id="ผลผลิตบางชนิดยังเป็นของทั่วไป"><a class="anchor" href="#ผลผลิตบางชนิดยังเป็นของทั่วไป" aria-hidden="true">#</a>ผลผลิตบางชนิดยังเป็นของทั่วไป <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>พืช 21 ชนิดยังไม่พบผลผลิตเฉพาะของเกมต้นฉบับ ตอนนี้จึงให้ของทั่วไปแทน เช่น ดอกไม้ประดับ → <strong>ดอกไม้</strong> · ต้นเมเปิ้ล/ต้นแปะก๊วย → <strong>ใบไม้</strong> · ต้นกล้วย มะม่วง ส้ม → <strong>ผลไม้เขตร้อน</strong> · ต้นมะเดื่อ → <strong>ผลไม้ปกติ</strong> — อาจเปลี่ยนภายหลังเมื่อได้ข้อมูลเพิ่ม</p>
+<h2 id="ยังไม่เสร็จ"><a class="anchor" href="#ยังไม่เสร็จ" aria-hidden="true">#</a>ยังไม่เสร็จ</h2>
+<h3 id="ความเชี่ยวชาญเลเวล-10-และ-20"><a class="anchor" href="#ความเชี่ยวชาญเลเวล-10-และ-20" aria-hidden="true">#</a>ความเชี่ยวชาญเลเวล 10 และ 20 <span class="badge badge-wip" title="ยังไม่เสร็จ — ยังไม่ขึ้นเซิร์ฟ หรือกำลังทำ"><span aria-hidden="true">⏳</span> ยังไม่เสร็จ</span></h3>
+<p>ตัวเลือกเลเวล 10 (ลดเวลา/แรงตอนเก็บ) และเลเวล 20 (โอกาสได้คุณสมบัติสุ่ม/หายาก) เลือกได้ในหน้าสารานุกรม แต่ยังไม่มีผลกับแปลง</p>
+<h3 id="ดินที่พืชชอบ-พืชเหี่ยวตาย-ปุ๋ยเร่งผลผลิต"><a class="anchor" href="#ดินที่พืชชอบ-พืชเหี่ยวตาย-ปุ๋ยเร่งผลผลิต" aria-hidden="true">#</a>ดินที่พืชชอบ · พืชเหี่ยวตาย · ปุ๋ยเร่งผลผลิต <span class="badge badge-wip" title="ยังไม่เสร็จ — ยังไม่ขึ้นเซิร์ฟ หรือกำลังทำ"><span aria-hidden="true">⏳</span> ยังไม่เสร็จ</span></h3>
+<ul>
+<li>ข้อมูลต้นฉบับมี «ดินที่ชอบ» และ «โอกาสรอด» ของพืช แต่ยังไม่ใช้ — ตอนนี้พืชไม่เหี่ยวตาย และปลูกที่ไหนผลเท่ากัน</li>
+<li>ช่อง <strong>ปุ๋ยหมัก</strong> ในหน้าใส่ปุ๋ยยังแสดง «ไม่มี» เสมอ เพราะยังไม่มีทางได้ปุ๋ยที่มีคุณสมบัติเร่งผลผลิต</li>
+</ul>
+
+</article>
+<nav class="pager"><a class="prev" href="tags.html"><small>← ก่อนหน้า</small>คุณสมบัติของไอเทม</a><a class="next" href="eating.html"><small>ถัดไป →</small>การกินและดื่ม</a></nav>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"><p class="toc-title">ในหน้านี้</p><ul><li class="toc-l2"><a href="#ทำอะไรได้บ้าง">ทำอะไรได้บ้าง</a></li><li class="toc-l2"><a href="#วิธีทำ">วิธีทำ</a></li><li class="toc-l2"><a href="#ตัวเลขสำคัญ">ตัวเลขสำคัญ</a></li><li class="toc-l3"><a href="#เวลาโต">เวลาโต</a></li><li class="toc-l3"><a href="#น้ำและปุ๋ย">น้ำและปุ๋ย</a></li><li class="toc-l3"><a href="#เครื่องฉีดน้ำ">เครื่องฉีดน้ำ</a></li><li class="toc-l3"><a href="#เก็บเกี่ยว">เก็บเกี่ยว</a></li><li class="toc-l3"><a href="#สารานุกรมการเพาะปลูก">สารานุกรมการเพาะปลูก</a></li><li class="toc-l2"><a href="#เคล็ดลับ">เคล็ดลับ</a></li><li class="toc-l2"><a href="#ผลผลิตบางชนิดยังเป็นของทั่วไป">ผลผลิตบางชนิดยังเป็นของทั่วไป</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ยังไม่เสร็จ">ยังไม่เสร็จ</a></li><li class="toc-l3"><a href="#ความเชี่ยวชาญเลเวล-10-และ-20">ความเชี่ยวชาญเลเวล 10 และ 20</a> <span class="dot dot-wip" title="ยังไม่เสร็จ — ยังไม่ขึ้นเซิร์ฟ หรือกำลังทำ"><span aria-hidden="true">⏳</span><span class="sr">ยังไม่เสร็จ</span></span></li><li class="toc-l3"><a href="#ดินที่พืชชอบ-พืชเหี่ยวตาย-ปุ๋ยเร่งผลผลิต">ดินที่พืชชอบ · พืชเหี่ยวตาย · ปุ๋ยเร่งผลผลิต</a> <span class="dot dot-wip" title="ยังไม่เสร็จ — ยังไม่ขึ้นเซิร์ฟ หรือกำลังทำ"><span aria-hidden="true">⏳</span><span class="sr">ยังไม่เสร็จ</span></span></li></ul></aside>
+</div>
+<footer class="footer"><p>เนื้อหาอ้างอิงจากโค้ดและข้อมูลของเซิร์ฟ · รูปเป็นของเกม Durango: Wild Lands ต้นฉบับ</p></footer>
+<script src="../assets/wiki.js?v=mudz20a8" defer></script>
+</body>
+</html>

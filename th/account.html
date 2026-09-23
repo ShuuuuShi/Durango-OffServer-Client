@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>บัญชีและการเข้าเกม · คู่มือ Durango OffServer</title>
+<meta name="description" content="ผูก Discord ด้วยโค้ดในช่องใส่คูปอง · ย้ายเครื่องด้วยคีย์ย้ายเครื่อง · 1 บัญชีเข้าได้ทีละเครื่อง · CloseBeta เฉพาะยศ Supporter">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/account.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/account.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/account.html">
+<link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
+<link rel="stylesheet" href="../assets/wiki.css?v=mudz20a8">
+<script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body data-root="../" data-lang="th" data-slug="account">
+<a class="skip" href="#content">ข้ามไปเนื้อหา</a>
+<header class="topbar">
+<button class="icon-btn menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" title="เมนู"><span aria-hidden="true">☰</span><span class="sr">เมนู</span></button>
+<a class="brand" href="../th/index.html"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="brand-icon glyph" loading="lazy"><span class="brand-long">คู่มือ Durango OffServer</span><span class="brand-short">Durango Wiki</span></a>
+<div class="search" role="search">
+<input type="search" id="search-input" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ…" autocomplete="off" data-none="ไม่พบผลลัพธ์">
+<ul id="search-results" class="search-results" hidden></ul>
+</div>
+<nav class="langs" aria-label="ภาษา"><span class="lang current" aria-current="true" lang="th">ไทย</span><a class="lang" href="../en/account.html" hreflang="en" lang="en" data-lang="en">English</a></nav>
+<button class="icon-btn theme-btn" type="button" title="สลับธีมมืด/สว่าง"><span aria-hidden="true">◐</span><span class="sr">สลับธีมมืด/สว่าง</span></button>
+</header>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="เมนู">
+<a class="nav-home"href="../th/index.html">หน้าแรก</a>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">เริ่มต้น</p><ul>
+<li><a href="../th/getting-started.html">เริ่มต้นเล่น <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/account.html" class="current" aria-current="page">บัญชีและการเข้าเกม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">เอาตัวรอด</p><ul>
+<li><a href="../th/survival.html">การเอาตัวรอด <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/weather.html">สภาพอากาศและค่าดัชนีแปรผัน <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/death.html">การตายและการคืนชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">เก็บของและคราฟต์</p><ul>
+<li><a href="../th/gathering.html">การเก็บของ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/crafting.html">การคราฟต์ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/tags.html">คุณสมบัติของไอเทม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/farming.html">การเพาะปลูก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">อาหาร</p><ul>
+<li><a href="../th/eating.html">การกินและดื่ม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/cooking.html">การทำอาหาร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/preserving.html">การถนอมอาหารและอาหารเน่า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">ก่อสร้างและที่ดิน</p><ul>
+<li><a href="../th/building.html">การก่อสร้าง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/land.html">อาณาเขต <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/decay.html">การผุพังและซ่อม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/storage.html">ที่เก็บของ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">สัตว์และการต่อสู้</p><ul>
+<li><a href="../th/combat.html">การต่อสู้ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/animals.html">สัตว์ป่า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">จับและเลี้ยงสัตว์</p><ul>
+<li><a href="../th/taming.html">การจับสัตว์ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/pets.html">สัตว์เลี้ยง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">การเติบโต</p><ul>
+<li><a href="../th/skills.html">สกิลและอาชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/titles.html">ฉายา <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/organizations.html">องค์กร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/quests.html">เควสและรางวัล <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_InviteToClan.webp" alt="" width="52" height="42" class="nav-icon glyph" loading="lazy">สังคมและเศรษฐกิจ</p><ul>
+<li><a href="../th/clan.html">แคลน <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/market.html">ตลาดและร้านค้า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/transport.html">ขนส่งและพาหนะ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/mail.html">จดหมาย <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">โลกและการเดินทาง</p><ul>
+<li><a href="../th/islands.html">เกาะและการเดินทาง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/warp.html">วาร์ปและรอยแยก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+</nav>
+
+<main id="content" class="content">
+<article class="page">
+<p class="crumbs"><a href="index.html">หน้าแรก</a> › เริ่มต้น</p>
+<h1><img src="../images/atlas/main_pc_atlas/icon_mainhud_change_character_pc.webp" alt="" width="32" height="29" class="title-icon" loading="lazy">บัญชีและการเข้าเกม <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h1>
+<p class="summary">ผูก Discord ด้วยโค้ดในช่องใส่คูปอง · ย้ายเครื่องด้วยคีย์ย้ายเครื่อง · 1 บัญชีเข้าได้ทีละเครื่อง · CloseBeta เฉพาะยศ Supporter</p>
+
+<p>บัญชีเกมของคุณผูกกับ <strong>เครื่อง (ตัวเกมที่ติดตั้ง)</strong> โดยอัตโนมัติ — เปิดเกมครั้งแรกก็สร้างตัวละครเล่นได้เลย การ <strong>ผูก Discord</strong> ช่วยให้ได้ของขวัญ ได้ <strong>คีย์ย้ายเครื่อง</strong> ไว้ย้ายไปเครื่องใหม่ และเป็นทางเข้าเซิร์ฟ CloseBeta ไม่มีรหัสผ่านให้จำ</p>
+<h2 id="สิ่งที่ทำได้"><a class="anchor" href="#สิ่งที่ทำได้" aria-hidden="true">#</a>สิ่งที่ทำได้</h2>
+<ul>
+<li>เลือกเซิร์ฟจากรายชื่อในเกม (PrebetaServer / CloseBeta)</li>
+<li>ผูกบัญชีกับ Discord ด้วยโค้ด 6 ตัว — ได้จดหมาย 100 T Stone + คีย์ย้ายเครื่อง</li>
+<li>ย้ายเครื่อง/ลงเกมใหม่ด้วยคีย์ย้ายเครื่อง แล้วได้ตัวละครเดิมกลับมา</li>
+<li>ขอคีย์ใหม่เมื่อคีย์หายหรือหลุด (คีย์เก่าใช้ไม่ได้ทันที)</li>
+<li>ลบตัวละคร/ลบบัญชี แบบมีเวลาให้เปลี่ยนใจ</li>
+</ul>
+<h2 id="เลือกเซิร์ฟ"><a class="anchor" href="#เลือกเซิร์ฟ" aria-hidden="true">#</a>เลือกเซิร์ฟ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>รายชื่อเซิร์ฟขึ้นในเกมที่หน้า <strong>เลือกเซิร์ฟเวอร์</strong> — ตัวเปิดเกม (DurangoLauncher) มีไว้อัปเดตตัวเกมเท่านั้น ไม่จำเป็นต้องใช้ทุกครั้ง</p>
+<div class="table-wrap"><table>
+<thead><tr><th>เซิร์ฟ</th><th>ใครเข้าได้</th></tr></thead>
+<tbody>
+<tr><td>PrebetaServer</td><td>ทุกคน (ไม่ต้องผูก Discord)</td></tr>
+<tr><td>CloseBeta</td><td>เฉพาะคนที่มี <strong>ยศ Supporter</strong> ใน Discord ของเซิร์ฟ</td></tr>
+</tbody></table></div>
+<ul>
+<li>CloseBeta ตรวจยศ <strong>สด ๆ ทุกครั้งที่กดเข้าเกม</strong> — ได้ยศแล้วเข้าได้ทันที · ไม่มียศจะขึ้นกล่องแจ้งว่าเข้าไม่ได้ตอนกดเข้าเกม (เข้าโลกไม่ได้เลย) · ถ้ายศถูกถอดระหว่างเล่นจะถูกตัดออก</li>
+<li>ผูก Discord ที่ PrebetaServer <strong>ครั้งเดียว</strong> แล้ว CloseBeta จะจำเครื่องเดียวกันเอง ไม่ต้องกรอกโค้ดซ้ำ</li>
+</ul>
+<h2 id="ผูกบัญชีกับ-discord"><a class="anchor" href="#ผูกบัญชีกับ-discord" aria-hidden="true">#</a>ผูกบัญชีกับ Discord <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<ol>
+<li>ใน Discord ของเซิร์ฟ กดปุ่ม <strong>🔗 ผูกบัญชีเกม</strong> → บอทเปิดช่องส่วนตัวพร้อม <strong>โค้ด 6 ตัว</strong></li>
+<li>ในเกม: <strong>การตั้งค่า</strong> ▸ <strong>บัญชี</strong> ▸ <strong>ใส่คูปอง</strong> ▸ กรอกโค้ด</li>
+<li>สำเร็จแล้วได้ <img src="../images/atlas/main_pc_atlas/icon_mainhud_mail_pc.webp" alt="" width="30" height="24" loading="lazy" class="img-inline"> <strong>จดหมายจาก Discord</strong> แนบ <img src="../images/tex/Assets__Texture2D__tstone_01.webp" alt="" width="64" height="64" loading="lazy" class="img-inline"> <strong>100 T Stone</strong> และ <strong>คีย์ย้ายเครื่อง</strong> · ช่องส่วนตัวของบอทก็แสดงคีย์ด้วย (ช่องจะถูกลบภายใน 10 นาที — จดเก็บไว้)</li>
+</ol>
+<div class="table-wrap"><table>
+<thead><tr><th>รายการ</th><th>ค่า</th></tr></thead>
+<tbody>
+<tr><td>โค้ดจากบอท</td><td>6 ตัวอักษร · ใช้ได้ <strong>10 นาที</strong> · ใช้ได้ครั้งเดียว</td></tr>
+<tr><td>ตัวอักษรที่ใช้</td><td>A–Z และ 2–9 (ไม่มี 0 O 1 I กันสับสน)</td></tr>
+<tr><td>ของขวัญผูกสำเร็จ</td><td>100 T Stone (ทางจดหมาย)</td></tr>
+</tbody></table></div>
+<ul>
+<li>ใครผูกไว้ก่อนมีระบบคีย์ จดหมายคีย์จะมาเองตอนเข้าเกมครั้งถัดไป</li>
+</ul>
+<h2 id="ย้ายเครื่อง-ลงเกมใหม่"><a class="anchor" href="#ย้ายเครื่อง-ลงเกมใหม่" aria-hidden="true">#</a>ย้ายเครื่อง / ลงเกมใหม่ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<ol>
+<li>ติดตั้งเกมบนเครื่องใหม่ แล้วเข้าเกม (ตัวละครชั่วคราวก็ได้)</li>
+<li><strong>การตั้งค่า</strong> ▸ <strong>บัญชี</strong> ▸ <strong>ใส่คูปอง</strong> ▸ กรอก <strong>คีย์ย้ายเครื่อง</strong> (<code>XXXX-XXXX-XXXX</code>)</li>
+<li><strong>กลับไปหน้าแรก</strong> แล้วเข้าเกมใหม่ = ได้ตัวละครเดิมของบัญชี</li>
+</ol>
+<div class="table-wrap"><table>
+<thead><tr><th>รายการ</th><th>ค่า</th></tr></thead>
+<tbody>
+<tr><td>รูปแบบคีย์</td><td>12 ตัวอักษร (<code>XXXX-XXXX-XXXX</code>) ชุดตัวอักษรเดียวกับโค้ดบอท</td></tr>
+<tr><td>ใช้ได้ที่</td><td>ทุกเซิร์ฟที่ผูก Discord เดียวกัน (คีย์เดียว)</td></tr>
+<tr><td>เวอร์ชันตัวเกม</td><td>2.8.2 ขึ้นไป (อัปเดตผ่าน DurangoLauncher)</td></tr>
+</tbody></table></div>
+<ul>
+<li>ทุกครั้งที่มีคนใช้คีย์ของคุณย้ายเครื่อง <strong>บอทจะ DM แจ้งคุณ</strong></li>
+<li><strong>คีย์หาย/สงสัยว่าหลุด:</strong> กด 🔗 ขอโค้ดใหม่แล้วกรอกจากเครื่องของคุณ = ย้ายได้ทันทีและได้คีย์ใหม่ · หรือกดปุ่ม <strong>🔑 คีย์ใหม่</strong> ในช่อง ticket ของบอท (กดได้ 1 ครั้งต่อนาที) — คีย์เก่าใช้ไม่ได้ทันทีทุกเซิร์ฟ</li>
+<li>ไม่มีรหัสผ่านอีกแล้ว</li>
+</ul>
+<aside class="callout callout-warn"><p class="callout-title"><span aria-hidden="true">⚠️</span> ระวัง</p><p>คีย์ย้ายเครื่องเหมือนกุญแจบ้าน — ใครได้ไปก็ย้ายบัญชีของคุณไปเครื่องเขาได้ ห้ามบอกใคร</p>
+</aside>
+<h2 id="1-บัญชีเข้าได้ทีละเครื่อง"><a class="anchor" href="#1-บัญชีเข้าได้ทีละเครื่อง" aria-hidden="true">#</a>1 บัญชีเข้าได้ทีละเครื่อง <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>บัญชีหนึ่งเล่นได้ทีละตัวละคร ทีละเครื่อง — ถ้าเข้าเกมจากอีกเครื่อง (หรือตัวละครอื่นในบัญชีเดียวกัน) ตัวที่ออนไลน์อยู่ก่อนจะถูกตัดออก</p>
+<h2 id="ลบตัวละคร-ลบบัญชี"><a class="anchor" href="#ลบตัวละคร-ลบบัญชี" aria-hidden="true">#</a>ลบตัวละคร / ลบบัญชี <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<div class="table-wrap"><table>
+<thead><tr><th>การลบ</th><th>เวลาก่อนหายจริง</th><th>ยกเลิกได้อย่างไร</th></tr></thead>
+<tbody>
+<tr><td>ลบตัวละคร (หน้าเลือกตัวละคร)</td><td>24 ชั่วโมง</td><td>กดยกเลิกการลบในหน้าเลือกตัวละคร</td></tr>
+<tr><td>ลบบัญชี (<strong>การตั้งค่า</strong> ▸ <strong>บัญชี</strong>)</td><td>7 วัน</td><td>เข้าเกม / สร้างตัวละคร / ยกเลิกการลบ ภายใน 7 วัน = กู้คืนทั้งบัญชี</td></tr>
+</tbody></table></div>
+<ul>
+<li>ตัวที่รอลบยังนับรวมในโควตา 3 ตัวต่อบัญชี</li>
+<li>ลบบัญชีจะปลดการผูก Discord ด้วย</li>
+</ul>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> เคล็ดลับ</p><p>อยากรู้เลขบัญชีเต็มของตัวเอง พิมพ์ <code>/myaccount</code> ใน Discord (บอทตอบให้เห็นคนเดียว)</p>
+</aside>
+<h2 id="เมนู-ขอโค้ดคีย์ทาง-dm"><a class="anchor" href="#เมนู-ขอโค้ดคีย์ทาง-dm" aria-hidden="true">#</a>เมนู 🔑 ขอโค้ด/คีย์ทาง DM <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>ในห้องเปิด ticket ของ Discord เลือก <strong>🔑 ขอโค้ด/คีย์ย้ายเครื่อง</strong> → เลือกเซิร์ฟ → บอทส่ง <strong>โค้ดผูก 6 ตัว + คีย์ปัจจุบัน</strong> ให้ทาง DM (ไม่เปิดห้อง) · เมนูนี้ <strong>เฉพาะยศ Supporter</strong> · ถ้าปิด DM ไว้ บอทจะตอบแบบเห็นคนเดียวแทน</p>
+
+</article>
+<nav class="pager"><a class="prev" href="getting-started.html"><small>← ก่อนหน้า</small>เริ่มต้นเล่น</a><a class="next" href="survival.html"><small>ถัดไป →</small>การเอาตัวรอด</a></nav>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"><p class="toc-title">ในหน้านี้</p><ul><li class="toc-l2"><a href="#สิ่งที่ทำได้">สิ่งที่ทำได้</a></li><li class="toc-l2"><a href="#เลือกเซิร์ฟ">เลือกเซิร์ฟ</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ผูกบัญชีกับ-discord">ผูกบัญชีกับ Discord</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ย้ายเครื่อง-ลงเกมใหม่">ย้ายเครื่อง / ลงเกมใหม่</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#1-บัญชีเข้าได้ทีละเครื่อง">1 บัญชีเข้าได้ทีละเครื่อง</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ลบตัวละคร-ลบบัญชี">ลบตัวละคร / ลบบัญชี</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#เมนู-ขอโค้ดคีย์ทาง-dm">เมนู 🔑 ขอโค้ด/คีย์ทาง DM</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li></ul></aside>
+</div>
+<footer class="footer"><p>เนื้อหาอ้างอิงจากโค้ดและข้อมูลของเซิร์ฟ · รูปเป็นของเกม Durango: Wild Lands ต้นฉบับ</p></footer>
+<script src="../assets/wiki.js?v=mudz20a8" defer></script>
+</body>
+</html>

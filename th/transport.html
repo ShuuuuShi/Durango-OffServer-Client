@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ขนส่งและพาหนะ · คู่มือ Durango OffServer</title>
+<meta name="description" content="ส่งของกลับบ้านผ่านหลุมวาร์ปส่งสาร ขึ้นเครื่องยิงก้อนหิน บินบอลลูน และขี่สัตว์ — ส่วนการเดินทางข้ามเกาะดูหน้าเกาะ">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/transport.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/transport.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/transport.html">
+<link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
+<link rel="stylesheet" href="../assets/wiki.css?v=mudz20a8">
+<script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body data-root="../" data-lang="th" data-slug="transport">
+<a class="skip" href="#content">ข้ามไปเนื้อหา</a>
+<header class="topbar">
+<button class="icon-btn menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" title="เมนู"><span aria-hidden="true">☰</span><span class="sr">เมนู</span></button>
+<a class="brand" href="../th/index.html"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="brand-icon glyph" loading="lazy"><span class="brand-long">คู่มือ Durango OffServer</span><span class="brand-short">Durango Wiki</span></a>
+<div class="search" role="search">
+<input type="search" id="search-input" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ…" autocomplete="off" data-none="ไม่พบผลลัพธ์">
+<ul id="search-results" class="search-results" hidden></ul>
+</div>
+<nav class="langs" aria-label="ภาษา"><span class="lang current" aria-current="true" lang="th">ไทย</span><a class="lang" href="../en/transport.html" hreflang="en" lang="en" data-lang="en">English</a></nav>
+<button class="icon-btn theme-btn" type="button" title="สลับธีมมืด/สว่าง"><span aria-hidden="true">◐</span><span class="sr">สลับธีมมืด/สว่าง</span></button>
+</header>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="เมนู">
+<a class="nav-home"href="../th/index.html">หน้าแรก</a>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">เริ่มต้น</p><ul>
+<li><a href="../th/getting-started.html">เริ่มต้นเล่น <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/account.html">บัญชีและการเข้าเกม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">เอาตัวรอด</p><ul>
+<li><a href="../th/survival.html">การเอาตัวรอด <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/weather.html">สภาพอากาศและค่าดัชนีแปรผัน <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/death.html">การตายและการคืนชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">เก็บของและคราฟต์</p><ul>
+<li><a href="../th/gathering.html">การเก็บของ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/crafting.html">การคราฟต์ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/tags.html">คุณสมบัติของไอเทม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/farming.html">การเพาะปลูก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">อาหาร</p><ul>
+<li><a href="../th/eating.html">การกินและดื่ม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/cooking.html">การทำอาหาร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/preserving.html">การถนอมอาหารและอาหารเน่า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">ก่อสร้างและที่ดิน</p><ul>
+<li><a href="../th/building.html">การก่อสร้าง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/land.html">อาณาเขต <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/decay.html">การผุพังและซ่อม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/storage.html">ที่เก็บของ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">สัตว์และการต่อสู้</p><ul>
+<li><a href="../th/combat.html">การต่อสู้ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/animals.html">สัตว์ป่า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">จับและเลี้ยงสัตว์</p><ul>
+<li><a href="../th/taming.html">การจับสัตว์ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/pets.html">สัตว์เลี้ยง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">การเติบโต</p><ul>
+<li><a href="../th/skills.html">สกิลและอาชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/titles.html">ฉายา <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/organizations.html">องค์กร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/quests.html">เควสและรางวัล <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_InviteToClan.webp" alt="" width="52" height="42" class="nav-icon glyph" loading="lazy">สังคมและเศรษฐกิจ</p><ul>
+<li><a href="../th/clan.html">แคลน <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/market.html">ตลาดและร้านค้า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/transport.html" class="current" aria-current="page">ขนส่งและพาหนะ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/mail.html">จดหมาย <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">โลกและการเดินทาง</p><ul>
+<li><a href="../th/islands.html">เกาะและการเดินทาง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/warp.html">วาร์ปและรอยแยก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+</ul></div>
+</nav>
+
+<main id="content" class="content">
+<article class="page">
+<p class="crumbs"><a href="index.html">หน้าแรก</a> › สังคมและเศรษฐกิจ</p>
+<h1><img src="../images/atlas/icon_atlas/act_warphole.webp" alt="" width="51" height="52" class="title-icon glyph" loading="lazy">ขนส่งและพาหนะ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h1>
+<p class="summary">ส่งของกลับบ้านผ่านหลุมวาร์ปส่งสาร ขึ้นเครื่องยิงก้อนหิน บินบอลลูน และขี่สัตว์ — ส่วนการเดินทางข้ามเกาะดูหน้าเกาะ</p>
+<p class="partial-note"><span aria-hidden="true">⏳</span> บางหัวข้อในหน้านี้ยังไม่เสร็จ</p>
+<p><img src="../images/atlas/icon_atlas/cargo_warphole_01_out.webp" alt="หลุมวาร์ปส่งสาร (ทางออก)" width="128" height="56" loading="lazy" class="img-icon glyph"></p>
+<p>หน้านี้รวมวิธี <strong>ขนของ</strong> และ <strong>พาหนะ</strong> ในเซิร์ฟนี้</p>
+<ul>
+<li>ส่งของจากเกาะไหนก็ได้กลับบ้าน → <strong>หลุมวาร์ปส่งสาร</strong></li>
+<li>พาหนะที่ใช้ได้ตอนนี้ → <strong>เครื่องยิงก้อนหิน</strong> (นั่งได้อย่างเดียว) · <strong>บอลลูน</strong> ที่แคมป์ · <strong>ขี่สัตว์เลี้ยง</strong></li>
+<li>เดินทางไปเกาะอื่น → ดู <a href="islands.html">เกาะ</a> และ <a href="warp.html">วาร์ป</a></li>
+</ul>
+<h2 id="ส่งของกลับบ้าน-หลุมวาร์ปส่งสาร"><a class="anchor" href="#ส่งของกลับบ้าน-หลุมวาร์ปส่งสาร" aria-hidden="true">#</a>ส่งของกลับบ้าน (หลุมวาร์ปส่งสาร) <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>ของที่หาได้ไกลบ้าน ไม่ต้องแบกกลับเอง — ส่งจากหลุมวาร์ปมาที่ <strong>ทางออก</strong> ที่คุณสร้างไว้</p>
+<ol>
+<li>เรียนแบบแปลน <strong>หลุมวาร์ปส่งสาร (ทางออก)</strong> จากสกิล (ดู <a href="skills.html">สกิล</a>) แล้วสร้างไว้ใกล้บ้าน</li>
+<li>แตะทางออกที่สร้างเสร็จ → <strong>เปิดใช้งาน</strong> — ทางออกนี้จะเป็นปลายทางส่วนตัวของคุณ (มีได้ทีละ 1 จุด · ต้องเป็นของที่คุณสร้างเอง)</li>
+<li>ไปที่ <strong>หลุมวาร์ป</strong> ไหนก็ได้ — หลุมวาร์ปกลางบนเกาะ หลุมวาร์ปในแคมป์ หรือหลุมวาร์ปที่ผู้เล่นสร้าง — ยืนใกล้ ๆ แล้วเลือกส่งของ</li>
+<li>เลือกของจากกระเป๋า (ของที่สวมอยู่ส่งไม่ได้) → จ่ายค่าส่งเป็นทีสโตน → ของออกจากกระเป๋า</li>
+<li>รอจนถึงเวลา แล้วไปหยิบที่กล่องของทางออก · อยากได้ทันทีให้กด <strong>รับทันที</strong> (จ่ายเพิ่ม)</li>
+</ol>
+<div class="table-wrap"><table>
+<thead><tr><th>ทางออก</th><th>ขนาดบนพื้น</th><th>รับของได้ (หน่วยขนาดรวม)</th></tr></thead>
+<tbody>
+<tr><td>หลุมวาร์ปชั่วคราวสำหรับส่งสาร (ทางออก)</td><td>2×2</td><td>20</td></tr>
+<tr><td>หลุมวาร์ปแบบพื้นฐานสำหรับส่งสาร (ทางออก)</td><td>3×3</td><td>45</td></tr>
+<tr><td>หลุมวาร์ปแบบผู้ชำนาญสำหรับส่งสาร (ทางออก)</td><td>3×3</td><td>45</td></tr>
+<tr><td>หลุมวาร์ปแบบมืออาชีพสำหรับส่งสาร (ทางออก)</td><td>4×4</td><td>80</td></tr>
+</tbody></table></div>
+<aside class="callout callout-note"><p class="callout-title"><span aria-hidden="true">ℹ️</span> หมายเหตุ</p><p>คำอธิบายในเกมบอกความจุ 80/120/160/200 ช่อง แต่เซิร์ฟนี้นับตามตารางด้านบน (ของที่กำลังส่งมา + ของที่ถึงแล้วในกล่อง รวมกันต้องไม่เกิน)</p>
+</aside>
+<div class="table-wrap"><table>
+<thead><tr><th>เรื่อง</th><th>ค่า</th></tr></thead>
+<tbody>
+<tr><td>ค่าส่ง</td><td>30 ทีสโตน × ขนาดรวมของที่ส่ง</td></tr>
+<tr><td>เวลาถึง</td><td>60 วินาที × ขนาดรวมของที่ส่ง</td></tr>
+<tr><td>รับทันที</td><td>(นาทีที่เหลือ ปัดลง + 1) × 1 ทีสโตน</td></tr>
+</tbody></table></div>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> เคล็ดลับ</p><ul>
+<li>ของชิ้นใหญ่ใช้ขนาดมาก ทั้งค่าส่งและเวลาเพิ่มตาม — ของเล็กส่งถูกและถึงเร็ว</li>
+<li>ถ้ากล่องทางออกเต็ม ของที่ถึงแล้วจะรออยู่จนกว่าจะมีที่ว่าง — หยิบออกบ่อย ๆ</li>
+<li>รื้อทางออกแล้วต้องสร้างใหม่และกดเปิดใช้งานอีกครั้ง</li>
+</ul>
+</aside>
+<h2 id="เครื่องยิงก้อนหิน"><a class="anchor" href="#เครื่องยิงก้อนหิน" aria-hidden="true">#</a>เครื่องยิงก้อนหิน <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p><img src="../images/atlas/icon_atlas/building_defence_catapult.webp" alt="เครื่องยิงก้อนหิน" width="124" height="112" loading="lazy" class="img-icon glyph"></p>
+<p>พาหนะแบบเดียวที่นั่งได้ในเซิร์ฟนี้คือ <strong>เครื่องยิงก้อนหิน</strong> — แตะแล้วกด <strong>ขี่</strong> เพื่อขึ้น กด <strong>ลง</strong> เพื่อลง · เดินทางไปเกาะอื่น ตาย หรือหลุดการเชื่อมต่อ = ลงเองอัตโนมัติ
+เครื่องยิงก้อนหินยังไม่มีแบบแปลนให้เรียน (มีเฉพาะที่แอดมิน/อีเวนต์วางไว้) และ <strong>ยังยิงไม่ได้</strong></p>
+<h2 id="บอลลูน"><a class="anchor" href="#บอลลูน" aria-hidden="true">#</a>บอลลูน <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>ที่ <strong>แคมป์</strong> บางแห่งมีสถานีบอลลูน — แตะสถานีเพื่อขึ้น <strong>ฟรี</strong> แล้วบินข้ามน้ำ/ภูเขาได้อิสระ · กดลงได้เฉพาะจุดที่ลงจอดได้</p>
+<div class="table-wrap"><table>
+<thead><tr><th>เรื่อง</th><th>ค่า</th></tr></thead>
+<tbody>
+<tr><td>บินได้นานสุด</td><td>15 นาที (ครบแล้วลงเอง)</td></tr>
+<tr><td>ค่าขึ้น</td><td>ฟรี</td></tr>
+</tbody></table></div>
+<aside class="callout callout-note"><p class="callout-title"><span aria-hidden="true">ℹ️</span> หมายเหตุ</p><p>ถ้าหลุดการเชื่อมต่อกลางอากาศ เข้าเกมใหม่จะกลับมาที่สถานีบอลลูน</p>
+</aside>
+<h2 id="ขี่สัตว์"><a class="anchor" href="#ขี่สัตว์" aria-hidden="true">#</a>ขี่สัตว์ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>สัตว์เลี้ยงบางชนิดขี่ได้ — เรียกออกมาแล้วกดขี่ · ดูรายละเอียดที่ <a href="pets.html">สัตว์เลี้ยง</a> และ <a href="taming.html">การฝึกสัตว์</a></p>
+<h2 id="เรือและแพ"><a class="anchor" href="#เรือและแพ" aria-hidden="true">#</a>เรือและแพ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>การเดินทางไปเกาะอื่นทางทะเลอธิบายไว้ที่ <a href="islands.html">เกาะ</a> · <strong>แพมีใบเรือ</strong> และ <strong>แพ</strong> ที่มีในข้อมูลเกม ผู้เล่นยังสร้างเองไม่ได้</p>
+<h2 id="ส่วนที่ยังไม่เสร็จ"><a class="anchor" href="#ส่วนที่ยังไม่เสร็จ" aria-hidden="true">#</a>ส่วนที่ยังไม่เสร็จ <span class="badge badge-wip" title="ยังไม่เสร็จ — ยังไม่ขึ้นเซิร์ฟ หรือกำลังทำ"><span aria-hidden="true">⏳</span> ยังไม่เสร็จ</span></h2>
+<ul>
+<li><strong>ยิงเครื่องยิงก้อนหิน</strong> — ยังไม่มีระบบกระสุน/ความเสียหาย</li>
+<li><strong>หลุมวาร์ปส่งสาร (ทางเข้า)</strong> แบบสร้างเอง · <strong>ปลายทางของแคลน</strong> · <strong>แคลนยึดหลุมวาร์ป/เก็บภาษี</strong> — ยังไม่เปิด</li>
+<li><strong>รถ/ยานพาหนะอื่น</strong> — ไม่มีในเซิร์ฟนี้</li>
+</ul>
+
+</article>
+<nav class="pager"><a class="prev" href="market.html"><small>← ก่อนหน้า</small>ตลาดและร้านค้า</a><a class="next" href="mail.html"><small>ถัดไป →</small>จดหมาย</a></nav>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"><p class="toc-title">ในหน้านี้</p><ul><li class="toc-l2"><a href="#ส่งของกลับบ้าน-หลุมวาร์ปส่งสาร">ส่งของกลับบ้าน (หลุมวาร์ปส่งสาร)</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#เครื่องยิงก้อนหิน">เครื่องยิงก้อนหิน</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#บอลลูน">บอลลูน</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ขี่สัตว์">ขี่สัตว์</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#เรือและแพ">เรือและแพ</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ส่วนที่ยังไม่เสร็จ">ส่วนที่ยังไม่เสร็จ</a> <span class="dot dot-wip" title="ยังไม่เสร็จ — ยังไม่ขึ้นเซิร์ฟ หรือกำลังทำ"><span aria-hidden="true">⏳</span><span class="sr">ยังไม่เสร็จ</span></span></li></ul></aside>
+</div>
+<footer class="footer"><p>เนื้อหาอ้างอิงจากโค้ดและข้อมูลของเซิร์ฟ · รูปเป็นของเกม Durango: Wild Lands ต้นฉบับ</p></footer>
+<script src="../assets/wiki.js?v=mudz20a8" defer></script>
+</body>
+</html>

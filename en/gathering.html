@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gathering · Durango OffServer Guide</title>
+<meta name="description" content="Gather plants, wood, stone and ore, and butcher carcasses — item level, success chance, required tools and regrow times">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/gathering.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/gathering.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/gathering.html">
+<link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
+<link rel="stylesheet" href="../assets/wiki.css?v=mudz20a8">
+<script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body data-root="../" data-lang="en" data-slug="gathering">
+<a class="skip" href="#content">Skip to content</a>
+<header class="topbar">
+<button class="icon-btn menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" title="Menu"><span aria-hidden="true">☰</span><span class="sr">Menu</span></button>
+<a class="brand" href="../en/index.html"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="brand-icon glyph" loading="lazy"><span class="brand-long">Durango OffServer Guide</span><span class="brand-short">Durango Wiki</span></a>
+<div class="search" role="search">
+<input type="search" id="search-input" placeholder="Search the guide…" aria-label="Search the guide…" autocomplete="off" data-none="No results">
+<ul id="search-results" class="search-results" hidden></ul>
+</div>
+<nav class="langs" aria-label="Language"><a class="lang" href="../th/gathering.html" hreflang="th" lang="th" data-lang="th">ไทย</a><span class="lang current" aria-current="true" lang="en">English</span></nav>
+<button class="icon-btn theme-btn" type="button" title="Toggle dark/light theme"><span aria-hidden="true">◐</span><span class="sr">Toggle dark/light theme</span></button>
+</header>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="Menu">
+<a class="nav-home"href="../en/index.html">Home</a>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">Getting Started</p><ul>
+<li><a href="../en/getting-started.html">Getting Started <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/account.html">Account &amp; Login <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">Survival</p><ul>
+<li><a href="../en/survival.html">Survival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/weather.html">Weather &amp; Unstable Index <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/death.html">Death &amp; Revival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">Gathering &amp; Crafting</p><ul>
+<li><a href="../en/gathering.html" class="current" aria-current="page">Gathering <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/crafting.html">Crafting <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/tags.html">Item attributes <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/farming.html">Farming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">Food</p><ul>
+<li><a href="../en/eating.html">Eating and drinking <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/cooking.html">Cooking <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/preserving.html">Preserving food and spoilage <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">Building &amp; Land</p><ul>
+<li><a href="../en/building.html">Building <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/land.html">Domain <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/decay.html">Decay and repair <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/storage.html">Storage <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">Animals &amp; Combat</p><ul>
+<li><a href="../en/combat.html">Combat <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/animals.html">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
+<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
+<li><a href="../en/skills.html">Skills and Careers <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/titles.html">Titles <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/organizations.html">Organizations <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/quests.html">Quests and Rewards <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_InviteToClan.webp" alt="" width="52" height="42" class="nav-icon glyph" loading="lazy">Social &amp; Economy</p><ul>
+<li><a href="../en/clan.html">Clans <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/market.html">Market and Shop <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/transport.html">Transport and Vehicles <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/mail.html">Mail <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">World &amp; Travel</p><ul>
+<li><a href="../en/islands.html">Islands &amp; Travel <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/warp.html">Warps &amp; Rifts <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+</nav>
+
+<main id="content" class="content">
+<article class="page">
+<p class="crumbs"><a href="index.html">Home</a> › Gathering &amp; Crafting</p>
+<h1><img src="../images/atlas/icon_atlas/act_Plant.webp" alt="" width="42" height="52" class="title-icon glyph" loading="lazy">Gathering <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h1>
+<p class="summary">Gather plants, wood, stone and ore, and butcher carcasses — item level, success chance, required tools and regrow times</p>
+<p class="partial-note"><span aria-hidden="true">⏳</span> Some sections on this page are not ready yet</p>
+<p>Everything on the islands starts with gathering — branches, leaves, stones and ore, all the way to leather and meat from animal carcasses. Every gathered item has a <strong>level</strong>; the higher the level, the better the things you craft from it. Some pieces also come with <a href="tags.html">latent attributes</a>.</p>
+<p><figure><img src="../images/tex/Assets__Texture2D__gathering_1-w560.webp" alt="Players gathering plants and ore" width="560" height="280" loading="lazy" class="img-figure"><figcaption>Players gathering plants and ore</figcaption></figure></p>
+<h2 id="what-you-can-gather"><a class="anchor" href="#what-you-can-gather" aria-hidden="true">#</a>What you can gather</h2>
+<ul>
+<li><strong>Plants</strong> — leaves, fruit, flowers, reeds, mushrooms and more; most can be picked bare-handed</li>
+<li><strong>Wood</strong> — branches and bark by hand · logs from big trees need an axe or a saw</li>
+<li><strong>Stone and ore</strong> — big stones, ore and gems need a pickaxe or a hammer</li>
+<li><strong>Dirt</strong> — bare hands or a shovel</li>
+<li><strong>Carcasses</strong> — hunt an animal, then butcher it for leather, meat and bone (Butchering skill category) — see <a href="animals.html">Animals</a></li>
+<li><strong>Structures that produce items</strong> — such as wells or traps, harvested in rounds — see <a href="building.html">Building</a></li>
+</ul>
+<h2 id="how-to-gather"><a class="anchor" href="#how-to-gather" aria-hidden="true">#</a>How to gather</h2>
+<ol>
+<li>Walk up to the resource (within <strong>3 tiles</strong>) and tap it</li>
+<li>The menu lists what you can gather there, with the <strong>level you will actually get</strong></li>
+<li>Pick an entry — the game picks a suitable tool for you; entries you have no usable tool for are grayed out</li>
+<li>Wait for the progress bar to fill, then see the result: Success · Flawless Success · or Failed to Gather</li>
+</ol>
+<ul>
+<li>If your Energy is low, the game asks whether you want to continue</li>
+<li>Some categories need a skill first — tapping them opens the skill page for the skill you need</li>
+</ul>
+<h2 id="required-tools"><a class="anchor" href="#required-tools" aria-hidden="true">#</a>Required tools <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p><figure><img src="../images/tex/Assets__Texture2D__gathering_2-w560.webp" alt="Shovel, axe, pickaxe and knife" width="560" height="280" loading="lazy" class="img-figure"><figcaption>Shovel, axe, pickaxe and knife</figcaption></figure></p>
+<div class="table-wrap"><table>
+<thead><tr><th>What you gather</th><th>Usable tools</th></tr></thead>
+<tbody>
+<tr><td>Ore / gems</td><td>Pickaxe · One-handed Hammer · Two-handed Hammer</td></tr>
+<tr><td>Big stones</td><td>Pickaxe · One-handed Hammer · Two-handed Hammer</td></tr>
+<tr><td>Logs from big trees</td><td>Work Axe · Work Two-Handed Axe · Saw · Chainsaw</td></tr>
+<tr><td>Branches / bark</td><td>Bare hands · Knife · Work Axe</td></tr>
+<tr><td>Dirt</td><td>Bare hands · Shovel</td></tr>
+<tr><td>Everything else</td><td>Bare hands · Knife</td></tr>
+</tbody></table></div>
+<p><strong>Tool level rule:</strong> the tool's level must be <strong>equal to or higher than the source level</strong> (natural resources = island level · carcasses = animal level). For example, ore on a level 35 island needs a level 35+ pickaxe. Anything that can be gathered bare-handed ignores this rule.</p>
+<h2 id="level-of-what-you-get"><a class="anchor" href="#level-of-what-you-get" aria-hidden="true">#</a>Level of what you get <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<pre><code>item level = source level + skill bonus, but never above your character level</code></pre>
+<ul>
+<li><strong>Source level</strong> — island level for natural resources · animal level for carcasses</li>
+<li><strong>Skill bonus</strong> — based on the total learned node levels in the <strong>Gathering</strong> category (natural resources) or <strong>Butchering</strong> category (carcasses), including the free nodes every new character starts with</li>
+<li><strong>Capped at your character level</strong> — when this lowers your item, the game tells you once per login</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>Total node levels in the category</th><th>0</th><th>1–3</th><th>4–5</th><th>6–7</th><th>8–9</th><th>10–11</th><th>12–13</th><th>14–15</th><th>16+</th></tr></thead>
+<tbody>
+<tr><td>Item level bonus</td><td>+0</td><td>+1</td><td>+2</td><td>+3</td><td>+4</td><td>+5</td><td>+6</td><td>+7</td><td>+8</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Example</th><th>Island Lv10</th><th>Island Lv35</th><th>Island Lv45</th></tr></thead>
+<tbody>
+<tr><td>Character Lv15 · no bonus</td><td>10</td><td>15</td><td>15</td></tr>
+<tr><td>Character Lv30 · bonus +5</td><td>15</td><td>30</td><td>30</td></tr>
+<tr><td>Character Lv45 · bonus +5</td><td>15</td><td>40</td><td>45</td></tr>
+<tr><td>Character Lv60 · bonus +8</td><td>18</td><td>43</td><td>53</td></tr>
+</tbody></table></div>
+<p>The gathering menu shows the level you will actually get under this rule (it can be above the island level with a bonus). Tools, time, Energy and success chance are still based on the <strong>source level</strong>.</p>
+<h2 id="success-and-failure"><a class="anchor" href="#success-and-failure" aria-hidden="true">#</a>Success and failure <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>Any gathering attempt can <strong>fail</strong>. The success chance comes from your category skill (65%) + a per-item base value (35%) + a tool bonus.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Category skill bonus</th><th>Natural resources</th><th>Carcasses</th></tr></thead>
+<tbody>
+<tr><td>+0</td><td>86%</td><td>85%</td></tr>
+<tr><td>+2</td><td>89%</td><td>87%</td></tr>
+<tr><td>+4</td><td>91%</td><td>90%</td></tr>
+<tr><td>+6</td><td>94%</td><td>92%</td></tr>
+<tr><td>+7 or more</td><td>95%</td><td>94%</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Tools</strong> add 2% + 0.2% per level above the requirement (up to +8%) + tool attributes (−6% to +8%), scaled by the tool's remaining durability · the total never exceeds 99%</li>
+<li><strong>Failure</strong> — the resource is used up and Energy is spent, but you get no item and no experience · the tool wears half as much</li>
+<li><strong>Big failure</strong> — about 1.5% of all attempts (1% when your success chance is at the 99% cap) · the tool wears more than usual</li>
+<li><strong>Flawless Success</strong> — chance 3% + (success chance − 85%) × 0.25, up to 12% · +5% with a «Meticulous Gatherer» tool · the material's main attribute gets +1 level</li>
+</ul>
+<h2 id="time-and-energy"><a class="anchor" href="#time-and-energy" aria-hidden="true">#</a>Time and Energy</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Source level</th><th>Gathering time</th><th>Energy used</th><th>Fatigue added</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>2.5 s</td><td>1.75</td><td>0.53</td></tr>
+<tr><td>10</td><td>4.75 s</td><td>3.33</td><td>0.73</td></tr>
+<tr><td>20</td><td>7.25 s</td><td>5.08</td><td>0.90</td></tr>
+<tr><td>35</td><td>11 s</td><td>7.7</td><td>1.11</td></tr>
+<tr><td>60</td><td>17.25 s</td><td>12.08</td><td>1.39</td></tr>
+</tbody></table></div>
+<p>Some skills reduce the time and Energy cost (time never goes below 0.5 s).</p>
+<h2 id="when-things-grow-back"><a class="anchor" href="#when-things-grow-back" aria-hidden="true">#</a>When things grow back</h2>
+<p>Each entry at a resource comes back after the time below, counted from when it was first taken. If you take everything, the resource disappears and comes back after the same time. Tapping a used-up resource tells you how many seconds are left.</p>
+<p><strong>Base time 180 seconds</strong>, multiplied by the season (each season lasts 7 days):</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Season</th><th>Spring</th><th>Summer</th><th>Autumn</th><th>Winter</th></tr></thead>
+<tbody>
+<tr><td>Most islands</td><td>~138 s</td><td>180 s</td><td>~257 s</td><td>300 s</td></tr>
+<tr><td>Ancora</td><td>~35 s</td><td>45 s</td><td>~64 s</td><td>75 s</td></tr>
+</tbody></table></div>
+<h3 id="more-players-faster-regrowth"><a class="anchor" href="#more-players-faster-regrowth" aria-hidden="true">#</a>More players, faster regrowth <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>The more players online on the same island, the faster things come back (recounted every 60 seconds · existing resources don't multiply — only the regrow time speeds up).</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Players on the island</th><th>0–2</th><th>3</th><th>5</th><th>10</th><th>20</th><th>30+</th></tr></thead>
+<tbody>
+<tr><td>Speed</td><td>×1</td><td>×1.17</td><td>×1.5</td><td>×2</td><td>×3</td><td>×4</td></tr>
+<tr><td>Time (summer)</td><td>180 s</td><td>~154 s</td><td>120 s</td><td>90 s</td><td>60 s</td><td>45 s</td></tr>
+</tbody></table></div>
+<h3 id="stone-and-ore-come-back-on-time"><a class="anchor" href="#stone-and-ore-come-back-on-time" aria-hidden="true">#</a>Stone and ore come back on time <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<ul>
+<li>Every entry on the same resource has its own timer — someone else taking a different entry from the same rock does not restart the timer you are waiting on</li>
+<li>Stone and ore always come back on time; <strong>plants</strong> may take longer if the area already has as many plants as its ecosystem allows</li>
+</ul>
+<h3 id="ancora"><a class="anchor" href="#ancora" aria-hidden="true">#</a>Ancora <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>New characters' first island is tuned for practising gathering and crafting: natural resources are <strong>×4 denser</strong> · grow back <strong>4× faster</strong> (season table above) · resting recovers <strong>×3 faster</strong></p>
+<h2 id="skill-experience"><a class="anchor" href="#skill-experience" aria-hidden="true">#</a>Skill experience <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>Each successful gather gives skill-category experience (Gathering / Butchering) based on the level of the item you got compared with your category level:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Item level vs category level</th><th>Category experience</th></tr></thead>
+<tbody>
+<tr><td>Equal or higher</td><td>3</td></tr>
+<tr><td>1–5 lower</td><td>2</td></tr>
+<tr><td>6–15 lower</td><td>1</td></tr>
+<tr><td>More than 15 lower</td><td>0</td></tr>
+</tbody></table></div>
+<p>Flawless Success ×1.5 (rounded up, max 3) · failed gathers give no experience · see <a href="skills.html">Skills</a></p>
+<h2 id="tips"><a class="anchor" href="#tips" aria-hidden="true">#</a>Tips</h2>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>Always carry tools at least as high-level as the island you visit — tools above the requirement also add a little success chance.</p>
+</aside>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>High-level items need a high-level character too — gathering on a level 45 island with a Lv20 character only gives Lv20 items.</p>
+</aside>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>A tool with the «Extra Extra» attribute has a 10% chance to give one more item. See <a href="tags.html">Item attributes</a>.</p>
+</aside>
+<h2 id="coming-soon-one-timed-action-at-a-time"><a class="anchor" href="#coming-soon-one-timed-action-at-a-time" aria-hidden="true">#</a>Coming soon: one timed action at a time <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h2>
+<ul>
+<li>Actions with a progress bar (gathering, butchering, washing, drinking, drawing water, dyeing, taming, crafting and so on) run <strong>one at a time</strong></li>
+<li>Starting a new one before the current bar is full = the new one replaces it, and the old one gives nothing</li>
+<li>Results arrive <strong>only when the bar completes</strong> · for gathering, the resource is taken when the bar completes — if someone else takes it first or you walk out of range, you get nothing</li>
+</ul>
+
+</article>
+<nav class="pager"><a class="prev" href="death.html"><small>← Previous</small>Death &amp; Revival</a><a class="next" href="crafting.html"><small>Next →</small>Crafting</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-gather">What you can gather</a></li><li class="toc-l2"><a href="#how-to-gather">How to gather</a></li><li class="toc-l2"><a href="#required-tools">Required tools</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#level-of-what-you-get">Level of what you get</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#success-and-failure">Success and failure</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#time-and-energy">Time and Energy</a></li><li class="toc-l2"><a href="#when-things-grow-back">When things grow back</a></li><li class="toc-l3"><a href="#more-players-faster-regrowth">More players, faster regrowth</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#stone-and-ore-come-back-on-time">Stone and ore come back on time</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#ancora">Ancora</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#skill-experience">Skill experience</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#tips">Tips</a></li><li class="toc-l2"><a href="#coming-soon-one-timed-action-at-a-time">Coming soon: one timed action at a time</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
+</div>
+<footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
+<script src="../assets/wiki.js?v=mudz20a8" defer></script>
+</body>
+</html>

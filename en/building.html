@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building · Durango OffServer Guide</title>
+<meta name="description" content="Build houses, furniture, workbenches and boxes — pick a site, add materials, build, then maintain, repair, demolish or package them">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/building.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/building.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/building.html">
+<link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
+<link rel="stylesheet" href="../assets/wiki.css?v=mudz20a8">
+<script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body data-root="../" data-lang="en" data-slug="building">
+<a class="skip" href="#content">Skip to content</a>
+<header class="topbar">
+<button class="icon-btn menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" title="Menu"><span aria-hidden="true">☰</span><span class="sr">Menu</span></button>
+<a class="brand" href="../en/index.html"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="brand-icon glyph" loading="lazy"><span class="brand-long">Durango OffServer Guide</span><span class="brand-short">Durango Wiki</span></a>
+<div class="search" role="search">
+<input type="search" id="search-input" placeholder="Search the guide…" aria-label="Search the guide…" autocomplete="off" data-none="No results">
+<ul id="search-results" class="search-results" hidden></ul>
+</div>
+<nav class="langs" aria-label="Language"><a class="lang" href="../th/building.html" hreflang="th" lang="th" data-lang="th">ไทย</a><span class="lang current" aria-current="true" lang="en">English</span></nav>
+<button class="icon-btn theme-btn" type="button" title="Toggle dark/light theme"><span aria-hidden="true">◐</span><span class="sr">Toggle dark/light theme</span></button>
+</header>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="Menu">
+<a class="nav-home"href="../en/index.html">Home</a>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">Getting Started</p><ul>
+<li><a href="../en/getting-started.html">Getting Started <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/account.html">Account &amp; Login <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">Survival</p><ul>
+<li><a href="../en/survival.html">Survival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/weather.html">Weather &amp; Unstable Index <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/death.html">Death &amp; Revival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">Gathering &amp; Crafting</p><ul>
+<li><a href="../en/gathering.html">Gathering <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/crafting.html">Crafting <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/tags.html">Item attributes <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/farming.html">Farming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">Food</p><ul>
+<li><a href="../en/eating.html">Eating and drinking <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/cooking.html">Cooking <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/preserving.html">Preserving food and spoilage <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">Building &amp; Land</p><ul>
+<li><a href="../en/building.html" class="current" aria-current="page">Building <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/land.html">Domain <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/decay.html">Decay and repair <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/storage.html">Storage <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">Animals &amp; Combat</p><ul>
+<li><a href="../en/combat.html">Combat <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/animals.html">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
+<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
+<li><a href="../en/skills.html">Skills and Careers <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/titles.html">Titles <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/organizations.html">Organizations <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/quests.html">Quests and Rewards <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_InviteToClan.webp" alt="" width="52" height="42" class="nav-icon glyph" loading="lazy">Social &amp; Economy</p><ul>
+<li><a href="../en/clan.html">Clans <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/market.html">Market and Shop <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/transport.html">Transport and Vehicles <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/mail.html">Mail <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">World &amp; Travel</p><ul>
+<li><a href="../en/islands.html">Islands &amp; Travel <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/warp.html">Warps &amp; Rifts <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+</nav>
+
+<main id="content" class="content">
+<article class="page">
+<p class="crumbs"><a href="index.html">Home</a> › Building &amp; Land</p>
+<h1><img src="../images/atlas/icon_atlas/building_house_hut.webp" alt="" width="122" height="128" class="title-icon glyph" loading="lazy">Building <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h1>
+<p class="summary">Build houses, furniture, workbenches and boxes — pick a site, add materials, build, then maintain, repair, demolish or package them</p>
+<p class="partial-note"><span aria-hidden="true">⏳</span> Some sections on this page are not ready yet</p>
+<p><figure><img src="../images/tex/Assets__Texture2D__constructing_7-w640.webp" alt="Player-built houses and a party yard" width="640" height="320" loading="lazy" class="img-figure"><figcaption>Player-built houses and a party yard</figcaption></figure></p>
+<p>Everything a player places on the ground — tents, houses, workbenches, bonfires, boxes, furniture — is a <strong>structure</strong>.
+You build it from a <strong>blueprint</strong> unlocked through skills (<a href="skills.html">Skills</a>) and fill it with materials from your bag.</p>
+<h2 id="what-you-can-do"><a class="anchor" href="#what-you-can-do" aria-hidden="true">#</a>What you can do</h2>
+<ul>
+<li>Select a construction site → add materials → build (some structures then need extra time to finish)</li>
+<li>Let friends help with finalization, or pay T-Stones for instant construction</li>
+<li>Use it: open boxes, craft at workbenches, light/put out fires, open/close gates, rest in tents, name it, write on signs</li>
+<li>Houses: modify parts, change textures, place wall decorations, extend floors, complete furniture sets</li>
+<li>Repair when Durability drops (<a href="decay.html">Decay and repair</a>) · demolish to get materials back · package it and place it elsewhere</li>
+</ul>
+<h2 id="how-to-build"><a class="anchor" href="#how-to-build" aria-hidden="true">#</a>How to build</h2>
+<ol>
+<li>Open <strong>Structure Building</strong> and pick a blueprint you have learned (unlearned blueprints cannot be built)</li>
+<li><strong>Select Construction Site</strong> on the ground — you must stand within 4 tiles and it must not overlap another structure</li>
+<li>Touch the site and put materials into each slot (the item's tags must match the slot) — anyone can help put materials into a site</li>
+<li>When all slots are full, press <strong>Build</strong> — some blueprints need a hammer (or saw) in your bag; the tool wears each use</li>
+<li>If the blueprint has a finishing time, the structure stays translucent with scaffolding until the time is up, then it becomes usable</li>
+</ol>
+<p><strong>A structure's level = the average level of the materials you used</strong> (within the blueprint's level range) · workbenches get workbench tags capped at this level and may inherit special properties from the main material (<a href="tags.html">Item tags</a>)</p>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>Always build on your own Domain — structures outside a Domain break within 1 day and vanish if nobody uses them. See <a href="land.html">Domain</a> and <a href="decay.html">Decay</a></p>
+</aside>
+<h3 id="where-you-can-build"><a class="anchor" href="#where-you-can-build" aria-hidden="true">#</a>Where you can build</h3>
+<ul>
+<li>Free ground not covered by another structure (discarded item bundles do not block)</li>
+<li><strong>Someone else's Domain: not allowed</strong> unless the owner grants the «Build» permission (<a href="land.html">Domain</a>)</li>
+<li>Interior furniture can be placed inside the frame of a finished house</li>
+</ul>
+<h2 id="key-numbers"><a class="anchor" href="#key-numbers" aria-hidden="true">#</a>Key numbers</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Item</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Distance you must stand within (select site/build/use/repair/demolish)</td><td>4 tiles</td></tr>
+<tr><td>Site selection time</td><td>2 + tiles covered (seconds)</td></tr>
+<tr><td>Energy for site selection</td><td>1 + 2 × tiles covered</td></tr>
+<tr><td>Energy to press Build</td><td>1</td></tr>
+<tr><td>Build bar / demolish bar</td><td>5 + Durability ÷ 10 (seconds)</td></tr>
+<tr><td>Energy to demolish</td><td>10 + Durability ÷ 2</td></tr>
+<tr><td>Max Durability</td><td>100 + 2 × (level − 1)</td></tr>
+<tr><td>Hammer wear per build/modification</td><td>4</td></tr>
+</tbody></table></div>
+<p>Example finishing times (after pressing Build):</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Structure</th><th>Finishing time</th><th>Max helpers</th></tr></thead>
+<tbody>
+<tr><td>House</td><td>3 hours</td><td>6</td></tr>
+<tr><td>Barracks</td><td>1 hour 30 minutes</td><td>6</td></tr>
+<tr><td>Small Box</td><td>30 minutes</td><td>2</td></tr>
+<tr><td>Tent</td><td>15 minutes</td><td>2</td></tr>
+<tr><td>Bonfire · Personal Storage</td><td>instant</td><td>—</td></tr>
+</tbody></table></div>
+<h2 id="helping-and-instant-construction"><a class="anchor" href="#helping-and-instant-construction" aria-hidden="true">#</a>Helping and instant construction</h2>
+<ul>
+<li><strong>Help with Finalization</strong> (anyone but the owner): cuts the remaining time by total finishing time ÷ (max helpers + 1) · once per person per site · <strong>3 helps per day</strong></li>
+<li><strong>Instant Construction</strong> (owner): pay T-Stones based on the time left</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>Time left</th><th>T-Stones</th></tr></thead>
+<tbody>
+<tr><td>up to 1 minute</td><td>1</td></tr>
+<tr><td>15 minutes</td><td>15</td></tr>
+<tr><td>30 minutes</td><td>30</td></tr>
+<tr><td>1 hour</td><td>60</td></tr>
+<tr><td>3 hours</td><td>122</td></tr>
+<tr><td>1 day</td><td>780</td></tr>
+<tr><td>7 days</td><td>3,000</td></tr>
+</tbody></table></div>
+<p>Prices between these points scale linearly.</p>
+<h2 id="houses-and-furniture"><a class="anchor" href="#houses-and-furniture" aria-hidden="true">#</a>Houses and furniture</h2>
+<p><figure><img src="../images/tex/Assets__Texture2D__constructing_6-w560.webp" alt="A furnished house interior" width="560" height="280" loading="lazy" class="img-figure"><figcaption>A furnished house interior</figcaption></figure></p>
+<ul>
+<li><strong>Houses</strong> (and Barracks) can be dragged to any size; materials scale with size</li>
+<li><strong>Modification</strong>: swap the materials of a part (walls, roof, …) — old materials return to your bag · parts can also get a new <strong>texture</strong></li>
+<li><strong>Wall Decoration</strong>: place doors, windows and wall decorations from your bag — take them back any time (owner only)</li>
+<li><strong>Extend</strong>: House and Brick House can go up to 3 floors</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>Extension</th><th>T-Stones</th></tr></thead>
+<tbody>
+<tr><td>1 → 2 floors</td><td>10,000</td></tr>
+<tr><td>2 → 3 floors</td><td>20,000</td></tr>
+</tbody></table></div>
+<h3 id="furniture-sets-and-ambiance"><a class="anchor" href="#furniture-sets-and-ambiance" aria-hidden="true">#</a>Furniture sets and ambiance</h3>
+<p>Furniture inside a house counts toward a <strong>Set Effect</strong> once all pieces of a set are present, and creates an <strong>Ambiance</strong> based on its style — use <strong>Look Around</strong> inside the house to receive the ambiance effect.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Set</th><th>Pieces needed</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>Kitchen</td><td>Cooking Storage · Cooking Countertop · Table</td><td>Unattended crafting (cooking) on the countertop in the house takes 35% less time</td></tr>
+<tr><td>Living Room</td><td>Sofa · Interior Brazier · 2 decorations</td><td>Faster energy recovery while resting in the house</td></tr>
+<tr><td>Bedroom</td><td>Table · Bed · Lighting</td><td>Faster fatigue recovery, health/life regen while resting in the house</td></tr>
+</tbody></table></div>
+<p>There are 6 ambiances: Cute Ambiance (higher max energy) · Fragrant Spring Ambiance (higher great-success chance when crafting) · Luxurious Ambiance · Fiery Ambiance (higher attack) · Gloomy Ambiance (animals' pre-emptive attack range shrinks) · Academic Ambiance (shorter skill research)
+The set menu opens when the house's <strong>Antibiotic</strong> is ≥ 20 · the ambiance menu opens when <strong>Comfort</strong> is ≥ 30</p>
+<h2 id="workbenches-and-unattended-crafting"><a class="anchor" href="#workbenches-and-unattended-crafting" aria-hidden="true">#</a>Workbenches and unattended crafting</h2>
+<p><figure><img src="../images/tex/Assets__Texture2D__constructing_5-w480.webp" alt="Workbenches" width="480" height="240" loading="lazy" class="img-figure"><figcaption>Workbenches</figcaption></figure></p>
+<p>Workbenches (kitchens, kilns, drying racks, …) are needed for workbench recipes; stand within 4 tiles.
+Some recipes (food, firing, drying, fertilizer) are <strong>unattended crafting</strong> — leave the job on the bench, go do something else, and collect the result when the time is up · cancelling returns the materials.
+See recipes in <a href="crafting.html">Crafting</a> and <a href="cooking.html">Cooking</a>.</p>
+<h2 id="gates"><a class="anchor" href="#gates" aria-hidden="true">#</a>Gates</h2>
+<p>Gate-type structures can be <strong>opened/closed</strong> by touching them · on someone else's Domain you need the «Enter» permission to use the gate (this permission does not stop anyone walking into the Domain)</p>
+<h2 id="demolishing"><a class="anchor" href="#demolishing" aria-hidden="true">#</a>Demolishing</h2>
+<p>Touch your own structure → <strong>Demolish</strong> · wait for the bar (length depends on Durability)</p>
+<ul>
+<li><strong>Materials come back in proportion to Durability</strong> · a site that was never built returns 100%</li>
+<li>Items in boxes/storage and reins in pens go to the demolisher's bag · pets in pens go back to their owner</li>
+<li>Returned items enter your bag even if it is full (nothing is lost)</li>
+</ul>
+<aside class="callout callout-warn"><p class="callout-title"><span aria-hidden="true">⚠️</span> Caution</p><p>Known issues being fixed: demolishing a house <strong>does not return wall decorations (doors, windows)</strong> · <strong>jobs left on a workbench are not returned</strong> · upper-floor furniture may be left floating after the house is gone — always remove wall decorations, collect workbench jobs and demolish the furniture before demolishing a house</p>
+</aside>
+<h2 id="packaging-and-moving"><a class="anchor" href="#packaging-and-moving" aria-hidden="true">#</a>Packaging and moving</h2>
+<p>Packageable structures: touch → <strong>Package</strong> (owner only). It becomes a «Packaged Construction» item or a <strong>Moving Box</strong> in your bag.
+Everything is kept — level, Durability, name, box contents · Durability does not drop while you carry it · place it somewhere new without rebuilding.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Item</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Packaging fee</td><td>free</td></tr>
+<tr><td>Packaging bar</td><td>1 second</td></tr>
+</tbody></table></div>
+<h2 id="houses-reappear-when-you-come-back"><a class="anchor" href="#houses-reappear-when-you-come-back" aria-hidden="true">#</a>Houses reappear when you come back</h2>
+<p>Walk far away and run back — your house and nearby structures load again as you approach, no relog needed.</p>
+<h2 id="coming-soon"><a class="anchor" href="#coming-soon" aria-hidden="true">#</a>Coming soon <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h2>
+<ul>
+<li><strong>Original-game Durability</strong> (7 × a multiplier from materials) — building and demolishing become much faster (about 5.7 seconds) and cost less energy</li>
+<li><strong>Instant Repair with T-Stones</strong>, no repair kit needed (<a href="decay.html">Decay and repair</a>)</li>
+<li><strong>Packaging fee outside your own Domain</strong> = 100 × level T-Stones (free inside your own Domain)</li>
+<li>Demolishing a house also demolishes the furniture inside; everything returns to your bag · wall decorations, workbench jobs and incoming cargo are returned</li>
+<li>New houses come with a <strong>Basic Wooden Door Frame</strong>, and doors can be placed normally</li>
+<li>Domain owners can demolish other players' structures on their own Domain (contents are mailed back to the builder)</li>
+<li>The server checks placement itself: no building in water, on trees/rocks or in training zones · house size limited by skill</li>
+</ul>
+<h2 id="not-on-this-server"><a class="anchor" href="#not-on-this-server" aria-hidden="true">#</a>Not on this server <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h2>
+<ul>
+<li>Structures taking damage from animal or player attacks</li>
+<li>A time limit to finish a construction site — unfinished sites stay indefinitely</li>
+</ul>
+
+</article>
+<nav class="pager"><a class="prev" href="preserving.html"><small>← Previous</small>Preserving food and spoilage</a><a class="next" href="land.html"><small>Next →</small>Domain</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#how-to-build">How to build</a></li><li class="toc-l3"><a href="#where-you-can-build">Where you can build</a></li><li class="toc-l2"><a href="#key-numbers">Key numbers</a></li><li class="toc-l2"><a href="#helping-and-instant-construction">Helping and instant construction</a></li><li class="toc-l2"><a href="#houses-and-furniture">Houses and furniture</a></li><li class="toc-l3"><a href="#furniture-sets-and-ambiance">Furniture sets and ambiance</a></li><li class="toc-l2"><a href="#workbenches-and-unattended-crafting">Workbenches and unattended crafting</a></li><li class="toc-l2"><a href="#gates">Gates</a></li><li class="toc-l2"><a href="#demolishing">Demolishing</a></li><li class="toc-l2"><a href="#packaging-and-moving">Packaging and moving</a></li><li class="toc-l2"><a href="#houses-reappear-when-you-come-back">Houses reappear when you come back</a></li><li class="toc-l2"><a href="#coming-soon">Coming soon</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l2"><a href="#not-on-this-server">Not on this server</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
+</div>
+<footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
+<script src="../assets/wiki.js?v=mudz20a8" defer></script>
+</body>
+</html>

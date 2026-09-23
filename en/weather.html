@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weather &amp; Unstable Index · Durango OffServer Guide</title>
+<meta name="description" content="Weather changes every 20 minutes per island · seasons turn every 7 days · the Unstable Index (1–10) makes islands harsher and needs a Climate Resistance Level before you can sail there">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/weather.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/weather.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/weather.html">
+<link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
+<link rel="stylesheet" href="../assets/wiki.css?v=mudz20a8">
+<script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body data-root="../" data-lang="en" data-slug="weather">
+<a class="skip" href="#content">Skip to content</a>
+<header class="topbar">
+<button class="icon-btn menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" title="Menu"><span aria-hidden="true">☰</span><span class="sr">Menu</span></button>
+<a class="brand" href="../en/index.html"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="brand-icon glyph" loading="lazy"><span class="brand-long">Durango OffServer Guide</span><span class="brand-short">Durango Wiki</span></a>
+<div class="search" role="search">
+<input type="search" id="search-input" placeholder="Search the guide…" aria-label="Search the guide…" autocomplete="off" data-none="No results">
+<ul id="search-results" class="search-results" hidden></ul>
+</div>
+<nav class="langs" aria-label="Language"><a class="lang" href="../th/weather.html" hreflang="th" lang="th" data-lang="th">ไทย</a><span class="lang current" aria-current="true" lang="en">English</span></nav>
+<button class="icon-btn theme-btn" type="button" title="Toggle dark/light theme"><span aria-hidden="true">◐</span><span class="sr">Toggle dark/light theme</span></button>
+</header>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="Menu">
+<a class="nav-home"href="../en/index.html">Home</a>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">Getting Started</p><ul>
+<li><a href="../en/getting-started.html">Getting Started <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/account.html">Account &amp; Login <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">Survival</p><ul>
+<li><a href="../en/survival.html">Survival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/weather.html" class="current" aria-current="page">Weather &amp; Unstable Index <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/death.html">Death &amp; Revival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">Gathering &amp; Crafting</p><ul>
+<li><a href="../en/gathering.html">Gathering <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/crafting.html">Crafting <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/tags.html">Item attributes <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/farming.html">Farming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">Food</p><ul>
+<li><a href="../en/eating.html">Eating and drinking <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/cooking.html">Cooking <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/preserving.html">Preserving food and spoilage <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">Building &amp; Land</p><ul>
+<li><a href="../en/building.html">Building <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/land.html">Domain <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/decay.html">Decay and repair <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/storage.html">Storage <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">Animals &amp; Combat</p><ul>
+<li><a href="../en/combat.html">Combat <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/animals.html">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
+<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
+<li><a href="../en/skills.html">Skills and Careers <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/titles.html">Titles <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/organizations.html">Organizations <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/quests.html">Quests and Rewards <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_InviteToClan.webp" alt="" width="52" height="42" class="nav-icon glyph" loading="lazy">Social &amp; Economy</p><ul>
+<li><a href="../en/clan.html">Clans <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/market.html">Market and Shop <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/transport.html">Transport and Vehicles <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/mail.html">Mail <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+<div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">World &amp; Travel</p><ul>
+<li><a href="../en/islands.html">Islands &amp; Travel <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/warp.html">Warps &amp; Rifts <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+</ul></div>
+</nav>
+
+<main id="content" class="content">
+<article class="page">
+<p class="crumbs"><a href="index.html">Home</a> › Survival</p>
+<h1><img src="../images/atlas/explore_atlas/icon_sailing_snowfield.webp" alt="" width="36" height="42" class="title-icon" loading="lazy">Weather &amp; Unstable Index <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h1>
+<p class="summary">Weather changes every 20 minutes per island · seasons turn every 7 days · the Unstable Index (1–10) makes islands harsher and needs a Climate Resistance Level before you can sail there</p>
+<p class="partial-note"><span aria-hidden="true">⏳</span> Some sections on this page are not ready yet</p>
+<p>Every island has its own weather based on its terrain (tropical forests rain often, deserts bake, snow fields snow), and the weather has real effects: you walk slower, predators see you from closer, rain waters your crops, storms put out fires. Unstable islands also carry an <strong>Unstable Index</strong>: the higher it is, the more dangerous — and the more rewarding.</p>
+<h2 id="what-you-can-do"><a class="anchor" href="#what-you-can-do" aria-hidden="true">#</a>What you can do</h2>
+<ul>
+<li>Check the current weather on the on-screen clock and plan your trips</li>
+<li>Let the rain water your fields · sit out storms in a shelter</li>
+<li>Pick an island by its Index on the sailing screen</li>
+<li>Build up your <strong>Climate Resistance Level</strong> by staying on islands of that climate, to unlock high-Index islands</li>
+</ul>
+<h2 id="weather-on-each-island"><a class="anchor" href="#weather-on-each-island" aria-hidden="true">#</a>Weather on each island <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>Weather changes every <strong>20 minutes</strong> (the same weather can roll again = it lasts longer). Everyone on the same island sees the same weather. The chances depend on the island group (before seasons are applied):</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Island group</th><th>Sunny</th><th>Cloudy</th><th>Rain</th><th>Heavy rain</th><th>Snow</th><th>Heavy snow</th><th>Volcanic ash</th></tr></thead>
+<tbody>
+<tr><td>Safe House · Ancora</td><td>65%</td><td>25%</td><td>10%</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>Temperate forest · grassland/savanna · Tamed Island</td><td>50%</td><td>25%</td><td>18%</td><td>7%</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>Tropical forest</td><td>40%</td><td>20%</td><td>28%</td><td>12%</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>Desert</td><td>85%</td><td>15%</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>Swamp</td><td>30%</td><td>35%</td><td>25%</td><td>10%</td><td>–</td><td>–</td><td>–</td></tr>
+<tr><td>Tundra</td><td>40%</td><td>25%</td><td>–</td><td>–</td><td>25%</td><td>10%</td><td>–</td></tr>
+<tr><td>Snow field</td><td>25%</td><td>25%</td><td>–</td><td>–</td><td>30%</td><td>20%</td><td>–</td></tr>
+<tr><td>Volcanic</td><td>45%</td><td>30%</td><td>–</td><td>–</td><td>–</td><td>–</td><td>25%</td></tr>
+</tbody></table></div>
+<h2 id="what-weather-does"><a class="anchor" href="#what-weather-does" aria-hidden="true">#</a>What weather does <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Weather</th><th>Walk speed</th><th>Distance predators see you</th><th>Extra Fatigue/min</th><th>Other</th></tr></thead>
+<tbody>
+<tr><td>Sunny · Cloudy</td><td>Normal</td><td>Normal</td><td>–</td><td>–</td></tr>
+<tr><td><strong>Rain</strong></td><td>×0.95</td><td>×0.8</td><td>0.2</td><td>You get Wet · waters planted fields 1 unit when the rain starts</td></tr>
+<tr><td>Heavy rain</td><td>×0.9</td><td>×0.6</td><td>0.5</td><td>You get Wet · waters 2 units · <strong>puts out player-lit bonfires/stoves</strong></td></tr>
+<tr><td><strong>Snow</strong></td><td>×0.92</td><td>×0.8</td><td>0.3</td><td>–</td></tr>
+<tr><td>Heavy snow</td><td>×0.85</td><td>×0.5</td><td>0.8</td><td>You get Wet · <strong>puts out bonfires/stoves</strong></td></tr>
+<tr><td>Volcanic ash</td><td>×0.95</td><td>×0.6</td><td>1.0</td><td>–</td></tr>
+</tbody></table></div>
+<ul>
+<li>In rough weather wild animals stop to rest more often (chance per round: normally 30% → rain/snow 40% · heavy rain/heavy snow 60% · ash 50%)</li>
+<li>Weather fatigue hits <strong>every island, the Safe House included</strong> — sit out storms in a shelter</li>
+<li>Weather also moves your body temperature — table in <a href="survival.html#body-temperature">Survival</a></li>
+</ul>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>Rain is a farmer's friend — planted fields get free water every time rain starts. See <a href="farming.html">Farming</a>.</p>
+</aside>
+<h2 id="seasons"><a class="anchor" href="#seasons" aria-hidden="true">#</a>Seasons <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>The whole world runs through 4 seasons in turn, <strong>7 days</strong> each (a 28-day cycle), changing every <strong>Thursday at 00:00 UTC (07:00 Thai time)</strong>.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Season</th><th>Weather more / less likely</th><th>Time for plants to come back</th><th>Animal breeding</th></tr></thead>
+<tbody>
+<tr><td>Spring</td><td>Rain ×1.5 · heavy rain ×1.3 · sunny ×0.85</td><td>Faster (×0.77)</td><td>×1.25</td></tr>
+<tr><td>Summer</td><td>Sunny ×1.4 · rain ×0.75 · heavy rain ×0.7</td><td>Normal</td><td>×1</td></tr>
+<tr><td>Autumn</td><td>Cloudy ×1.35 · rain ×1.2 · sunny ×0.9</td><td>Slower (×1.43)</td><td>×0.75</td></tr>
+<tr><td>Winter</td><td>Snow ×1.5 · heavy snow ×1.4 · cloudy ×1.1 · sunny ×0.65</td><td>Slower (×1.67)</td><td>×0.45</td></tr>
+</tbody></table></div>
+<ul>
+<li>Seasons only reweight the odds — snow still falls only on islands that already have snow (tundra/snow field); deserts get no snow in winter</li>
+<li>One in-game day = 48 real minutes</li>
+</ul>
+<h2 id="unstable-index"><a class="anchor" href="#unstable-index" aria-hidden="true">#</a>Unstable Index <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p><img src="../images/atlas/explore_atlas/unstable_number_bg.webp" alt="Unstable Index" width="82" height="82" loading="lazy" class="img-inline"> Every unstable island of level 15 and up has an <strong>Unstable Index from 1 to 10</strong>, shown on the sailing screen.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Island type</th><th>Index</th></tr></thead>
+<tbody>
+<tr><td>Areas with 4 islands (swamp, desert, temperate forest, tropical forest, savanna, snow field, tundra, volcanic)</td><td>Fixed 1 · 4 · 7 · 10, one value per island — pick the one you want on the sailing screen</td></tr>
+<tr><td>Areas with a single island (levels 15 · 20 · 25 · 30)</td><td>Goes up by 1 every 7 days (1 → 2 → … → 10 → 1)</td></tr>
+<tr><td>Safe House · Ancora · Tamed Island · training island · abandoned cities · event islands</td><td>Always 1</td></tr>
+</tbody></table></div>
+<p><img src="../images/atlas/explore_atlas/explore_map_unstable_island.webp" alt="An unstable island on the sailing screen" width="118" height="114" loading="lazy" class="img-icon"></p>
+<p><strong>What a higher Index does</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Index</th><th>Extra Fatigue/min</th><th>Animal Life/Attack</th><th>Organization mission EXP</th><th>Climate Resistance Level needed</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>–</td><td>×1</td><td>×1</td><td>–</td></tr>
+<tr><td>2</td><td>1.0</td><td>×1.25</td><td>×2.2</td><td>–</td></tr>
+<tr><td>3</td><td>1.5</td><td>×1.5</td><td>×4.5</td><td>3</td></tr>
+<tr><td>4</td><td>2.0</td><td>×1.75</td><td>×6.3</td><td>7</td></tr>
+<tr><td>5</td><td>2.5</td><td>×2</td><td>×9.1</td><td>12</td></tr>
+<tr><td>6</td><td>3.0</td><td>×2.25</td><td>×11.4</td><td>17</td></tr>
+<tr><td>7</td><td>3.5</td><td>×2.5</td><td>×14.4</td><td>25</td></tr>
+<tr><td>8</td><td>4.0</td><td>×2.75</td><td>×17.6</td><td>35</td></tr>
+<tr><td>9</td><td>4.5</td><td>×3</td><td>×21.1</td><td>62</td></tr>
+<tr><td>10</td><td>5.0</td><td>×3.25</td><td>×24.7</td><td>80</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>At Index 2 and up</strong> the island's craters become <strong>permanent caches</strong>: 10 special natural items around each crater and 3 guardian animals, 1.5× tougher than normal (on top of the Index multiplier)</li>
+<li>Items gathered on high-Index islands roll higher hidden tags — see <a href="tags.html">Tags</a></li>
+<li>Islands at Index 2 and up count as <strong>temporary islands</strong>: log out there and your next login puts you at your waypoint or the Safe House — see <a href="death.html#logging-out-on-a-temporary-island">Death</a></li>
+</ul>
+<h2 id="climate-resistance-level"><a class="anchor" href="#climate-resistance-level" aria-hidden="true">#</a>Climate Resistance Level <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>To sail to an island of Index 3 or higher you need the <strong>Climate Resistance Level</strong> for that island's climate (table above). If you are short, the sailing screen shows the requirement in red and the server refuses the departure (returning to your own land or the Safe House is not checked).</p>
+<p><strong>How to raise it:</strong> just be on an island of that climate (while online) and it rises by itself — faster on higher-Index islands.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Climates with their own resistance</th><th>Tropical forest · desert · tundra · snow field · swamp · volcanic</th></tr></thead>
+<tbody>
+<tr><td>Temperate forest · grassland/savanna</td><td>No resistance of their own — your <strong>highest resistance of any kind</strong> is used</td></tr>
+<tr><td>Growth rate</td><td>300 points/second × (1 + 0.5 × (Index − 1))</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<thead><tr><th>To reach level</th><th>Time on an Index 1 island</th><th>Index 4</th><th>Index 7</th></tr></thead>
+<tbody>
+<tr><td>3 (enter Index 3)</td><td>45 min</td><td>18 min</td><td>11 min</td></tr>
+<tr><td>7 (enter Index 4)</td><td>4.0 h</td><td>1.6 h</td><td>1.0 h</td></tr>
+<tr><td>12 (enter Index 5)</td><td>10.3 h</td><td>4.1 h</td><td>2.6 h</td></tr>
+<tr><td>17 (enter Index 6)</td><td>18.4 h</td><td>7.4 h</td><td>4.6 h</td></tr>
+<tr><td>25 (enter Index 7)</td><td>34.3 h</td><td>13.7 h</td><td>8.6 h</td></tr>
+<tr><td>35 (enter Index 8)</td><td>57.9 h</td><td>23.2 h</td><td>14.5 h</td></tr>
+</tbody></table></div>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>The Safe House and Ancora are tropical-forest islands — whatever you are doing there, your tropical resistance keeps rising.</p>
+</aside>
+<aside class="callout callout-warn"><p class="callout-title"><span aria-hidden="true">⚠️</span> Caution</p><p>The highest resistance you can build right now is level 51 — so <strong>Index 9 (needs 62) and Index 10 (needs 80) islands cannot be sailed to yet</strong>.</p>
+</aside>
+<h2 id="not-finished-yet"><a class="anchor" href="#not-finished-yet" aria-hidden="true">#</a>Not finished yet</h2>
+<h3 id="a-way-into-index-910-islands"><a class="anchor" href="#a-way-into-index-910-islands" aria-hidden="true">#</a>A way into Index 9–10 islands <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h3>
+<p>There is no way yet to reach resistance level 62/80 — the Index 9 and 10 island of each area cannot be entered yet.</p>
+
+</article>
+<nav class="pager"><a class="prev" href="survival.html"><small>← Previous</small>Survival</a><a class="next" href="death.html"><small>Next →</small>Death &amp; Revival</a></nav>
+</main>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#weather-on-each-island">Weather on each island</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#what-weather-does">What weather does</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#seasons">Seasons</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#unstable-index">Unstable Index</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#climate-resistance-level">Climate Resistance Level</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#not-finished-yet">Not finished yet</a></li><li class="toc-l3"><a href="#a-way-into-index-910-islands">A way into Index 9–10 islands</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
+</div>
+<footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
+<script src="../assets/wiki.js?v=mudz20a8" defer></script>
+</body>
+</html>
