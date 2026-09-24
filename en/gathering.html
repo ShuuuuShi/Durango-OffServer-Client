@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0b0f0d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/gathering.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/gathering.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/gathering.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mue3r5pw">
+<link rel="stylesheet" href="../assets/wiki.css?v=mufb8v69">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="en" data-slug="gathering">
@@ -70,7 +70,7 @@
 <li><a href="../en/animals.html">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
-<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/taming.html">Taming <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
@@ -168,12 +168,23 @@
 <tr><td>+7 or more</td><td>95%</td><td>94%</td></tr>
 </tbody></table></div>
 <ul>
+<li><strong>Gathering ability from outside skills</strong> — every point of gathering ability from titles, item attributes, item modifiers, food buffs and house ambiance adds <strong>+0.5%</strong> to the skill part (skill part capped at 99%) · it counts the ability that matches what you gather: Plant Gathering Ability (plants, wood, dirt and the rest) · Mining Ability (stone, ore, gems) · Slaughter Ability (carcasses) · Disassemble Ability (modern items) · the «Gathering Ability Buff» attribute counts for all four · points from skills are already in the category bonus and don't count twice</li>
 <li><strong>Tools</strong> add 2% + 0.2% per level above the requirement (up to +8%) + tool attributes (−6% to +8%), scaled by the tool's remaining durability · the total never exceeds 99%</li>
 <li><strong>Failure</strong> — the resource is used up and Energy is spent, but you get no item and no experience · the tool wears half as much</li>
 <li><strong>Big failure</strong> — about 1.5% of all attempts (1% when your success chance is at the 99% cap) · the tool wears more than usual</li>
-<li><strong>Flawless Success</strong> — chance 3% + (success chance − 85%) × 0.25, up to 12% · +5% with a «Meticulous Gatherer» tool · the material's main attribute gets +1 level</li>
+<li><strong>Flawless Success</strong> — chance 3% + (success chance − 85%) × 0.25, up to 12% · +5% when the <strong>tool you gather with</strong> has «Meticulous Gatherer» (bare-handed = your worn gear counts) · the material's main attribute gets +1 level</li>
+<li><strong>Green attributes</strong> — titles with «Latent/Rare Attribute Rate» multiply the <strong>chance to be green</strong> by (1 + the title's value), for example 30% → 39% with +30% · cap 90% · the 15% chance of getting a latent attribute at all doesn't change · see <a href="tags.html#attributes-from-gathering">Item attributes</a></li>
 </ul>
-<h2 id="time-and-energy"><a class="anchor" href="#time-and-energy" aria-hidden="true">#</a>Time and Energy</h2>
+<p>Example: the <strong>Gatherer Name Tag</strong> (Gathering Ability +16 for all four types) · no tool · resource at your level:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Gathering category bonus</th><th>Skill part before → with the tag</th><th>Success chance before → with the tag</th></tr></thead>
+<tbody>
+<tr><td>+0 (nothing learned)</td><td>85% → 93%</td><td>86.1% → 91.2%</td></tr>
+<tr><td>+2</td><td>89% → 97%</td><td>88.7% → 93.8%</td></tr>
+<tr><td>+4</td><td>93% → 99%</td><td>91.2% → 95.2%</td></tr>
+<tr><td>+8 (max)</td><td>99% → 99% (cap)</td><td>95.2% → 95.2%</td></tr>
+</tbody></table></div>
+<h2 id="time-and-energy"><a class="anchor" href="#time-and-energy" aria-hidden="true">#</a>Time and Energy <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <div class="table-wrap"><table>
 <thead><tr><th>Source level</th><th>Gathering time</th><th>Energy used</th><th>Fatigue added</th></tr></thead>
 <tbody>
@@ -183,16 +194,21 @@
 <tr><td>35</td><td>11 s</td><td>7.7</td><td>1.11</td></tr>
 <tr><td>60</td><td>17.25 s</td><td>12.08</td><td>1.39</td></tr>
 </tbody></table></div>
-<p>Some skills reduce the time and Energy cost (time never goes below 0.5 s).</p>
+<p>Some skills reduce the time and Energy cost (time never goes below 0.5 s). Gear, food and buffs can cut more:</p>
+<ul>
+<li><strong>Gathering time</strong> × (1 − reduction) — the «Gathering Time Reduction» attribute gives 1% per level on every gather (butchering too) · «Plant Gathering Time Reduction» gives 0.5% per level on plants only · both together at most −90% · for example both at level 10 while picking plants = −15%</li>
+<li><strong>Fatigue from gathering</strong> × (1 − reduction) — for example the <strong>Gatherer Name Tag</strong> halves it · at most −90%</li>
+</ul>
 <h2 id="when-things-grow-back"><a class="anchor" href="#when-things-grow-back" aria-hidden="true">#</a>When things grow back</h2>
 <p>Each entry at a resource comes back after the time below, counted from when it was first taken. If you take everything, the resource disappears and comes back after the same time. Tapping a used-up resource tells you how many seconds are left.</p>
 <p><strong>Base time 180 seconds</strong>, multiplied by the season (each season lasts 7 days):</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Season</th><th>Spring</th><th>Summer</th><th>Autumn</th><th>Winter</th></tr></thead>
 <tbody>
-<tr><td>Most islands</td><td>~138 s</td><td>180 s</td><td>~257 s</td><td>300 s</td></tr>
-<tr><td>Ancora</td><td>~35 s</td><td>45 s</td><td>~64 s</td><td>75 s</td></tr>
+<tr><td>All islands (Ancora included)</td><td>~138 s</td><td>180 s</td><td>~257 s</td><td>300 s</td></tr>
 </tbody></table></div>
+<h3 id="regrowth-stays-on-the-same-kind-of-ground"><a class="anchor" href="#regrowth-stays-on-the-same-kind-of-ground" aria-hidden="true">#</a>Regrowth stays on the same kind of ground <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>When something grows back or reappears on a nearby tile, it always lands on the same kind of ground as before: freshwater things (reeds, lake fish) in freshwater · sea things in the sea · land things on land in the same area — never on a cliff or across a river or cliff wall. This is true on every island.</p>
 <h3 id="more-players-faster-regrowth"><a class="anchor" href="#more-players-faster-regrowth" aria-hidden="true">#</a>More players, faster regrowth <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
 <p>The more players online on the same island, the faster things come back (recounted every 60 seconds · existing resources don't multiply — only the regrow time speeds up).</p>
 <div class="table-wrap"><table>
@@ -213,7 +229,12 @@
 <li>Winter still slows plant regrowth, as in the season table</li>
 </ul>
 <h3 id="ancora"><a class="anchor" href="#ancora" aria-hidden="true">#</a>Ancora <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
-<p>New characters' first island is tuned for practising gathering and crafting: natural resources are <strong>×4 denser</strong> · grow back <strong>4× faster</strong> (season table above) · resting recovers <strong>×3 faster</strong></p>
+<p>New characters' first island now follows the original game: normal density and the normal regrow times in the season table above (the old ×4 density, ×4 faster regrowth and ×3 faster resting are gone).</p>
+<ul>
+<li>Resources were laid out again following the original ecosystem rules and the tutorial steps — date palms by the train, reeds along the stream and lakes, stones by the lake, branches and stones around the Bonfire, logs between the beach and the raft</li>
+<li>Every resource can be reached on foot (only sea fish schools sit just off the beach) · none are on cliffs</li>
+<li>Sitting at Ancora's <strong>Bonfire</strong> clears a full fatigue bar in <strong>5 seconds</strong></li>
+</ul>
 <h2 id="skill-experience"><a class="anchor" href="#skill-experience" aria-hidden="true">#</a>Skill experience <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>Each successful gather gives skill-category experience (Gathering / Butchering) based on the level of the item you got compared with your category level:</p>
 <div class="table-wrap"><table>
@@ -243,9 +264,9 @@
 </article>
 <nav class="pager"><a class="prev" href="death.html"><small>← Previous</small>Death &amp; Revival</a><a class="next" href="crafting.html"><small>Next →</small>Crafting</a></nav>
 </main>
-<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-gather">What you can gather</a></li><li class="toc-l2"><a href="#how-to-gather">How to gather</a></li><li class="toc-l2"><a href="#required-tools">Required tools</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#level-of-what-you-get">Level of what you get</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#success-and-failure">Success and failure</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#time-and-energy">Time and Energy</a></li><li class="toc-l2"><a href="#when-things-grow-back">When things grow back</a></li><li class="toc-l3"><a href="#more-players-faster-regrowth">More players, faster regrowth</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#stone-and-ore-come-back-on-time">Stone and ore come back on time</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#fruit-and-map-plants-grow-back-on-time">Fruit and map plants grow back on time</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#ancora">Ancora</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#skill-experience">Skill experience</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#tips">Tips</a></li><li class="toc-l2"><a href="#one-timed-action-at-a-time">One timed action at a time</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li></ul></aside>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-gather">What you can gather</a></li><li class="toc-l2"><a href="#how-to-gather">How to gather</a></li><li class="toc-l2"><a href="#required-tools">Required tools</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#level-of-what-you-get">Level of what you get</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#success-and-failure">Success and failure</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#time-and-energy">Time and Energy</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#when-things-grow-back">When things grow back</a></li><li class="toc-l3"><a href="#regrowth-stays-on-the-same-kind-of-ground">Regrowth stays on the same kind of ground</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#more-players-faster-regrowth">More players, faster regrowth</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#stone-and-ore-come-back-on-time">Stone and ore come back on time</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#fruit-and-map-plants-grow-back-on-time">Fruit and map plants grow back on time</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#ancora">Ancora</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#skill-experience">Skill experience</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#tips">Tips</a></li><li class="toc-l2"><a href="#one-timed-action-at-a-time">One timed action at a time</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li></ul></aside>
 </div>
 <footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
-<script src="../assets/wiki.js?v=mue3r5pw" defer></script>
+<script src="../assets/wiki.js?v=mufb8v69" defer></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0b0f0d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/animals.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/animals.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/animals.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mue3r5pw">
+<link rel="stylesheet" href="../assets/wiki.css?v=mufb8v69">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="en" data-slug="animals">
@@ -70,7 +70,7 @@
 <li><a href="../en/animals.html" class="current" aria-current="page">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
-<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/taming.html">Taming <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
@@ -113,7 +113,7 @@
 <div class="table-wrap"><table>
 <thead><tr><th>Temperament</th><th>Behavior</th></tr></thead>
 <tbody>
-<tr><td>Aggressive</td><td>Sees you within 8 tiles → notices you in 2.5 seconds (alphas 1.5) → roars and chases · gives up once more than 32 tiles from home</td></tr>
+<tr><td>Aggressive</td><td>Sees you within 8 tiles (closer if you have <a href="#stealth">Stealth</a>) → notices you in 2.5 seconds (alphas 1.5) → roars and chases · gives up once more than 32 tiles from home</td></tr>
 <tr><td>Neutral</td><td>Ignores you until hit, then fights back</td></tr>
 <tr><td>Skittish</td><td>Runs away when hit or when a predator comes</td></tr>
 </tbody></table></div>
@@ -121,6 +121,27 @@
 <li>After 20 seconds out of combat, animals regenerate 0.3% health per second · Tyrannosaurus and Apatosaurus regenerate 1% per second · Allosaurus does not regenerate</li>
 </ul>
 <aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>If you hit an animal and then leave it alone for a long time, it heals back — keep the pressure on when hunting big animals</p>
+</aside>
+<h2 id="stealth"><a class="anchor" href="#stealth" aria-hidden="true">#</a>Stealth <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>Your <strong>Stealth Ability</strong> (on the stats window) makes aggressive animals spot you from closer, and sleeping animals wake only when you come closer than before · the distance is divided by the original game's formula, which divides by at most about 1.1 — <strong>in practice it is about 1 tile shorter</strong>, and even a little Stealth gives nearly the full effect</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Stealth</th><th>Aggressive animals see you (sunny)</th><th>Rain</th><th>Heavy rain</th><th>Sleeping animals wake when you come within</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>8 tiles</td><td>6</td><td>5</td><td>4 tiles</td></tr>
+<tr><td>24 (Stealth I–VI complete)</td><td>7 tiles</td><td>5</td><td>4</td><td>3 tiles</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Stealth comes from</th><th>Amount</th></tr></thead>
+<tbody>
+<tr><td>The <strong>Stealth I–VI</strong> skills</td><td>+4 per step (24 in total)</td></tr>
+<tr><td><strong>Gloomy Ambiance</strong> in a house (<a href="status-effects.html#house-furniture-sets-and-moods">Buffs</a>)</td><td>+25</td></tr>
+<tr><td>Clan Research Ecology</td><td>+10</td></tr>
+<tr><td>Some worn items and stealth attributes (<a href="clothing.html">Clothing</a>)</td><td>Per item</td></tr>
+</tbody></table></div>
+<ul>
+<li>It does not affect animals that chase you back after being hit, nor predators hunting other animals</li>
+</ul>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>To sneak past animals sleeping at night, even one step of Stealth I lets you walk 1 tile closer</p>
 </aside>
 <h2 id="animal-levels"><a class="anchor" href="#animal-levels" aria-hidden="true">#</a>Animal levels <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <ul>
@@ -178,7 +199,7 @@
 <ul>
 <li>Night animals (wolves, sabertooths, etc.) are awake at dusk and night · everything else is awake except at night</li>
 <li>Outside its waking hours each animal has a 45% chance to be asleep (re-rolled daily) · sleeping animals don't wander, chase or hunt</li>
-<li>They wake if you come within 4 tiles or hit them, then stay awake for 2 minutes · alphas and water animals never sleep</li>
+<li>They wake if you come within 4 tiles (3 tiles with <a href="#stealth">Stealth</a>) or hit them, then stay awake for 2 minutes · alphas and water animals never sleep</li>
 </ul>
 </li>
 <li><strong>Flinching:</strong> every hit plays a short flinch (visual only) · only a critical hit or a full stagger gauge interrupts the attack an animal is winding up</li>
@@ -214,9 +235,9 @@
 </article>
 <nav class="pager"><a class="prev" href="combat.html"><small>← Previous</small>Combat</a><a class="next" href="taming.html"><small>Next →</small>Taming</a></nav>
 </main>
-<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#animal-temperaments">Animal temperaments</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#animal-levels">Animal levels</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#unstable-index">Unstable Index</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#herds-and-animal-numbers">Herds and animal numbers</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#alphas">Alphas</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#predators-hunting-prey">Predators hunting prey</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#movement-and-sleep">Movement and sleep</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#butchering-and-drops">Butchering and drops</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#population-recovery">Population recovery</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#not-finished-yet">Not finished yet</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l3"><a href="#bonus-exp-from-alphas">Bonus EXP from alphas</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#animal-temperaments">Animal temperaments</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#stealth">Stealth</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#animal-levels">Animal levels</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#unstable-index">Unstable Index</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#herds-and-animal-numbers">Herds and animal numbers</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#alphas">Alphas</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#predators-hunting-prey">Predators hunting prey</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#movement-and-sleep">Movement and sleep</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#butchering-and-drops">Butchering and drops</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#population-recovery">Population recovery</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#not-finished-yet">Not finished yet</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l3"><a href="#bonus-exp-from-alphas">Bonus EXP from alphas</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
 </div>
 <footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
-<script src="../assets/wiki.js?v=mue3r5pw" defer></script>
+<script src="../assets/wiki.js?v=mufb8v69" defer></script>
 </body>
 </html>

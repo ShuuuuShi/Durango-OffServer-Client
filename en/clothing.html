@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0b0f0d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/clothing.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/clothing.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/clothing.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mue3r5pw">
+<link rel="stylesheet" href="../assets/wiki.css?v=mufb8v69">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="en" data-slug="clothing">
@@ -70,7 +70,7 @@
 <li><a href="../en/animals.html">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
-<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/taming.html">Taming <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
@@ -102,6 +102,25 @@
 
 <p>Clothing gives defense and stats (see <a href="stats.html">Character stats</a>) · equipping, removing and repairing is on <a href="equipment.html">Equipment and repair</a>
 Career outfits are sewn at a <strong>Tailoring Workbench</strong> · many fashion items come from <strong>packs/random boxes in the shop</strong> (<a href="market.html">Market and Shop</a>)</p>
+<h2 id="special-item-stats-really-work"><a class="anchor" href="#special-item-stats-really-work" aria-hidden="true">#</a>Special item stats really work <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>The stats written on an item (besides defense) and the item's attributes <strong>really apply while you wear it</strong> — they add to the stats window and the gauges on screen</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Item stat</th><th>Effect</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>Max Health · Max Energy · Life recovery</td><td>Longer gauges, faster regeneration (<a href="survival.html#gauge-ceilings-and-regeneration-from-every-source">Survival</a>)</td><td>Some event items give +90 Max Health</td></tr>
+<tr><td>Evasion</td><td>A chance to dodge animal attacks by itself (<a href="stats.html">Character stats</a>)</td><td>Melee Combat Outfit +1 to +5 depending on item level</td></tr>
+<tr><td>Heat/cold/wind … resistance</td><td>1% less fatigue of that weather per point (<a href="weather.html#weather-resistance-from-gear">Weather</a>)</td><td>Leaf Outfit (heat) · Thermal Resistance Gloves +10 to +12</td></tr>
+<tr><td>Movement speed</td><td>Walk faster (<a href="weather.html#walk-speed-and-stealth">Weather</a>)</td><td>Ninja Outfit +10%</td></tr>
+<tr><td>Stealth</td><td>Aggressive animals spot you from closer (<a href="animals.html#stealth">Wild animals</a>)</td><td>Some camouflage items</td></tr>
+<tr><td>Bag capacity</td><td>Carry more (<a href="storage.html#extra-bag-slots-from-worn-items">Storage</a>)</td><td>[Event] Travel Luggage +20</td></tr>
+<tr><td>Acquired EXP</td><td>More character EXP (<a href="skills.html#extra-exp-from-worn-items">Skills</a>)</td><td>Somebody's Apple +200%</td></tr>
+<tr><td>Gathering fatigue reduction</td><td>Less tired from gathering (<a href="gathering.html">Gathering</a>)</td><td>Gatherer Name Tag −50%</td></tr>
+</tbody></table></div>
+<ul>
+<li>Stats that rise in steps with level use the <strong>item's level</strong> (an item below the first step gets the first step's value)</li>
+<li>An item at <strong>zero durability</strong> gives no stats until repaired (<a href="equipment.html#wear">Equipment and repair</a>)</li>
+<li><strong>Crafting</strong> fatigue reduction (e.g. the Builder Name Tag) has no effect yet, because crafting on this server doesn't add fatigue in the first place</li>
+</ul>
 <h2 id="beginner-outfits"><a class="anchor" href="#beginner-outfits" aria-hidden="true">#</a>Beginner outfits</h2>
 <p>Leaf, hide and first cloth outfits · 19 obtainable</p>
 <div class="table-wrap"><table>
@@ -293,9 +312,9 @@ Career outfits are sewn at a <strong>Tailoring Workbench</strong> · many fashio
 </article>
 <nav class="pager"><a class="prev" href="weapons-tools.html"><small>← Previous</small>Weapons and tools</a><a class="next" href="materials.html"><small>Next →</small>Materials</a></nav>
 </main>
-<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#beginner-outfits">Beginner outfits</a></li><li class="toc-l2"><a href="#explorer-outfits">Explorer outfits</a></li><li class="toc-l2"><a href="#hunter-outfits">Hunter outfits</a></li><li class="toc-l2"><a href="#settler-outfits">Settler outfits</a></li><li class="toc-l2"><a href="#hats">Hats</a></li><li class="toc-l2"><a href="#gloves">Gloves</a></li><li class="toc-l2"><a href="#shoes">Shoes</a></li><li class="toc-l2"><a href="#bags">Bags</a></li><li class="toc-l2"><a href="#modern-fashion">Modern fashion</a></li></ul></aside>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#special-item-stats-really-work">Special item stats really work</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#beginner-outfits">Beginner outfits</a></li><li class="toc-l2"><a href="#explorer-outfits">Explorer outfits</a></li><li class="toc-l2"><a href="#hunter-outfits">Hunter outfits</a></li><li class="toc-l2"><a href="#settler-outfits">Settler outfits</a></li><li class="toc-l2"><a href="#hats">Hats</a></li><li class="toc-l2"><a href="#gloves">Gloves</a></li><li class="toc-l2"><a href="#shoes">Shoes</a></li><li class="toc-l2"><a href="#bags">Bags</a></li><li class="toc-l2"><a href="#modern-fashion">Modern fashion</a></li></ul></aside>
 </div>
 <footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
-<script src="../assets/wiki.js?v=mue3r5pw" defer></script>
+<script src="../assets/wiki.js?v=mufb8v69" defer></script>
 </body>
 </html>

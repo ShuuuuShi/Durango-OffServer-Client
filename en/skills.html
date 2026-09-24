@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0b0f0d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/skills.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/skills.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/skills.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mue3r5pw">
+<link rel="stylesheet" href="../assets/wiki.css?v=mufb8v69">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="en" data-slug="skills">
@@ -70,7 +70,7 @@
 <li><a href="../en/animals.html">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
-<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/taming.html">Taming <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
@@ -130,6 +130,12 @@ Character levels give you <strong>Skill Points</strong> to learn skills. A skill
 Example: a Lv.30 character gathering a Lv.10 resource gets about ×0.43.</p>
 <p>Every character level-up gives <strong>+5</strong> Skill Points, <strong>+4</strong> max health and <strong>+1.5</strong> max energy.
 Levels 2, 5 and 10 also give a <a href="titles.html">level title</a>.</p>
+<h3 id="extra-exp-from-worn-items"><a class="anchor" href="#extra-exp-from-worn-items" aria-hidden="true">#</a>Extra EXP from worn items <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>Some worn items have an <strong>Acquired EXP</strong> stat — character EXP from actions × (1 + that value), multiplied together with the <strong>Delicious</strong> status · the total multiplier stays between ×0.1 and ×10</p>
+<ul>
+<li>e.g. <strong>Somebody's Apple</strong> (accessory) +200% EXP → ×3 (×3.09 with Delicious)</li>
+<li>It does not multiply skill category EXP or quest reward EXP</li>
+</ul>
 <h2 id="skill-categories"><a class="anchor" href="#skill-categories" aria-hidden="true">#</a>Skill categories <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>There are 12 categories you can train. Each goes from Lv.1 to 60 and <strong>cannot go above your character level</strong>. Once a category catches up with your character level, its EXP bar stays full until your character levels up.</p>
 <div class="table-wrap"><table>
@@ -192,6 +198,8 @@ Every category has research steps except Survival.</p>
 <li>Research can only start while the category level is <strong>below</strong> your character level</li>
 <li>While researching, keep doing that category's work to shorten the timer (EXP × category level ÷ 10 seconds per action), up to 25% of the total time</li>
 </ul>
+<h3 id="shorter-research"><a class="anchor" href="#shorter-research" aria-hidden="true">#</a>Shorter research <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>With <strong>Academic Ambiance</strong> from a house (<a href="status-effects.html#what-house-moods-really-do">Buffs</a>), research started while the buff is on takes <strong>−20%</strong> (e.g. 5 minutes → 4 minutes) · the Skill page shows the shortened time before you start · reductions add up to at most 90%</p>
 <h2 id="skill-points"><a class="anchor" href="#skill-points" aria-hidden="true">#</a>Skill Points <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>Total Skill Points = <strong>10 + (character level − 1) × 5</strong></p>
 <div class="table-wrap"><table>
@@ -208,6 +216,20 @@ Every category has research steps except Survival.</p>
 <li>Ranks must be learned in order, and the category level must meet the rank's requirement</li>
 <li>A sub-skill needs its main skill first</li>
 </ul>
+<h2 id="skills-that-raise-your-stats"><a class="anchor" href="#skills-that-raise-your-stats" aria-hidden="true">#</a>Skills that raise your stats <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>The bonuses from these skills <strong>really take effect in game</strong> (added to worn items, food, titles and houses), and the numbers on the stats window match what the server uses</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Skill</th><th>Effect when complete</th><th>Read more</th></tr></thead>
+<tbody>
+<tr><td>Health I–VI</td><td>+250 Max Health</td><td><a href="survival.html#gauge-ceilings-and-regeneration-from-every-source">Survival</a></td></tr>
+<tr><td>Bulk Up</td><td>+10 Max Energy per step</td><td>〃</td></tr>
+<tr><td>Life Recovery I–VI · Stamina Recovery I–VI</td><td>+1 / +2.5 per second</td><td>〃</td></tr>
+<tr><td>Stealth I–VI</td><td>+24 Stealth Ability</td><td><a href="animals.html#stealth">Wild animals</a></td></tr>
+<tr><td>Exploration I–III</td><td>Search button waits 9 / 8 / 7 seconds</td><td><a href="map.html#cooldown-by-exploration-skill">Map</a></td></tr>
+<tr><td>Capture skills (10 steps)</td><td>+55 Capture Ability</td><td><a href="taming.html#capture-ability">Taming</a></td></tr>
+<tr><td>Animal Handling I–IV</td><td>Own up to 10 / 12 / 14 / 16 animals</td><td><a href="pets.html#how-many-animals-you-can-own">Pets</a></td></tr>
+</tbody></table></div>
+<p>For combat stats (defense, attack, dodge, combat speed) see <a href="stats.html">Character stats</a></p>
 <h2 id="learning-and-skill-rewind"><a class="anchor" href="#learning-and-skill-rewind" aria-hidden="true">#</a>Learning and Skill Rewind <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p><strong>Learn:</strong> open the <strong>Skill</strong> page, choose a category and learn the next rank. Your character must be alive.</p>
 <p><strong>Skill Rewind:</strong> removes one rank at a time, starting from the top rank, and refunds the points right away.
@@ -280,9 +302,9 @@ Each course is a list of skills to learn.</p>
 </article>
 <nav class="pager"><a class="prev" href="stats.html"><small>← Previous</small>Character stats</a><a class="next" href="skill-list.html"><small>Next →</small>Skill list</a></nav>
 </main>
-<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#character-level-and-exp">Character level and EXP</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#skill-categories">Skill categories</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#skill-category-exp">Skill category EXP</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#skill-research">Skill Research</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#skill-points">Skill Points</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#learning-and-skill-rewind">Learning and Skill Rewind</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#careers">Careers</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#career-guide">Career Guide</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#not-finished-yet">Not finished yet</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#character-level-and-exp">Character level and EXP</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#extra-exp-from-worn-items">Extra EXP from worn items</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#skill-categories">Skill categories</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#skill-category-exp">Skill category EXP</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#skill-research">Skill Research</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#shorter-research">Shorter research</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#skill-points">Skill Points</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#skills-that-raise-your-stats">Skills that raise your stats</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#learning-and-skill-rewind">Learning and Skill Rewind</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#careers">Careers</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#career-guide">Career Guide</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#not-finished-yet">Not finished yet</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
 </div>
 <footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
-<script src="../assets/wiki.js?v=mue3r5pw" defer></script>
+<script src="../assets/wiki.js?v=mufb8v69" defer></script>
 </body>
 </html>

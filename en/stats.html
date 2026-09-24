@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0b0f0d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/stats.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/stats.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/stats.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mue3r5pw">
+<link rel="stylesheet" href="../assets/wiki.css?v=mufb8v69">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="en" data-slug="stats">
@@ -70,7 +70,7 @@
 <li><a href="../en/animals.html">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
-<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/taming.html">Taming <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
@@ -100,19 +100,19 @@
 <h1><img src="../images/atlas/icon_atlas/skill_survival_1.webp" alt="" width="43" height="55" class="title-icon glyph" loading="lazy">Character stats <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h1>
 <p class="summary">The 8 basic abilities, max Health/Energy, combat stats, crafting/gathering stats, resistances and power ratings — where they come from, how they're calculated, which ones really matter</p>
 
-<p>The <strong>character info</strong> screen shows many values — some directly affect play, some are display only. This page explains where each one comes from, how it's calculated and what it does on this server.</p>
+<p>The <strong>character info</strong> screen shows many values — the numbers it shows are now the same values the server really uses, <strong>counting every source</strong> (skills · titles · gear and tags · food · house ambiance). This page explains where each one comes from, how it's calculated and what it does on this server.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Value</th><th>Comes from</th><th>Affects</th></tr></thead>
 <tbody>
-<tr><td>8 basic abilities</td><td>Character level + skill category levels + title</td><td>Endurance → max Health · Will → max Energy</td></tr>
-<tr><td>Max Health / Energy</td><td>Base + level + basic abilities + title</td><td>The on-screen gauges (<a href="survival.html">Survival</a>)</td></tr>
-<tr><td>Combat stats</td><td>The weapon and gear you wear · skill effects on moves</td><td>Damage dealt and taken (<a href="combat.html">Combat</a>)</td></tr>
-<tr><td>Crafting / gathering stats</td><td>Character level + learned skills + bonuses</td><td>Unlocking recipes on the mastery ladder (<a href="crafting.html">Crafting</a>)</td></tr>
-<tr><td>Climate resistance</td><td>Time spent on islands of each climate</td><td>Entry gates for high-Index islands (<a href="weather.html#climate-resistance-level">Weather</a>)</td></tr>
+<tr><td>8 basic abilities</td><td>Character level + skill category levels + title + food/gear</td><td>Endurance → max Health · Will → max Energy</td></tr>
+<tr><td>Max Health / Energy · regen per second</td><td>Base + level + basic abilities + bonuses from every source</td><td>The on-screen gauges (<a href="survival.html">Survival</a>)</td></tr>
+<tr><td>Combat stats</td><td>The weapon and gear you wear + character bonuses · skill effects on moves</td><td>Damage dealt and taken · auto-dodge/auto-block (<a href="combat.html">Combat</a>)</td></tr>
+<tr><td>Crafting / gathering stats</td><td>Character level + learned skills + bonuses from every source</td><td>Mastery ladder · craft/gather success chance (<a href="crafting.html">Crafting</a> · <a href="gathering.html">Gathering</a>)</td></tr>
+<tr><td>Climate resistance</td><td>Time spent on islands of each climate + gear</td><td>Entry gates for high-Index islands · less weather fatigue (<a href="weather.html#climate-resistance-level">Weather</a>)</td></tr>
 <tr><td>3 power ratings</td><td>Weighted from the values above</td><td>Display only</td></tr>
 </tbody></table></div>
 <h2 id="the-8-basic-abilities"><a class="anchor" href="#the-8-basic-abilities" aria-hidden="true">#</a>The 8 basic abilities <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
-<p><strong>Ability = 10 + 0.5 × (character level − 1) + 0.35 × sum of (feeding category level − 1) + title bonus</strong> · minimum 1, maximum 100 · the character screen rounds to whole numbers</p>
+<p><strong>Ability = 10 + 0.5 × (character level − 1) + 0.35 × sum of (feeding category level − 1) + title bonus + food/gear/tag bonus</strong> · minimum 1, maximum 100 · the character screen rounds to whole numbers</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Ability</th><th>Fed by skill categories</th></tr></thead>
 <tbody>
@@ -126,17 +126,25 @@
 <tr><td><strong>Charisma</strong></td><td>Cooking · Tailoring</td></tr>
 </tbody></table></div>
 <p>Example: a Lv30 character with <strong>Survival</strong> Lv20 and <strong>Defense</strong> Lv10 → Endurance = 10 + 14.5 + 0.35 × (19 + 9) = <strong>34.3</strong></p>
-<aside class="callout callout-note"><p class="callout-title"><span aria-hidden="true">ℹ️</span> Note</p><p>On this server the basic abilities that actually do something are <strong>Endurance</strong> (max Health) and <strong>Will</strong> (max Energy) — the other 6 are shown on the character screen but aren't used in any damage or chance calculation yet</p>
+<aside class="callout callout-note"><p class="callout-title"><span aria-hidden="true">ℹ️</span> Note</p><p>The basic abilities that actually do something are <strong>Endurance</strong> (max Health) and <strong>Will</strong> (max Energy) — Endurance/Will from food, tags and gear raise the gauges too · the other 6 are shown on the character screen but aren't used in any damage or chance calculation yet</p>
 </aside>
 <h2 id="max-health-and-energy"><a class="anchor" href="#max-health-and-energy" aria-hidden="true">#</a>Max Health and Energy <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <div class="table-wrap"><table>
 <thead><tr><th>Value</th><th>Formula</th></tr></thead>
 <tbody>
-<tr><td><strong>Max Health</strong> (ceiling of Life)</td><td>300 + 4 × (level − 1) + 2 × (Endurance − 10) + title bonus</td></tr>
-<tr><td><strong>Max Energy</strong> (ceiling of Stamina)</td><td>100 + 1.5 × (level − 1) + 0.8 × (Will − 10) + title bonus</td></tr>
+<tr><td><strong>Max Health</strong> (ceiling of Life)</td><td>300 + 4 × (level − 1) + 2 × (Endurance − 10) + max Health bonus from every source</td></tr>
+<tr><td><strong>Max Energy</strong> (ceiling of Stamina)</td><td>100 + 1.5 × (level − 1) + 0.8 × (Will − 10) + max Energy bonus from every source</td></tr>
 </tbody></table></div>
+<p>&quot;Every source&quot; = skills · titles · tags and built-in bonuses of the gear you wear · food · house ambiance — <strong>the on-screen gauge always equals the number on the character screen</strong></p>
+<ul>
+<li>Max Health goes up → your current Life rises with it right away (like a level-up)</li>
+<li>Max Energy bonus from skills/gear/house ambiance → <strong>only widens the gauge</strong>, it doesn't refill Energy for free (eat or wait for it to regenerate)</li>
+<li>Take gear off or a buff ends and the maximum drops → the current value is cut down to the new maximum</li>
+<li>The Fatigue maximum can also be raised by food, gear, titles and house ambiance</li>
+</ul>
+<p>Example: a Lv30 character with 472 max Health learns all 6 max-Health skill levels (+25/+25/+50/+50/+50/+50 = <strong>+250</strong>) → max Health <strong>722</strong> · the max-Energy skill has 10 levels (+10 each) = <strong>+100</strong></p>
 <div class="table-wrap"><table>
-<thead><tr><th>Level (no skill categories yet)</th><th>Basic ability</th><th>Max Health</th><th>Max Energy</th></tr></thead>
+<thead><tr><th>Level (no skill categories or bonuses yet)</th><th>Basic ability</th><th>Max Health</th><th>Max Energy</th></tr></thead>
 <tbody>
 <tr><td>1</td><td>10</td><td>300</td><td>100</td></tr>
 <tr><td>10</td><td>14.5</td><td>345</td><td>117</td></tr>
@@ -148,24 +156,37 @@
 <li>Hypothermia/overheating lowers Health temporarily (<a href="survival.html#body-temperature">Survival</a>)</li>
 <li>The Fatigue gauge tops out at 100 · warning at 60, danger at 90</li>
 </ul>
+<h3 id="regeneration-per-second"><a class="anchor" href="#regeneration-per-second" aria-hidden="true">#</a>Regeneration per second <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>Regeneration bonuses from <strong>every source</strong> (skills · titles · gear · house ambiance) add to how fast each gauge refills by itself</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Gauge</th><th>Base regeneration</th><th>Example bonus</th></tr></thead>
+<tbody>
+<tr><td>Life</td><td>1.0/second</td><td>All 6 Life-regen skill levels (+0.1/+0.1/+0.1/+0.2/+0.2/+0.3) → <strong>2.0/second</strong></td></tr>
+<tr><td>Stamina</td><td>5.0/second</td><td>All 6 Stamina-regen skill levels (+0.25/+0.25/+0.5/+0.5/+0.5/+0.5) → <strong>7.5/second</strong></td></tr>
+<tr><td>Energy</td><td>+16.7/hour</td><td>Cute Ambiance in your house +0.15/second (= +9/min)</td></tr>
+</tbody></table></div>
+<p>While dead, gauges don't regenerate</p>
 <h2 id="combat-stats"><a class="anchor" href="#combat-stats" aria-hidden="true">#</a>Combat stats <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
-<p>Real damage comes from <strong>what you hold and wear</strong>, not from basic abilities — the full formula is on <a href="combat.html#damage-formula">Combat</a></p>
+<p>The combat stats on the character screen <strong>are the values used when you hit and get hit</strong> = what you hold/wear + your character bonuses (skills · titles · tags and built-in gear bonuses · food · house ambiance) — the full formula is on <a href="combat.html#damage-formula">Combat</a></p>
 <div class="table-wrap"><table>
 <thead><tr><th>Stat</th><th>In real combat</th></tr></thead>
 <tbody>
-<tr><td><strong>Attack</strong></td><td>The attack of the weapon in your hand (bare hands = 40) · a weapon with 0 Durability gives nothing</td></tr>
-<tr><td><strong>Armor penetration</strong></td><td>The weapon's (bare hands = 40) — the further above the animal's defense, the harder you hit</td></tr>
-<tr><td><strong>Defense</strong></td><td>Sum of the defense of every clothing/accessory piece you wear (pieces at 0 Durability don't count)</td></tr>
-<tr><td><strong>Critical Hit</strong></td><td>Fixed 10% chance (heavy moves 18%), damage ×1.9</td></tr>
-<tr><td><strong>Accuracy</strong></td><td>Hit chance comes from the move's accuracy (normal moves 95%)</td></tr>
-<tr><td>Skill effects on moves</td><td>Learned skills unlock new moves and boost existing ones</td></tr>
+<tr><td><strong>Attack</strong></td><td>The attack of the weapon in your hand (bare hands = 40) + attack bonuses · a weapon with 0 Durability gives nothing</td></tr>
+<tr><td><strong>Armor penetration</strong></td><td>The weapon's (bare hands = 40) + penetration bonuses — the further above the animal's defense, the harder you hit</td></tr>
+<tr><td><strong>Defense</strong></td><td>Defense of every clothing/accessory piece you wear (pieces at 0 Durability don't count) + defense bonuses (e.g. the 6 Defense skill levels +10/+10/+10/+20/+20/+30 = <strong>+100</strong>)</td></tr>
+<tr><td><strong>Critical Hit</strong></td><td>The move's critical chance 10% (heavy moves 18%) <strong>+ 1% per Critical point</strong> · damage ×1.9</td></tr>
+<tr><td><strong>Accuracy</strong></td><td>The move's hit chance (normal moves 95%) <strong>+ 0.1% per Accuracy point above 100</strong> (below 100 lowers it)</td></tr>
+<tr><td><strong>Evasion</strong></td><td><strong>Auto-dodge</strong> chance = Evasion × 0.1%, max 15% — the animal's hit shows «Dodged» and you lose no health (<a href="combat.html#auto-dodge">Combat</a>)</td></tr>
+<tr><td>Auto-block</td><td>Holding a melee weapon → 5% + 0.25% per <strong>Defense</strong> category level (max 20%) to reduce the damage you take (<a href="combat.html#auto-block">Combat</a>)</td></tr>
+<tr><td>Skill effects on moves</td><td>Learned skills unlock new moves and boost existing ones · armor-penetration skills give moves <strong>a chance for that hit to ignore the animal's defense</strong></td></tr>
 </tbody></table></div>
 <ul>
-<li>Material tags (e.g. «attack up», «defense up») add to the weapon/gear by level (<a href="tags.html">Item attributes</a>)</li>
+<li>Material tags and built-in gear bonuses (e.g. «attack up», «defense up», «evasion») are already counted in the values above (<a href="tags.html">Item attributes</a>)</li>
+<li>The accuracy value on weapons themselves is not used (only your character's Accuracy)</li>
 <li>Weapons wear with the damage they deal · gear wears with the damage you take — repair on <a href="equipment.html">Equipment and repair</a></li>
 </ul>
 <h2 id="crafting-and-gathering-stats"><a class="anchor" href="#crafting-and-gathering-stats" aria-hidden="true">#</a>Crafting and gathering stats <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
-<p>Each branch's mastery value (character screen) = <strong>character level + 4 × skill nodes learned in the feeding categories + bonuses</strong> (food, gear, titles, mastery ladder)</p>
+<p>Each branch's mastery value (character screen) = <strong>character level + 4 × skill nodes learned in the feeding categories + bonuses from every source</strong> (food · gear and tags · titles · house ambiance · mastery ladder) — the value on screen is the value the server really uses</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Branch</th><th>Fed by skill categories</th></tr></thead>
 <tbody>
@@ -182,11 +203,14 @@
 <tr><td>Butchering</td><td>Butchering</td></tr>
 </tbody></table></div>
 <ul>
-<li>These values are compared against the <strong>mastery ladder</strong> — reach a threshold and you get extra recipes/blueprints automatically (<a href="crafting.html">Crafting</a>)</li>
-<li>Recipe screens show the required value as difficulty, but this server <strong>does not block</strong> crafting if you're below it</li>
+<li>These values are compared against the <strong>mastery ladder</strong> — reach a threshold and you get extra recipes/blueprints automatically · steps you already reached stay when you take gear off (<a href="crafting.html">Crafting</a>)</li>
+<li>Recipe screens show the required value as difficulty · this server <strong>does not block</strong> crafting if you're below it, but <strong>the further below the difficulty, the lower your success chance</strong> — the estimate screen shows the real chance (<a href="crafting.html">Crafting</a>)</li>
+<li>Gathering values from non-skill sources (titles, tags, gear, food) add 0.5% gathering success chance per point (<a href="gathering.html">Gathering</a>)</li>
 </ul>
 <h2 id="climate-resistance"><a class="anchor" href="#climate-resistance" aria-hidden="true">#</a>Climate resistance <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>Resistance to each climate (swamp, desert, tropical forest, volcano, snowfield, tundra) <strong>grows by itself while you stay on islands of that climate</strong> and gates high-Index islands — details on <a href="weather.html#climate-resistance-level">Weather</a> · temperate forest/grassland islands use the highest resistance level you have</p>
+<h3 id="resistance-from-gear"><a class="anchor" href="#resistance-from-gear" aria-hidden="true">#</a>Resistance from gear <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>Resistance values (heat · cold · humidity · wind etc.) from tags, gear, status effects, titles and food <strong>are shown on the survival panel</strong> and reduce fatigue from that kind of weather/climate: fatigue × (1 − resistance ÷ 100) — resistance 100 = no fatigue from that kind at all · resistance of the <strong>opposite kind</strong> (e.g. cold resistance while somewhere hot) makes you tire faster × (1 + value ÷ 100), up to ×2 · this does not affect island entry gates (<a href="weather.html">Weather</a>)</p>
 <h2 id="power-ratings"><a class="anchor" href="#power-ratings" aria-hidden="true">#</a>Power ratings <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>The character screen shows <strong>Combat Power · Crafting Power · Gathering Power</strong> as summary numbers — for comparison only, they don't affect the game</p>
 <div class="table-wrap"><table>
@@ -196,31 +220,32 @@
 <tr><td>Crafting Power</td><td>All 9 crafting branches (equal weight)</td></tr>
 <tr><td>Gathering Power</td><td>Gathering · Mining · Butchering</td></tr>
 </tbody></table></div>
-<h2 id="other-values-on-the-character-screen"><a class="anchor" href="#other-values-on-the-character-screen" aria-hidden="true">#</a>Other values on the character screen</h2>
+<h2 id="other-values-on-the-character-screen"><a class="anchor" href="#other-values-on-the-character-screen" aria-hidden="true">#</a>Other values on the character screen <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <div class="table-wrap"><table>
 <thead><tr><th>Value</th><th>On this server</th></tr></thead>
 <tbody>
 <tr><td>Swimming</td><td>100</td></tr>
 <tr><td>Blow / knockback resistance</td><td>350 / 250 (unused — there is no knockback on this server)</td></tr>
-<tr><td>Tameable animals</td><td>10</td></tr>
-<tr><td>Bag capacity on the character screen</td><td>100 (display value — the real bag holds 200 items, see <a href="storage.html">Storage</a>)</td></tr>
+<tr><td>Animals you can own</td><td><strong>8</strong> + 2 per level of the extra-animals skill (4 levels → up to <strong>16</strong>) · the server enforces it: when full you can't capture, bridle, or take animals back from grazing (animals grazing on your island don't count · if you already own more, none are taken away) — <a href="taming.html">Taming</a></td></tr>
+<tr><td>Bag capacity on the character screen</td><td>100 (display value) — the real bag holds <strong>200 items + extra capacity</strong> from some items/status effects (e.g. +20 · +40) · go over after taking one off = nothing is lost, you just can't pick up more (<a href="storage.html">Storage</a>)</td></tr>
+<tr><td>Movement speed · hiding · search wait time</td><td>Already count skills, gear and status effects from every source · in combat your speed depends on the weapon you hold (<a href="equipment.html">Equipment and repair</a>)</td></tr>
 </tbody></table></div>
 <h2 id="ways-to-raise-your-stats"><a class="anchor" href="#ways-to-raise-your-stats" aria-hidden="true">#</a>Ways to raise your stats</h2>
 <ul>
 <li><strong>Character level</strong> — every level raises basic abilities, Health, Energy and crafting stats (<a href="skills.html#character-level-and-exp">Skills and Careers</a>)</li>
-<li><strong>Skill category levels</strong> — use that category a lot (<a href="skills.html">Skills and Careers</a>)</li>
-<li><strong>Learning skills</strong> — raises crafting stats and gives specific effects (<a href="skill-list.html">Skill list</a>)</li>
+<li><strong>Skill category levels</strong> — use that category a lot · the Defense category also raises your auto-block chance (<a href="skills.html">Skills and Careers</a>)</li>
+<li><strong>Learning skills</strong> — raises crafting stats, Defense, max Health/Energy, regeneration, how many animals you can own, and specific move effects (<a href="skill-list.html">Skill list</a>)</li>
 <li><strong>Titles</strong> — wear a title with a bonus (<a href="titles.html#title-bonuses">Titles</a>)</li>
-<li><strong>Gear</strong> — weapons, clothing and their tag attributes (<a href="equipment.html">Equipment and repair</a>)</li>
-<li><strong>Food and buffs</strong> — food buffs and house moods (<a href="status-effects.html">Buffs and status effects</a>)</li>
+<li><strong>Gear</strong> — weapons, clothing, their tag attributes and each piece's built-in bonuses (pieces at 0 Durability give nothing) (<a href="equipment.html">Equipment and repair</a>)</li>
+<li><strong>Food and buffs</strong> — food buffs and house ambiance (<a href="status-effects.html">Buffs and status effects</a>)</li>
 </ul>
 
 </article>
 <nav class="pager"><a class="prev" href="pets.html"><small>← Previous</small>Pets</a><a class="next" href="skills.html"><small>Next →</small>Skills and Careers</a></nav>
 </main>
-<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#the-8-basic-abilities">The 8 basic abilities</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#max-health-and-energy">Max Health and Energy</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#combat-stats">Combat stats</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#crafting-and-gathering-stats">Crafting and gathering stats</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#climate-resistance">Climate resistance</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#power-ratings">Power ratings</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#other-values-on-the-character-screen">Other values on the character screen</a></li><li class="toc-l2"><a href="#ways-to-raise-your-stats">Ways to raise your stats</a></li></ul></aside>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#the-8-basic-abilities">The 8 basic abilities</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#max-health-and-energy">Max Health and Energy</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#regeneration-per-second">Regeneration per second</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#combat-stats">Combat stats</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#crafting-and-gathering-stats">Crafting and gathering stats</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#climate-resistance">Climate resistance</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#resistance-from-gear">Resistance from gear</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#power-ratings">Power ratings</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#other-values-on-the-character-screen">Other values on the character screen</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#ways-to-raise-your-stats">Ways to raise your stats</a></li></ul></aside>
 </div>
 <footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
-<script src="../assets/wiki.js?v=mue3r5pw" defer></script>
+<script src="../assets/wiki.js?v=mufb8v69" defer></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0b0f0d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/map.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/map.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/map.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mue3r5pw">
+<link rel="stylesheet" href="../assets/wiki.css?v=mufb8v69">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="en" data-slug="map">
@@ -70,7 +70,7 @@
 <li><a href="../en/animals.html">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
-<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/taming.html">Taming <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
@@ -116,10 +116,21 @@
 <thead><tr><th>Item</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td>Energy per search</td><td>5</td></tr>
-<tr><td>Wait between searches</td><td>10 seconds</td></tr>
+<tr><td>Wait between searches</td><td>10 seconds (skills shorten it — <a href="#cooldown-by-exploration-skill">below</a>)</td></tr>
 <tr><td>Result</td><td>The 3 nearest points of interest</td></tr>
 </tbody></table></div>
 <p>Not enough energy = no search («หมดแรง — พักก่อนค่อยค้นหา», Thai-only server message) · too soon = «ยังค้นหาไม่ได้ — รอสักครู่»</p>
+<h3 id="cooldown-by-exploration-skill"><a class="anchor" href="#cooldown-by-exploration-skill" aria-hidden="true">#</a>Cooldown by Exploration skill <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Skill</th><th>Wait between searches</th></tr></thead>
+<tbody>
+<tr><td>None</td><td>10 seconds</td></tr>
+<tr><td><strong>Exploration I</strong> / <strong>II</strong> / <strong>III</strong></td><td>9 / 8 / 7 seconds</td></tr>
+</tbody></table></div>
+<ul>
+<li>The Search button shows a countdown ring that matches the time the server really uses</li>
+<li>Pressing it while waiting shows a wait message and <strong>costs no energy</strong></li>
+</ul>
 <h2 id="discovery-rewards"><a class="anchor" href="#discovery-rewards" aria-hidden="true">#</a>Discovery rewards <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>Walk up to a point of interest you haven't discovered on that island → it stays on your map for good</p>
 <div class="table-wrap"><table>
@@ -148,9 +159,9 @@
 </article>
 <nav class="pager"><a class="prev" href="warp.html"><small>← Previous</small>Warps &amp; Rifts</a><span></span></nav>
 </main>
-<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#points-of-interest-on-the-map">Points of interest on the map</a></li><li class="toc-l2"><a href="#the-search-button">The Search button</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#discovery-rewards">Discovery rewards</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#map-vouchers">Map vouchers</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#encyclopedia">Encyclopedia</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li></ul></aside>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#points-of-interest-on-the-map">Points of interest on the map</a></li><li class="toc-l2"><a href="#the-search-button">The Search button</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#cooldown-by-exploration-skill">Cooldown by Exploration skill</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#discovery-rewards">Discovery rewards</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#map-vouchers">Map vouchers</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#encyclopedia">Encyclopedia</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li></ul></aside>
 </div>
 <footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
-<script src="../assets/wiki.js?v=mue3r5pw" defer></script>
+<script src="../assets/wiki.js?v=mufb8v69" defer></script>
 </body>
 </html>

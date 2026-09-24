@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0b0f0d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/weather.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/weather.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/weather.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mue3r5pw">
+<link rel="stylesheet" href="../assets/wiki.css?v=mufb8v69">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="en" data-slug="weather">
@@ -70,7 +70,7 @@
 <li><a href="../en/animals.html">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
-<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/taming.html">Taming <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
@@ -138,7 +138,47 @@
 <li>Weather fatigue hits <strong>every island, the Safe House included</strong> — sit out storms in a shelter</li>
 <li>Weather also moves your body temperature — table in <a href="survival.html#body-temperature">Survival</a></li>
 </ul>
+<h3 id="walk-speed-and-stealth"><a class="anchor" href="#walk-speed-and-stealth" aria-hidden="true">#</a>Walk speed and stealth <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<ul>
+<li>The walk-speed multipliers in the table apply to your own walk speed: normally <strong>500</strong> × (1 + speed bonus from worn items), up to <strong>1000</strong> — e.g. the Ninja Outfit (+10%) walks at 550, or 522 in the rain · for combat speed see <a href="stats.html">Character stats</a></li>
+<li>The distance predators see you from is also divided by your <strong>Stealth</strong> (up to about 1 tile shorter) — see <a href="animals.html#stealth">Wild animals</a></li>
+</ul>
 <aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>Rain is a farmer's friend — planted fields get free water every time rain starts. See <a href="farming.html">Farming</a>.</p>
+</aside>
+<h2 id="weather-resistance-from-gear"><a class="anchor" href="#weather-resistance-from-gear" aria-hidden="true">#</a>Weather resistance from gear <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>Many outfits, hats, gloves and shoes carry a <strong>resistance</strong> attribute (the leaf outfit resists heat, the leather outfit resists cold, and so on) · the total from worn items, statuses, titles and food shows on the Survival tab of the stats window</p>
+<ul>
+<li>A matching resistance: <strong>1 point = 1% less fatigue of that kind</strong> (100 points = no fatigue of that kind at all)</li>
+<li>The <strong>opposite</strong> resistance adds 1% fatigue of that kind per point (up to 2×) · wearing both multiplies the two effects</li>
+<li>Applies to fatigue from the <strong>island's climate</strong> and the <strong>current weather</strong> · fatigue from the <strong>Unstable Index</strong> is lowered by the resistance that matches the island's climate (no opposite kind) · fatigue from the island level is not lowered</li>
+<li>This is separate from the <strong>Climate Resistance Level</strong> that unlocks high-Index islands (<a href="#climate-resistance-level">below</a>) — that one still grows only by staying on the island</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>Fatigue from</th><th>Lowered by</th><th>Raised by</th></tr></thead>
+<tbody>
+<tr><td>Heat · intense heat</td><td>Heat Resistance</td><td>Cold Resistance</td></tr>
+<tr><td>Cold · intense cold</td><td>Cold Resistance</td><td>Heat Resistance</td></tr>
+<tr><td>Humid</td><td>Humidity Resistance</td><td>Wind Resistance</td></tr>
+<tr><td>Gale</td><td>Wind Resistance</td><td>Humidity Resistance</td></tr>
+<tr><td>Volcanic heat</td><td>Volcanic Heat Resistance</td><td>Cold Resistance</td></tr>
+<tr><td>Scorching sun</td><td>Scorching Sun Resistance</td><td>—</td></tr>
+<tr><td>Snowstorm</td><td>Snow Resistance</td><td>—</td></tr>
+<tr><td>Poison</td><td>Poison Resistance</td><td>—</td></tr>
+<tr><td>Dry · island level</td><td>—</td><td>—</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Example</th><th>Before</th><th>After</th></tr></thead>
+<tbody>
+<tr><td>Level 60 volcanic island + Thermal Resistance Gloves Lv60 (+12)</td><td>10.5/min</td><td>9.24/min</td></tr>
+<tr><td>Hot island + Heat Resistance +30</td><td>6.0/min</td><td>4.2/min</td></tr>
+<tr><td>Hot island + Cold Resistance +20</td><td>6.0/min</td><td>7.2/min</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Index on an island of climate</th><th>Tropical forest</th><th>Desert</th><th>Tundra</th><th>Snow field</th><th>Swamp</th><th>Volcanic</th></tr></thead>
+<tbody>
+<tr><td>Resistance that lowers Index fatigue</td><td>Heat</td><td>Scorching Sun</td><td>Cold</td><td>Wind</td><td>Humidity</td><td>Volcanic Heat</td></tr>
+</tbody></table></div>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>Before sailing to a cold island, take off your heat-resistant gear — the wrong kind of resistance makes you tire faster.</p>
 </aside>
 <h2 id="seasons"><a class="anchor" href="#seasons" aria-hidden="true">#</a>Seasons <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>The whole world runs through 4 seasons in turn, <strong>7 days</strong> each (a 28-day cycle), changing every <strong>Thursday at 00:00 UTC (07:00 Thai time)</strong>.</p>
@@ -214,9 +254,9 @@
 </article>
 <nav class="pager"><a class="prev" href="status-effects.html"><small>← Previous</small>Buffs and status effects</a><a class="next" href="death.html"><small>Next →</small>Death &amp; Revival</a></nav>
 </main>
-<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#weather-on-each-island">Weather on each island</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#what-weather-does">What weather does</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#seasons">Seasons</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#unstable-index">Unstable Index</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#climate-resistance-level">Climate Resistance Level</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#not-finished-yet">Not finished yet</a></li><li class="toc-l3"><a href="#a-way-into-index-910-islands">A way into Index 9–10 islands</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#weather-on-each-island">Weather on each island</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#what-weather-does">What weather does</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#walk-speed-and-stealth">Walk speed and stealth</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#weather-resistance-from-gear">Weather resistance from gear</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#seasons">Seasons</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#unstable-index">Unstable Index</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#climate-resistance-level">Climate Resistance Level</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#not-finished-yet">Not finished yet</a></li><li class="toc-l3"><a href="#a-way-into-index-910-islands">A way into Index 9–10 islands</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
 </div>
 <footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
-<script src="../assets/wiki.js?v=mue3r5pw" defer></script>
+<script src="../assets/wiki.js?v=mufb8v69" defer></script>
 </body>
 </html>

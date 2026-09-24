@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Crafting · Durango OffServer Guide</title>
-<meta name="description" content="Craft tools, weapons and clothes and process materials — recipes, workbenches, product level, Processing Chances and desulfurizing metal with seashells">
+<meta name="description" content="Craft tools, weapons and clothes and process materials — recipes, workbenches, success chance and failure, product level, Processing Chances and desulfurizing metal with seashells">
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#0b0f0d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/crafting.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/crafting.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/crafting.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mue3r5pw">
+<link rel="stylesheet" href="../assets/wiki.css?v=mufb8v69">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="en" data-slug="crafting">
@@ -70,7 +70,7 @@
 <li><a href="../en/animals.html">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
-<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/taming.html">Taming <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
@@ -98,7 +98,7 @@
 <article class="page">
 <p class="crumbs"><a href="index.html">Home</a> › Gathering &amp; Crafting</p>
 <h1><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="title-icon glyph" loading="lazy">Crafting <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h1>
-<p class="summary">Craft tools, weapons and clothes and process materials — recipes, workbenches, product level, Processing Chances and desulfurizing metal with seashells</p>
+<p class="summary">Craft tools, weapons and clothes and process materials — recipes, workbenches, success chance and failure, product level, Processing Chances and desulfurizing metal with seashells</p>
 
 <p>What you gather becomes tools, weapons, clothes, food and building parts. Many materials must be <strong>processed</strong> first (trimmed, smelted, tanned, dried …) before the next recipe accepts them. The level and attributes of your materials carry over into what you make.</p>
 <p><figure><img src="../images/tex/Assets__Texture2D__weaponcrafting_3-w560.webp" alt="A recipe's material slots" width="560" height="280" loading="lazy" class="img-figure"><figcaption>A recipe's material slots</figcaption></figure></p>
@@ -118,24 +118,79 @@
 <li>Wait for the progress bar to fill, then collect your item</li>
 </ol>
 <ul>
-<li>Recipes unlock by learning <a href="skills.html">Skills</a>, and some recipes/Plans unlock by themselves once your <strong>Crafting Ability</strong> in that category is high enough</li>
-<li>The recipe page shows the required ability as its difficulty — it does not block crafting right now</li>
+<li>Recipes unlock by learning <a href="skills.html">Skills</a>, and some recipes/Plans unlock by themselves once your <strong>Crafting Ability</strong> in that category is high enough (the mastery ladder)</li>
+<li>Crafting Ability never blocks a recipe — you can always try. Instead it sets your <strong>success chance</strong>: the <strong>Expected Result</strong> window shows the recipe's <strong>Difficulty</strong>, the success rate and the Flawless Rate before you craft — the same numbers the server rolls with</li>
 </ul>
-<h2 id="key-numbers"><a class="anchor" href="#key-numbers" aria-hidden="true">#</a>Key numbers</h2>
+<h2 id="key-numbers"><a class="anchor" href="#key-numbers" aria-hidden="true">#</a>Key numbers <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <div class="table-wrap"><table>
 <thead><tr><th>Topic</th><th>Value</th></tr></thead>
 <tbody>
 <tr><td>Normal crafting time</td><td>2 s (skills can shorten it · minimum 0.5 s)</td></tr>
 <tr><td>Processing time</td><td>per recipe, at most 20 s</td></tr>
 <tr><td>Stamina used</td><td>5 per craft</td></tr>
-<tr><td>Crafting failure</td><td>none — you always get the item</td></tr>
-<tr><td>Flawless Success</td><td>10%</td></tr>
+<tr><td>Fatigue</td><td>crafting adds none — so «Crafting Fatigue Reduction» has no effect for now</td></tr>
+<tr><td>Success chance</td><td>100% when your Crafting Ability ≥ the Difficulty · lower below it — see <a href="#success-and-failure">Success and failure</a></td></tr>
+<tr><td>Flawless Success</td><td>usually 10% · up to 30% with buffs — see <a href="#flawless-success-chance">Flawless Success chance</a></td></tr>
 <tr><td>Product level</td><td>average level of all materials, rounded down (capped at the recipe's max level)</td></tr>
 <tr><td>Level of a processed item</td><td>same as the original item</td></tr>
 </tbody></table></div>
 <p><strong>Flawless Success</strong> puts a «Flawless Success» mark on the item · +10% max durability · processing recipes give +1 level to the attributes they add · ×1.5 experience</p>
-<h3 id="experience"><a class="anchor" href="#experience" aria-hidden="true">#</a>Experience</h3>
-<p>Each craft gives experience in the recipe's skill category (Weapon/Tool Crafting · Tailoring · Cooking · Build · Processing) based on the product level compared with your category level — the same table as <a href="gathering.html">Gathering</a>.</p>
+<h3 id="experience"><a class="anchor" href="#experience" aria-hidden="true">#</a>Experience <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>Each craft gives experience in the recipe's skill category (Weapon/Tool Crafting · Tailoring · Cooking · Build · Processing) based on the product level compared with your category level — the same table as <a href="gathering.html">Gathering</a>. A <strong>big failure</strong> gives <strong>half</strong> of that (and half the character experience) · crafting quests don't count it.</p>
+<h2 id="success-and-failure"><a class="anchor" href="#success-and-failure" aria-hidden="true">#</a>Success and failure <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>Every craft is rolled against the recipe's <strong>Difficulty</strong> (shown in the Expected Result window — it grows with the product level) and your <strong>Crafting Ability</strong> in the recipe's category:</p>
+<pre><code>gap = Difficulty − Crafting Ability   (0 when your ability is higher)
+success chance = 1 − (gap ÷ 100)²</code></pre>
+<div class="table-wrap"><table>
+<thead><tr><th>Result</th><th>Chance</th><th>What happens</th></tr></thead>
+<tbody>
+<tr><td>Success</td><td>1 − (gap ÷ 100)²</td><td>you get the item — it may be a Flawless Success</td></tr>
+<tr><td>Failure</td><td>(gap ÷ 100)² − (gap ÷ 100)³</td><td>the game shows it as a success and you get the item, but no Flawless Success and no bonus items · weapons, tools, clothes and accessories start at <strong>70%</strong> of max durability (repair brings them back to full) · food and materials are not affected</td></tr>
+<tr><td>Big failure</td><td>(gap ÷ 100)³</td><td>the game says «Crafting Failed» · <strong>no item</strong> · you lose <strong>gap %</strong> of the materials, the rest go back to your bag (the same pieces) · Stamina and time are not refunded · half experience</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Recovery rate</strong> — mastery ladder steps in 8 crafting categories give recovery rate (+10%, +15%, +20%, +30% per step): materials lost on a big failure × (1 − recovery rate) · at most <strong>90%</strong> recovered · Farming has none</li>
+<li>Which pieces are lost is random — per slot, count × loss share, and any fraction is a chance to lose one more piece</li>
+<li><strong>Dyeing and bleaching</strong> recipes ignore ability and always succeed · so do recipes with no Difficulty</li>
+<li><strong>Unattended crafting</strong> rolls when you place the job — on a big failure nothing is put on the workbench</li>
+<li>Until 24 Sep every craft succeeded; the original formula is now in use</li>
+</ul>
+<h3 id="examples"><a class="anchor" href="#examples" aria-hidden="true">#</a>Examples</h3>
+<p>Weapon recipes · ability = the Crafting Ability value (for example «10» = a Lv10 character with no bonuses) · each cell = success · big failure · materials lost on a big failure</p>
+<p><strong>Recipes whose Difficulty = 1 × item level</strong> (some handles and bone blades)</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Crafting Ability</th><th>Item Lv10 (Difficulty 10)</th><th>Item Lv30 (Difficulty 30)</th><th>Item Lv60 (Difficulty 60)</th></tr></thead>
+<tbody>
+<tr><td>10</td><td>100%</td><td>96% · 0.8% · 20%</td><td>75% · 12.5% · 50%</td></tr>
+<tr><td>30</td><td>100%</td><td>100%</td><td>91% · 2.7% · 30%</td></tr>
+<tr><td>50</td><td>100%</td><td>100%</td><td>99% · 0.1% · 10%</td></tr>
+<tr><td>60</td><td>100%</td><td>100%</td><td>100%</td></tr>
+</tbody></table></div>
+<p><strong>Recipes whose Difficulty = 1.75 × item level</strong> (improved metal axe heads and similar)</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Crafting Ability</th><th>Item Lv10 (Difficulty 17.5)</th><th>Item Lv30 (Difficulty 52.5)</th><th>Item Lv60 (Difficulty 105)</th></tr></thead>
+<tbody>
+<tr><td>10</td><td>99.4% · 0.04% · 7.5%</td><td>81.9% · 7.7% · 42.5%</td><td>9.8% · 85.7% · 95%</td></tr>
+<tr><td>30</td><td>100%</td><td>94.9% · 1.1% · 22.5%</td><td>43.8% · 42.2% · 75%</td></tr>
+<tr><td>60</td><td>100%</td><td>100%</td><td>79.8% · 9.1% · 45%</td></tr>
+<tr><td>100</td><td>100%</td><td>100%</td><td>99.8% · 0.01% · 5%</td></tr>
+</tbody></table></div>
+<p>Before 24 Sep: 100% success in every cell, no materials lost. Material loss here is before any recovery rate.</p>
+<h3 id="crafting-ability-counts-every-source"><a class="anchor" href="#crafting-ability-counts-every-source" aria-hidden="true">#</a>Crafting Ability counts every source <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>The ability used for the roll is the same number your character screen shows: skills · mastery ladder · titles · item attributes · item modifiers · food buffs · house ambiance. The mastery ladder uses that number too — a ladder step reached thanks to gear stays yours after you take the gear off. The «Crafting Ability Buff» attribute adds to all 9 crafting abilities (Weapon Crafting · Tailoring · Sewing · Handicraft · Metal Processing · Cooking · Furniture Crafting · Building · Farming). More on these numbers in <a href="stats.html">Stats</a>.</p>
+<h3 id="flawless-success-chance"><a class="anchor" href="#flawless-success-chance" aria-hidden="true">#</a>Flawless Success chance <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<ul>
+<li>Base <strong>10%</strong> · an ability far above the Difficulty raises it — Weapon Crafting and Tailoring up to about 17%, Furniture Crafting and Building up to about 13%, other categories stay at 10%</li>
+<li>Buffs that raise the Flawless Crafting Rate add on top — for example the house ambiance «Fragrant Spring» +4% (10% → 14%) · total cap <strong>30%</strong></li>
+<li>A failure or big failure is never Flawless</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>Weapon Crafting Ability \ Difficulty</th><th>5</th><th>15</th><th>30</th><th>45</th><th>60</th><th>105</th></tr></thead>
+<tbody>
+<tr><td>100</td><td>10%</td><td>10%</td><td>10%</td><td>10%</td><td>10%</td><td>10%</td></tr>
+<tr><td>150</td><td>14.5%</td><td>13.5%</td><td>12%</td><td>10.5%</td><td>10%</td><td>10%</td></tr>
+<tr><td>180</td><td>17.4%</td><td>16.2%</td><td>14.4%</td><td>12.6%</td><td>10.8%</td><td>10%</td></tr>
+</tbody></table></div>
 <h2 id="unattended-crafting-at-a-workbench"><a class="anchor" href="#unattended-crafting-at-a-workbench" aria-hidden="true">#</a>Unattended crafting at a workbench <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <ul>
 <li>Supported recipes (such as smelting ore and desulfurizing metal at a kiln) can be left on a <strong>Workbench</strong> — materials are taken right away and the item waits on the table until the time is up</li>
@@ -174,8 +229,9 @@
 <li>«Waterproof» (Waterproofed Material) and «Dried» (drying recipes) follow the same rule</li>
 <li>Metal you desulfurized before this fix works right away — no need to redo it</li>
 </ul>
-<h2 id="attributes-that-carry-over"><a class="anchor" href="#attributes-that-carry-over" aria-hidden="true">#</a>Attributes that carry over</h2>
+<h2 id="attributes-that-carry-over"><a class="anchor" href="#attributes-that-carry-over" aria-hidden="true">#</a>Attributes that carry over <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>The material in the <strong>main slot</strong> passes its attributes on to what you craft (each one can be lost at every step) — details in <a href="tags.html">Item attributes</a>.</p>
+<p>Titles with «Latent/Rare Attribute Rate» multiply the chance of each attribute carrying over by (1 + the title's value) — for example +30% turns a 30% chance into 39% · cap 90%.</p>
 <h2 id="repair"><a class="anchor" href="#repair" aria-hidden="true">#</a>Repair</h2>
 <p>Tools and weapons wear out with use; repair them with a Repair Kit or T Stone — see <a href="decay.html">Decay and repair</a>.</p>
 <h2 id="tips"><a class="anchor" href="#tips" aria-hidden="true">#</a>Tips</h2>
@@ -185,15 +241,17 @@
 </aside>
 <aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>Long jobs like smelting and desulfurizing can be left at a kiln while you go gathering.</p>
 </aside>
+<aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>Before crafting a high-level item, open <strong>Expected Result</strong> — if the success rate is low, raise your Crafting Ability first (skills, food, gear, titles) or craft a lower-level version.</p>
+</aside>
 <h2 id="crafting-and-other-actions-cant-overlap"><a class="anchor" href="#crafting-and-other-actions-cant-overlap" aria-hidden="true">#</a>Crafting and other actions can't overlap <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>Starting another timed action (such as gathering or washing) while a craft is in progress cancels that craft, and its materials are not used · <strong>unattended crafting</strong> left on a workbench is not affected and keeps going · full rule on <a href="gathering.html#one-timed-action-at-a-time">Gathering</a>.</p>
 
 </article>
 <nav class="pager"><a class="prev" href="gathering.html"><small>← Previous</small>Gathering</a><a class="next" href="tags.html"><small>Next →</small>Item attributes</a></nav>
 </main>
-<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#how-to-craft">How to craft</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#key-numbers">Key numbers</a></li><li class="toc-l3"><a href="#experience">Experience</a></li><li class="toc-l2"><a href="#unattended-crafting-at-a-workbench">Unattended crafting at a workbench</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#processing-materials">Processing materials</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#processing-chances">Processing Chances</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#desulfurizing-metal-with-seashells">Desulfurizing metal with seashells</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#attributes-that-carry-over">Attributes that carry over</a></li><li class="toc-l2"><a href="#repair">Repair</a></li><li class="toc-l2"><a href="#tips">Tips</a></li><li class="toc-l2"><a href="#crafting-and-other-actions-cant-overlap">Crafting and other actions can't overlap</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li></ul></aside>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#how-to-craft">How to craft</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#key-numbers">Key numbers</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#experience">Experience</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#success-and-failure">Success and failure</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#examples">Examples</a></li><li class="toc-l3"><a href="#crafting-ability-counts-every-source">Crafting Ability counts every source</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#flawless-success-chance">Flawless Success chance</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#unattended-crafting-at-a-workbench">Unattended crafting at a workbench</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#processing-materials">Processing materials</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#processing-chances">Processing Chances</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#desulfurizing-metal-with-seashells">Desulfurizing metal with seashells</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#attributes-that-carry-over">Attributes that carry over</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#repair">Repair</a></li><li class="toc-l2"><a href="#tips">Tips</a></li><li class="toc-l2"><a href="#crafting-and-other-actions-cant-overlap">Crafting and other actions can't overlap</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li></ul></aside>
 </div>
 <footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
-<script src="../assets/wiki.js?v=mue3r5pw" defer></script>
+<script src="../assets/wiki.js?v=mufb8v69" defer></script>
 </body>
 </html>
