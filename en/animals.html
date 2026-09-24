@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wild animals · Durango OffServer Guide</title>
-<meta name="description" content="Animal temperaments, island-based levels, herds and alphas, predators hunting prey, movement/sleep, and what you get from butchering">
+<meta name="description" content="Animal temperaments, counterattacks, island-based levels, herds and alphas, predators hunting prey, movement/sleep, and what you get from butchering">
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#0b0f0d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/animals.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/animals.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/animals.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mufilj4m">
+<link rel="stylesheet" href="../assets/wiki.css?v=mufx74sm">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="en" data-slug="animals">
@@ -70,7 +70,7 @@
 <li><a href="../en/animals.html" class="current" aria-current="page">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
-<li><a href="../en/taming.html">Taming <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/taming.html">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
@@ -98,7 +98,7 @@
 <article class="page">
 <p class="crumbs"><a href="index.html">Home</a> › Animals &amp; Combat</p>
 <h1><img src="../images/atlas/target_atlas/target_raptor.webp" alt="" width="62" height="80" class="title-icon" loading="lazy">Wild animals <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h1>
-<p class="summary">Animal temperaments, island-based levels, herds and alphas, predators hunting prey, movement/sleep, and what you get from butchering</p>
+<p class="summary">Animal temperaments, counterattacks, island-based levels, herds and alphas, predators hunting prey, movement/sleep, and what you get from butchering</p>
 <p class="partial-note"><span aria-hidden="true">⏳</span> Some sections on this page are not ready yet</p>
 <p>Every island is home to herds of dinosaurs and prehistoric animals. Some attack the moment they see you, some run, some ignore you until they are hit. Animals have levels based on their island, sleep at night, hunt each other in front of you, and leave a carcass you can butcher for meat, leather and bones.</p>
 <p> <img src="../images/atlas/target_atlas/target_trex.webp" alt="Tyrannosaurus" width="65" height="77" loading="lazy" class="img-icon"> <img src="../images/atlas/target_atlas/target_sabertooth.webp" alt="Sabertooth" width="65" height="75" loading="lazy" class="img-icon"> <img src="../images/atlas/target_atlas/target_mammoth.webp" alt="Mammoth" width="70" height="78" loading="lazy" class="img-icon"></p>
@@ -119,8 +119,26 @@
 </tbody></table></div>
 <ul>
 <li>After 20 seconds out of combat, animals regenerate 0.3% health per second · Tyrannosaurus and Apatosaurus regenerate 1% per second · Allosaurus does not regenerate</li>
+<li>Giving up the chase far from home doesn't mean you can hit it for free — an animal you're hitting will always strike back if it can reach you, see <a href="#when-an-animal-is-hit">When an animal is hit</a></li>
 </ul>
 <aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>If you hit an animal and then leave it alone for a long time, it heals back — keep the pressure on when hunting big animals</p>
+</aside>
+<h2 id="when-an-animal-is-hit"><a class="anchor" href="#when-an-animal-is-hit" aria-hidden="true">#</a>When an animal is hit <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>Aggressive and neutral animals that get hit turn on whoever hit them — standing in a safe zone or luring them far from home won't let you hit them for free</p>
+<ul>
+<li><strong>If it can reach you, it strikes back:</strong> if you've hit it within the last 20 seconds and you're inside its <strong>counter range</strong> (the reach of that species' longest attack + 1 tile), it hits back every time — even when lured more than 32 tiles from home, or when you're standing in a safe zone</li>
+<li><strong>Far from home:</strong> more than 32 tiles from home it won't keep chasing — step out of its counter range and it gives up (you still can't lure it any farther)</li>
+<li><strong>Safe zones</strong> (12-tile radius around Harbors and arrival points): animals <strong>never step inside</strong> — hit one from inside the zone and it runs up to the edge and strikes back if it can reach you
+<ul>
+<li>If you stand deeper inside where it can't reach you, it roars a warning once and just watches (it doesn't swing attacks that can't land)</li>
+<li>After 10 seconds of not being able to reach you, it loses interest, walks back home and its <strong>health refills to full</strong></li>
+</ul>
+</li>
+<li>Idle, wandering animals avoid walking into safe zones · any already inside slowly walk out on their own</li>
+<li>Aggressive animals that spotted you and gave chase on their own (you haven't hit them) still give up when you enter a safe zone</li>
+<li>Skittish animals still run away when hit, as in the original game (no counterattack) · stunned/collapsed animals don't attack</li>
+</ul>
+<aside class="callout callout-warn"><p class="callout-title"><span aria-hidden="true">⚠️</span> Caution</p><p>A safe zone stops animals from running in after you, but it doesn't protect you from counterattacks — if you hit an animal standing at the edge, expect to take damage</p>
 </aside>
 <h2 id="stealth"><a class="anchor" href="#stealth" aria-hidden="true">#</a>Stealth <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>Your <strong>Stealth Ability</strong> (on the stats window) makes aggressive animals spot you from closer, and sleeping animals wake only when you come closer than before · the distance is divided by the original game's formula, which divides by at most about 1.1 — <strong>in practice it is about 1 tile shorter</strong>, and even a little Stealth gives nearly the full effect</p>
@@ -145,7 +163,8 @@
 </aside>
 <h2 id="animal-levels"><a class="anchor" href="#animal-levels" aria-hidden="true">#</a>Animal levels <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <ul>
-<li>Regular animals spawn at <strong>island level ±5</strong> (minimum 1 · maximum 70) · alphas and elite leaders keep the fixed level from the spawn table</li>
+<li><strong>Every</strong> animal spawns at <strong>island level ±5</strong> (minimum 1 · maximum 70) — including alphas, elite leaders and animals guarding resource caches/rifts · so low-level islands no longer have alphas far above the island's level</li>
+<li>Animals reborn into a herd (after dying or being captured) roll a new level in this range each time</li>
 <li>Health, attack and defense grow with level using the original game's formula (health ≈ species constant × (level + 24)²)</li>
 <li>The same species at different levels can differ a lot in toughness — that is real game data, not a bug</li>
 </ul>
@@ -155,6 +174,14 @@
 <tr><td>Raptor (health)</td><td>488</td><td>817</td><td>—</td><td>—</td></tr>
 <tr><td>Sabertooth (health)</td><td>1,053</td><td>1,764</td><td>2,656</td><td>6,428</td></tr>
 </tbody></table></div>
+<h3 id="islands-of-level-55-and-up"><a class="anchor" href="#islands-of-level-55-and-up" aria-hidden="true">#</a>Islands of level 55 and up <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h3>
+<ul>
+<li>On islands of level <strong>55 and up</strong> (the highest island level is 60) <strong>every</strong> animal — alphas, elite leaders and animals guarding resource caches/rifts included — spawns at a <strong>random level from 60 to 70</strong>, each level equally likely, instead of island level ±5</li>
+<li>Islands below level 55 keep island level ±5</li>
+<li>Animals already out there before the update keep their level and are replaced bit by bit as new ones spawn · an alpha or animal that respawns as itself rolls a new level in 60–70 if its level is outside that range</li>
+<li>The maximum wild animal level is still 70 · health, attack and defense keep growing with the same formula</li>
+<li>You can capture Lv61–70 animals as pets — see <a href="taming.html#animals-above-level-60">Taming</a></li>
+</ul>
 <h2 id="unstable-index"><a class="anchor" href="#unstable-index" aria-hidden="true">#</a>Unstable Index <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>On an <a href="islands.html">Unstable Island</a> the health and attack of every animal (alphas included) are multiplied by <strong>1 + (Unstable Index − 1) × 0.25</strong> · the level shown over its head does not change</p>
 <div class="table-wrap"><table>
@@ -164,29 +191,41 @@
 </tbody></table></div>
 <h2 id="herds-and-animal-numbers"><a class="anchor" href="#herds-and-animal-numbers" aria-hidden="true">#</a>Herds and animal numbers <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <ul>
-<li>Public islands hold about <strong>9 animals per 64×64-tile area</strong> (3 herds × 3 animals), using the species from that island's table</li>
+<li>Public islands hold <strong>6–12 animals per 64×64-tile area depending on terrain</strong> (<a href="#numbers-by-terrain">see below</a>), living in herds of <strong>up to 6 animals</strong>, using the species from that island's table</li>
 <li>Every island keeps at least <strong>3 herds with ≥ 3 animals each</strong> — if hunting drops it below that, the missing herd returns to its spot after 3 minutes (aggressive) · 2 minutes (skittish) · 4 minutes (neutral)</li>
 <li>Safehouses, tutorial islands and peaceful islands are not topped up</li>
-<li>Areas with nobody around for 30 minutes put their herds to rest; when someone returns, the remaining animals come back</li>
+<li>Areas with nobody around for 30 minutes put their herds to rest and set them up again when someone returns</li>
 </ul>
-<h3 id="numbers-by-terrain"><a class="anchor" href="#numbers-by-terrain" aria-hidden="true">#</a>Numbers by terrain <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h3>
-<p>How many animals live in each 64×64-tile area depends on the island's terrain (still 3 animals per herd):</p>
+<h3 id="numbers-by-terrain"><a class="anchor" href="#numbers-by-terrain" aria-hidden="true">#</a>Numbers by terrain <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>How many animals live in each 64×64-tile area depends on the island's terrain:</p>
 <div class="table-wrap"><table>
-<thead><tr><th>Terrain</th><th>Herds</th><th>Animals per area</th></tr></thead>
+<thead><tr><th>Terrain</th><th>Animals per area</th><th>Split into herds</th></tr></thead>
 <tbody>
-<tr><td>Grassland · savanna · tropical forest · temperate forest</td><td>4</td><td>12</td></tr>
-<tr><td>Swamp · tundra · other terrain</td><td>3</td><td>9</td></tr>
-<tr><td>Snow islands · desert · volcanic</td><td>2</td><td>6</td></tr>
+<tr><td>Grassland · savanna · tropical forest · temperate forest</td><td>12</td><td>2 herds × 6</td></tr>
+<tr><td>Swamp · tundra · other terrain</td><td>9</td><td>a herd of 6 + a herd of 3</td></tr>
+<tr><td>Snow islands · desert · volcanic</td><td>6</td><td>1 herd × 6</td></tr>
 </tbody></table></div>
 <ul>
-<li>Areas that already hold more than the new number are not culled — they thin out naturally as animals are hunted or migrate</li>
+<li>Areas that already hold more than this are not culled — they thin out naturally as animals are hunted or migrate</li>
 <li>The 3-herd minimum per island and the alphas are unchanged</li>
 </ul>
-<h2 id="herd-migration"><a class="anchor" href="#herd-migration" aria-hidden="true">#</a>Herd migration <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h2>
+<h3 id="herd-homes-and-overcrowding"><a class="anchor" href="#herd-homes-and-overcrowding" aria-hidden="true">#</a>Herd homes and overcrowding <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<ul>
+<li>A herd settling somewhere new (a herd moving in, or one added when an area opens) picks a random spot on land in the area <strong>at least 4 tiles from water</strong> and <strong>more than 8 tiles from any herd of the same species</strong> — herds no longer pile up on the shore or at the edge of the area</li>
+<li>If <strong>more than 6 animals of the same species are within 8 tiles</strong> of each other, the extras get split off:
+<ul>
+<li>A predator nearby (within 16 tiles) → the closest one hunts the extras right away, without waiting to get hungry · the ones it kills are reborn in another herd of that species that isn't full, or at a new home (not back in the same pile)</li>
+<li>No predator → the extras move off to a new home on their own</li>
+</ul>
+</li>
+<li>Alphas, elite leaders, fixed-spot animals, storage/rift guards and players' pets don't count · moves stay inside the same 64×64-tile area</li>
+</ul>
+<h2 id="herd-migration"><a class="anchor" href="#herd-migration" aria-hidden="true">#</a>Herd migration <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>Wild herds don't stay put forever — in areas where players are present:</p>
 <ul>
-<li><strong>When a herd is wiped out</strong> (killed or tamed), a new herd walks in from the edge of the area after about <strong>20 minutes</strong>, even if you're still standing there</li>
-<li><strong>Herds that are still whole</strong> move away from time to time (about 10–30 minutes, random per herd · one herd per area at a time) — they walk away from people toward the edge and vanish once they are at least 23 tiles from every player, then a new herd comes in, which <strong>may be a species you've never seen there</strong></li>
+<li><strong>Herds that are still whole</strong> move away from time to time (about 10–30 minutes, random per herd · one herd per area at a time) — they walk away from people toward the edge and vanish once they are at least 23 tiles from every player, then a new herd settles at a <a href="#herd-homes-and-overcrowding">random spot in the area</a> (appearing out of sight and walking in), which <strong>may be a species you've never seen there</strong></li>
+<li>A herd that fails to leave (someone keeps following it or fighting it for too long) gives up and returns to its old home</li>
+<li><strong>A herd that is wiped out</strong> is not replaced by a new herd — its members are reborn into the same herd one by one, see <a href="#population-recovery">Population recovery</a> · the exception is a herd wiped out while it was leaving: a new herd moves in after about <strong>20 minutes</strong></li>
 <li>Sleeping herds can migrate without walking (they vanish when nobody is nearby)</li>
 <li>Areas with nobody around don't rotate · returning to an area you left for a long time rotates it once when you get back</li>
 <li>Areas never hold more animals than the <a href="#numbers-by-terrain">numbers by terrain</a></li>
@@ -203,6 +242,7 @@
 <tr><td>Examples</td><td>Alpha Tyrannosaurus Lv60 ≈ 389,191 · Allosaurus Lv60 ≈ 96,914 · Elephantulus Lv60 = 5,000</td></tr>
 </tbody></table></div>
 <ul>
+<li>Alphas and elite leaders are island level ±5 like every other animal (<a href="#animal-levels">Animal levels</a>) · so the Lv60 examples above show up on islands of about level 55–65 · coming soon: on islands of level 55 and up alphas roll 60–70 (<a href="#islands-of-level-55-and-up">Islands of level 55 and up</a>)</li>
 <li>No alphas on Tamed Islands or safehouses · on Unstable Islands their health is multiplied by the Index as well</li>
 </ul>
 <h2 id="predators-hunting-prey"><a class="anchor" href="#predators-hunting-prey" aria-hidden="true">#</a>Predators hunting prey <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
@@ -213,13 +253,13 @@
 <li>After a kill the predator eats for 20 seconds, then rests from hunting for 10 minutes · it gives up a chase after 60 seconds</li>
 <li>The kill leaves a carcass you can butcher, but with <strong>half the meat</strong> (leather/bones are complete) · no EXP/quest credit since you didn't kill it</li>
 <li>Hit a predator mid-hunt and it turns on you · a predator already chasing you won't switch to hunting animals</li>
-<li>At most 2 hunts at a time per area · how often depends on ecosystem hunger (0.08 prey per predator per hour), so it's not common · no hunting on peaceful islands</li>
+<li>At most 2 hunts at a time per area · for when predators go hunting see <a href="#hunting-when-hungry">Hunting when hungry</a> · no hunting on peaceful islands</li>
 </ul>
-<h3 id="hunting-when-hungry"><a class="anchor" href="#hunting-when-hungry" aria-hidden="true">#</a>Hunting when hungry <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h3>
+<h3 id="hunting-when-hungry"><a class="anchor" href="#hunting-when-hungry" aria-hidden="true">#</a>Hunting when hungry <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
 <ul>
-<li>Each predator <strong>gets hungry every ~15 minutes on average</strong> (random 7.5–22.5 minutes per animal) and goes after nearby prey within 16 tiles — you'll see hunts far more often · the old hunting driven by ecosystem hunger (0.08 per hour) is retired</li>
+<li>Each predator <strong>gets hungry every ~15 minutes on average</strong> (random 7.5–22.5 minutes per animal) and goes after nearby prey within 16 tiles</li>
 <li>A predator needs about 8 bites to kill its prey · <strong>big prey fights back harder, and the predator can lose</strong></li>
-<li>Anything that dies in a hunt (prey or predator) is replaced by a new one of the same species <strong>right away at the spot farthest from players</strong> in the area — the area's animal count doesn't drop · the carcass can still be butchered (half the meat)</li>
+<li>Anything that dies in a hunt (prey or predator) is reborn into its herd one at a time, the same as any other death — see <a href="#population-recovery">Population recovery</a> · the carcass can still be butchered (half the meat)</li>
 <li>Still at most 2 hunts at a time per area · predators rest 10 minutes after eating · sleeping predators and those chasing a player don't hunt</li>
 </ul>
 <h2 id="movement-and-sleep"><a class="anchor" href="#movement-and-sleep" aria-hidden="true">#</a>Movement and sleep <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
@@ -257,7 +297,13 @@
 <li>Parts that were broken when the animal died give half (meat excluded) · carcasses left by predators give half the meat</li>
 </ul>
 <h2 id="population-recovery"><a class="anchor" href="#population-recovery" aria-hidden="true">#</a>Population recovery <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
-<p>Animals you kill or capture don't pop back at the same spot right away; each area's population regrows over time (only while someone is nearby) · if a species is hunted out of an area, new ones return after the area has been quiet for 12 hours · the 3-herds-per-island minimum always applies</p>
+<p>Herd animals that die — killed by a player, eaten by a predator, captured or caught in a trap — don't pop back right away; they are <strong>reborn into the same herd one at a time</strong>:</p>
+<ul>
+<li>Wait = <strong>about 3.3 minutes × the number of animals the herd is missing</strong> (20 minutes ÷ 6) — missing 1 waits 3.3 minutes · missing 2 waits 6.7 minutes · … · a whole herd of 6 wiped out waits 20 minutes before the first one returns</li>
+<li>After each birth the timer restarts based on how many are still missing · more deaths while waiting restart it too — so small remnants come back slowly, and a wiped-out herd of 6 takes about <strong>70 minutes</strong> to fill up again</li>
+<li>If players are nearby, the newcomer appears out of sight (at least 23 tiles from every player, on the herd's side) and walks into the herd · with nobody around it appears right in the herd</li>
+<li>Alphas/elite leaders respawn on their own timers (<a href="#alphas">Alphas</a>) · the 3-herds-per-island minimum always applies</li>
+</ul>
 <h2 id="not-finished-yet"><a class="anchor" href="#not-finished-yet" aria-hidden="true">#</a>Not finished yet <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h2>
 <h3 id="bonus-exp-from-alphas"><a class="anchor" href="#bonus-exp-from-alphas" aria-hidden="true">#</a>Bonus EXP from alphas <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h3>
 <p>Killing an alpha currently gives the same EXP as a normal animal of the same level (the alpha bonus isn't implemented yet)</p>
@@ -265,9 +311,9 @@
 </article>
 <nav class="pager"><a class="prev" href="combat.html"><small>← Previous</small>Combat</a><a class="next" href="taming.html"><small>Next →</small>Taming</a></nav>
 </main>
-<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#animal-temperaments">Animal temperaments</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#stealth">Stealth</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#animal-levels">Animal levels</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#unstable-index">Unstable Index</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#herds-and-animal-numbers">Herds and animal numbers</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#numbers-by-terrain">Numbers by terrain</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l2"><a href="#herd-migration">Herd migration</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l2"><a href="#alphas">Alphas</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#predators-hunting-prey">Predators hunting prey</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#hunting-when-hungry">Hunting when hungry</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l2"><a href="#movement-and-sleep">Movement and sleep</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#butchering-and-drops">Butchering and drops</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#population-recovery">Population recovery</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#not-finished-yet">Not finished yet</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l3"><a href="#bonus-exp-from-alphas">Bonus EXP from alphas</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#animal-temperaments">Animal temperaments</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#when-an-animal-is-hit">When an animal is hit</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#stealth">Stealth</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#animal-levels">Animal levels</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#islands-of-level-55-and-up">Islands of level 55 and up</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l2"><a href="#unstable-index">Unstable Index</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#herds-and-animal-numbers">Herds and animal numbers</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#numbers-by-terrain">Numbers by terrain</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#herd-homes-and-overcrowding">Herd homes and overcrowding</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#herd-migration">Herd migration</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#alphas">Alphas</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#predators-hunting-prey">Predators hunting prey</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#hunting-when-hungry">Hunting when hungry</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#movement-and-sleep">Movement and sleep</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#butchering-and-drops">Butchering and drops</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#population-recovery">Population recovery</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#not-finished-yet">Not finished yet</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l3"><a href="#bonus-exp-from-alphas">Bonus EXP from alphas</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
 </div>
 <footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
-<script src="../assets/wiki.js?v=mufilj4m" defer></script>
+<script src="../assets/wiki.js?v=mufx74sm" defer></script>
 </body>
 </html>

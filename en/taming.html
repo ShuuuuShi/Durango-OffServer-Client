@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0b0f0d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/taming.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/taming.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/taming.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mufilj4m">
+<link rel="stylesheet" href="../assets/wiki.css?v=mufx74sm">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="en" data-slug="taming">
@@ -70,7 +70,7 @@
 <li><a href="../en/animals.html">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
-<li><a href="../en/taming.html" class="current" aria-current="page">Taming <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/taming.html" class="current" aria-current="page">Taming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
@@ -99,7 +99,7 @@
 <p class="crumbs"><a href="index.html">Home</a> › Taming &amp; Pets</p>
 <h1><img src="../images/atlas/icon_atlas/act_capture_1.webp" alt="" width="56" height="58" class="title-icon glyph" loading="lazy">Taming <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h1>
 <p class="summary">Beat an animal below 30% health or stun it, then capture it with a Taming Herb — tame it in a pen before forming a bond</p>
-
+<p class="partial-note"><span aria-hidden="true">⏳</span> Some sections on this page are not ready yet</p>
 <p>Almost every wild animal can become your companion. The steps are <strong>weaken it → capture it with a Taming Herb → get its Rein → tame it in a pen → form a bond</strong>, and you get a <a href="pets.html">pet</a> that travels with you, can be ridden, helps in fights and produces goods.</p>
 <p><figure><img src="../images/tex/Assets__Texture2D__pet_1-w480.webp" alt="Capturing an animal and putting it in a pen" width="480" height="240" loading="lazy" class="img-figure"><figcaption>Capturing an animal and putting it in a pen</figcaption></figure></p>
 <h2 id="what-you-can-do"><a class="anchor" href="#what-you-can-do" aria-hidden="true">#</a>What you can do</h2>
@@ -234,20 +234,27 @@
 </tbody></table></div>
 <ol>
 <li>When time is up, collect the result: <strong>success</strong> → the animal is tamed and gets a random rank (S · A · B · C · D, whichever that species can have) · <strong>failure</strong> → the animal escapes to the wild and the Rein is lost</li>
-<li>Use the tamed animal's Rein to <strong>form a bond</strong> → it becomes your pet (the animal's level must not exceed your Survival category level) — continue at <a href="pets.html">Pets</a></li>
+<li>Use the tamed animal's Rein to <strong>form a bond</strong> → it becomes your pet (the Rein's level must not exceed your Survival category level) — continue at <a href="pets.html">Pets</a></li>
 </ol>
 <ul>
 <li>Taming time can't be cut below half</li>
 </ul>
 <aside class="callout callout-note"><p class="callout-title"><span aria-hidden="true">ℹ️</span> Note</p><p>Animal traps give carcass items (meat, leather, bones), not live animals to raise</p>
 </aside>
+<h3 id="animals-above-level-60"><a class="anchor" href="#animals-above-level-60" aria-hidden="true">#</a>Animals above level 60 <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h3>
+<ul>
+<li>Wild animals of Lv61–70 (on islands of level 55 and up — <a href="animals.html#islands-of-level-55-and-up">Wild animals</a>) can be captured as usual</li>
+<li>The <strong>Rein</strong> you get shows at most level <strong>60</strong> (the Rein's level cap), but the animal inside keeps its real level</li>
+<li>The bonding rule is unchanged: <strong>your Survival category level must reach the Rein's level</strong> — so with Survival at Lv60 you can form a bond with any tamed animal, Lv61–70 included · the pet keeps its real level of 61–70</li>
+<li>If your category is too low, the game won't let you form the bond and the server also refuses with a message (in Thai) saying the animal's level is above your Survival level · the Rein stays in your bag</li>
+</ul>
 
 </article>
 <nav class="pager"><a class="prev" href="animals.html"><small>← Previous</small>Wild animals</a><a class="next" href="pets.html"><small>Next →</small>Pets</a></nav>
 </main>
-<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#what-you-need">What you need</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#how-to-capture">How to capture</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#when-your-animal-slots-are-full">When your animal slots are full</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#capture-chance">Capture chance</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#capture-ability">Capture Ability</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#stun-gauge">Stun gauge</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#stunning-faster">Stunning faster</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#after-the-capture-taming-in-a-pen">After the capture: taming in a pen</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li></ul></aside>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#what-you-need">What you need</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#how-to-capture">How to capture</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#when-your-animal-slots-are-full">When your animal slots are full</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#capture-chance">Capture chance</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#capture-ability">Capture Ability</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#stun-gauge">Stun gauge</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#stunning-faster">Stunning faster</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#after-the-capture-taming-in-a-pen">After the capture: taming in a pen</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#animals-above-level-60">Animals above level 60</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
 </div>
 <footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
-<script src="../assets/wiki.js?v=mufilj4m" defer></script>
+<script src="../assets/wiki.js?v=mufx74sm" defer></script>
 </body>
 </html>
