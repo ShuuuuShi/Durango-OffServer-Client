@@ -1,6 +1,5 @@
 {
   "servers": [
-    { "name": "[CBT] Thailand Community", "gateway": "http://187.53.129.69:8290" },
-    { "name": "[PRE] Thailand Community", "gateway": "http://187.53.129.69:8292" }
+    { "name": "[CBT] Thailand Community", "gateway": "http://187.53.129.69:8290" }
   ]
 }
