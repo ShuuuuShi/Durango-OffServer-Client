@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "updated": "2026-09-30T19:47:37+07:00",
+  "game": {
+    "package": "com.durango.offserver",
+    "version": "3.0.1",
+    "tag": "v3.0.1",
+    "min_sdk": 26,
+    "builds": {
+      "arm64-v8a": {
+        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.0.1/DurangoReborn.apk",
+        "mirrors": [],
+        "size": 221938391,
+        "sha256": "39b76436cf82c0f63e923a9742a65b8c062e5692d99fd7ba6b24a0cfe2970038",
+        "version_code": 0
+      },
+      "armeabi-v7a": {
+        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.0.1/DurangoReborn.apk",
+        "mirrors": [],
+        "size": 221938391,
+        "sha256": "39b76436cf82c0f63e923a9742a65b8c062e5692d99fd7ba6b24a0cfe2970038",
+        "version_code": 0
+      }
+    }
+  },
+  "history": [],
+  "spec": {
+    "ram_good_gb": 4,
+    "ram_warn_gb": 3,
+    "ram_margin": 0.85,
+    "storage_good_gb": 2,
+    "storage_warn_gb": 1,
+    "gles_good": "3.0"
+  },
+  "news": [
+    {
+      "date": "2026-09-30",
+      "title": "Durango:Reborn 3.0.1 บนมือถือ",
+      "body": "โหลด/อัปเดตเกมผ่าน Durango Launcher ได้แล้ว — ใช้ได้กับ Android 8.0 ขึ้นไป",
+      "title_en": "Durango:Reborn 3.0.1 on mobile",
+      "body_en": "Download and update the game with Durango Launcher — Android 8.0 or newer"
+    }
+  ],
+  "launcher": {
+    "version": "1.0.0",
+    "version_code": 1,
+    "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/android-launcher-v1.0.0/DurangoLauncher-android-1.0.0.apk",
+    "mirrors": [],
+    "size": 492894,
+    "sha256": "adf7203d649792eaa9fec2aa94ad0a8a3bb209bdb7f03f4539c5f588cc0b301e"
+  },
+  "min_launcher": 0,
+  "servers_url": "https://raw.githubusercontent.com/ShuuuuShi/Durango-OffServer-Client/main/servers.json",
+  "links": {
+    "discord": "https://discord.gg/RMfeg6Drbu",
+    "facebook": "https://www.facebook.com/share/g/1BZp6apPM8/"
+  },
+  "manifest_url": "",
+  "manifest_mirrors": []
+}
