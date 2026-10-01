@@ -1,29 +1,42 @@
 {
   "schema": 1,
-  "updated": "2026-09-30T19:47:37+07:00",
+  "updated": "2026-10-02T01:26:53+07:00",
   "game": {
     "package": "com.durango.offserver",
-    "version": "3.0.1",
-    "tag": "v3.0.1",
+    "version": "3.1.1",
+    "tag": "v3.1.1",
     "min_sdk": 26,
     "builds": {
       "arm64-v8a": {
-        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.0.1/DurangoReborn.apk",
+        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.1.1/DurangoReborn.apk",
         "mirrors": [],
-        "size": 221938391,
-        "sha256": "39b76436cf82c0f63e923a9742a65b8c062e5692d99fd7ba6b24a0cfe2970038",
+        "size": 222067239,
+        "sha256": "9fe3df8833893f4e403d98327edaf6a2a2c4f974c356eaec7cfb3749baf0e162",
         "version_code": 0
       },
       "armeabi-v7a": {
-        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.0.1/DurangoReborn.apk",
+        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.1.1/DurangoReborn.apk",
         "mirrors": [],
-        "size": 221938391,
-        "sha256": "39b76436cf82c0f63e923a9742a65b8c062e5692d99fd7ba6b24a0cfe2970038",
+        "size": 222067239,
+        "sha256": "9fe3df8833893f4e403d98327edaf6a2a2c4f974c356eaec7cfb3749baf0e162",
         "version_code": 0
       }
     }
   },
-  "history": [],
+  "history": [
+    {
+      "version": "3.0.2",
+      "abi": "arm64-v8a",
+      "sha256": "67d0b1e8928858ba21debae5ecb94c573759045b68a5c6349727e4bb9768b695",
+      "version_code": 0
+    },
+    {
+      "version": "3.0.1",
+      "abi": "arm64-v8a",
+      "sha256": "39b76436cf82c0f63e923a9742a65b8c062e5692d99fd7ba6b24a0cfe2970038",
+      "version_code": 0
+    }
+  ],
   "spec": {
     "ram_good_gb": 4,
     "ram_warn_gb": 3,
@@ -33,6 +46,13 @@
     "gles_good": "3.0"
   },
   "news": [
+    {
+      "date": "2026-10-02",
+      "title": "Durango:Reborn 3.1.1",
+      "body": "ย้ายเกาะโหลดเร็วขึ้น · แถบโหลดใหม่ · ตั้งค่าแสดงระยะโจมตีและจำนวนผู้เล่นที่แสดง",
+      "title_en": "Durango:Reborn 3.1.1",
+      "body_en": "Faster island changes, a new loading bar, and settings for attack range and how many players are shown"
+    },
     {
       "date": "2026-09-30",
       "title": "Durango:Reborn 3.0.1 บนมือถือ",
