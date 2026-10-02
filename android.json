@@ -1,29 +1,35 @@
 {
   "schema": 1,
-  "updated": "2026-10-02T02:30:51+07:00",
+  "updated": "2026-10-02T10:52:11+07:00",
   "game": {
     "package": "com.durango.offserver",
-    "version": "3.1.2",
-    "tag": "v3.1.2",
+    "version": "3.1.3",
+    "tag": "v3.1.3",
     "min_sdk": 26,
     "builds": {
       "arm64-v8a": {
-        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.1.2/DurangoReborn.apk",
+        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.1.3/DurangoReborn.apk",
         "mirrors": [],
-        "size": 222058599,
-        "sha256": "2afc45c8cb505ec85a89e0c829d082f863186c7b45a7025bf491e0e9184af478",
+        "size": 236364659,
+        "sha256": "190c644da02b89607fb6a5776786f1df9400652178b18bc2b2eee319d145b9bc",
         "version_code": 0
       },
       "armeabi-v7a": {
-        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.1.2/DurangoReborn.apk",
+        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.1.3/DurangoReborn.apk",
         "mirrors": [],
-        "size": 222058599,
-        "sha256": "2afc45c8cb505ec85a89e0c829d082f863186c7b45a7025bf491e0e9184af478",
+        "size": 236364659,
+        "sha256": "190c644da02b89607fb6a5776786f1df9400652178b18bc2b2eee319d145b9bc",
         "version_code": 0
       }
     }
   },
   "history": [
+    {
+      "version": "3.1.2",
+      "abi": "arm64-v8a",
+      "sha256": "2afc45c8cb505ec85a89e0c829d082f863186c7b45a7025bf491e0e9184af478",
+      "version_code": 0
+    },
     {
       "version": "3.1.1",
       "abi": "arm64-v8a",
@@ -52,6 +58,13 @@
     "gles_good": "3.0"
   },
   "news": [
+    {
+      "date": "2026-10-02",
+      "title": "Durango:Reborn 3.1.3",
+      "body": "Gem แยกจาก T Stone (แตะยอด Gem เพื่อแลก 10:1) · เติม Coin ด้วยโค้ดจากแอดมินในช่องคูปอง · คลิกเดินแบบต้นฉบับ · รอยแยก/วาร์ปโฮลแสดงแล้ว",
+      "title_en": "Durango:Reborn 3.1.3",
+      "body_en": "Gem is separate from T Stone (tap Gem to exchange 10:1) · top up Coin with an admin code in Coupon · original click-to-move · cracks/warp holes now show"
+    },
     {
       "date": "2026-10-02",
       "title": "Durango:Reborn 3.1.2 (แก้ด่วน)",
