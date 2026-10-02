@@ -1,6 +1,7 @@
 {
   "servers": [
     { "name": "[CBT] Thailand Community", "gateway": "http://201.18.211.139:8290" },
-    { "name": "[CBT] Supporter", "gateway": "http://201.18.211.139:8292" }
+    { "name": "[CBT] Supporter", "gateway": "http://201.18.211.139:8292" },
+    { "name": "[DEV] Test Server", "gateway": "http://201.18.211.139:8390" }
   ]
 }
