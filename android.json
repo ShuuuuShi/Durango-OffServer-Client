@@ -1,29 +1,35 @@
 {
   "schema": 1,
-  "updated": "2026-10-03T10:25:29+07:00",
+  "updated": "2026-10-05T09:28:00+07:00",
   "game": {
     "package": "com.durango.offserver",
-    "version": "3.1.5",
-    "tag": "v3.1.5",
+    "version": "3.1.7",
+    "tag": "v3.1.7",
     "min_sdk": 26,
     "builds": {
       "arm64-v8a": {
-        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.1.5/DurangoReborn.apk",
+        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.1.7/DurangoReborn.apk",
         "mirrors": [],
-        "size": 237040895,
-        "sha256": "790d7cae38b098bb119fbed267240be3c2884a708e5c362a351dd53979d75150",
+        "size": 830182360,
+        "sha256": "4f4ba365ebd9d2ec75e0cff9695bd65bc14015db8aea318f842ea8b3d2d936c1",
         "version_code": 0
       },
       "armeabi-v7a": {
-        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.1.5/DurangoReborn.apk",
+        "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/v3.1.7/DurangoReborn.apk",
         "mirrors": [],
-        "size": 237040895,
-        "sha256": "790d7cae38b098bb119fbed267240be3c2884a708e5c362a351dd53979d75150",
+        "size": 830182360,
+        "sha256": "4f4ba365ebd9d2ec75e0cff9695bd65bc14015db8aea318f842ea8b3d2d936c1",
         "version_code": 0
       }
     }
   },
   "history": [
+    {
+      "version": "3.1.5",
+      "abi": "arm64-v8a",
+      "sha256": "790d7cae38b098bb119fbed267240be3c2884a708e5c362a351dd53979d75150",
+      "version_code": 0
+    },
     {
       "version": "3.1.3",
       "abi": "arm64-v8a",
@@ -64,6 +70,13 @@
     "gles_good": "3.0"
   },
   "news": [
+    {
+      "date": "2026-10-05",
+      "title": "Durango:Reborn 3.1.7",
+      "body": "โมเดล/สัตว์ครบในตัวเกม · เสียงบนมือถือ · ตาบอสเรืองแสง · แชร์ไอเทมในแชท · ชื่อไอเทมไทยแปลใหม่ · ถามก่อนรื้อสิ่งก่อสร้าง · ลาวาหลุมวาร์ปกลับมา",
+      "title_en": "Durango:Reborn 3.1.7",
+      "body_en": "All models and animals built into the game · sound on mobile · glowing boss eyes · share items in chat · new Thai item names · confirm before removing buildings · warp-hole lava is back"
+    },
     {
       "date": "2026-10-03",
       "title": "อัปเดต 3.1.5 (บังคับ)",
