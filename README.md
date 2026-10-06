@@ -1,110 +1,36 @@
-🇹🇭 [ไทย](#durangoreborn--ตัวเกมสำหรับผู้เล่น) · 🇬🇧 [English](#durangoreborn--game-client-english) · 🇮🇩 [Bahasa Indonesia](#durangoreborn--client-game-bahasa-indonesia)
+# Durango: Reborn — Fan Project Disclaimer
 
-# Durango:Reborn — ตัวเกมสำหรับผู้เล่น
+> **English** · [ภาษาไทย](#ภาษาไทย) · [한국어](#한국어)
 
-repo นี้มีแต่ **[Releases](../../releases)** — ตัวเกม Durango: Wild Lands ที่ปรับให้ต่อเซิร์ฟ Durango OffServer
+## English
 
-| เครื่อง | เวอร์ชันล่าสุด | ไฟล์ |
-|---|---|---|
-| **Android** | 3.0.1 | `DurangoReborn.apk` ใน [release ล่าสุด](../../releases/latest) |
-| **PC (Windows)** | 3.0.1 | `Durango-OffServer-Client-v3.0.1.zip` ใน [release ล่าสุด](../../releases/latest) + `DurangoLauncher.exe` |
+**Durango: Reborn is an unofficial, non-commercial fan project.**
 
-ลิงก์โหลด APK ตรง (ชี้ release ล่าสุดเสมอ): `https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/latest/download/DurangoReborn.apk`
+- This project is **not affiliated with, endorsed by, or sponsored by** NEXON Korea Corporation, NEXON Games, or any of their subsidiaries.
+- *Durango: Wild Lands* (야생의 땅: 듀랑고), its name, logos, characters, artwork, music, and all related content are the **property of NEXON** and their respective owners.
+- This project is made **by fans, for fans**, to preserve the memory of a game whose official service ended in December 2019.
+- **We do not make any profit.** There are no sales, in-game purchases, VIP, paid items, advertising, or donations. If anyone asks you for money in the name of Durango: Reborn, it is **not us**.
+- Please do not sell, rent, or redistribute this project for profit.
+- If you are a rights holder and have any concern, please contact us at **[อีเมลติดต่อ]**. We will respond promptly and will **comply with any request, including taking this project down**.
 
-## Android — เริ่มเล่น
-1. โหลด `DurangoReborn.apk` จาก [release ล่าสุด](../../releases/latest)
-2. เปิดไฟล์ → อนุญาต «ติดตั้งแอปจากแหล่งที่ไม่รู้จัก» ถ้าเครื่องถาม → ติดตั้ง
-3. เปิดแอป **Durango:Reborn** → เลือกเซิร์ฟที่หน้า Title → แตะหน้าจอ
-4. ครั้งแรกเกมโหลดข้อมูลจากเซิร์ฟ (รอสักครู่) แล้วสร้างตัวละครได้เลย
+## ภาษาไทย
 
-- ต้องการ Android 8.0 ขึ้นไป · ไฟล์ ~222 MB
-- เล่น: ลากนิ้วเพื่อเดิน · **แตะพื้นเพื่อเดินไปจุดนั้น** · แตะสัตว์/ของเพื่อโต้ตอบ
-- อัปเดต: โหลด APK ใหม่แล้วติดตั้งทับ — บัญชีและตัวละครอยู่ครบ (อย่าถอนแอปถ้าไม่จำเป็น)
-- ทดสอบแล้วบน **MuMu Player (Android 15)** · มือถือจริงยังทดสอบน้อย เจออะไรแจ้งใน [Issues](../../issues)
+**Durango: Reborn เป็นโปรเจกต์ของแฟนเกม ไม่ใช่ของทางการ และไม่แสวงหาผลกำไรใดๆ ทั้งสิ้น**
 
-## PC — เริ่มเล่น
-**มีเกมอยู่แล้ว:** เปิด `DurangoLauncher.exe` → กด **อัปเดต** (แพตช์ ~195 MB) → เปิด launcher อีกครั้ง มันจะลบไฟล์ชุดเก่าที่ไม่ใช้แล้วให้เอง
+- โปรเจกต์นี้**ไม่มีส่วนเกี่ยวข้อง ไม่ได้รับการรับรอง และไม่ได้รับการสนับสนุน**จาก NEXON Korea Corporation, NEXON Games หรือบริษัทในเครือ
+- *Durango: Wild Lands* (야생의 땅: 듀랑고) รวมถึงชื่อ โลโก้ ตัวละคร ภาพ เพลง และเนื้อหาทั้งหมดที่เกี่ยวข้อง เป็น**ทรัพย์สินของ NEXON** และเจ้าของสิทธิ์ที่เกี่ยวข้อง
+- โปรเจกต์นี้จัดทำขึ้น**โดยแฟนเกม เพื่อแฟนเกม** เพื่อเก็บรักษาความทรงจำของเกมที่ปิดให้บริการไปเมื่อเดือนธันวาคม 2019
+- **เราไม่มีรายได้ใดๆ ทั้งสิ้น** ไม่มีการขาย ไม่มีระบบเติมเงิน ไม่มี VIP ไม่มีไอเทมขาย ไม่มีโฆษณา และไม่รับโดเนท หากมีใครเรียกเก็บเงินในนาม Durango: Reborn **นั่นไม่ใช่เรา**
+- ห้ามนำโปรเจกต์นี้ไปขาย ให้เช่า หรือเผยแพร่ต่อเพื่อหาผลประโยชน์
+- หากท่านเป็นเจ้าของสิทธิ์และมีข้อกังวลใดๆ กรุณาติดต่อ **[อีเมลติดต่อ]** เราจะตอบกลับโดยเร็ว และ**พร้อมปฏิบัติตามทุกคำขอ รวมถึงการปิดโปรเจกต์นี้**
 
-**ครั้งแรก:**
-1. โหลด `Durango-OffServer-Client-v3.0.1.zip` จาก [release ล่าสุด](../../releases/latest)
-2. แตก zip ไว้ที่ไหนก็ได้ (ไม่ต้องอยู่ใน Program Files)
-3. เปิด `DurangoLauncher.exe` → รอเช็คเวอร์ชัน → กด **เล่น**
+## 한국어
 
-- 3.0.1 เป็นตัวเกมชุดเดียวกับ Android: หน้าจอแบบมือถือ · **คลิกพื้นเพื่อเดินไปจุดนั้น** · Windows 10/11 64 บิต
+**Durango: Reborn은 비공식, 비영리 팬 프로젝트입니다.**
 
-Windows SmartScreen เตือน → *More info* → *Run anyway* (ไฟล์ไม่ได้เซ็นชื่อ)
-launcher เช็คเวอร์ชันกับเซิร์ฟทุกครั้งที่เปิด — มีเวอร์ชันใหม่จะขึ้นปุ่ม **อัปเดต** ให้เอง · `offserver.txt` ข้าง `DurangoV2.exe` คือไฟล์ตั้งค่าเซิร์ฟ (`gateway=`)
-
-## เซิร์ฟ
-รายชื่อเซิร์ฟที่เกมดึงไปแสดงอยู่ใน [`servers.json`](servers.json) — ตอนนี้: **[CBT] Thailand Community** และ **[CBT] Supporter**
-
-## บัญชีและการย้ายเครื่อง
-เข้าเกมครั้งแรก เซิร์ฟสร้างบัญชีให้อัตโนมัติ และผูกไว้กับเครื่องนั้น (ไม่มีรหัสผ่าน) · หลังผูก Discord ขอดูเลขบัญชีเต็มได้จากบอทในดิส (`/myaccount` ตอบทาง DM)
-
-**ผูก Discord ไว้กันหาย** — **ตั้งค่า ▸ บัญชี ▸ Link Discord** → ล็อกอิน Discord ในเบราว์เซอร์ → กลับเข้าเกม · ผูกแล้วใช้ย้ายเครื่องได้ และแอดมินช่วยกู้ได้ถ้ามีปัญหา · ทางเดิมยังใช้ได้: กด 🔗 ในดิสได้โค้ด 6 ตัว แล้วกรอกที่ **ตั้งค่า ▸ บัญชี ▸ ใส่คูปอง**
-
-**ย้ายไปเครื่องใหม่**
-- ผูก Discord ไว้แล้ว: เครื่องใหม่กด **Link Discord** ด้วย Discord เดิม → เกมถามว่าจะย้ายบัญชีมาเครื่องนี้ไหม → ยืนยัน
-- ปุ่ม **ย้ายเครื่อง** (3.0.1): เครื่องเดิมกดแล้วได้รหัส 9 หลัก → เครื่องใหม่กรอกที่ **ใส่คูปอง** · ⚠️ **ยังใช้ไม่ได้จนกว่าเซิร์ฟจะอัปเดต** — ตอนนี้กดแล้วขึ้น «เซิร์ฟนี้ยังไม่รองรับ»
-- PC: เติม `account=<เลขบัญชี>` ใน `offserver.txt` ของเครื่องใหม่
-
-⚠️ **ห้ามบอกเลขบัญชี รหัสย้ายเครื่อง หรือคีย์ย้ายเครื่องให้ใคร** — ใครได้ไปเข้าบัญชีเราได้
-
-## มีปัญหา
-- เข้าไม่ได้ / ค้างหน้าโหลด → เซิร์ฟอาจปิดอยู่ ดูจุดสถานะมุมล่างหน้า Title (เขียว = ออนไลน์)
-- PC: ดู `player.log` ในโฟลเดอร์เกม และ `%TEMP%\DurangoLauncher.log`
-- แจ้งบั๊กที่ [Issues](../../issues) หรือห้องในดิส
-
----
-
-# Durango:Reborn — Game Client (English)
-
-This repo only holds **[Releases](../../releases)** — Durango: Wild Lands, patched to connect to the Durango OffServer.
-
-| Device | Latest | File |
-|---|---|---|
-| **Android** | 3.0.1 | `DurangoReborn.apk` in the [latest release](../../releases/latest) |
-| **PC (Windows)** | 3.0.1 | `Durango-OffServer-Client-v3.0.1.zip` in the [latest release](../../releases/latest) + `DurangoLauncher.exe` |
-
-Direct APK link (always the latest release): `https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/latest/download/DurangoReborn.apk`
-
-## Android
-1. Download `DurangoReborn.apk` from the [latest release](../../releases/latest)
-2. Open it, allow "install unknown apps" if asked, install
-3. Open **Durango:Reborn**, pick a server on the title screen, tap the screen
-4. The first start downloads game data from the server, then you can create a character
-
-Android 8.0 or newer · about 222 MB · drag to move, **tap the ground to walk there**, tap animals/objects to interact · update by installing the new APK over the old one (your account stays) · tested on **MuMu Player (Android 15)**; real phones are less tested — please report problems in [Issues](../../issues).
-
-## PC
-Already have the game: open `DurangoLauncher.exe`, press **Update** (~195 MB patch), then open the launcher again — it removes the old files that are no longer used. First time: download `Durango-OffServer-Client-v3.0.1.zip` from the [latest release](../../releases/latest), extract it anywhere, run `DurangoLauncher.exe` and press **Play**. 3.0.1 is the same client as Android (mobile UI, **click the ground to walk there**) · Windows 10/11 64-bit. The launcher checks for updates every time. SmartScreen warning → *More info* → *Run anyway* (unsigned files).
-
-## Servers
-The in-game server list comes from [`servers.json`](servers.json): **[CBT] Thailand Community** and **[CBT] Supporter**.
-
-## Account and moving to a new device
-Your account is created on first login and tied to that device (no password). After linking Discord, the bot's `/myaccount` command DMs you the full account number.
-- **Link Discord** (Settings ▸ Account ▸ Link Discord) protects the account and lets you move it: on the new device press Link Discord with the same Discord account and confirm the move. The old way still works: 🔗 in Discord gives a 6-character code for **Settings ▸ Account ▸ Enter Coupon**.
-- **Move Device** button (3.0.1): the old device shows a 9-digit code, the new device enters it in **Enter Coupon** — ⚠️ **not available until the servers are updated** (it currently says the server doesn't support it).
-- PC: add `account=<account number>` to `offserver.txt` on the new PC.
-
-⚠️ Never share your account number, move code or transfer key.
-
----
-
-# Durango:Reborn — Client Game (Bahasa Indonesia)
-
-Repo ini hanya berisi **[Releases](../../releases)** — Durango: Wild Lands yang disesuaikan untuk server Durango OffServer.
-
-| Perangkat | Versi terbaru | File |
-|---|---|---|
-| **Android** | 3.0.1 | `DurangoReborn.apk` di [rilis terbaru](../../releases/latest) |
-| **PC (Windows)** | 3.0.1 | `Durango-OffServer-Client-v3.0.1.zip` di [rilis terbaru](../../releases/latest) + `DurangoLauncher.exe` |
-
-Link APK langsung (selalu rilis terbaru): `https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/latest/download/DurangoReborn.apk`
-
-**Android:** unduh `DurangoReborn.apk`, izinkan "instal aplikasi tidak dikenal", instal, buka **Durango:Reborn**, pilih server, ketuk layar. Android 8.0+ · ±222 MB · seret untuk berjalan, **ketuk tanah untuk berjalan ke sana** · perbarui dengan menginstal APK baru di atas yang lama (akun tetap). Diuji di **MuMu Player (Android 15)**.
-
-**PC:** sudah punya game: buka `DurangoLauncher.exe`, tekan **Update** (patch ~195 MB), lalu buka launcher lagi — file lama dihapus otomatis. Pertama kali: unduh `Durango-OffServer-Client-v3.0.1.zip` dari [rilis terbaru](../../releases/latest), ekstrak, jalankan `DurangoLauncher.exe`, tekan **Main**. Windows 10/11 64-bit.
-
-**Akun:** dibuat otomatis saat pertama masuk dan terikat ke perangkat. Tautkan Discord di **Pengaturan ▸ Akun ▸ Link Discord** agar bisa pindah perangkat. Tombol **Pindah Perangkat** (kode 9 digit) ⚠️ **belum bisa dipakai sampai server diperbarui**. Jangan bagikan nomor akun atau kode pindah.
+- 본 프로젝트는 NEXON Korea Corporation, NEXON Games 및 그 계열사와 **관련이 없으며, 승인이나 후원을 받지 않았습니다.**
+- *야생의 땅: 듀랑고 (Durango: Wild Lands)*의 명칭, 로고, 캐릭터, 아트워크, 음악 등 모든 관련 콘텐츠의 권리는 **NEXON** 및 각 권리자에게 있습니다.
+- 본 프로젝트는 2019년 12월 서비스가 종료된 게임을 추억하기 위해 **팬이 팬을 위해** 만든 것입니다.
+- **어떠한 수익도 얻지 않습니다.** 판매, 인게임 결제, VIP, 유료 아이템, 광고, 후원을 일절 받지 않습니다. Durango: Reborn의 이름으로 돈을 요구하는 경우 **저희가 아닙니다.**
+- 본 프로젝트를 판매, 대여 또는 영리 목적으로 재배포하지 마십시오.
+- 권리자께서 우려 사항이 있으시면 **[อีเมลติดต่อ]** 로 연락해 주십시오. 신속히 답변드리며, **프로젝트 중단을 포함한 모든 요청에 따르겠습니다.**
