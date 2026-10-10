@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#1f1e1d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/decay.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/decay.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/decay.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mv2p1o1n">
+<link rel="stylesheet" href="../assets/wiki.css?v=mv2phk83">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="en" data-slug="decay">
@@ -115,8 +115,8 @@ How fast it drops and what happens at zero <strong>depends on where it stands</s
 <div class="table-wrap"><table>
 <thead><tr><th>Where it stands</th><th>Durability runs out in</th><th>At zero</th><th>Nobody uses it</th></tr></thead>
 <tbody>
-<tr><td>Any player's Domain (yours, a friend's, anyone's) · clan Enclave — no matter who built it</td><td>7 days</td><td><strong>breaks and cannot be used until repaired</strong> — it does not vanish, contents stay</td><td>no effect</td></tr>
-<tr><td>Outside any Domain (every island) · Safe House Island</td><td>1 day</td><td><strong>vanishes</strong>, contents drop as bundles on the ground</td><td>unused for <strong>10 minutes</strong> → vanishes at once</td></tr>
+<tr><td>Any player's Domain (yours, a friend's, anyone's) · clan Enclave — no matter who built it</td><td>7 days (things that can't be repaired <strong>don't decay</strong> — <a href="#buildings-that-cannot-be-repaired-do-not-decay-on-your-domain">below</a>)</td><td><strong>breaks and cannot be used until repaired</strong> — it does not vanish, contents stay</td><td>no effect</td></tr>
+<tr><td>Outside any Domain (every island) · Safe House Island</td><td>1 day</td><td><strong>vanishes</strong>, contents drop as bundles on the ground</td><td>unused for <strong>10 minutes</strong> → vanishes at once (a table with an entrusted job counts from when the job finishes — <a href="#tables-with-an-entrusted-job-outside-a-domain">below</a>)</td></tr>
 <tr><td>Everything on a Tamed Island (the shared Tamed Islands and Supporters' private Tamed Islands)</td><td><strong>does not decay</strong> — Durability stays fixed</td><td>—</td><td>no effect</td></tr>
 <tr><td>Player-placed Bonfire · Large Bonfire · Cooking Bonfire (anywhere)</td><td>1 day</td><td>vanishes</td><td>the fire dies out in <strong>3 minutes</strong> · out for <strong>1 minute</strong> → vanishes (<a href="#bonfires-dying-out-and-disappearing">below</a>)</td></tr>
 <tr><td>Interior Brazier (anywhere)</td><td>1 day</td><td>vanishes</td><td>no effect</td></tr>
@@ -149,6 +149,14 @@ How fast it drops and what happens at zero <strong>depends on where it stands</s
 <li>Resting at an island's own bonfire (e.g. in a camp) with a lit player bonfire within resting range also counts as using that bonfire</li>
 <li>Not covered by this rule: Interior Brazier (decays in 1 day as in the table) · bonfires placed by the game itself (never die out or vanish)</li>
 </ul>
+<h3 id="buildings-that-cannot-be-repaired-do-not-decay-on-your-domain"><a class="anchor" href="#buildings-that-cannot-be-repaired-do-not-decay-on-your-domain" aria-hidden="true">#</a>Buildings that cannot be repaired do not decay on your Domain <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>Buildings the game marks as <strong>not repairable</strong> (no Repair menu), such as the Makeshift Fence · Tent · Makeshift Tent · Makeshift Workbench · Makeshift Door · Fish Trap · house roofs — <strong>don't decay</strong> while they stand on a <strong>Domain/clan Enclave</strong>; their Durability stays full</p>
+<ul>
+<li>Ones that had decayed or broken before 11 Oct 2026 get full Durability back once someone comes near that area</li>
+<li>Outside a Domain they still decay and vanish as in the table · Bonfires still die out and vanish by the bonfire rules</li>
+</ul>
+<h3 id="tables-with-an-entrusted-job-outside-a-domain"><a class="anchor" href="#tables-with-an-entrusted-job-outside-a-domain" aria-hidden="true">#</a>Tables with an entrusted job outside a Domain <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>A workbench, stove or drying rack outside a Domain with an <a href="crafting.html#unattended-crafting-at-a-workbench">entrusted job</a> on it <strong>does not vanish while the job is still running</strong>, even if nobody touches it — the «unused for 10 minutes» clock starts when the last job finishes · if you don't come back within 10 minutes of it finishing, the table vanishes and its items drop as a bundle on the ground (anyone can pick it up)</p>
 <h3 id="condition-shown"><a class="anchor" href="#condition-shown" aria-hidden="true">#</a>Condition shown</h3>
 <div class="table-wrap"><table>
 <thead><tr><th>Durability left</th><th>Condition</th></tr></thead>
@@ -202,7 +210,7 @@ How fast it drops and what happens at zero <strong>depends on where it stands</s
 <p>Energy used to repair = required repair power × 0.8</p>
 <aside class="callout callout-tip"><p class="callout-title"><span aria-hidden="true">💡</span> Tip</p><p>Repair before Durability runs out — an outside structure repaired in time gets another full day · one on your Domain gets another 7 days</p>
 </aside>
-<p>The <strong>Repair</strong> option only appears on structures that can be repaired — tents, bonfires and house roofs can't be repaired (no option).</p>
+<p>The <strong>Repair</strong> option only appears on structures that can be repaired — tents, bonfires and house roofs can't be repaired (no option) · things that can't be repaired (except bonfires) don't decay on a Domain (<a href="#buildings-that-cannot-be-repaired-do-not-decay-on-your-domain">above</a>)</p>
 <h3 id="repair-now-with-warp-gems"><a class="anchor" href="#repair-now-with-warp-gems" aria-hidden="true">#</a>Repair Now with Warp Gems <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
 <p>No repair kit? Press <strong>Repair Now</strong> in the repair window and pay <strong>Warp Gems</strong> instead.</p>
 <ul>
@@ -217,9 +225,9 @@ How fast it drops and what happens at zero <strong>depends on where it stands</s
 </article>
 <nav class="pager"><a class="prev" href="land.html"><small>← Previous</small>Domain</a><a class="next" href="storage.html"><small>Next →</small>Storage</a></nav>
 </main>
-<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#how-fast-things-decay">How fast things decay</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#unfinished-sites-outside-a-domain">Unfinished sites outside a Domain</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l3"><a href="#bonfires-dying-out-and-disappearing">Bonfires dying out and disappearing</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#condition-shown">Condition shown</a></li><li class="toc-l2"><a href="#when-it-breaks-on-your-own-domain">When it breaks on your own Domain</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#when-it-vanishes-outside-a-domain">When it vanishes outside a Domain</a></li><li class="toc-l2"><a href="#repairing">Repairing</a></li><li class="toc-l3"><a href="#repair-now-with-warp-gems">Repair Now with Warp Gems</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li></ul></aside>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#how-fast-things-decay">How fast things decay</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#unfinished-sites-outside-a-domain">Unfinished sites outside a Domain</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l3"><a href="#bonfires-dying-out-and-disappearing">Bonfires dying out and disappearing</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#buildings-that-cannot-be-repaired-do-not-decay-on-your-domain">Buildings that cannot be repaired do not decay on your Domain</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#tables-with-an-entrusted-job-outside-a-domain">Tables with an entrusted job outside a Domain</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#condition-shown">Condition shown</a></li><li class="toc-l2"><a href="#when-it-breaks-on-your-own-domain">When it breaks on your own Domain</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#when-it-vanishes-outside-a-domain">When it vanishes outside a Domain</a></li><li class="toc-l2"><a href="#repairing">Repairing</a></li><li class="toc-l3"><a href="#repair-now-with-warp-gems">Repair Now with Warp Gems</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li></ul></aside>
 </div>
 <footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
-<script src="../assets/wiki.js?v=mv2p1o1n" defer></script>
+<script src="../assets/wiki.js?v=mv2phk83" defer></script>
 </body>
 </html>
