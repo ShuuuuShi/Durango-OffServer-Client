@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Combat · Durango OffServer Guide</title>
-<meta name="description" content="Fight animals bare handed, with melee weapons, bows or crossbows — damage depends on attack, the move you use, and armor penetration against the animal's defense · character combat stats, auto-dodge and auto-block · fighting players on the Lawless Islands">
+<meta name="description" content="Fight animals bare handed, with melee weapons, bows or crossbows — damage depends on attack, the move you use, and armor penetration against the animal's defense · skill moves spend Stamina · bows shoot 6 tiles · training dummies · the catapult · character combat stats, auto-dodge and auto-block · fighting players on the Lawless Islands">
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#1f1e1d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/combat.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/combat.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/combat.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mupfw2p5">
+<link rel="stylesheet" href="../assets/wiki.css?v=mv2mjkwv">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="en" data-slug="combat">
@@ -28,10 +28,11 @@
 <nav class="sidebar" id="sidebar" aria-label="Menu">
 <a class="nav-home"href="../en/index.html">Home</a>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">Getting Started</p><ul>
-<li><a href="../en/getting-started.html">Getting Started <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/install.html">Install and update <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/getting-started.html">Getting Started <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/guide.html">Start-to-finish guide <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/account.html">Account &amp; Login <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
-<li><a href="../en/roadmap.html">Roadmap to launch <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/roadmap.html">Roadmap to launch <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">Survival</p><ul>
 <li><a href="../en/survival.html">Survival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
@@ -40,18 +41,18 @@
 <li><a href="../en/death.html">Death &amp; Revival <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">Gathering &amp; Crafting</p><ul>
-<li><a href="../en/gathering.html">Gathering <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/gathering.html">Gathering <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/crafting.html">Crafting <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/tags.html">Item attributes <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
-<li><a href="../en/farming.html">Farming <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/farming.html">Farming <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/harvestables.html">Traps and wells <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/rgb_atlas/bag_back.webp" alt="" width="64" height="64" class="nav-icon" loading="lazy">Items</p><ul>
 <li><a href="../en/items.html">Items <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/equipment.html">Equipment and repair <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
-<li><a href="../en/weapons-tools.html">Weapons and tools <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/weapons-tools.html">Weapons and tools <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/clothing.html">Clothing and accessories <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
-<li><a href="../en/materials.html">Materials <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/materials.html">Materials <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/consumables.html">Food, drinks and medicine <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">Food</p><ul>
@@ -62,21 +63,21 @@
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">Building &amp; Land</p><ul>
 <li><a href="../en/building.html">Building <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/land.html">Domain <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
-<li><a href="../en/decay.html">Decay and repair <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/decay.html">Decay and repair <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/storage.html">Storage <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">Animals &amp; Combat</p><ul>
 <li><a href="../en/combat.html" class="current" aria-current="page">Combat <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/pvp.html">Lawless Islands (PvP) <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
-<li><a href="../en/animals.html">Wild animals <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/animals.html">Wild animals <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">Taming &amp; Pets</p><ul>
 <li><a href="../en/taming.html">Taming <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
-<li><a href="../en/pets.html">Pets <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
+<li><a href="../en/pets.html">Pets <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">Progression</p><ul>
 <li><a href="../en/stats.html">Character stats <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
-<li><a href="../en/skills.html">Skills and Careers <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/skills.html">Skills and Careers <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/skill-list.html">Skill list <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
 <li><a href="../en/titles.html">Titles <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/organizations.html">Organizations <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
@@ -91,7 +92,7 @@
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">World &amp; Travel</p><ul>
 <li><a href="../en/islands.html">Islands &amp; Travel <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 <li><a href="../en/warp.html">Warps &amp; Rifts <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
-<li><a href="../en/map.html">Map and exploration <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></a></li>
+<li><a href="../en/map.html">Map and exploration <span class="dot dot-partial" title="Live — available on the server · Some sections on this page are not ready yet"><span aria-hidden="true">✓⏳</span><span class="sr">Live · Some sections on this page are not ready yet</span></span></a></li>
 </ul></div>
 </nav>
 
@@ -99,7 +100,7 @@
 <article class="page">
 <p class="crumbs"><a href="index.html">Home</a> › Animals &amp; Combat</p>
 <h1><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="title-icon glyph" loading="lazy">Combat <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h1>
-<p class="summary">Fight animals bare handed, with melee weapons, bows or crossbows — damage depends on attack, the move you use, and armor penetration against the animal's defense · character combat stats, auto-dodge and auto-block · fighting players on the Lawless Islands</p>
+<p class="summary">Fight animals bare handed, with melee weapons, bows or crossbows — damage depends on attack, the move you use, and armor penetration against the animal's defense · skill moves spend Stamina · bows shoot 6 tiles · training dummies · the catapult · character combat stats, auto-dodge and auto-block · fighting players on the Lawless Islands</p>
 <p class="partial-note"><span aria-hidden="true">⏳</span> Some sections on this page are not ready yet</p>
 <p>Dinosaurs and wild animals are your food, your materials and your biggest danger. Combat on this server follows the original game's rules: every hit starts from <strong>weapon attack × the move's multiplier</strong>, then compares your <strong>armor penetration</strong> with the animal's <strong>defense</strong>. The colored area an animal draws on the ground while winding up is exactly where it will hit — step out in time and it misses.</p>
 <p><figure><img src="../images/tex/Assets__Texture2D__melee_3-w480.webp" alt="A hunter slashing a raptor" width="480" height="240" loading="lazy" class="img-figure"><figcaption>A hunter slashing a raptor</figcaption></figure></p>
@@ -110,7 +111,10 @@
 <li><strong>Stagger</strong> an animal so the attack it is winding up is cancelled; make it <strong>stunned / collapse</strong> to capture it (see <a href="taming.html">Taming</a>)</li>
 <li>Break body parts (head · body · legs · tail) to slow an animal down or weaken its attacks</li>
 <li>Use green weapon tags to make animals bleed (see <a href="tags.html">Tags</a>)</li>
-<li>On the <strong>Lawless Islands</strong> (level 56+) you can fight other players — see <a href="pvp.html">Lawless Islands (PvP)</a></li>
+<li>Shoot bows and crossbows up to 6 tiles (the farther, the weaker) — see <a href="#bow-and-crossbow-range">Bow and crossbow range</a></li>
+<li>Practice on the <a href="#training-dummies-and-the-punch-machine">training dummies and the punch machine</a> in the Safe House and see your real damage numbers at no cost</li>
+<li>Skill moves and the roll spend your Stamina bar — see <a href="#move-stamina">Move stamina</a></li>
+<li>On the <strong>Lawless Islands</strong> (level 56+) you can fight other players — see <a href="pvp.html">Lawless Islands (PvP)</a> · play last-one-standing matches on <strong>Brawl Island</strong> (level 50+) — see <a href="pvp.html#brawl-island-season-2">Brawl Island</a></li>
 </ul>
 <h2 id="how-to-fight"><a class="anchor" href="#how-to-fight" aria-hidden="true">#</a>How to fight <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <ol>
@@ -118,6 +122,8 @@
 <li>A weapon's basic attack is always available · special moves (heavy hit, flurry, stab, sweep, strike, aimed shot, quick shot) must be learned first</li>
 <li>Watch the colored area under the animal while it winds up — run out of it before the attack lands to dodge</li>
 <li>Animals you hit will turn and fight; some herbivores run away instead (see <a href="animals.html">Wild animals</a>) · if it can reach you it always strikes back, even when you stand in the safe zone around a Harbor or have lured it far from home — see <a href="animals.html#when-an-animal-is-hit">When an animal is hit</a></li>
+<li>Standing on a water tile (even ankle-deep) you <strong>cannot attack</strong> — bows, crossbows, combat skills, every target including players · your pets don't attack or use attack skills while you stand in water either (riding a pet into the water counts as being in the water) · the roll still works · get back on land to fight</li>
+<li>You can hit an animal from somewhere it can't walk to (a small island, a sandbar cut off by water, a cliff), but it will lose interest and walk home, its health recovering at the normal rate — see <a href="animals.html#when-an-animal-is-hit">When an animal is hit</a></li>
 </ol>
 <h2 id="weapon-types-and-moves"><a class="anchor" href="#weapon-types-and-moves" aria-hidden="true">#</a>Weapon types and moves <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>Numbers are the move's damage multiplier (1.0 = normal hit) · several numbers = several strikes</p>
@@ -127,7 +133,7 @@
 <tr><td>Bare Handed (attack 40)</td><td>1.0</td><td>Kick 0.8 · heavy hit 1.3 · punch combo 0.6 ×3</td></tr>
 <tr><td>One-Handed (axe · knife/sword · hammer)</td><td>1.0</td><td>Heavy hit 2.2 · flurry 0.9 / 1.1 / 1.33 · stab 2.8</td></tr>
 <tr><td>Two-Handed</td><td>1.0</td><td>Heavy hit 2.2 · sweep 1.1 / 1.6 · strike 2.5</td></tr>
-<tr><td>Spear</td><td>1.0</td><td>Heavy thrust 2.2 · dash thrust 1.1 ×3</td></tr>
+<tr><td>Spear</td><td>1.0</td><td>Heavy thrust 2.2 · dash thrust 1.1 ×3 / 1.2</td></tr>
 <tr><td>Bow / Crossbow</td><td>1.0</td><td>Quick shot 1.0 / 1.0 / 1.22 · aimed shot 2.1</td></tr>
 </tbody></table></div>
 <aside class="callout callout-note"><p class="callout-title"><span aria-hidden="true">ℹ️</span> Note</p><p>Holding a weapon uses the weapon's attack (the bare-hand 40 is not added), then your character's attack bonus is added · axes, swords and hammers share the same move multipliers; they differ in their mastery skills</p>
@@ -135,14 +141,25 @@
 <h2 id="damage-formula"><a class="anchor" href="#damage-formula" aria-hidden="true">#</a>Damage formula <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p><strong>Damage = attack × move multiplier × penetration multiplier × direction multiplier × critical</strong></p>
 <ul>
-<li><strong>Attack</strong> = the attack of the weapon in your hand (bare hands 40) + your character's attack bonus (tags, built-in gear bonuses, food, titles, house ambiance) — the same number as on the character screen (<a href="stats.html#combat-stats">Character stats</a>)</li>
-<li><strong>Penetration multiplier</strong> = 2.2 to the power of ((your armor penetration − animal defense) ÷ 100) · your armor penetration = the weapon's (bare hands 40) + your character's penetration bonus
+<li><strong>Attack</strong> = the attack of the weapon in your hand (bare hands 40) + your character's attack bonus (tags, built-in gear bonuses, food, titles, house ambiance and your stats — every 5 points of <strong>Strength</strong> above 10 = +1 attack) — the same number as on the character screen (<a href="stats.html#combat-stats">Character stats</a>)</li>
+<li><strong>Penetration multiplier</strong> = 2.2 to the power of ((your armor penetration − animal defense) ÷ 100) · your armor penetration = the weapon's (bare hands 40) + your character's penetration bonus (every 5 points of Strength above 10 = +1)
 <ul>
 <li>Difference 0 = ×1 · penetration ahead by 100 or more = ×2.2 (cap) · defense ahead by 100 or more = ×0.45 (floor)</li>
 <li>Animal defense grows with level (usually level × 5, e.g. Raptor Lv10 = 50) and is multiplied by the island's Unstable Index</li>
 </ul>
 </li>
-<li><strong>Hit chance</strong> = 50% + move accuracy × 45% (normal moves = 95%) · heavy moves −4% · <strong>+ 0.1% per point of your character's Accuracy above 100</strong> · always between 35% and 99%</li>
+<li><strong>Hit chance</strong> = 50% + move accuracy × 45% (normal moves of bare hands, swords, axes, blunt weapons and spears = 95% · bow normal shot ≈ 84% · crossbow normal shot ≈ 86%) · heavy moves −4% · <strong>+ 0.1% per point of your character's Accuracy above 100</strong> · always between 35% and 99%</li>
+<li><strong>Animal dodge</strong> — after your hit lands, the animal still has a chance to dodge = <strong>animal Evasion × 0.1% × 100 ÷ your Accuracy</strong> (max 40%) · most animals have Evasion = level × 5 · a dodge shows «Dodged», the animal loses no health, your weapon doesn't wear and you get no exp (same as a miss) · so Accuracy works two ways: your hit chance + cutting the target's dodge · animals with broken legs dodge less (Evasion −40) · training sandbags never dodge</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>Animal</th><th>Accuracy 100</th><th>Accuracy 150</th><th>Accuracy 200</th></tr></thead>
+<tbody>
+<tr><td>Lv20</td><td>10%</td><td>6.7%</td><td>5%</td></tr>
+<tr><td>Lv40</td><td>20%</td><td>13.3%</td><td>10%</td></tr>
+<tr><td>Lv60</td><td>30%</td><td>20%</td><td>15%</td></tr>
+</tbody></table></div>
+<p>Accuracy below 100 (for example from the Heavy tag) lets animals dodge more — Accuracy 80 against a Lv40 animal = 25% · overall example: a Lv60 animal with Accuracy 100 and a normal move really gets hit ≈ 95% × 70% ≈ 66% of the time</p>
+<ul>
 <li><strong>Critical hit</strong> chance 10% (heavy moves 18%) <strong>+ 1% per Critical point</strong> (max 95%) · damage ×1.9</li>
 </ul>
 <p>Examples (hit from the front, no critical · no character bonuses)</p>
@@ -169,6 +186,45 @@
 <tr><td>Spear specialization</td><td>All spear moves</td><td>+6%</td></tr>
 <tr><td>Bow specialization</td><td>All bow moves</td><td>+10%</td></tr>
 </tbody></table></div>
+<h2 id="bow-and-crossbow-range"><a class="anchor" href="#bow-and-crossbow-range" aria-hidden="true">#</a>Bow and crossbow range <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>Bows and crossbows shoot up to <strong>6 tiles</strong> with every shooting move, but the farther the target, the weaker the hit</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Distance from you to the target's edge</th><th>Damage</th></tr></thead>
+<tbody>
+<tr><td>Up to 3.75 tiles</td><td>Full 100%</td></tr>
+<tr><td>3.75 → 6 tiles</td><td>Falls in a straight line down to 60%</td></tr>
+<tr><td>Beyond 6 tiles</td><td>60%</td></tr>
+</tbody></table></div>
+<ul>
+<li>The <strong>aimed shot</strong> (bow and crossbow) does not fall off — full damage at any range · normal shots and quick shots follow the table</li>
+<li>Measured from you to the <strong>edge of the target's body</strong> at the moment the shot lands — big animals aren't penalized for being big</li>
+<li>Same for animals, players on the Lawless Islands (the <a href="pvp.html#damage">×0.35 for shooting players</a> still multiplies on top) and training dummies · melee moves and accuracy are not affected</li>
+<li>If you tap a target farther than 6 tiles, your character walks up to the 6-tile edge and shoots there = 60% damage — walk closer yourself first if you want full damage</li>
+</ul>
+<h3 id="arrows-and-stones-you-can-see"><a class="anchor" href="#arrows-and-stones-you-can-see" aria-hidden="true">#</a>Arrows and stones you can see <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h3>
+<p>With game version 3.1.5 or newer (PC and Android), shooting a bow, crossbow or sling shows the projectile flying from the shooter to the target — arrows that hit stay stuck in the target for about 5 seconds, then disappear · players around you see your arrows and you see theirs · damage, accuracy and range are unchanged, only the visuals are new</p>
+<h2 id="move-stamina"><a class="anchor" href="#move-stamina" aria-hidden="true">#</a>Move stamina <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h2>
+<p>Combat moves spend <strong>Stamina</strong> (full bar 100 · refills by itself at about 5 per second — the Stamina-regeneration skills make it faster, see <a href="stats.html#regeneration-per-second">Character stats</a>) · each move's cost is shown in its description · applies to every target: animals, players (PvP) and training dummies</p>
+<ul>
+<li><strong>Basic attacks</strong> (a weapon's base move) always go out, even at zero Stamina — they take whatever is left</li>
+<li><strong>Every skill move and the roll</strong> needs enough Stamina — if you don't have it the move doesn't fire, you see «Not enough Stamina», no cooldown is spent and nothing is deducted · wait for the bar to refill and press again</li>
+<li>Basic attacks in a row cost Stamina too: one-handed swings cost 5–6 in about 1 second, more than the refill, so the bar slowly drops · bows/crossbows drain faster (12 per 1.8 seconds) · two-handed basic attacks cost less than the refill (the bar doesn't drop)</li>
+<li>While you see «Exhausted — sit and rest» or «Too fatigued …», every move including basic attacks is unavailable until you rest</li>
+<li>The skills «Roll: Stamina I–III» and «Barrage: Stamina I–III» cut that move's cost by 6% per level</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>Move</th><th>Stamina cost</th><th>Cooldown (seconds)</th></tr></thead>
+<tbody>
+<tr><td>Basic attack: one-handed · two-handed · spear</td><td>5–6 · 8–9 · 7</td><td>—</td></tr>
+<tr><td>Basic attack: bow · crossbow · bare hands</td><td>12 · 12 · 0</td><td>—</td></tr>
+<tr><td>Roll</td><td>35</td><td>7</td></tr>
+<tr><td>One-handed: heavy hit · flurry · stab</td><td>25–27 · 31–33 · 30–32</td><td>8.4–9.2 · 23.5–25.7 · 11.8–12.9</td></tr>
+<tr><td>Two-handed: heavy hit · sweep · strike</td><td>31–35 · 50–59 · 35–39</td><td>12.6–13.5 · 32.2–35.8 · 16.4–18.3</td></tr>
+<tr><td>Spear: heavy thrust · dash thrust</td><td>37 · 50</td><td>12.8 · 32.2</td></tr>
+<tr><td>Bare hands: kick · heavy hit · punch combo</td><td>20 · 30 · 40</td><td>6 · 8 · 12</td></tr>
+<tr><td>Bow/crossbow: quick shot · aimed shot</td><td>34 · 52</td><td>14.7 · 49.5</td></tr>
+</tbody></table></div>
+<p>Example: from a full 100 bar, a one-handed sword heavy hit 25 + flurry 31 + stab 30 = 86 → 14 left, not enough for a roll (35) · axes and blunt weapons cost slightly different Stamina/cooldown from swords — the ranges in the table cover all three</p>
 <h2 id="stagger-gauge"><a class="anchor" href="#stagger-gauge" aria-hidden="true">#</a>Stagger gauge <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>Every hit adds &quot;blow power&quot; to the animal's gauge. When the gauge reaches the species' <strong>stagger resistance</strong>, the animal staggers and <strong>the attack it is winding up is cancelled</strong>, then the gauge starts over · if it isn't hit for 4 seconds, the gauge resets</p>
 <div class="table-wrap"><table>
@@ -219,6 +275,7 @@
 <tr><td>Tyrannosaurus Lv60</td><td>300</td><td>952</td></tr>
 </tbody></table></div>
 <p>After the damage is worked out there is still a chance to <strong>auto-dodge</strong> (no damage at all) and to <strong>auto-block</strong> (less damage) — dodge is rolled first, block only if you didn't dodge</p>
+<p>A hit that really lands (no dodge, no block) also has a <strong>5% chance to knock your character down</strong> for a moment (about 2 seconds) — gear with the «Knockdown Resistance Buff» property lowers this by 1% per tag level (down to 0%), while properties that lower knockdown resistance raise it by 1% per level (<a href="tags.html">Item properties</a>) · animals only — players hitting each other don't knock down</p>
 <h3 id="how-much-defense-and-blocking-help"><a class="anchor" href="#how-much-defense-and-blocking-help" aria-hidden="true">#</a>How much defense and blocking help <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
 <p>A Lv30 character wearing armor with 122.5 total defense, holding a Lv30 two-handed stone axe (attack 154) · damage per hit (from the side, no critical)</p>
 <div class="table-wrap"><table>
@@ -234,17 +291,36 @@
 </ul>
 <aside class="callout callout-warn"><p class="callout-title"><span aria-hidden="true">⚠️</span> Caution</p><p>Animals Lv40 and above can kill a lightly armored player in 1–3 hits — go as a team, use heavy moves to stagger, and dodge the colored areas in time</p>
 </aside>
-<h2 id="auto-dodge"><a class="anchor" href="#auto-dodge" aria-hidden="true">#</a>Auto-dodge <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
-<p>Every time an animal lands a hit, you have an <strong>auto-dodge chance = Evasion × 0.1%</strong> (max <strong>15%</strong>) — on a dodge you see «Dodged», lose no health, and the <strong>Defense</strong> category gets the same exp as dodging with a roll</p>
+<h3 id="animal-moods-you-can-see"><a class="anchor" href="#animal-moods-you-can-see" aria-hidden="true">#</a>Animal moods you can see <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h3>
+<p>An animal that has picked you shows its mood: an icon over its head (about to chase / fighting / running away), it turns to look at its target, and its body color shifts towards red with each level</p>
 <div class="table-wrap"><table>
-<thead><tr><th>Evasion</th><th>Dodge chance</th></tr></thead>
+<thead><tr><th>Level</th><th>When</th><th>Message on screen</th></tr></thead>
+<tbody>
+<tr><td>Calm</td><td>No target</td><td>—</td></tr>
+<tr><td>Excited</td><td>Has spotted you and is about to chase</td><td>«… is excited»</td></tr>
+<tr><td>Attacking</td><td>Chasing you (you haven't hit it)</td><td>«… is attacking»</td></tr>
+<tr><td>Angry</td><td>You hit it within the last 20 seconds</td><td>«… is angry»</td></tr>
+<tr><td>Furious</td><td>Angry and health at 50% or less</td><td>«… is furious»</td></tr>
+<tr><td>Final stand</td><td>Has a target and health at 20% or less</td><td>«… is making a final stand»</td></tr>
+</tbody></table></div>
+<ul>
+<li>The message appears only for the player the animal has picked, when the level goes up or it switches to a new target (not repeated within 15 seconds) · the color change is seen by everyone looking at that animal</li>
+<li>It is only a warning signal — the animal's strength and behavior are unchanged</li>
+</ul>
+<h2 id="auto-dodge"><a class="anchor" href="#auto-dodge" aria-hidden="true">#</a>Auto-dodge <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>Every time an animal lands a hit, you have an <strong>auto-dodge chance = Evasion × 0.1% × 100 ÷ the attacker's Accuracy</strong> (max <strong>40%</strong>) — on a dodge you see «Dodged», lose no health, your character staggers aside briefly in the hit direction (animal hits and PvP), and the <strong>Defense</strong> category gets the same exp as dodging with a roll</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Evasion</th><th>Dodge chance (attacker Accuracy 100 · animal up to Lv20)</th></tr></thead>
 <tbody>
 <tr><td>0 (default)</td><td>0%</td></tr>
 <tr><td>30</td><td>3%</td></tr>
-<tr><td>150 or more</td><td>15% (cap)</td></tr>
+<tr><td>150</td><td>15%</td></tr>
+<tr><td>400 or more</td><td>40% (cap)</td></tr>
 </tbody></table></div>
 <ul>
-<li>Evasion comes from some gear (e.g. the improved melee combat outfit), tags, titles or food — no skill level gives Evasion yet</li>
+<li><strong>Animal Accuracy</strong> is mostly level × 5 (multiplied by the island Index) but never counts below 100 — animals up to Lv20 never make you dodge more than the table · a Lv40 animal (Accuracy 200) halves your dodge · Lv60 leaves a third — e.g. Evasion 115: Lv20 = 11.5% · Lv40 = 5.8% · Lv60 = 3.8%</li>
+<li><strong>PvP</strong> uses the attacker's Accuracy (no minimum) — an attacker with Accuracy 150 against Evasion 115 = 7.7% · an attacker below 100 Accuracy lets the target dodge more</li>
+<li>Evasion comes from some gear (e.g. the improved melee combat outfit), tags, titles, food or your <strong>Agility</strong> stat (every 5 points above 10 = +1) — no skill level gives Evasion yet</li>
 <li>Works with every weapon, bare hands included</li>
 </ul>
 <h2 id="auto-block"><a class="anchor" href="#auto-block" aria-hidden="true">#</a>Auto-block <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
@@ -266,23 +342,47 @@
 </tbody></table></div>
 <h2 id="stunned-and-collapsed"><a class="anchor" href="#stunned-and-collapsed" aria-hidden="true">#</a>Stunned and collapsed <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
 <p>Hitting an animal repeatedly drains its stun gauge until it freezes (stunned) or collapses with stars over its head. It can't attack during that time and can be captured — see <a href="taming.html">Taming</a></p>
-<h2 id="player-vs-player-pvp"><a class="anchor" href="#player-vs-player-pvp" aria-hidden="true">#</a>Player vs player (PvP) <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
-<p>You can hit players only on the <strong>Lawless Islands</strong> (open from level 56) — on every other island your only enemies are animals</p>
+<h2 id="training-dummies-and-the-punch-machine"><a class="anchor" href="#training-dummies-and-the-punch-machine" aria-hidden="true">#</a>Training dummies and the punch machine <span class="badge badge-live" title="Live — available on the server"><span aria-hidden="true">✓</span> Live</span></h2>
+<p>The <a href="islands.html">Safe House</a> has 4 kinds of training dummy — <strong>Target</strong> · <strong>Scarecrow</strong> · <strong>Training Set</strong> · <strong>Punching Bag</strong> — and a <strong>Punch Machine</strong>, so you can try weapons and moves before heading out to hunt</p>
 <ul>
-<li>Same moves and formula as against animals, but damage against players is multiplied by <strong>×0.8</strong> (melee, area moves included) / <strong>×0.35</strong> (bow, crossbow) · the target can still roll, auto-dodge and auto-block as usual</li>
+<li>Tap a dummy and choose <strong>Attack!</strong> to enter combat mode and target it, then hit it with your normal moves — the damage number pops up on the dummy (people watching see the same number)</li>
+<li>Damage = <strong>your raw damage</strong> with the same formula as hitting animals (weapon, stats, skills, move, tags), but a dummy has <strong>no armor, never dodges and never makes you miss</strong> · critical hits and heavy moves work as usual</li>
+<li>Hitting a dummy gives no exp · your weapon doesn't wear · the dummy never breaks, dies or drops anything · it doesn't put you in the combat state</li>
+<li>Area moves aimed at an animal don't sweep dummies, and hits on a dummy don't sweep animals</li>
+<li>The <strong>Punch Machine</strong> costs 100 T Stone per try — the number it shows and ranks is the real damage with the same formula as above (the old ranking, which used the previous formula, has been cleared)</li>
+</ul>
+<h2 id="catapult"><a class="anchor" href="#catapult" aria-hidden="true">#</a>Catapult <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h2>
+<p>The <a href="transport.html#catapult">catapult</a> you can climb onto now really fires at enemies:</p>
+<ol>
+<li><strong>Load it</strong> — tap the catapult, choose «Load Projectile» and pick big items tagged «big chunk» (for example Stone Chunk, Marble, Obsidian, Granite, Basalt, Large Skull) — 1 item = 1 shot, up to 400 shots (shown as «Projectile n/400») · you need the right to deposit items at that catapult</li>
+<li><strong>Fire</strong> — sit in it and aim at a spot 3–7.5 tiles away · a warning circle appears on the ground about 2 seconds before the shot lands · at most one shot every 5 seconds, and it can't fire when it is empty</li>
+<li><strong>Impact</strong> — hits every target within about 2.25 tiles of the impact point (up to 20 targets, nearest first)</li>
+</ol>
+<div class="table-wrap"><table>
+<thead><tr><th>Hits</th><th>Result</th></tr></thead>
+<tbody>
+<tr><td>Wild animals</td><td>130 + 0.8 × the catapult's level damage (penetration 200 + level) · no critical · your own weapon and skills are not used</td></tr>
+<tr><td>Players on the <a href="pvp.html">Lawless Islands</a></td><td>Normal PvP rules (party, clan, allied clans and players still under their arrival shield aren't hit) · damage uses the <a href="pvp.html#damage">PvP penetration table</a> × 0.15, then halved = ×0.075</td></tr>
+<tr><td>Whoever sits in the catapult inside the circle</td><td>Takes 60%</td></tr>
+<tr><td>Structures</td><td>Not damaged yet</td></tr>
+</tbody></table></div>
+<h2 id="player-vs-player-pvp"><a class="anchor" href="#player-vs-player-pvp" aria-hidden="true">#</a>Player vs player (PvP) <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h2>
+<p>You can hit players only on the <strong>Lawless Islands</strong> (open from level 56) and in <strong>Brawl Island</strong> matches (level 50+ — <a href="pvp.html#brawl-island-season-2">Brawl Island</a>) — on every other island your only enemies are animals</p>
+<ul>
+<li>Same moves as against animals, but the damage formula against players is a PvP set of its own: gradual defense curve · 4% base critical chance · skill-category bonuses don't apply · kind-of-move multiplier <strong>×0.8</strong> (melee, area moves included) / <strong>×0.35</strong> (bow, crossbow — long shots also fall off with <a href="#bow-and-crossbow-range">range</a>), then halved again ×0.5 — all numbers at <a href="pvp.html#damage">Damage in PvP</a> · the target can still roll, auto-dodge and auto-block as usual</li>
 <li>Party members, clanmates and allied clans can't hit each other · players are never stunned by players · no exp for hitting players</li>
 <li>Everything else (arrival shield · what drops when you die) is on <a href="pvp.html">Lawless Islands (PvP)</a></li>
 </ul>
 <h2 id="not-on-this-server-yet"><a class="anchor" href="#not-on-this-server-yet" aria-hidden="true">#</a>Not on this server yet <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h2>
-<h3 id="weapon-accuracy-animal-evasion-knockback"><a class="anchor" href="#weapon-accuracy-animal-evasion-knockback" aria-hidden="true">#</a>Weapon accuracy / animal evasion / knockback <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h3>
-<p>The accuracy value on weapons themselves and the animals' evasion are not used for hit chance yet (hit chance comes from the move + your character's Accuracy) · knockback moves have no push effect · there is no manual guard move (only <a href="#auto-block">auto-block</a>)</p>
+<h3 id="weapon-accuracy-knockback"><a class="anchor" href="#weapon-accuracy-knockback" aria-hidden="true">#</a>Weapon accuracy / knockback <span class="badge badge-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span> Not ready</span></h3>
+<p>The accuracy value on weapons themselves is not used for hit chance yet (hit chance comes from the move + your character's Accuracy · animal evasion is now used — see <a href="#damage-formula">Animal dodge</a>) · knockback moves have no push effect · there is no manual guard move (only <a href="#auto-block">auto-block</a>)</p>
 
 </article>
 <nav class="pager"><a class="prev" href="storage.html"><small>← Previous</small>Storage</a><a class="next" href="pvp.html"><small>Next →</small>Lawless Islands (PvP)</a></nav>
 </main>
-<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#how-to-fight">How to fight</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#weapon-types-and-moves">Weapon types and moves</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#damage-formula">Damage formula</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#defense-penetration-rate-skills">Defense Penetration Rate skills</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#stagger-gauge">Stagger gauge</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#hit-shapes-and-areas">Hit shapes and areas</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#hit-direction-and-body-parts">Hit direction and body parts</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#status-effects-on-animals">Status effects on animals</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#when-animals-hit-you">When animals hit you</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#how-much-defense-and-blocking-help">How much defense and blocking help</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#auto-dodge">Auto-dodge</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#auto-block">Auto-block</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#stunned-and-collapsed">Stunned and collapsed</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#player-vs-player-pvp">Player vs player (PvP)</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#not-on-this-server-yet">Not on this server yet</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l3"><a href="#weapon-accuracy-animal-evasion-knockback">Weapon accuracy / animal evasion / knockback</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
+<aside class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li class="toc-l2"><a href="#what-you-can-do">What you can do</a></li><li class="toc-l2"><a href="#how-to-fight">How to fight</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#weapon-types-and-moves">Weapon types and moves</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#damage-formula">Damage formula</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#defense-penetration-rate-skills">Defense Penetration Rate skills</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#bow-and-crossbow-range">Bow and crossbow range</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#arrows-and-stones-you-can-see">Arrows and stones you can see</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l2"><a href="#move-stamina">Move stamina</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l2"><a href="#stagger-gauge">Stagger gauge</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#hit-shapes-and-areas">Hit shapes and areas</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#hit-direction-and-body-parts">Hit direction and body parts</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#status-effects-on-animals">Status effects on animals</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#when-animals-hit-you">When animals hit you</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#how-much-defense-and-blocking-help">How much defense and blocking help</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l3"><a href="#animal-moods-you-can-see">Animal moods you can see</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#auto-dodge">Auto-dodge</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#auto-block">Auto-block</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#stunned-and-collapsed">Stunned and collapsed</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#training-dummies-and-the-punch-machine">Training dummies and the punch machine</a> <span class="dot dot-live" title="Live — available on the server"><span aria-hidden="true">✓</span><span class="sr">Live</span></span></li><li class="toc-l2"><a href="#catapult">Catapult</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l2"><a href="#player-vs-player-pvp">Player vs player (PvP)</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l2"><a href="#not-on-this-server-yet">Not on this server yet</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li><li class="toc-l3"><a href="#weapon-accuracy-knockback">Weapon accuracy / knockback</a> <span class="dot dot-wip" title="Not ready — not on the server yet, or still in progress"><span aria-hidden="true">⏳</span><span class="sr">Not ready</span></span></li></ul></aside>
 </div>
 <footer class="footer"><p>Based on the server's code and data · Images are from the original Durango: Wild Lands</p></footer>
-<script src="../assets/wiki.js?v=mupfw2p5" defer></script>
+<script src="../assets/wiki.js?v=mv2mjkwv" defer></script>
 </body>
 </html>

@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>การจับสัตว์ · คู่มือ Durango OffServer</title>
-<meta name="description" content="ตีสัตว์ให้เลือดต่ำกว่า 30% หรือให้มึน แล้วใช้สมุนไพรฝึกสัตว์จับ — จากนั้นฝึกในคอกให้เชื่องก่อนสร้างสายใย">
+<meta name="description" content="จับได้เฉพาะบางชนิด — ตีสัตว์ให้เลือดต่ำกว่า 30% หรือให้มึน แล้วใช้สมุนไพรฝึกสัตว์จับ จากนั้นฝึกในคอก 1 ชั่วโมงให้เชื่องก่อนสร้างสายใย">
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#1f1e1d">
 <link rel="canonical" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/taming.html"><link rel="alternate" hreflang="th" href="https://shuuuushi.github.io/Durango-OffServer-Client/th/taming.html"><link rel="alternate" hreflang="en" href="https://shuuuushi.github.io/Durango-OffServer-Client/en/taming.html">
 <link rel="icon" href="../images/atlas/icon_atlas/act_DepartTutorial.webp">
-<link rel="stylesheet" href="../assets/wiki.css?v=mupfw2p5">
+<link rel="stylesheet" href="../assets/wiki.css?v=mv2mjkwv">
 <script>try{var t=localStorage.getItem("wiki-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body data-root="../" data-lang="th" data-slug="taming">
@@ -28,10 +28,11 @@
 <nav class="sidebar" id="sidebar" aria-label="เมนู">
 <a class="nav-home"href="../th/index.html">หน้าแรก</a>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_DepartTutorial.webp" alt="" width="48" height="52" class="nav-icon glyph" loading="lazy">เริ่มต้น</p><ul>
-<li><a href="../th/getting-started.html">เริ่มต้นเล่น <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/install.html">ติดตั้งและอัปเดตเกม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/getting-started.html">เริ่มต้นเล่น <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/guide.html">ไกด์เล่นตั้งแต่ต้นจนจบ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 <li><a href="../th/account.html">บัญชีและการเข้าเกม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
-<li><a href="../th/roadmap.html">แผนงานถึงเปิดจริง <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/roadmap.html">แผนงานถึงเปิดจริง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_drinkwater.webp" alt="" width="63" height="43" class="nav-icon glyph" loading="lazy">เอาตัวรอด</p><ul>
 <li><a href="../th/survival.html">การเอาตัวรอด <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
@@ -40,18 +41,18 @@
 <li><a href="../th/death.html">การตายและการคืนชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Craft.webp" alt="" width="55" height="57" class="nav-icon glyph" loading="lazy">เก็บของและคราฟต์</p><ul>
-<li><a href="../th/gathering.html">การเก็บของ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/gathering.html">การเก็บของ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/crafting.html">การคราฟต์ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/tags.html">คุณสมบัติของไอเทม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
-<li><a href="../th/farming.html">การเพาะปลูก <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/farming.html">การเพาะปลูก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/harvestables.html">กับดักและบ่อน้ำ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/rgb_atlas/bag_back.webp" alt="" width="64" height="64" class="nav-icon" loading="lazy">ไอเทม</p><ul>
 <li><a href="../th/items.html">ไอเทม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 <li><a href="../th/equipment.html">อุปกรณ์และการซ่อม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
-<li><a href="../th/weapons-tools.html">อาวุธและเครื่องมือ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/weapons-tools.html">อาวุธและเครื่องมือ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/clothing.html">เสื้อผ้าและเครื่องประดับ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
-<li><a href="../th/materials.html">วัตถุดิบ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/materials.html">วัตถุดิบ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/consumables.html">อาหาร เครื่องดื่ม และยา <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/cook_skewer.webp" alt="" width="58" height="57" class="nav-icon glyph" loading="lazy">อาหาร</p><ul>
@@ -62,21 +63,21 @@
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_estate.webp" alt="" width="50" height="42" class="nav-icon glyph" loading="lazy">ก่อสร้างและที่ดิน</p><ul>
 <li><a href="../th/building.html">การก่อสร้าง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/land.html">อาณาเขต <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
-<li><a href="../th/decay.html">การผุพังและซ่อม <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/decay.html">การผุพังและซ่อม <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/storage.html">ที่เก็บของ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_Attack.webp" alt="" width="59" height="58" class="nav-icon glyph" loading="lazy">สัตว์และการต่อสู้</p><ul>
 <li><a href="../th/combat.html">การต่อสู้ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/pvp.html">เกาะไร้กฎ (PvP) <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
-<li><a href="../th/animals.html">สัตว์ป่า <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/animals.html">สัตว์ป่า <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_domesticate_1.webp" alt="" width="64" height="59" class="nav-icon glyph" loading="lazy">จับและเลี้ยงสัตว์</p><ul>
 <li><a href="../th/taming.html" class="current" aria-current="page">การจับสัตว์ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
-<li><a href="../th/pets.html">สัตว์เลี้ยง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
+<li><a href="../th/pets.html">สัตว์เลี้ยง <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 </ul></div>
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/skill_cooking_1.webp" alt="" width="58" height="49" class="nav-icon glyph" loading="lazy">การเติบโต</p><ul>
 <li><a href="../th/stats.html">ค่าสถานะตัวละคร <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
-<li><a href="../th/skills.html">สกิลและอาชีพ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/skills.html">สกิลและอาชีพ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/skill-list.html">รายการสกิล <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
 <li><a href="../th/titles.html">ฉายา <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/organizations.html">องค์กร <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
@@ -91,7 +92,7 @@
 <div class="nav-cat"><p class="nav-cat-title"><img src="../images/atlas/icon_atlas/act_fasttravel.webp" alt="" width="56" height="44" class="nav-icon glyph" loading="lazy">โลกและการเดินทาง</p><ul>
 <li><a href="../th/islands.html">เกาะและการเดินทาง <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 <li><a href="../th/warp.html">วาร์ปและรอยแยก <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
-<li><a href="../th/map.html">แผนที่และการสำรวจ <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></a></li>
+<li><a href="../th/map.html">แผนที่และการสำรวจ <span class="dot dot-partial" title="ใช้ได้ — มีในเซิร์ฟแล้ว · บางหัวข้อในหน้านี้ยังไม่เสร็จ"><span aria-hidden="true">✓⏳</span><span class="sr">ใช้ได้ · บางหัวข้อในหน้านี้ยังไม่เสร็จ</span></span></a></li>
 </ul></div>
 </nav>
 
@@ -99,15 +100,41 @@
 <article class="page">
 <p class="crumbs"><a href="index.html">หน้าแรก</a> › จับและเลี้ยงสัตว์</p>
 <h1><img src="../images/atlas/icon_atlas/act_capture_1.webp" alt="" width="56" height="58" class="title-icon glyph" loading="lazy">การจับสัตว์ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h1>
-<p class="summary">ตีสัตว์ให้เลือดต่ำกว่า 30% หรือให้มึน แล้วใช้สมุนไพรฝึกสัตว์จับ — จากนั้นฝึกในคอกให้เชื่องก่อนสร้างสายใย</p>
+<p class="summary">จับได้เฉพาะบางชนิด — ตีสัตว์ให้เลือดต่ำกว่า 30% หรือให้มึน แล้วใช้สมุนไพรฝึกสัตว์จับ จากนั้นฝึกในคอก 1 ชั่วโมงให้เชื่องก่อนสร้างสายใย</p>
 
-<p>สัตว์ป่าเกือบทุกชนิดจับมาเป็นคู่หูได้ ขั้นตอนคือ <strong>ตีให้อ่อนแรง → จับด้วยสมุนไพรฝึกสัตว์ → ได้สายบังเหียน → ฝึกในคอกให้เชื่อง → สร้างสายใย</strong> แล้วจะได้ <a href="pets.html">สัตว์เลี้ยง</a> ที่พาเดินทาง ขี่ ช่วยสู้ และผลิตของได้</p>
+<p>สัตว์ป่า<strong>บางชนิด</strong>จับมาเป็นคู่หูได้ (<a href="#สัตว์ที่จับได้">สัตว์ที่จับได้</a>) ขั้นตอนคือ <strong>ตีให้อ่อนแรง → จับด้วยสมุนไพรฝึกสัตว์ → ได้สายบังเหียน → ฝึกในคอกให้เชื่อง → สร้างสายใย</strong> แล้วจะได้ <a href="pets.html">สัตว์เลี้ยง</a> ที่พาเดินทาง ขี่ ช่วยสู้ และผลิตของได้</p>
 <p><figure><img src="../images/tex/Assets__Texture2D__pet_1-w480.webp" alt="จับสัตว์แล้วใส่คอก" width="480" height="240" loading="lazy" class="img-figure"><figcaption>จับสัตว์แล้วใส่คอก</figcaption></figure></p>
 <h2 id="ทำอะไรได้บ้าง"><a class="anchor" href="#ทำอะไรได้บ้าง" aria-hidden="true">#</a>ทำอะไรได้บ้าง</h2>
 <ul>
 <li>จับสัตว์ป่าที่เลือดเหลือ ≤ 30% <strong>หรือ</strong> กำลังมึน/ล้มอยู่ (เลือดเท่าไรก็ได้)</li>
 <li>ตีด้วยอาวุธประเภททุบหรือท่าหนักให้สัตว์มึนเร็ว</li>
 <li>ฝึกสัตว์ที่จับมาในคอกฝึกสัตว์ แล้วสร้างสายใยเป็นสัตว์เลี้ยง</li>
+</ul>
+<h2 id="สัตว์ที่จับได้"><a class="anchor" href="#สัตว์ที่จับได้" aria-hidden="true">#</a>สัตว์ที่จับได้ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
+<p>จับได้เฉพาะชนิดที่เกมต้นฉบับให้เลี้ยง — ต้องเรียน<strong>สกิลจับ</strong>ของชนิดนั้น (หมวดการอยู่รอด สาย «การฝึกสัตว์») ก่อน · ยังไม่เรียน = เซิร์ฟขึ้นหน้าสกิลให้เรียน ไม่มีแถบเวลา เครื่องมือไม่สึก</p>
+<div class="table-wrap"><table>
+<thead><tr><th>เลเวลหมวดการอยู่รอดที่ต้องมี</th><th>สัตว์ที่จับได้</th></tr></thead>
+<tbody>
+<tr><td>15</td><td>ซีบราเซราทอปส์ · โปรโตเซราทอปส์ (รวมสีชมพูอ่อน)</td></tr>
+<tr><td>20</td><td>โอวิแรปเตอร์ · อัลบิแรปเตอร์ · พิกตาแรปเตอร์ · มาครัวเคเนีย · ไดโนนิคัส</td></tr>
+<tr><td>30</td><td>แรปเตอร์ · ซีโลไฟซิส (รวมแบบทุ่งหิมะ)</td></tr>
+<tr><td>35</td><td>เมกาโลเซรอสตัวผู้ (รวมท้องขาว) · พาโวมิมัส</td></tr>
+<tr><td>40</td><td>สกังโคดัส</td></tr>
+<tr><td>45</td><td>สไตราโคซอรัส · เซนโทรซอรัส</td></tr>
+<tr><td>50</td><td>ออร์นิโทไมมัส</td></tr>
+<tr><td>60</td><td>ไดโลโฟซอรัส</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>ต้องมีครบ 2 อย่าง: สกิลจับ + แคลนที่วิจัยแล้ว</strong> — แองคิโลซอรัส · ไดร์วูล์ฟ · สไมโลดอนป่า
+<ul>
+<li>① เรียน<strong>สกิลจับของชนิดนั้น</strong>: แองคิโลซอรัส = <strong>จับไดโนเสาร์สี่ขา 2</strong> (หมวดการอยู่รอด Lv45) · ไดร์วูล์ฟ / สไมโลดอนป่า = <strong>จับสัตว์เลี้ยงลูกด้วยนมที่พร้อมสู้ II</strong> (หมวดการอยู่รอด Lv60)</li>
+<li>② <strong>อยู่ในแคลนที่วิจัย «วิจัยการจับที่มีคุณภาพ» แล้ว และบัพยังไม่หมด</strong> — วิจัยที่ศูนย์วิจัยคุณภาพ 150,000 ทีสโตน · บัพอยู่ 2 ชั่วโมง · วิจัยซ้ำได้หลังบัพหมด 6 ชั่วโมง (<a href="clan.html#วิจัยแคลน">วิจัยแคลน</a>)</li>
+<li>③ <strong>ไม่มีแคลน หรือแคลนยังไม่วิจัย/บัพหมด = แตะสัตว์แล้วไม่มีปุ่มจับเลย</strong> (เกมไม่ขึ้นข้อความบอก) แม้เรียนสกิลครบแล้ว</li>
+<li>ไดร์วูล์ฟดำ (เกาะไร้กฎ) ไม่มีสกิลจับ จึงจับไม่ได้</li>
+</ul>
+</li>
+<li>ชนิดย่อยบางแบบของสัตว์ข้างบนและสัตว์ภูเขาไฟบางชนิด (เช่น แฮโดรซอรัสลาวา สกังโคดัสกำมะถัน) จับได้ตามสกิลเดียวกัน</li>
+<li><strong>ชนิดอื่นจับไม่ได้</strong> ขึ้นข้อความ «สัตว์ชนิดนี้เลี้ยงเชื่องไม่ได้» (เช่น ฟีนาโคดัส เซเบอร์ทูธทั่วไป แมมมอธ แบรคิโอซอรัส ไทรเซราทอปส์ สเตโกซอรัส คอมพ์ซอกนาธัส ยูทาห์แรปเตอร์ แกลลิมิมัส อัลโลซอรัส อะแพโทซอรัส ไทแรนโนซอรัส แคสโมซอรัส) · บางชนิดได้จากร้านค้า/อีเวนต์/ของขวัญเท่านั้น — ขึ้นข้อความบอกเหตุผล ไม่มีแถบเวลา เครื่องมือไม่สึก</li>
 </ul>
 <h2 id="สิ่งที่ต้องมี"><a class="anchor" href="#สิ่งที่ต้องมี" aria-hidden="true">#</a>สิ่งที่ต้องมี <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
 <div class="table-wrap"><table>
@@ -124,7 +151,7 @@
 <h2 id="วิธีจับ"><a class="anchor" href="#วิธีจับ" aria-hidden="true">#</a>วิธีจับ <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h2>
 <ol>
 <li>ตีสัตว์จนเลือดเหลือ ≤ 30% หรือจนมันมึน/ล้ม (ดูหัวข้อเกจมึนด้านล่าง)</li>
-<li>เล็งสัตว์ แล้วกดปุ่ม <strong>จับ</strong> <img src="../images/atlas/icon_atlas/act_capture_1.webp" alt="" width="56" height="58" loading="lazy" class="img-inline glyph"> — ปุ่มเปิดให้กดเสมอเมื่อมีเครื่องมือ เซิร์ฟเป็นคนตรวจเงื่อนไข</li>
+<li>เล็งสัตว์ แล้วกดปุ่ม <strong>จับ</strong> <img src="../images/atlas/icon_atlas/act_capture_1.webp" alt="" width="56" height="58" loading="lazy" class="img-inline glyph"> — ปุ่มกดได้เมื่อมีเครื่องมือและเรียนสกิลจับของชนิดนั้นแล้ว (ไม่ต้องรอให้เลือดต่ำ) เซิร์ฟเป็นคนตรวจเงื่อนไข</li>
 <li>ยืนนิ่ง 3 วินาทีระหว่างแถบเวลา (ขยับ = ยกเลิก)</li>
 <li>สำเร็จ → สัตว์หายจากโลกและได้ <strong>สายบังเหียน</strong> ของสัตว์ตัวนั้นเข้ากระเป๋า · ไม่สำเร็จ → ขึ้นข้อความพร้อมโอกาสที่ทอย ลองใหม่ได้หลังคูลดาวน์ 5 วินาที</li>
 </ol>
@@ -223,7 +250,7 @@
 <p><figure><img src="../images/tex/Assets__Texture2D__pet_2-w480.webp" alt="คอกฝึกสัตว์" width="480" height="240" loading="lazy" class="img-figure"><figcaption>คอกฝึกสัตว์</figcaption></figure></p>
 <ol>
 <li>สร้าง/วาง <strong>คอกฝึกสัตว์</strong> แล้วใส่สายบังเหียนลงคอก</li>
-<li>กดเริ่มฝึก — ใช้เวลา 60 วินาที · โอกาสสำเร็จเริ่มต้น 60% (สูงสุด 100%)</li>
+<li>กดเริ่มฝึก — ใช้เวลา <strong>1 ชั่วโมง</strong> (3,600 วินาที ทุกชนิด) · โอกาสสำเร็จเริ่มต้น 60% (สูงสุด 100%)</li>
 <li>ให้อาหารระหว่างฝึกเพื่อช่วย:</li>
 </ol>
 <div class="table-wrap"><table>
@@ -234,7 +261,7 @@
 <tr><td>เนื้อ / ปลาซิว</td><td>เวลา −10 วินาทีต่อชิ้น</td></tr>
 </tbody></table></div>
 <ol>
-<li>ครบเวลากดรับผล: <strong>สำเร็จ</strong> → สัตว์เชื่อง ได้อันดับสุ่ม (S · A · B · C · D ตามที่ชนิดนั้นมี) · <strong>ไม่สำเร็จ</strong> → สัตว์หนีกลับป่า สายบังเหียนหาย</li>
+<li>ครบเวลากดรับผล: <strong>สำเร็จ</strong> → สัตว์เชื่อง ได้อันดับสุ่ม (S · A · B · C · D ตามที่ชนิดนั้นมี — อันดับกำหนดจำนวนช่องคุณสมบัติ ดู <a href="pets.html#วงล้อคุณสมบัติ">สัตว์เลี้ยง</a>) · <strong>ไม่สำเร็จ</strong> → สัตว์หนีกลับป่า สายบังเหียนหาย</li>
 <li>ใช้สายบังเหียนของสัตว์ที่เชื่องแล้วเพื่อ<strong>สร้างสายใย</strong> → กลายเป็นสัตว์เลี้ยง (เลเวลของสายบังเหียนต้องไม่เกินเลเวลหมวดการอยู่รอดของเรา) — ต่อที่ <a href="pets.html">สัตว์เลี้ยง</a></li>
 </ol>
 <ul>
@@ -244,20 +271,18 @@
 </aside>
 <h3 id="สัตว์เลเวลเกิน-60"><a class="anchor" href="#สัตว์เลเวลเกิน-60" aria-hidden="true">#</a>สัตว์เลเวลเกิน 60 <span class="badge badge-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span> ใช้ได้</span></h3>
 <ul>
-<li>สัตว์ป่า Lv61–99 (บนเกาะเลเวล 55 ขึ้นไป — <a href="animals.html#เกาะเลเวล-55-ขึ้นไป">สัตว์ป่า</a>) จับได้ตามปกติ · <strong>สายบังเหียน</strong> ที่ได้แสดง <strong>เลเวลจริงของสัตว์</strong> (สูงสุด 99)</li>
-<li>เงื่อนไขสร้างสายใยเหมือนเดิม: <strong>เลเวลหมวดการอยู่รอดต้องถึงเลเวลของสายบังเหียน</strong> — หมวดการอยู่รอดสูงสุด 60 จึง <strong>ยังสร้างสายใยกับสัตว์ Lv61 ขึ้นไปไม่ได้</strong></li>
-<li>กดสร้างสายใยตอนหมวดไม่ถึง เกมไม่ให้กด และเซิร์ฟก็ปฏิเสธด้วยข้อความ (ภาษาไทย) ว่าสัตว์เลเวลสูงกว่าเลเวลหมวดการอยู่รอด · สายบังเหียนยังอยู่ในกระเป๋า</li>
-<li>สัตว์เลี้ยง Lv61–70 ที่สร้างสายใยไว้แล้วก่อนหน้านี้ยังอยู่ครบ และเลี้ยงต่อได้ถึง 99 (<a href="pets.html#เลเวลสูงสุด-99">สัตว์เลี้ยง</a>)</li>
+<li>เกาะเลเวล 60 มีสัตว์ป่า Lv61–65 ได้ (<a href="animals.html#เกาะเลเวลสูง">สัตว์ป่า</a>) — จับได้ตามปกติ</li>
+<li><strong>สายบังเหียน</strong> ที่ได้ แสดงเลเวลสูงสุด <strong>60</strong> (เพดานเลเวลของสายบังเหียน) แม้ตัวสัตว์จะเลเวลสูงกว่า — จึงสร้างสายใยได้เมื่อ <strong>เลเวลหมวดการอยู่รอดถึง 60</strong> · ตัวสัตว์ยังคงเลเวลจริงของมัน</li>
+<li>ถ้าหมวดการอยู่รอดยังไม่ถึงเลเวลของสายบังเหียน กดสร้างสายใยไม่ได้ และเซิร์ฟขึ้นข้อความ (ภาษาไทย) ว่าสัตว์เลเวลสูงกว่าเลเวลหมวดการอยู่รอด · สายบังเหียนยังอยู่ในกระเป๋า</li>
+<li>สัตว์เลี้ยงเลเวลเกิน 60 ขึ้นเลเวลต่อด้วย EXP ไม่ได้ (เพดานเลเวลสัตว์เลี้ยง 60) — ดู <a href="pets.html#เลเวลสูงสุด-60">สัตว์เลี้ยง</a></li>
 </ul>
-<aside class="callout callout-warn"><p class="callout-title"><span aria-hidden="true">⚠️</span> ระวัง</p><p>ทำลายสายใยสัตว์เลี้ยงที่เลเวลเกิน 60 จะได้สายบังเหียนเลเวลจริงของมัน ซึ่ง <strong>สร้างสายใยกลับไม่ได้</strong> — อย่าทำลายสายใยตัวที่เลเวลเกิน 60</p>
-</aside>
 
 </article>
 <nav class="pager"><a class="prev" href="animals.html"><small>← ก่อนหน้า</small>สัตว์ป่า</a><a class="next" href="pets.html"><small>ถัดไป →</small>สัตว์เลี้ยง</a></nav>
 </main>
-<aside class="toc" aria-label="ในหน้านี้"><p class="toc-title">ในหน้านี้</p><ul><li class="toc-l2"><a href="#ทำอะไรได้บ้าง">ทำอะไรได้บ้าง</a></li><li class="toc-l2"><a href="#สิ่งที่ต้องมี">สิ่งที่ต้องมี</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#วิธีจับ">วิธีจับ</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l3"><a href="#สัตว์ในสังกัดเต็ม">สัตว์ในสังกัดเต็ม</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#โอกาสจับ">โอกาสจับ</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l3"><a href="#ทักษะในการจับ">ทักษะในการจับ</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#เกจมึน">เกจมึน</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ทำให้มึนเร็ว">ทำให้มึนเร็ว</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#หลังจับได้-ฝึกในคอก">หลังจับได้: ฝึกในคอก</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l3"><a href="#สัตว์เลเวลเกิน-60">สัตว์เลเวลเกิน 60</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li></ul></aside>
+<aside class="toc" aria-label="ในหน้านี้"><p class="toc-title">ในหน้านี้</p><ul><li class="toc-l2"><a href="#ทำอะไรได้บ้าง">ทำอะไรได้บ้าง</a></li><li class="toc-l2"><a href="#สัตว์ที่จับได้">สัตว์ที่จับได้</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#สิ่งที่ต้องมี">สิ่งที่ต้องมี</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#วิธีจับ">วิธีจับ</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l3"><a href="#สัตว์ในสังกัดเต็ม">สัตว์ในสังกัดเต็ม</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#โอกาสจับ">โอกาสจับ</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l3"><a href="#ทักษะในการจับ">ทักษะในการจับ</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#เกจมึน">เกจมึน</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#ทำให้มึนเร็ว">ทำให้มึนเร็ว</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l2"><a href="#หลังจับได้-ฝึกในคอก">หลังจับได้: ฝึกในคอก</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li><li class="toc-l3"><a href="#สัตว์เลเวลเกิน-60">สัตว์เลเวลเกิน 60</a> <span class="dot dot-live" title="ใช้ได้ — มีในเซิร์ฟแล้ว"><span aria-hidden="true">✓</span><span class="sr">ใช้ได้</span></span></li></ul></aside>
 </div>
 <footer class="footer"><p>เนื้อหาอ้างอิงจากโค้ดและข้อมูลของเซิร์ฟ · รูปเป็นของเกม Durango: Wild Lands ต้นฉบับ</p></footer>
-<script src="../assets/wiki.js?v=mupfw2p5" defer></script>
+<script src="../assets/wiki.js?v=mv2mjkwv" defer></script>
 </body>
 </html>
