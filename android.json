@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-05T09:28:00+07:00",
+  "updated": "2026-10-10T23:30:00+07:00",
   "game": {
     "package": "com.durango.offserver",
     "version": "3.1.7",
@@ -114,12 +114,12 @@
     }
   ],
   "launcher": {
-    "version": "1.0.0",
-    "version_code": 1,
-    "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/android-launcher-v1.0.0/DurangoLauncher-android-1.0.0.apk",
+    "version": "1.1.0",
+    "version_code": 2,
+    "url": "https://github.com/ShuuuuShi/Durango-OffServer-Client/releases/download/android-launcher-v1.0.0/DurangoLauncher-android-1.1.0.apk",
     "mirrors": [],
-    "size": 492894,
-    "sha256": "adf7203d649792eaa9fec2aa94ad0a8a3bb209bdb7f03f4539c5f588cc0b301e"
+    "size": 493402,
+    "sha256": "66688acde5dc245e6a6168cfc0da787b4b6b091170c3b1fa486af09141949e38"
   },
   "min_launcher": 0,
   "servers_url": "https://raw.githubusercontent.com/ShuuuuShi/Durango-OffServer-Client/main/servers.json",
